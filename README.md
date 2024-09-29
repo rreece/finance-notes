@@ -1,12 +1,19 @@
-My new document
+Finance Notes
 ============================================
 
-[![pages build & deploy](https://github.com/rreece/quarto-example/actions/workflows/pages.yml/badge.svg)](https://github.com/rreece/quarto-example/actions/workflows/pages.yml)
+[![pages build & deploy](https://github.com/rreece/finance-notes/actions/workflows/pages.yml/badge.svg)](https://github.com/rreece/finance-notes/actions/workflows/pages.yml)
 
-TODO: set the build & deploy badge above to your repo
+Finance Notes by [Ryan Reece](https://rreece.github.io/).
 
-My section
+Introduction
 --------------------------------------------
 
-My writing
+TODO
+
+
+Author
+-------------------------------------------------------------------------------
+
+Ryan Reece ([@rreece](https://github.com/rreece))            
+Created: September 28, 2024
 
