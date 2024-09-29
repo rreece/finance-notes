@@ -175,7 +175,6 @@ This is how we estimate $V$ (and $\mu$).
     -   Onnela, J.P., Chakraborti, A., Kaski, K., Kertesz, J., & Kanto, A. (2003). [Dynamics of market correlations: Taxonomy and portfolio analysis](http://arXiv.org/abs/cond-mat/0302546v1). [^Onnela2003]
     -   Onnela, J.P., Kaski, K., & Kert&eacute;sz, J. (2004). Clustering and information in correlation based financial networks. [^Onnela2004]
     -   See [Hierarchical Risk Parity](#hierarchical-risk-parity)
--   TODO: maybe move this to statistics?
 
 TODO:
 
@@ -251,8 +250,8 @@ Cass & Stiglitz:
 Continuing the discussion of the context of a portfolio of risky assets
 (no risk-free asset; to be considered in the next section).
 
--   Tobin, J. (1958). [Liquidity preference as behavior towards risk](https://doi.org/10.2307/2296205). [^Tobin1958]
--   Merton, R.C. (1972). [An analytic derivation of the efficient portfolio frontier](https://www.jstor.org/stable/2329621). [^Merton1972b]
+Tobin[^Tobin1958] is often credited as the first to note and
+Merton[^Merton1972b] exposited formally the *One-fund theorem*:
 
 Merton:
 
@@ -291,7 +290,7 @@ we go from holding asset 2 to 1. Let's reparameterize so that $\xi \rightarrow (
 Now we consider adding the posibility of holding a risk-free asset
 with a risk-free return, $r_{f}$.
 
-TODO: theorem
+*One-fund theorem*:
 
 Kwok:
 
