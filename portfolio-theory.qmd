@@ -37,14 +37,14 @@ Given an $n$-dimensional vector of expected returns, $\vec{\mu}$,
 an $n\times{}n$-dimensional expected covariance matrix, $V$,
 an $m\times{}n$-dimensional constraint matrix, $A$,
 an $m$-dimensional constraint vector, $\vec{b}$,
-and a target return, $r$,
-solve for the portfolio weights, $\vec{w}^{\ast}$, an $n$-dimensional vector,
+and a target return, $r_{\ast}$,
+solve for the portfolio weights, $\vec{w}_{\ast}$, an $n$-dimensional vector,
 that are *efficient*, *i.e.* those
 that minimize the standard deviation of the portfolio return, $\sigma$,
 for a given target return.
-Return $(\vec{w}^{\ast}, \sigma^{\ast})$.
+Return $(\vec{w}_{\ast}, \sigma_{\ast})$.
 
-$$ \vec{w}^{\ast} = \underset{w}{\mathrm{argmin}}\ \vec{w}^\intercal \, V \, \vec{w} $$
+$$ \vec{w}_{\ast} = \underset{w}{\mathrm{argmin}}\ \vec{w}^\intercal \, V \, \vec{w} $$
 
 such that
 
