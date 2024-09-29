@@ -327,7 +327,7 @@ have deployed into risky assets in the market.
 
 The functional form of the Capital Allocation Line is
 
-$$ r_\mathrm{CAL}(\sigma) = r_{f} + \sigma \, \sqrt{c - 2 \, b \, r_{f} + a \, r_{f}^{2}} $$
+$$ r_\mathrm{CAL}(\sigma) = r_{f} + \sigma \, \sqrt{ a \, r_{f}^{2} - 2 \, b \, r_{f} + c} $$
 
 TODO: Double-check the expression and example values of this slope.
 
@@ -346,7 +346,7 @@ $$ r_{t} = \vec{\mu} \cdot \vec{w}_t = \frac{c - b \, r_{f}}{b - a \, r_{f}} $$
 
 and a variance
 
-$$ \sigma_{t}^{2} = \frac{(\vec{\mu} - r_{f} \, \vec{1})^2}{ (\vec{\mu} - r_{f} \, \vec{1})^\intercal \, V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}  = \frac{a \, r^2 - 2 \, b \, r + c}{\left| b - a \, r \right|} $$
+$$ \sigma_{t}^{2} = \frac{(\vec{\mu} - r_{f} \, \vec{1})^2}{ (\vec{\mu} - r_{f} \, \vec{1})^\intercal \, V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}  = \frac{a \, r_{f}^2 - 2 \, b \, r_{f} + c}{\left| b - a \, r_{f} \right|} $$
 
 Efficient frontier without borrowing:
 
