@@ -327,7 +327,7 @@ have deployed into risky assets in the market.
 
 The functional form of the Capital Allocation Line is
 
-$$ r_\mathrm{CAL}(\sigma) = r_{f} + \sigma \, \sqrt{c - 2 \, b \, r_{f} + a \, r_{f}^{2}} $$
+$$ r_\mathrm{CAL}(\sigma) = r_{f} + \sigma \, \sqrt{ a \, r_{f}^{2} - 2 \, b \, r_{f} + c} $$
 
 TODO: Double-check the expression and example values of this slope.
 
@@ -342,11 +342,11 @@ $$ \vec{w}_{t} = \frac{V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}{\vec{1}^\interc
 
 It has a return
 
-$$ r_{t} = XXX $$
+$$ r_{t} = \vec{\mu} \cdot \vec{w}_t = \frac{c - b \, r_{f}}{b - a \, r_{f}} $$
 
-and a standard deviation
+and a variance
 
-$$ \sigma_{t} = XXX $$
+$$ \sigma_{t}^{2} = \frac{(\vec{\mu} - r_{f} \, \vec{1})^2}{ (\vec{\mu} - r_{f} \, \vec{1})^\intercal \, V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}  = \frac{a \, r_{f}^2 - 2 \, b \, r_{f} + c}{\left| b - a \, r_{f} \right|} $$
 
 Efficient frontier without borrowing:
 
@@ -462,11 +462,11 @@ Risk preferences
 --------------------------------------------
 
 -   Risk preferences
--   [Gambler's ruin problem](https://en.wikipedia.org/wiki/Gambler%27s_ruin)
 -   [Kelly criterion](https://en.wikipedia.org/wiki/Kelly_criterion)
     -   Kelly, J.L. (1956). [A new interpretation of information rate](https://www.princeton.edu/~wbialek/rome/refs/kelly_56.pdf). [^Kelly1956]
--   Consumption/investment problem
--   [Merton's portfolio problem](https://en.wikipedia.org/wiki/Merton%27s_portfolio_problem)
+-   General consumption/investment problem
+    -   [Gambler's ruin problem](https://en.wikipedia.org/wiki/Gambler%27s_ruin)
+    -   [Merton's portfolio problem](https://en.wikipedia.org/wiki/Merton%27s_portfolio_problem)
     -   Merton, R.C. (1969). [Lifetime portfolio selection under uncertainty: The continuous-time case](https://www.jstor.org/stable/1926560). [^Merton1969]
     -   Karatzas, I., Lehoczky, J.P., Sethi, S.P., & Shreve, S.E (1986). [Explicit solution of a general consumption/investment problem](https://www.jstor.org/stable/3689808). [^Karatzas1986]
 -   Conditional Value at Risk (CVaR) or [Expected shortfall](https://en.wikipedia.org/wiki/Expected_shortfall)
