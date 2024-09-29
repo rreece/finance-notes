@@ -346,7 +346,7 @@ $$ r_{t} = \vec{\mu} \cdot \vec{w}_t = \frac{c - b \, r_{f}}{b - a \, r_{f}} $$
 
 and a variance
 
-$$ \sigma_{t}^{2} = \frac{(\vec{\mu} - r_{f} \, \vec{1})^2}{ (\vec{\mu} - r_{f} \, \vec{1})^\intercal \, V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}  = \frac{a \, r_{f}^2 - 2 \, b \, r_{f} + c}{\left| b - a \, r_{f} \right|} $$
+$$ \sigma_{t}^{2} = \frac{(\vec{\mu} - r_{f} \, \vec{1})^2}{ (\vec{\mu} - r_{f} \, \vec{1})^\intercal \, V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}  = \frac{a \, r_{f}^2 - 2 \, b \, r_{f} + c}{(b - a \, r_{f})^2} $$
 
 Efficient frontier without borrowing:
 
