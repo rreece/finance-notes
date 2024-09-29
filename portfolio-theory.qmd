@@ -321,7 +321,9 @@ have deployed into risky assets in the market.
 
 The functional form of the Capital Allocation Line is
 
-$$ r(\sigma) = r_{f} + \sigma \, \sqrt{c - 2 \, b \, r_{f} + a \, r_{f}^{2}} $$
+$$ r_\mathrm{CAL}(\sigma) = r_{f} + \sigma \, \sqrt{c - 2 \, b \, r_{f} + a \, r_{f}^{2}} $$
+
+TODO: Double-check the expression and example values of this slope.
 
 Note that while the shape of the efficient frontier is unchanged by
 introducing or varying the risk-free rate of return, which portfolio
