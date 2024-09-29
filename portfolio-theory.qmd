@@ -137,6 +137,13 @@ to somewhat lower returns when there is shorting on the efficient frontier.
 Quadratic programming and convex optimization are discussed in more detail
 in the section on [Convex optimization](#convex-optimization).
 
+An example of the efficient frontier and the no-shorts frontier is shown
+in @fig-markowitz-portfolio-btc-2024-09-13\.
+
+![The efficient frontier and no-shorts frontier for a few example assets,
+    using historical daily data from 2014-01-02 to 2024-08-30, 10 years and 9 months.
+    ](img/markowitz-portfolio-btc-2024-09-13.png){#fig-markowitz-portfolio-btc-2024-09-13}
+
 [^Das2016]: @Das_2016_Data_Science_Theories_Models_Algorithms\.
 [^Levy1979]: @Levy_1979_Approximating_expected_utility_by_a_function\.
 [^Markowitz1952]: @Markowitz_1952_Portfolio_selection\.
@@ -168,7 +175,6 @@ This is how we estimate $V$ (and $\mu$).
     -   Onnela, J.P., Chakraborti, A., Kaski, K., Kertesz, J., & Kanto, A. (2003). [Dynamics of market correlations: Taxonomy and portfolio analysis](http://arXiv.org/abs/cond-mat/0302546v1). [^Onnela2003]
     -   Onnela, J.P., Kaski, K., & Kert&eacute;sz, J. (2004). Clustering and information in correlation based financial networks. [^Onnela2004]
     -   See [Hierarchical Risk Parity](#hierarchical-risk-parity)
--   TODO: maybe move this to statistics?
 
 TODO:
 
@@ -244,8 +250,8 @@ Cass & Stiglitz:
 Continuing the discussion of the context of a portfolio of risky assets
 (no risk-free asset; to be considered in the next section).
 
--   Tobin, J. (1958). [Liquidity preference as behavior towards risk](https://doi.org/10.2307/2296205). [^Tobin1958]
--   Merton, R.C. (1972). [An analytic derivation of the efficient portfolio frontier](https://www.jstor.org/stable/2329621). [^Merton1972b]
+Tobin[^Tobin1958] is often credited as the first to note and
+Merton[^Merton1972b] exposited formally the *One-fund theorem*:
 
 Merton:
 
@@ -284,7 +290,13 @@ we go from holding asset 2 to 1. Let's reparameterize so that $\xi \rightarrow (
 Now we consider adding the posibility of holding a risk-free asset
 with a risk-free return, $r_{f}$.
 
-TODO: theorem
+*One-fund theorem*:
+
+Kwok:
+
+>   Any efficient portfolio [on the Capital Allocation Line] can be
+>   expressed as a combination of the risk free asset and the
+>   portfolio (or fund) represented by $M$.
 
 Kasa:
 
@@ -294,23 +306,43 @@ asset.
 
 The portfolio weights are
 
-$$ \vec{w} = \kappa \, \vec{w}_{f} + (1-\kappa) \, \vec{w}_{g} $$
+$$ \vec{w} = \kappa \, \vec{w}_{f} + (1-\kappa) \, \vec{w}_{t} $$
 
 The portfolio return is
 
-$$ r = \kappa \, r_{f} + (1-\kappa) \, r_{g} $$
+$$ r = \kappa \, r_{f} + (1-\kappa) \, r_{t} $$
 
 The portfolio standard deviation is
 
-$$ \sigma = \left| 1-\kappa \right| \sigma_{g} $$
+$$ \sigma = \left| 1-\kappa \right| \sigma_{t} $$
+
+Since the efficient frontier is a linear combination of the risk-free, "cash",
+and a single portfolio of risky assets, "stocks", then it forms a line in
+return-risk-space from the risk-free asset to the tangent portfolio,
+and follows the line further up for one allows borrowing at the risk-free rate
+and investing in the tangent portfolio.
+This line is called the *Capital Allocation Line* because it represents the
+possible portfolios one can have depending on how much of their cash they
+have deployed into risky assets in the market.
+
+The functional form of the Capital Allocation Line is
+
+$$ r_\mathrm{CAL}(\sigma) = r_{f} + \sigma \, \sqrt{c - 2 \, b \, r_{f} + a \, r_{f}^{2}} $$
+
+TODO: Double-check the expression and example values of this slope.
+
+Note that while the shape of the efficient frontier is unchanged by
+introducing or varying the risk-free rate of return, which portfolio
+along the frontier that is the tangent portfolio will depend on the
+risk-free rate of return.
+
+$$ r_{t}(\sigma; r_{f}) = X $$
 
 TODO:
 
 -   Citation need for the one-fund theorem
--   $\sigma_{g}$ as a function of $r_{f}$
--   Define *Capital Allocation Line*
--   Discuss lending and borrowing at the risk-free rate
--   Functional form of the capital allocation line, $r_\mathrm{CAL}(\sigma)$. Intersection at the tangent portfolio.
+-   CAL intersection at the tangent portfolio
+-   $r_{t}(\sigma; r_{f})$
 -   Case-wise functional form of the efficient frontier without borrowing
 -   Related to the efficient-market hypothesis: in equilibrium, the tangent portfolio becomes the market portfolio
 
