@@ -26,7 +26,7 @@ Markowitz, H.M., Starer, D., Fram, H., & Gerber, S. (2019). Avoiding the downsid
 Merton, R.C. (1969). Lifetime portfolio selection under uncertainty: The continuous-time case. *Review of Economics and Statistics*, 51, 247--257. https://www.jstor.org/stable/1926560
 Merton, R.C. (1972). An analytic derivation of the efficient portfolio frontier. *Journal of Financial and Quantitative Analysis*, 7, 1851--1872. https://www.jstor.org/stable/2329621
 Onnela, J.P., Chakraborti, A., Kaski, K., Kertesz, J., & Kanto, A. (2003). Dynamics of market correlations: Taxonomy and portfolio analysis. http://arXiv.org/abs/cond-mat/0302546v1
-Onnela, J.P., Kaski, K., & Kert&eacute;sz, J. (2004). Clustering and information in correlation based financial networks. *European Physical Journal B*, 38, 353--362.
+Onnela, J.P., Kaski, K., & Kert{\'e}sz, J. (2004). Clustering and information in correlation based financial networks. *European Physical Journal B*, 38, 353--362.
 Owen, J. & Rabinovitch, R. (1983). On the class of elliptical distributions and their applications to the theory of portfolio choice. *Journal of Finance*, 38, 745--752.
 L{\'o}pez de Prado, M. (2016). Building diversified portfolios that outperform out-of-sample. *Journal of Portfolio Management*. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708678
 L{\'o}pez de Prado, M. (2018). *Advances in Financial Machine Learning*. Wiley.
