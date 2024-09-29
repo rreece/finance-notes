@@ -250,8 +250,8 @@ Cass & Stiglitz:
 Continuing the discussion of the context of a portfolio of risky assets
 (no risk-free asset; to be considered in the next section).
 
-Tobin[^Tobin1958] is often credited as the first to note and
-Merton[^Merton1972b] exposited formally the *One-fund theorem*:
+Tobin[^Tobin1958] is often credited as the first to note, and later
+Merton[^Merton1972b] exposited more formally, the *Two-fund theorem*:
 
 Merton:
 
