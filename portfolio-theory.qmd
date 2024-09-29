@@ -130,6 +130,10 @@ The variance is
 
 $$ \sigma^2_{\ast} = \frac{a}{d} \, r_{\ast}^{2} - \frac{2 \, b}{d} \, r_{\ast} + \frac{c}{d} $$
 
+TODO: Note calculation order of $\vec{w}_{v}(\mu, V)$
+and $\vec{w}_{t}(\mu, V, r_{f})$, then calculate $r_{\ast}(\sigma_{\ast})$,
+scanning from $\sigma_{v}$ to $\sigma_\mathrm{max}$.
+
 In general, depending on the correlations of the assets, the efficient frontier portfolios will
 short various positions, indicated by having negative weights.
 
@@ -289,13 +293,7 @@ Kasa:
 
 $$ \vec{w}_{\ast} = \xi \, \vec{w}_{1} + (1-\xi) \, \vec{w}_{2} $$
 
-TODO [^TODOxi]
-
--   [Lecture notes by Yue Kuen Kwok (HKUST)](https://www.math.hkust.edu.hk/~maykwok/MATH4512.htm)
-    -   [Lecture 2](https://www.math.hkust.edu.hk/~maykwok/courses/MATH4512/lecture%20notes/MATH4512_T2.pdf)
--   [Lecture notes by Ken Kasa (SFU)](https://www.sfu.ca/~kkasa/econ815_23.html)
-    -   [Lecture 7](https://www.sfu.ca/~kkasa/Econ815_Lecture7.pdf)
--   [Lecture notes by Karl Sigman (Columbia)](https://www.columbia.edu/~ks20/FE-Notes/4700-07-Notes-funds.pdf)
+TODO: reparameterize? [^TODOxi]
 
 [^Merton1972b]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio\.
 [^Merton1972p1858]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio\, p. 1858.
@@ -357,7 +355,7 @@ risk-free rate of return.
 
 The *tangent portfolio with a risk-free asset* is
 
-$$ \vec{w}_{t} = \frac{V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}{\vec{1}^\intercal \, V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})} $$
+$$ \vec{w}_{t}  = \frac{V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}{\vec{1}^\intercal \, V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})} $$
 
 It has a return
 
@@ -365,7 +363,7 @@ $$ r_{t} = \vec{\mu} \cdot \vec{w}_t = \frac{c - b \, r_{f}}{b - a \, r_{f}} $$
 
 and a variance
 
-$$ \sigma_{t}^{2} = \frac{(\vec{\mu} - r_{f} \, \vec{1})^2}{ (\vec{\mu} - r_{f} \, \vec{1})^\intercal \, V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}  = \frac{a \, r_{f}^2 - 2 \, b \, r_{f} + c}{(b - a \, r_{f})^2} $$
+$$ \sigma_{t}^{2} = \frac{\left|\vec{\mu} - r_{f} \, \vec{1}\right|^2}{ (\vec{\mu} - r_{f} \, \vec{1})^\intercal \, V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}  = \frac{a \, r_{f}^2 - 2 \, b \, r_{f} + c}{(b - a \, r_{f})^2} $$
 
 TODO:
 
