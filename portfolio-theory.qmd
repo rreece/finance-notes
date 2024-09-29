@@ -6,10 +6,15 @@ date: today
 Modern portfolio theory
 --------------------------------------------
 
+Keywords:
+
 -   [Modern portfolio theory](https://en.wikipedia.org/wiki/Modern_portfolio_theory)
 -   [Harry Markowitz](https://en.wikipedia.org/wiki/Harry_Markowitz) (1927-2023)
 -   [Markowitz model](https://en.wikipedia.org/wiki/Markowitz_model)
 -   [Rayleigh quotient](https://en.wikipedia.org/wiki/Rayleigh_quotient)
+
+Historical background:
+
 -   Markowitz, H.M. (1952). Portfolio selection. [^Markowitz1952]
 -   Roy, A.D. (1952). [Safety first and the holding of assets](https://www.jstor.org/stable/1907413). [^Roy1952]
 -   Markowitz, H.M. (1959). *Portfolio Selection: Efficient Diversification of Investments*. [^Markowitz1959]
@@ -17,10 +22,18 @@ Modern portfolio theory
 -   Levy, H. & Markowitz, H.M. (1979). Approximating expected utility by a function of mean and variance. [^Levy1979]
 -   Markowitz, H.M. (1990). Nobel lecture: [Foundations of portfolio theory](https://www.nobelprize.org/uploads/2018/06/markowitz-lecture.pdf).
 -   Markowitz, H.M. (2005). Market efficiency: A theoretical distinction and so what? [^Markowitz2005]
--   Kwok, Y.K. (2017). Lecture notes: [Fundamentals of Mathematical Finance](https://www.math.hkust.edu.hk/~maykwok/MATH4512.htm).
+
+Lecture notes:
+
+-   Armerin, F. (2023). Lecture notes: [More on mean-variance analysis](https://people.kth.se/~armerin/FinInsMathRwanda/Lecture10.pdf).
 -   Das, S.R. (2016). [*Data Science: Theories, Models, Algorithms, and Analytics*](http://srdas.github.io/Papers/DSA_Book.pdf). [^Das2016]
     -   Also: Das, S.R. (2017). [Being mean with variance: Markowitz optimization](https://srdas.github.io/MLBook/PortfolioOptimization.html).
--   Armerin, F. (2023). Lecture notes: [More on mean-variance analysis](https://people.kth.se/~armerin/FinInsMathRwanda/Lecture10.pdf).
+-   Kasa, K. (2023). [Lecture notes by Ken Kasa (SFU)](https://www.sfu.ca/~kkasa/econ815_23.html)
+    -   In particular, [Lecture 7](https://www.sfu.ca/~kkasa/Econ815_Lecture7.pdf)
+-   Kwok, Y.K. (2017). Lecture notes: [Fundamentals of Mathematical Finance](https://www.math.hkust.edu.hk/~maykwok/MATH4512.htm).
+    -   In particular, [Lecture 2](https://www.math.hkust.edu.hk/~maykwok/courses/MATH4512/lecture%20notes/MATH4512_T2.pdf)
+-   Sigman, K. (2005). [Notes on fund theorems](https://www.columbia.edu/~ks20/FE-Notes/4700-07-Notes-funds.pdf).
+
 
 Return of a portfolio:
 
@@ -37,14 +50,14 @@ Given an $n$-dimensional vector of expected returns, $\vec{\mu}$,
 an $n\times{}n$-dimensional expected covariance matrix, $V$,
 an $m\times{}n$-dimensional constraint matrix, $A$,
 an $m$-dimensional constraint vector, $\vec{b}$,
-and a target return, $r$,
-solve for the portfolio weights, $\vec{w}^{\ast}$, an $n$-dimensional vector,
+and a target return, $r_{\ast}$,
+solve for the portfolio weights, $\vec{w}_{\ast}$, an $n$-dimensional vector,
 that are *efficient*, *i.e.* those
 that minimize the standard deviation of the portfolio return, $\sigma$,
 for a given target return.
-Return $(\vec{w}^{\ast}, \sigma^{\ast})$.
+Return $(\vec{w}_{\ast}, \sigma_{\ast})$.
 
-$$ \vec{w}^{\ast} = \underset{w}{\mathrm{argmin}}\ \vec{w}^\intercal \, V \, \vec{w} $$
+$$ \vec{w}_{\ast} = \underset{w}{\mathrm{argmin}}\ \vec{w}^\intercal \, V \, \vec{w} $$
 
 such that
 
@@ -60,7 +73,7 @@ There are a lot of topics to discuss about solving for the efficient frontier:
 
 TODO: Discuss the above more.
 
-It can be shown [^MertonVariables] that there is an analytic solution where:
+It can be shown[^ItCanBeShown] that there is an analytic solution where:
 
 $$ a \equiv \vec{1}^\intercal \, V^{-1} \, \vec{1}, \qquad  b \equiv \vec{1}^\intercal \, V^{-1} \, \vec{\mu}, \qquad c \equiv \vec{\mu}^\intercal \, V^{-1} \, \vec{\mu}, \qquad d \equiv a\,c - b^2 $$
 
@@ -128,7 +141,7 @@ $$ w_i \geq  0 $$
 then the problem doesn't have an analytic solution.
 TODO: Citation needed.
 
-The *No-shorts frontier* can be solved numerically with quadratic programming.
+The *no-shorts frontier* can be solved numerically with quadratic programming.
 In general, the no-shorts frontier will follow the unconstrained efficient frontier
 when there isn't any shorting in the efficient portfolios,
 and the no-shorts frontier will pull away from the efficient frontier
@@ -151,10 +164,12 @@ in @fig-markowitz-portfolio-btc-2024-09-13\.
 [^Markowitz1959p172]: @Markowitz_1959_Portfolio_Selection_Efficient_Diversification\, p. 172.
 [^Markowitz2005]: @Markowitz_2005_Market_efficiency_A_theoretical_distinction\.
 [^Merton1972]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio\.
-[^MertonVariables]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio was the first
+[^ItCanBeShown]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio was the first
     to show there was an analytic solution to the Markowitz portfolio problem?
     Note that we use variable names following Kwok, whereas to convert from Merton to Kwok:
-    $a_\mathrm{M} = b_\mathrm{K}, b_\mathrm{M} = c_\mathrm{K}, c_\mathrm{M} = a_\mathrm{K}$.
+    $a_\mathrm{M} = b_\mathrm{K}$, $b_\mathrm{M} = c_\mathrm{K}$, $c_\mathrm{M} = a_\mathrm{K}$.
+    For the analytic results descussed here, we generally follow a combination of
+    Kwok, Kasa, and Armerin.
 [^Roy1952]: @Roy_1952_Safety_first_and_the_holding_of_assets\.
 
 
@@ -323,7 +338,7 @@ $$ \sigma_{\ast} = \left| 1-\kappa \right| \sigma_{t} $$
 Since the efficient frontier is a linear combination of the risk-free, "cash",
 and a single portfolio of risky assets, "stocks", then it forms a line in
 return-risk-space from the risk-free asset to the tangent portfolio,
-and follows the line further up for one allows borrowing at the risk-free rate
+and follows the line further up if one allows borrowing at the risk-free rate
 and investing in the tangent portfolio.
 This line is called the *Capital Allocation Line* because it represents the
 possible portfolios one can have depending on how much of their cash they
@@ -354,7 +369,7 @@ $$ \sigma_{t}^{2} = \frac{(\vec{\mu} - r_{f} \, \vec{1})^2}{ (\vec{\mu} - r_{f} 
 
 TODO:
 
--   Citation need for the one-fund theorem
+-   Citation needed for the one-fund theorem
 -   Related to the efficient-market hypothesis: in equilibrium, the tangent portfolio becomes the market portfolio
 
 
@@ -481,6 +496,8 @@ Postmodern portfolio theory
 
 -   [Post-modern portfolio theory](https://en.wikipedia.org/wiki/Post-modern_portfolio_theory)
 -   [Downside risk](https://en.wikipedia.org/wiki/Downside_risk), semi-variance, semi-deviation, target semi-variance (TSV), target semi-deviation
+    -   Markowitz, H.M., Starer, D., Fram, H., & Gerber, S. (2019). [Avoiding the downside: A practical review of the Critical Line Algorithm for mean-semivariance portfolio optimization](https://www.hudsonbaycapital.com/documents/FG/hudsonbay/research/599440_paper.pdf). [^Markowitz2019]
+    -   [Mean-Semivariance frontier](https://scikit-portfolio.github.io/scikit-portfolio/efficient_semivariance/) in [scikit-portfolio](https://scikit-portfolio.github.io/scikit-portfolio/)
 
 $$ \mathrm{TSV}(r_i, r_t) = \mathbb{E}\left[ (r_i - r_t)^2 \: \mathbb{1}_{\{r_i < r_t\}} \right]  \label{eq:target_semi_variance} $$
 
@@ -488,14 +505,12 @@ $$ \mathrm{TSD}(r_i, r_t) = \sqrt{\mathrm{TSV}(r_i, r_t)}  \label{eq:target_semi
 
 -   [Sortino ratio](https://en.wikipedia.org/wiki/Sortino_ratio)
 -   [Low-volatility anomaly](https://en.wikipedia.org/wiki/Low-volatility_anomaly)
--   Past performance is no guarantee of future results
-    -   Criticisms of using historical estimators of $\mu$ and $V$
-    -   Problem of induction
 -   Rom, B.M. & Ferguson, K. (1993). Post-modern portfolio theory comes of age. [^Rom1993]
 -   Sortino, F. (2010). *The Sortino Framework for Constructing Portfolios*. [^Sortino2010]
 -   Elton, E.J., Gruber, M.J., Brown, S.J., & Goetzmann, W.N. (2014). *Modern Portfolio Theory and Investment Analysis*. [^Elton2014]
--   Markowitz, H.M., Starer, D., Fram, H., & Gerber, S. (2019). [Avoiding the downside: A practical review of the Critical Line Algorithm for mean-semivariance portfolio optimization](https://www.hudsonbaycapital.com/documents/FG/hudsonbay/research/599440_paper.pdf). [^Markowitz2019]
--   [Mean-Semivariance frontier](https://scikit-portfolio.github.io/scikit-portfolio/efficient_semivariance/) in [scikit-portfolio](https://scikit-portfolio.github.io/scikit-portfolio/)
+-   Past performance is no guarantee of future results
+    -   Criticisms of using historical estimators of $\mu$ and $V$
+    -   Problem of induction
 
 [^Elton2014]: @Elton_2014_Modern_Portfolio_Theory_and_Investment_Analysis\.
 [^Markowitz2019]: @Markowitz_2019_Avoiding_the_downside_A_practical_review\.
