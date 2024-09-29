@@ -263,12 +263,6 @@ Merton:
 >   between portfolios from among the original $m$ assets or from these
 >   two funds. [^Merton1972p1858]
 
--   [Lecture notes by Yue Kuen Kwok (HKUST)](https://www.math.hkust.edu.hk/~maykwok/MATH4512.htm)
-    -   [Lecture 2](https://www.math.hkust.edu.hk/~maykwok/courses/MATH4512/lecture%20notes/MATH4512_T2.pdf)
--   [Lecture notes by Ken Kasa (SFU)](https://www.sfu.ca/~kkasa/econ815_23.html)
-    -   [Lecture 7](https://www.sfu.ca/~kkasa/Econ815_Lecture7.pdf)
--   [Lecture notes by Karl Sigman (Columbia)](https://www.columbia.edu/~ks20/FE-Notes/4700-07-Notes-funds.pdf)
-
 Kasa:
 
 >   Any portfolio on the efficient frontier can be written as a linear
@@ -277,6 +271,12 @@ Kasa:
 $$ \vec{w}_{\ast} = \xi \, \vec{w}_{1} + (1-\xi) \, \vec{w}_{2} $$
 
 TODO [^TODOxi]
+
+-   [Lecture notes by Yue Kuen Kwok (HKUST)](https://www.math.hkust.edu.hk/~maykwok/MATH4512.htm)
+    -   [Lecture 2](https://www.math.hkust.edu.hk/~maykwok/courses/MATH4512/lecture%20notes/MATH4512_T2.pdf)
+-   [Lecture notes by Ken Kasa (SFU)](https://www.sfu.ca/~kkasa/econ815_23.html)
+    -   [Lecture 7](https://www.sfu.ca/~kkasa/Econ815_Lecture7.pdf)
+-   [Lecture notes by Karl Sigman (Columbia)](https://www.columbia.edu/~ks20/FE-Notes/4700-07-Notes-funds.pdf)
 
 [^Merton1972b]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio\.
 [^Merton1972p1858]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio\, p. 1858.
