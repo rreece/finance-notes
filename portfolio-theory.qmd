@@ -39,7 +39,7 @@ an $m\times{}n$-dimensional constraint matrix, $A$,
 an $m$-dimensional constraint vector, $\vec{b}$,
 and a target return, $r$,
 solve for the portfolio weights, $\vec{w}^{\ast}$, an $n$-dimensional vector,
-that are *efficient*, *i,e.* those
+that are *efficient*, *i.e.* those
 that minimize the standard deviation of the portfolio return, $\sigma$,
 for a given target return.
 Return $(\vec{w}^{\ast}, \sigma^{\ast})$.
@@ -307,9 +307,11 @@ $$ \sigma = \left| 1-\kappa \right| \sigma_{g} $$
 TODO:
 
 -   Citation need for the one-fund theorem
+-   $\sigma_{g}$ as a function of $r_{f}$
 -   Define *Capital Allocation Line*
 -   Discuss lending and borrowing at the risk-free rate
--   Functional form of the capital allocation line, intersection at the tangent portfolio
+-   Functional form of the capital allocation line, $r_\mathrm{CAL}(\sigma)$. Intersection at the tangent portfolio.
+-   Case-wise functional form of the efficient frontier without borrowing
 -   Related to the efficient-market hypothesis: in equilibrium, the tangent portfolio becomes the market portfolio
 
 
@@ -406,13 +408,15 @@ Factor models
 -   TODO
 
 
-Consumption/investment problem
+
+Risk preferences
 --------------------------------------------
 
+-   Risk preferences
 -   [Gambler's ruin problem](https://en.wikipedia.org/wiki/Gambler%27s_ruin)
 -   [Kelly criterion](https://en.wikipedia.org/wiki/Kelly_criterion)
     -   Kelly, J.L. (1956). [A new interpretation of information rate](https://www.princeton.edu/~wbialek/rome/refs/kelly_56.pdf). [^Kelly1956]
--   Risk preferences
+-   Consumption/investment problem
 -   [Merton's portfolio problem](https://en.wikipedia.org/wiki/Merton%27s_portfolio_problem)
     -   Merton, R.C. (1969). [Lifetime portfolio selection under uncertainty: The continuous-time case](https://www.jstor.org/stable/1926560). [^Merton1969]
     -   Karatzas, I., Lehoczky, J.P., Sethi, S.P., & Shreve, S.E (1986). [Explicit solution of a general consumption/investment problem](https://www.jstor.org/stable/3689808). [^Karatzas1986]
