@@ -19,6 +19,6 @@ Why isn't technical analysis discussed here?
 
 TODO:
 
--   "Technical analysis" is bullshit
+-   "Technical analysis" is mostly bullshit
 -   @Aronson_2007_Evidence_Based_Technical_Analysis
 
