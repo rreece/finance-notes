@@ -286,6 +286,12 @@ with a risk-free return, $r_{f}$.
 
 TODO: theorem
 
+Kwok:
+
+>   Any efficient portfolio [on the Capital Allocation Line] can be
+>   expressed as a combination of the risk free asset and the
+>   portfolio (or fund) represented by $M$.
+
 Kasa:
 
 >   Any portfolio on the efficient frontier can be written as a linear
@@ -294,20 +300,26 @@ asset.
 
 The portfolio weights are
 
-$$ \vec{w} = \kappa \, \vec{w}_{f} + (1-\kappa) \, \vec{w}_{g} $$
+$$ \vec{w} = \kappa \, \vec{w}_{f} + (1-\kappa) \, \vec{w}_{t} $$
 
 The portfolio return is
 
-$$ r = \kappa \, r_{f} + (1-\kappa) \, r_{g} $$
+$$ r = \kappa \, r_{f} + (1-\kappa) \, r_{t} $$
 
 The portfolio standard deviation is
 
-$$ \sigma = \left| 1-\kappa \right| \sigma_{g} $$
+$$ \sigma = \left| 1-\kappa \right| \sigma_{t} $$
+
+Since the efficient frontier is a linear combination of the risk-free, "cash",
+and a single portfolio of risky assets, "stocks", then it forms a line in
+return-risk-space from the risk-free asset to the tangent portfolio,
+and follows the line further up for one allows borrowing at the risk-free rate
+and investing in the tangent portfolio.
 
 TODO:
 
 -   Citation need for the one-fund theorem
--   $\sigma_{g}$ as a function of $r_{f}$
+-   $r_{t}(\sigma; r_{f})$
 -   Define *Capital Allocation Line*
 -   Discuss lending and borrowing at the risk-free rate
 -   Functional form of the capital allocation line, $r_\mathrm{CAL}(\sigma)$. Intersection at the tangent portfolio.
