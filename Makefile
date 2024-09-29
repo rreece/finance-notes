@@ -13,7 +13,7 @@ SHELL := /bin/bash
 PRINT = @echo '==>  '
 
 # TODO: automatically get these from _quarto.yml
-OUTPUT := Quarto-Example
+OUTPUT := Finance-Notes
 OUTDIR := _site
 BIBLIO := bibs/mybib.bib
 
