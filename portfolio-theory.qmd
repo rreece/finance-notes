@@ -128,7 +128,7 @@ $$ w_i \geq  0 $$
 then the problem doesn't have an analytic solution.
 TODO: Citation needed.
 
-The *No-shorts frontier* can be solved numerically with quadratic programming.
+The *no-shorts frontier* can be solved numerically with quadratic programming.
 In general, the no-shorts frontier will follow the unconstrained efficient frontier
 when there isn't any shorting in the efficient portfolios,
 and the no-shorts frontier will pull away from the efficient frontier
@@ -323,7 +323,7 @@ $$ \sigma_{\ast} = \left| 1-\kappa \right| \sigma_{t} $$
 Since the efficient frontier is a linear combination of the risk-free, "cash",
 and a single portfolio of risky assets, "stocks", then it forms a line in
 return-risk-space from the risk-free asset to the tangent portfolio,
-and follows the line further up for one allows borrowing at the risk-free rate
+and follows the line further up if one allows borrowing at the risk-free rate
 and investing in the tangent portfolio.
 This line is called the *Capital Allocation Line* because it represents the
 possible portfolios one can have depending on how much of their cash they
@@ -354,7 +354,7 @@ $$ \sigma_{t}^{2} = \frac{(\vec{\mu} - r_{f} \, \vec{1})^2}{ (\vec{\mu} - r_{f} 
 
 TODO:
 
--   Citation need for the one-fund theorem
+-   Citation needed for the one-fund theorem
 -   Related to the efficient-market hypothesis: in equilibrium, the tangent portfolio becomes the market portfolio
 
 
