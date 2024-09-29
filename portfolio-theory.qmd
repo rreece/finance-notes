@@ -140,7 +140,8 @@ in the section on [Convex optimization](#convex-optimization).
 An example of the efficient frontier and the no-shorts frontier is shown
 in @fig-markowitz-portfolio-btc-2024-09-13\.
 
-![The efficient frontier and no-shorts frontier for a few example assets.
+![The efficient frontier and no-shorts frontier for a few example assets,
+    using historical daily data from 2014-01-02 to 2024-08-30, 10 years and 9 months.
     ](img/markowitz-portfolio-btc-2024-09-13.png){#fig-markowitz-portfolio-btc-2024-09-13}
 
 [^Das2016]: @Das_2016_Data_Science_Theories_Models_Algorithms\.
