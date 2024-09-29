@@ -307,7 +307,7 @@ $$ \sigma = \left| 1-\kappa \right| \sigma_{g} $$
 TODO:
 
 -   Citation need for the one-fund theorem
--   $\sigma_{g} as a function of $r_{f}$
+-   $\sigma_{g}$ as a function of $r_{f}$
 -   Define *Capital Allocation Line*
 -   Discuss lending and borrowing at the risk-free rate
 -   Functional form of the capital allocation line, $r_\mathrm{CAL}(\sigma)$. Intersection at the tangent portfolio.
