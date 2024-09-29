@@ -342,11 +342,11 @@ $$ \vec{w}_{t} = \frac{V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}{\vec{1}^\interc
 
 It has a return
 
-$$ r_{t} = XXX $$
+$$ r_{t} = \vec{\mu} \cdot \vec{w}_t = \frac{c - b \, r_{f}}{b - a \, r_{f}} $$
 
-and a standard deviation
+and a variance
 
-$$ \sigma_{t} = XXX $$
+$$ \sigma_{t}^{2} = \frac{(\vec{\mu} - r_{f} \, \vec{1})^2}{ (\vec{\mu} - r_{f} \, \vec{1})^\intercal \, V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}  = \frac{a \, r^2 - 2 \, b \, r + c}{\left| b - a \, r \right|} $$
 
 Efficient frontier without borrowing:
 
