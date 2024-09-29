@@ -356,7 +356,6 @@ TODO:
 
 -   Citation need for the one-fund theorem
 -   CAL intersection at the tangent portfolio
--   $r_{t}(\sigma; r_{f})$
 -   Case-wise functional form of the efficient frontier without borrowing
 -   Related to the efficient-market hypothesis: in equilibrium, the tangent portfolio becomes the market portfolio
 
