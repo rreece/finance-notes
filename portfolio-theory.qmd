@@ -315,14 +315,19 @@ and a single portfolio of risky assets, "stocks", then it forms a line in
 return-risk-space from the risk-free asset to the tangent portfolio,
 and follows the line further up for one allows borrowing at the risk-free rate
 and investing in the tangent portfolio.
+This line is called the *Capital Allocation Line* because it represents the
+possible portfolios one can have depending on how much of their cash they
+have deployed into risky assets in the market.
+
+The functional form of the Capital Allocation Line is
+
+$$ r(\sigma) = r_{f} + \sigma \, \sqrt{c - 2 \, b \, r_{f} + a \, r_{f}^{2}} $$
 
 TODO:
 
 -   Citation need for the one-fund theorem
+-   CAL intersection at the tangent portfolio
 -   $r_{t}(\sigma; r_{f})$
--   Define *Capital Allocation Line*
--   Discuss lending and borrowing at the risk-free rate
--   Functional form of the capital allocation line, $r_\mathrm{CAL}(\sigma)$. Intersection at the tangent portfolio.
 -   Case-wise functional form of the efficient frontier without borrowing
 -   Related to the efficient-market hypothesis: in equilibrium, the tangent portfolio becomes the market portfolio
 
