@@ -1,3 +1,4 @@
+Aronson, D. (2007). *Evidence-Based Technical Analysis*. Wiley.
 Black, F. & Litterman, R. (1991). Asset allocation. *Journal of Fixed Income*, 1, 7--18.
 Cass, D. & Stiglitz, J.E. (1970). The structure of investor preferences and asset returns, and separability in portfolio allocation: A contribution to the pure theory of mutual funds. *Journal of Economic Theory*, 2.
 Black, F. & Litterman, R. (1992). Global portfolio optimization. *Financial Analysts Journal*, 48, 28--43.
