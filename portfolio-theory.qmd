@@ -31,7 +31,7 @@ Lecture notes:
     -   Also: Das, S.R. (2017). [Being mean with variance: Markowitz optimization](https://srdas.github.io/MLBook/PortfolioOptimization.html).
 -   Kasa, K. (2023). [Lecture notes by Ken Kasa (SFU)](https://www.sfu.ca/~kkasa/econ815_23.html)
     -   In particular, [Lecture 7](https://www.sfu.ca/~kkasa/Econ815_Lecture7.pdf)
--   Kwok, Y.K. (2017). Lecture notes: [Fundamentals of Mathematical Finance](https://www.math.hkust.edu.hk/~maykwok/MATH4512.htm).
+-   Kwok, Y.K. (2017). Lecture notes: [Fundamentals of Mathematical Finance](https://www.math.hkust.edu.hk/~maykwok/MATH4512.htm). [^Kwok2017]
     -   In particular, [Lecture 2](https://www.math.hkust.edu.hk/~maykwok/courses/MATH4512/lecture%20notes/MATH4512_T2.pdf)
 -   Sigman, K. (2005). [Notes on fund theorems](https://www.columbia.edu/~ks20/FE-Notes/4700-07-Notes-funds.pdf).
 
@@ -160,6 +160,7 @@ in @fig-markowitz-portfolio-btc-2024-09-13\.
     ](img/markowitz-portfolio-btc-2024-09-13.png){#fig-markowitz-portfolio-btc-2024-09-13}
 
 [^Das2016]: @Das_2016_Data_Science_Theories_Models_Algorithms\.
+[^Kwok2017]: @Kwok_2017_Lecture_notes_Fundamentals_of_Mathematical\.
 [^Levy1979]: @Levy_1979_Approximating_expected_utility_by_a_function\.
 [^Markowitz1952]: @Markowitz_1952_Portfolio_selection\.
 [^Markowitz1959]: @Markowitz_1959_Portfolio_Selection_Efficient_Diversification\.
@@ -169,10 +170,10 @@ in @fig-markowitz-portfolio-btc-2024-09-13\.
 [^Merton1972]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio\.
 [^ItCanBeShown]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio was the first
     to show there was an analytic solution to the Markowitz portfolio problem?
+    For the analytic results descussed here, we generally follow
+    @Kwok_2017_Lecture_notes_Fundamentals_of_Mathematical\.
     Note that we use variable names following Kwok, whereas to convert from Merton to Kwok:
     $a_\mathrm{M} = b_\mathrm{K}$, $b_\mathrm{M} = c_\mathrm{K}$, $c_\mathrm{M} = a_\mathrm{K}$.
-    For the analytic results descussed here, we generally follow a combination of
-    Kwok, Kasa, and Armerin.
 [^Roy1952]: @Roy_1952_Safety_first_and_the_holding_of_assets\.
 
 Quadratic programming and convex optimization are discussed in more detail
@@ -388,7 +389,7 @@ Efficient-market hypothesis
 [^Fama1970]: @Fama_1970_Efficient_capital_markets_A_review_of_theory\.
 
 
-Capital Asset Pricing Model
+Capital asset pricing model
 --------------------------------------------
 
 Keywords:
@@ -528,10 +529,10 @@ $$ \mathrm{TSV}(r_i, r_t) = \mathbb{E}\left[ (r_i - r_t)^2 \: \mathbb{1}_{\{r_i 
 $$ \mathrm{TSD}(r_i, r_t) = \sqrt{\mathrm{TSV}(r_i, r_t)}  \label{eq:target_semi_deviation} $$
 
 -   [Sortino ratio](https://en.wikipedia.org/wiki/Sortino_ratio)
--   [Low-volatility anomaly](https://en.wikipedia.org/wiki/Low-volatility_anomaly)
 -   Rom, B.M. & Ferguson, K. (1993). Post-modern portfolio theory comes of age. [^Rom1993]
 -   Sortino, F. (2010). *The Sortino Framework for Constructing Portfolios*. [^Sortino2010]
 -   Elton, E.J., Gruber, M.J., Brown, S.J., & Goetzmann, W.N. (2014). *Modern Portfolio Theory and Investment Analysis*. [^Elton2014]
+-   [Low-volatility anomaly](https://en.wikipedia.org/wiki/Low-volatility_anomaly)
 -   Past performance is no guarantee of future results
     -   Criticisms of using historical estimators of $\mu$ and $V$
     -   Problem of induction
@@ -542,7 +543,7 @@ $$ \mathrm{TSD}(r_i, r_t) = \sqrt{\mathrm{TSV}(r_i, r_t)}  \label{eq:target_semi
 [^Sortino2010]: @Sortino_2010_The_Sortino_Framework_for_Constructing_Portfolios\.
 
 
-Hierarchical Risk Parity
+Hierarchical risk parity
 --------------------------------------------
 
 -   Hierarchical Risk Parity (HRP)
