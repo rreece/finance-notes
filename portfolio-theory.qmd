@@ -306,15 +306,15 @@ asset.
 
 The portfolio weights are
 
-$$ \vec{w} = \kappa \, \vec{w}_{f} + (1-\kappa) \, \vec{w}_{t} $$
+$$ \vec{w}_{\ast} = \kappa \, \vec{w}_{f} + (1-\kappa) \, \vec{w}_{t} $$
 
 The portfolio return is
 
-$$ r = \kappa \, r_{f} + (1-\kappa) \, r_{t} $$
+$$ r_{\ast} = \kappa \, r_{f} + (1-\kappa) \, r_{t} $$
 
 The portfolio standard deviation is
 
-$$ \sigma = \left| 1-\kappa \right| \sigma_{t} $$
+$$ \sigma_{\ast} = \left| 1-\kappa \right| \sigma_{t} $$
 
 Since the efficient frontier is a linear combination of the risk-free, "cash",
 and a single portfolio of risky assets, "stocks", then it forms a line in
@@ -342,15 +342,19 @@ $$ \vec{w}_{t} = \frac{V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}{\vec{1}^\interc
 
 It has a return
 
-$$ r_{t} = X $$
+$$ r_{t} = XXX $$
 
 and a standard deviation
 
-$$ \sigma_{t} = X $$
+$$ \sigma_{t} = XXX $$
 
 Efficient frontier without borrowing:
 
-$$ \sigma_{\ast}(r_{\ast}; r_{f}) = X $$
+$$ \sigma_{\ast}(r_{\ast}; r_{f}) = XXX $$
+
+or equivalently
+
+$$ r_{\ast}(\sigma_{\ast}; r_{f}) = XXX $$
 
 TODO:
 
