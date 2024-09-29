@@ -118,7 +118,7 @@ The variance is
 $$ \sigma^2_{\ast} = \frac{a}{d} \, r_{\ast}^{2} - \frac{2 \, b}{d} \, r_{\ast} + \frac{c}{d} $$
 
 In general, depending on the correlations of the assets, the efficient frontier portfolios will
-short various positions by having negative weights.
+short various positions, indicated by having negative weights.
 
 If one adds an additional constraint to the Markowitz portfolio problem as stated,
 requiring that we don't short any positions
@@ -352,19 +352,9 @@ and a variance
 
 $$ \sigma_{t}^{2} = \frac{(\vec{\mu} - r_{f} \, \vec{1})^2}{ (\vec{\mu} - r_{f} \, \vec{1})^\intercal \, V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}  = \frac{a \, r_{f}^2 - 2 \, b \, r_{f} + c}{(b - a \, r_{f})^2} $$
 
-Efficient frontier without borrowing:
-
-$$ \sigma_{\ast}(r_{\ast}; r_{f}) = XXX $$
-
-or equivalently
-
-$$ r_{\ast}(\sigma_{\ast}; r_{f}) = XXX $$
-
 TODO:
 
 -   Citation need for the one-fund theorem
--   CAL intersection at the tangent portfolio
--   Case-wise functional form of the efficient frontier without borrowing
 -   Related to the efficient-market hypothesis: in equilibrium, the tangent portfolio becomes the market portfolio
 
 
