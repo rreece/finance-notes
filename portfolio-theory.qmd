@@ -137,6 +137,12 @@ to somewhat lower returns when there is shorting on the efficient frontier.
 Quadratic programming and convex optimization are discussed in more detail
 in the section on [Convex optimization](#convex-optimization).
 
+An example of the efficient frontier and the no-shorts frontier is shown
+in @fig-markowitz-portfolio-btc-2024-09-13\.
+
+![The efficient frontier and no-shorts frontier for a few example assets.
+    ](img/markowitz-portfolio-btc-2024-09-13.png){#fig-markowitz-portfolio-btc-2024-09-13}
+
 [^Das2016]: @Das_2016_Data_Science_Theories_Models_Algorithms\.
 [^Levy1979]: @Levy_1979_Approximating_expected_utility_by_a_function\.
 [^Markowitz1952]: @Markowitz_1952_Portfolio_selection\.
