@@ -10,6 +10,8 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - portfolio-theory.qmd
+    - references.qmd
 
   abstract: |
     This is an example abstract.
