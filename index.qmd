@@ -1,0 +1,7 @@
+
+## Preface {.unnumbered}
+
+These are my finance notes, mostly about portfolio theory.
+They are written from my perspective as someone with a background
+in physics and machine learning.
+
