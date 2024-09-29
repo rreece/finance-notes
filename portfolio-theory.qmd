@@ -63,7 +63,7 @@ such that
 
 $$ \vec{w}^\intercal \, \vec{1} = \sum_i w_i = 1 $$
 
-$$ \vec{w}^\intercal \, \vec{\mu} = \sum_i w_i \, \mu_i = r $$
+$$ \vec{w}^\intercal \, \vec{\mu} = \sum_i w_i \, \mu_i = r_{\ast} $$
 
 There are a lot of topics to discuss about solving for the efficient frontier:
 
@@ -112,7 +112,7 @@ $$ \vec{w}_{\ast} = \xi \, \vec{w}_{v} + (1-\xi) \, \vec{w}_{t} $$
 
 where
 
-$$ \xi = (c - b \, r) \, a \, / \, d $$
+$$ \xi = (c - b \, r_{\ast}) \, a \, / \, d $$
 
 It's not trivial, but equivalently, the efficient frontier portfolio can be written
 
