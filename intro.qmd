@@ -7,12 +7,9 @@ number-sections: false
 What is this?
 --------------------------------------------
 
-These are my finance notes, mostly about portfolio theory.
-They are written from my perspective as someone with a background
-in physics and machine learning.
-
-If you find any of this interesting, let me know
-at Twitter [&#64;RyanDavidReece](https://twitter.com/RyanDavidReece).
-
-
+Lorem ipsum dolor sit amet, duo ut putant verear, nam ut brute utroque.
+Officiis qualisque conceptam te duo, eu vim soluta numquam, has ut aliquip
+accusamus. Probo aliquam pri id. Mutat singulis ad vis, eam euismod pertinax
+an, ea tale volumus vel. At porro soleat est. Debet facilis admodum an sed,
+at falli feugiat est.
 
