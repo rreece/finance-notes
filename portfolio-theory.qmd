@@ -176,6 +176,10 @@ This is how we estimate $V$ (and $\mu$).
     -   Onnela, J.P., Kaski, K., & Kert&eacute;sz, J. (2004). Clustering and information in correlation based financial networks. [^Onnela2004]
     -   See [Hierarchical Risk Parity](#hierarchical-risk-parity)
 
+![The correlation matrix of a few example assets
+    using historical daily data from 2014-01-02 to 2024-08-30, 10 years and 9 months.
+    ](img/corr-gldm-btc-2024-09-14.png){#fig-corr-gldm-btc-2024-09-14}
+
 TODO:
 
 -   Sample mean and covariance
@@ -409,6 +413,10 @@ $$ \alpha_{i} = (r_i - r_f) - \beta_i \, (r_m - r_f)  \label{eq:jensen_alpha} $$
 Thought in $r_i$ vs $\beta_i$ space:
 
 $$ \mathbb{E}(r_i) = r_f + \beta_i \left( \mathbb{E}(r_m) - r_f \right) $$
+
+![The Capital Asset Pricing Model (CAPM) applied to a few example assets
+    using historical daily data from 2014-01-02 to 2024-08-30, 10 years and 9 months.
+    ](img/capm-btc-2024-09-13.png){#fig-capm-btc-2024-09-13}
 
 -   [Treynor ratio](https://en.wikipedia.org/wiki/Treynor_ratio)
 
