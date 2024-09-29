@@ -21,6 +21,7 @@ Mantegna, R.N. (1998). Hierarchical structure in financial markets. https://arxi
 Markowitz, H.M. (1952). Portfolio selection. *Journal of Finance*, 7, 77--91. https://www.jstor.org/stable/2975974
 Markowitz, H.M. (1956). The optimization of a quadratic function subject to linear constraints. *Naval Research Logistics Quarterly*, 3, 111--133.
 Markowitz, H.M. (1959). *Portfolio Selection: Efficient Diversification of Investments*. Wiley.
+Markowitz, H.M. (1990). Nobel lecture: Foundations of portfolio theory. https://www.nobelprize.org/uploads/2018/06/markowitz-lecture.pdf
 Markowitz, H.M. (2005). Market efficiency: A theoretical distinction and so what? *Financial Analysts Journal*, 61, 17--30.
 Markowitz, H.M., Starer, D., Fram, H., & Gerber, S. (2019). Avoiding the downside: A practical review of the Critical Line Algorithm for mean-semivariance portfolio optimization. https://www.hudsonbaycapital.com/documents/FG/hudsonbay/research/599440_paper.pdf
 Merton, R.C. (1969). Lifetime portfolio selection under uncertainty: The continuous-time case. *Review of Economics and Statistics*, 51, 247--257. https://www.jstor.org/stable/1926560
@@ -35,6 +36,7 @@ Rom, B.M. & Ferguson, K. (1993). Post-modern portfolio theory comes of age. *Jou
 Roy, A.D. (1952). Safety first and the holding of assets. *Econometrica*, 20, 431--449. https://www.jstor.org/stable/1907413
 Sharpe, W.F. (1963). A simplified model for portfolio analysis. *Management Science*, 9, 277--293.
 Sharpe, W.F. (1964). Capital asset prices: A theory of market equilibrium under conditions of risk. *Journal of Finance*, 19, 425--442.
+Sharpe, W.F. (1990). Nobel lecture: Capital asset prices with and without negative holdings. https://www.nobelprize.org/uploads/2018/06/sharpe-lecture.pdf
 Sharpe, W.F. (1999). *Portfolio Theory and Capital Markets*. McGraw-Hill. [(Originally published in 1970)]
 Sortino, F. (2010). *The Sortino Framework for Constructing Portfolios*. Elsevier.
 Tobin, J. (1958). Liquidity preference as behavior towards risk. *Review of Economic Studies*, 25, 65--86. https://doi.org/10.2307/2296205

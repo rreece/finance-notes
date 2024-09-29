@@ -12,6 +12,7 @@ Keywords:
 -   [Harry Markowitz](https://en.wikipedia.org/wiki/Harry_Markowitz) (1927-2023)
 -   [Markowitz model](https://en.wikipedia.org/wiki/Markowitz_model)
 -   [Rayleigh quotient](https://en.wikipedia.org/wiki/Rayleigh_quotient)
+-   [Sharpe ratio](https://en.wikipedia.org/wiki/Sharpe_ratio)
 
 Historical background:
 
@@ -20,7 +21,7 @@ Historical background:
 -   Markowitz, H.M. (1959). *Portfolio Selection: Efficient Diversification of Investments*. [^Markowitz1959]
 -   Merton, R.C. (1972). [An analytic derivation of the efficient portfolio frontier](https://www.jstor.org/stable/2329621). [^Merton1972]
 -   Levy, H. & Markowitz, H.M. (1979). Approximating expected utility by a function of mean and variance. [^Levy1979]
--   Markowitz, H.M. (1990). Nobel lecture: [Foundations of portfolio theory](https://www.nobelprize.org/uploads/2018/06/markowitz-lecture.pdf).
+-   Markowitz, H.M. (1990). Nobel lecture: [Foundations of portfolio theory](https://www.nobelprize.org/uploads/2018/06/markowitz-lecture.pdf). [^Markowitz1990]
 -   Markowitz, H.M. (2005). Market efficiency: A theoretical distinction and so what? [^Markowitz2005]
 
 Lecture notes:
@@ -151,9 +152,6 @@ when there isn't any shorting in the efficient portfolios,
 and the no-shorts frontier will pull away from the efficient frontier
 to somewhat lower returns when there is shorting on the efficient frontier.
 
-Quadratic programming and convex optimization are discussed in more detail
-in the section on [Convex optimization](#convex-optimization).
-
 An example of the efficient frontier and the no-shorts frontier is shown
 in @fig-markowitz-portfolio-btc-2024-09-13\.
 
@@ -166,6 +164,7 @@ in @fig-markowitz-portfolio-btc-2024-09-13\.
 [^Markowitz1952]: @Markowitz_1952_Portfolio_selection\.
 [^Markowitz1959]: @Markowitz_1959_Portfolio_Selection_Efficient_Diversification\.
 [^Markowitz1959p172]: @Markowitz_1959_Portfolio_Selection_Efficient_Diversification\, p. 172.
+[^Markowitz1990]: @Markowitz_1990_Nobel_lecture_Foundations_of_portfolio_theory\.
 [^Markowitz2005]: @Markowitz_2005_Market_efficiency_A_theoretical_distinction\.
 [^Merton1972]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio\.
 [^ItCanBeShown]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio was the first
@@ -175,6 +174,9 @@ in @fig-markowitz-portfolio-btc-2024-09-13\.
     For the analytic results descussed here, we generally follow a combination of
     Kwok, Kasa, and Armerin.
 [^Roy1952]: @Roy_1952_Safety_first_and_the_holding_of_assets\.
+
+Quadratic programming and convex optimization are discussed in more detail
+in the section on [Convex optimization](#convex-optimization).
 
 
 Estimation of covariance matrices
@@ -365,6 +367,11 @@ and a variance
 
 $$ \sigma_{t}^{2} = \frac{\left|\vec{\mu} - r_{f} \, \vec{1}\right|^2}{ (\vec{\mu} - r_{f} \, \vec{1})^\intercal \, V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}  = \frac{a \, r_{f}^2 - 2 \, b \, r_{f} + c}{(b - a \, r_{f})^2} $$
 
+The tangent portfolio is the portfolio with the maximum
+[Sharpe ratio](https://en.wikipedia.org/wiki/Sharpe_ratio), $S_i$.
+
+$$ S_i = \frac{ r_i - r_f }{ \sigma_i }  \label{eq:sharpe_ratio} $$
+
 TODO:
 
 -   Citation needed for the one-fund theorem
@@ -384,36 +391,54 @@ Efficient-market hypothesis
 Capital Asset Pricing Model
 --------------------------------------------
 
+Keywords:
+
 -   [Capital Asset Pricing Model (CAPM)](https://en.wikipedia.org/wiki/Capital_asset_pricing_model)
 -   [William F. Sharpe](https://en.wikipedia.org/wiki/William_F._Sharpe) (b. 1934)
+-   [Beta](https://en.wikipedia.org/wiki/Beta_(finance))
+-   [Alpha](https://en.wikipedia.org/wiki/Alpha_(finance))
+-   [Security Characteristic Line (SCL)](https://en.wikipedia.org/wiki/Security_characteristic_line)
+-   [Security Market Line (SML)](https://en.wikipedia.org/wiki/Security_market_line)
+-   [Jensen's alpha](https://en.wikipedia.org/wiki/Jensen%27s_alpha)
+-   [Treynor ratio](https://en.wikipedia.org/wiki/Treynor_ratio)
+
+Background:
+
+-   Jensen, M. (1968). [The performance of mutual funds in the period 1945-1964](https://www.jstor.org/stable/2325404). [^Jensen1968]
 -   Sharpe, W.F. (1963). A simplified model for portfolio analysis. [^Sharpe1963]
 -   Sharpe, W.F. (1964). Capital asset prices: A theory of market equilibrium under conditions of risk. [^Sharpe1964]
 -   Sharpe, W.F. (1999). *Portfolio Theory and Capital Markets*. [^Sharpe1999]
--   Sharpe, W.F. (1990). Nobel lecture: [Capital asset prices with and without negative holdings](https://www.nobelprize.org/uploads/2018/06/sharpe-lecture.pdf).
--   Sharpe ratio
-
-$$ S_i = \frac{ r_i - r_f }{ \sigma_i }  \label{eq:sharpe_ratio} $$
-
--   [Beta](https://en.wikipedia.org/wiki/Beta_(finance))
+-   Sharpe, W.F. (1990). Nobel lecture: [Capital asset prices with and without negative holdings](https://www.nobelprize.org/uploads/2018/06/sharpe-lecture.pdf). [^Sharpe1990]
 
 $$ \beta_i = \frac{ \mathrm{Cov}(r_i, r_m) }{ \mathrm{Var}(r_m) } = \mathrm{Cor}(r_i, r_m) \: \frac{\sigma_i}{\sigma_m} \label{eq:sharpe_beta} $$
 
--   [Alpha](https://en.wikipedia.org/wiki/Alpha_(finance))
--   [Jensen's alpha](https://en.wikipedia.org/wiki/Jensen%27s_alpha)
--   [Security Characteristic Line (SCL)](https://en.wikipedia.org/wiki/Security_characteristic_line)
--   Jensen, M. (1968). [The performance of mutual funds in the period 1945-1964](https://www.jstor.org/stable/2325404). [^Jensen1968]
+Thought in $r_i$ vs $r_m$ space, accumulating points over time,
+$\alpha_{i}$ and $\beta_{i}$ can be calculated via linear regression:
 
-Thought in $r_i$ vs $r_m$ space, $\alpha$ and $\beta$ can be calculated via linear regression:
+SCL:
 
-$$ r_{it} - r_f = \alpha_i + \beta_i \, (r_{mt} - r_f) + \varepsilon_{it}  \label{eq:alpha_beta_regression} $$
+$$ r_{it} - r_f = \hat{\alpha}_i + \hat{\beta}_i \, (r_{mt} - r_f) + \varepsilon_{it}  \label{eq:alpha_beta_regression} $$
 
-Then the formula for Jensen's alpha is
+The [Security Characteristic Line (SCL)](https://en.wikipedia.org/wiki/Security_characteristic_line)
+is the line in $r_i$ vs $r_m$,
+fit to a particular asset, $i$, with its slope, $\hat{\beta}_{i}$,
+and its $(r_i - r_f)$ intercept, $\hat{\alpha}_i$.
 
-$$ \alpha_{i} = (r_i - r_f) - \beta_i \, (r_m - r_f)  \label{eq:jensen_alpha} $$
+[Jensen's alpha](https://en.wikipedia.org/wiki/Jensen%27s_alpha)
+uses the same form, but at a particular time point, using a historical
+fit for $\hat{\beta}_{i}$, but not $\alpha_{i}$.
 
--   [Security Market Line (SML)](https://en.wikipedia.org/wiki/Security_market_line)
+$$ \alpha_{i} = (r_i - r_f) - \hat{\beta}_{i} \, (r_m - r_f)  \label{eq:jensen_alpha} $$
 
-Thought in $r_i$ vs $\beta_i$ space:
+TODO: Compare with this:
+
+$$ \alpha_{i} = (r_i - r_f) - \hat{\beta}_{i} \, (\mu_{m} - r_f) $$
+
+The [Security Market Line (SML)](https://en.wikipedia.org/wiki/Security_market_line),
+thought in $r_i$ vs $\beta_i$ space, goes through the market portfolio at
+($\beta_m$, $r_m$).
+
+SML: 
 
 $$ \mathbb{E}(r_i) = r_f + \beta_i \left( \mathbb{E}(r_m) - r_f \right) $$
 
@@ -433,6 +458,7 @@ $$ T_i = \frac{ r_i - r_f }{ \beta_i }  \label{eq:treynor_ratio} $$
 [^Luenberger1998]: @Luenberger_1998_Investment_Science\.
 [^Sharpe1963]: @Sharpe_1963_A_simplified_model_for_portfolio_analysis\.
 [^Sharpe1964]: @Sharpe_1964_Capital_asset_prices_A_theory_of_market\.
+[^Sharpe1990]: @Sharpe_1990_Nobel_lecture_Capital_asset_prices_with\.
 [^Sharpe1999]: @Sharpe_1999_Portfolio_Theory_and_Capital_Markets\.
 
 
