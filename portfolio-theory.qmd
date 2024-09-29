@@ -336,7 +336,21 @@ introducing or varying the risk-free rate of return, which portfolio
 along the frontier that is the tangent portfolio will depend on the
 risk-free rate of return.
 
-$$ r_{t}(\sigma; r_{f}) = X $$
+The *tangent portfolio with a risk-free asset* is
+
+$$ \vec{w}_{t} = \frac{V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}{\vec{1}^\intercal \, V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})} $$
+
+It has a return
+
+$$ r_{t} = X $$
+
+and a standard deviation
+
+$$ \sigma_{t} = X $$
+
+Efficient frontier without borrowing:
+
+$$ \sigma_{\ast}(r_{\ast}; r_{f}) = X $$
 
 TODO:
 
