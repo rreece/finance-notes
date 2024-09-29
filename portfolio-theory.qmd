@@ -169,10 +169,10 @@ in @fig-markowitz-portfolio-btc-2024-09-13\.
 [^Merton1972]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio\.
 [^ItCanBeShown]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio was the first
     to show there was an analytic solution to the Markowitz portfolio problem?
+    For the analytic results descussed here, we generally follow
+    @Kwok_2017_Lecture_notes_Fundamentals_of_Mathematical\.
     Note that we use variable names following Kwok, whereas to convert from Merton to Kwok:
     $a_\mathrm{M} = b_\mathrm{K}$, $b_\mathrm{M} = c_\mathrm{K}$, $c_\mathrm{M} = a_\mathrm{K}$.
-    For the analytic results descussed here, we generally follow a combination of
-    Kwok, Kasa, and Armerin.
 [^Roy1952]: @Roy_1952_Safety_first_and_the_holding_of_assets\.
 
 Quadratic programming and convex optimization are discussed in more detail
