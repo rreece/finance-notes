@@ -250,8 +250,8 @@ Cass & Stiglitz:
 Continuing the discussion of the context of a portfolio of risky assets
 (no risk-free asset; to be considered in the next section).
 
-Tobin[^Tobin1958] is often credited as the first to note and
-Merton[^Merton1972b] exposited formally the *One-fund theorem*:
+Tobin[^Tobin1958] is often credited as the first to note, and later
+Merton[^Merton1972b] exposited more formally, the *Two-fund theorem*:
 
 Merton:
 
@@ -263,12 +263,6 @@ Merton:
 >   between portfolios from among the original $m$ assets or from these
 >   two funds. [^Merton1972p1858]
 
--   [Lecture notes by Yue Kuen Kwok (HKUST)](https://www.math.hkust.edu.hk/~maykwok/MATH4512.htm)
-    -   [Lecture 2](https://www.math.hkust.edu.hk/~maykwok/courses/MATH4512/lecture%20notes/MATH4512_T2.pdf)
--   [Lecture notes by Ken Kasa (SFU)](https://www.sfu.ca/~kkasa/econ815_23.html)
-    -   [Lecture 7](https://www.sfu.ca/~kkasa/Econ815_Lecture7.pdf)
--   [Lecture notes by Karl Sigman (Columbia)](https://www.columbia.edu/~ks20/FE-Notes/4700-07-Notes-funds.pdf)
-
 Kasa:
 
 >   Any portfolio on the efficient frontier can be written as a linear
@@ -277,6 +271,12 @@ Kasa:
 $$ \vec{w}_{\ast} = \xi \, \vec{w}_{1} + (1-\xi) \, \vec{w}_{2} $$
 
 TODO [^TODOxi]
+
+-   [Lecture notes by Yue Kuen Kwok (HKUST)](https://www.math.hkust.edu.hk/~maykwok/MATH4512.htm)
+    -   [Lecture 2](https://www.math.hkust.edu.hk/~maykwok/courses/MATH4512/lecture%20notes/MATH4512_T2.pdf)
+-   [Lecture notes by Ken Kasa (SFU)](https://www.sfu.ca/~kkasa/econ815_23.html)
+    -   [Lecture 7](https://www.sfu.ca/~kkasa/Econ815_Lecture7.pdf)
+-   [Lecture notes by Karl Sigman (Columbia)](https://www.columbia.edu/~ks20/FE-Notes/4700-07-Notes-funds.pdf)
 
 [^Merton1972b]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio\.
 [^Merton1972p1858]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio\, p. 1858.
@@ -306,15 +306,15 @@ asset.
 
 The portfolio weights are
 
-$$ \vec{w} = \kappa \, \vec{w}_{f} + (1-\kappa) \, \vec{w}_{t} $$
+$$ \vec{w}_{\ast} = \kappa \, \vec{w}_{f} + (1-\kappa) \, \vec{w}_{t} $$
 
 The portfolio return is
 
-$$ r = \kappa \, r_{f} + (1-\kappa) \, r_{t} $$
+$$ r_{\ast} = \kappa \, r_{f} + (1-\kappa) \, r_{t} $$
 
 The portfolio standard deviation is
 
-$$ \sigma = \left| 1-\kappa \right| \sigma_{t} $$
+$$ \sigma_{\ast} = \left| 1-\kappa \right| \sigma_{t} $$
 
 Since the efficient frontier is a linear combination of the risk-free, "cash",
 and a single portfolio of risky assets, "stocks", then it forms a line in
@@ -336,13 +336,30 @@ introducing or varying the risk-free rate of return, which portfolio
 along the frontier that is the tangent portfolio will depend on the
 risk-free rate of return.
 
-$$ r_{t}(\sigma; r_{f}) = X $$
+The *tangent portfolio with a risk-free asset* is
+
+$$ \vec{w}_{t} = \frac{V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}{\vec{1}^\intercal \, V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})} $$
+
+It has a return
+
+$$ r_{t} = XXX $$
+
+and a standard deviation
+
+$$ \sigma_{t} = XXX $$
+
+Efficient frontier without borrowing:
+
+$$ \sigma_{\ast}(r_{\ast}; r_{f}) = XXX $$
+
+or equivalently
+
+$$ r_{\ast}(\sigma_{\ast}; r_{f}) = XXX $$
 
 TODO:
 
 -   Citation need for the one-fund theorem
 -   CAL intersection at the tangent portfolio
--   $r_{t}(\sigma; r_{f})$
 -   Case-wise functional form of the efficient frontier without borrowing
 -   Related to the efficient-market hypothesis: in equilibrium, the tangent portfolio becomes the market portfolio
 
