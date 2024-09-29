@@ -481,6 +481,8 @@ Postmodern portfolio theory
 
 -   [Post-modern portfolio theory](https://en.wikipedia.org/wiki/Post-modern_portfolio_theory)
 -   [Downside risk](https://en.wikipedia.org/wiki/Downside_risk), semi-variance, semi-deviation, target semi-variance (TSV), target semi-deviation
+    -   Markowitz, H.M., Starer, D., Fram, H., & Gerber, S. (2019). [Avoiding the downside: A practical review of the Critical Line Algorithm for mean-semivariance portfolio optimization](https://www.hudsonbaycapital.com/documents/FG/hudsonbay/research/599440_paper.pdf). [^Markowitz2019]
+    -   [Mean-Semivariance frontier](https://scikit-portfolio.github.io/scikit-portfolio/efficient_semivariance/) in [scikit-portfolio](https://scikit-portfolio.github.io/scikit-portfolio/)
 
 $$ \mathrm{TSV}(r_i, r_t) = \mathbb{E}\left[ (r_i - r_t)^2 \: \mathbb{1}_{\{r_i < r_t\}} \right]  \label{eq:target_semi_variance} $$
 
@@ -488,14 +490,12 @@ $$ \mathrm{TSD}(r_i, r_t) = \sqrt{\mathrm{TSV}(r_i, r_t)}  \label{eq:target_semi
 
 -   [Sortino ratio](https://en.wikipedia.org/wiki/Sortino_ratio)
 -   [Low-volatility anomaly](https://en.wikipedia.org/wiki/Low-volatility_anomaly)
--   Past performance is no guarantee of future results
-    -   Criticisms of using historical estimators of $\mu$ and $V$
-    -   Problem of induction
 -   Rom, B.M. & Ferguson, K. (1993). Post-modern portfolio theory comes of age. [^Rom1993]
 -   Sortino, F. (2010). *The Sortino Framework for Constructing Portfolios*. [^Sortino2010]
 -   Elton, E.J., Gruber, M.J., Brown, S.J., & Goetzmann, W.N. (2014). *Modern Portfolio Theory and Investment Analysis*. [^Elton2014]
--   Markowitz, H.M., Starer, D., Fram, H., & Gerber, S. (2019). [Avoiding the downside: A practical review of the Critical Line Algorithm for mean-semivariance portfolio optimization](https://www.hudsonbaycapital.com/documents/FG/hudsonbay/research/599440_paper.pdf). [^Markowitz2019]
--   [Mean-Semivariance frontier](https://scikit-portfolio.github.io/scikit-portfolio/efficient_semivariance/) in [scikit-portfolio](https://scikit-portfolio.github.io/scikit-portfolio/)
+-   Past performance is no guarantee of future results
+    -   Criticisms of using historical estimators of $\mu$ and $V$
+    -   Problem of induction
 
 [^Elton2014]: @Elton_2014_Modern_Portfolio_Theory_and_Investment_Analysis\.
 [^Markowitz2019]: @Markowitz_2019_Avoiding_the_downside_A_practical_review\.
