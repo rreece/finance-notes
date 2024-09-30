@@ -6,7 +6,12 @@ date: today
 Introduction
 --------------------------------------------
 
-TODO
+TODO: Price data is pretty easy to come by, but where does one scrape
+up to date earnings data?
+
+TODO:
+
+-   Reading a 10-K
 
 
 Buffett Indicator
