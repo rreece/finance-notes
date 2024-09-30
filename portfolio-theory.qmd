@@ -3,6 +3,12 @@ title: "Portfolio Theory"
 date: today
 ---
 
+Introduction
+--------------------------------------------
+
+TODO
+
+
 Modern portfolio theory
 --------------------------------------------
 
@@ -547,7 +553,7 @@ Hierarchical risk parity
 --------------------------------------------
 
 -   Hierarchical Risk Parity (HRP)
--   L&oacute;pez de Prado, M. (2016). [Building diversified portfolios that outperform out-of-sample](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708678). *Journal of Portfolio Management*. [^LopezDePrado2016]
+-   L&oacute;pez de Prado, M. (2016). [Building diversified portfolios that outperform out-of-sample](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708678). [^LopezDePrado2016]
 -   L&oacute;pez de Prado, M. (2018). *Advances in Financial Machine Learning*. [^LopezDePrado2018]
 -   Lohre, H., Rother, C., & Sch&auml;fer, K.A. (2020). Hierarchical Risk Parity: Accounting for tail dependencies in multi-asset multi-factor allocations. [^Lohre2020]
 -   Blogs:

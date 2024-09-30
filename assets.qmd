@@ -1,0 +1,28 @@
+---
+title: "Assets of Note"
+date: today
+---
+
+Introduction
+--------------------------------------------
+
+TODO
+
+
+Asset classes
+--------------------------------------------
+
+-   stocks: ETFs, mutual funds
+-   bonds: treasuries, corporate bonds, municipal bonds
+-   real estate, REITs
+-   commodities, metals
+-   cryptocurrency
+-   collectables
+
+
+US sectors
+--------------------------------------------
+
+TODO
+
+

@@ -1,0 +1,32 @@
+---
+title: "Value Investing"
+date: today
+---
+
+Introduction
+--------------------------------------------
+
+TODO: Price data is pretty easy to come by, but where does one scrape
+up to date earnings data?
+
+TODO:
+
+-   Reading a 10-K
+
+
+Buffett Indicator
+--------------------------------------------
+
+-   [Buffett Indicator](https://www.currentmarketvaluation.com/models/buffett-indicator.php)
+-   [Longtermtrends: Buffett Indicator](https://www.longtermtrends.net/market-cap-to-gdp-the-buffett-indicator/)
+-   [Longtermtrends: S&P 500 PE Ratio](https://www.longtermtrends.net/sp500-price-earnings-shiller-pe-ratio/)
+
+
+Misc
+--------------------------------------------
+
+-   [Benjamin Graham](https://en.wikipedia.org/wiki/Benjamin_Graham) (1894-1976)
+    -   *The Intellegent Investor* (1949) [^Graham2003]
+
+[^Graham2003]: @Graham_2003_The_Intellegent_Investor_Revised_ed\.
+
