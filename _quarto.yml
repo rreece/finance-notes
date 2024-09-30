@@ -10,7 +10,9 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - assets.qmd
     - portfolio-theory.qmd
+    - value.qmd
     - references.qmd
 
 #  abstract: |
