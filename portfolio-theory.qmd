@@ -50,7 +50,7 @@ Variance of a portfolio:
 
 $$ \sigma^2 = \vec{w}^\intercal \, V \, \vec{w} = \sum_{ij} w_{i} \, V_{ij} \, w_{j}  $$
 
-TODO: Show above
+TODO: Show above  [^Luenberger1998p150]
 
 The *Markowitz portfolio problem*: [^Markowitz1959p172]
 Given an $n$-dimensional vector of expected returns, $\vec{\mu}$,
@@ -168,6 +168,7 @@ in @fig-markowitz-portfolio-btc-2024-09-13\.
 [^Das2016]: @Das_2016_Data_Science_Theories_Models_Algorithms\.
 [^Kwok2017]: @Kwok_2017_Lecture_notes_Fundamentals_of_Mathematical\.
 [^Levy1979]: @Levy_1979_Approximating_expected_utility_by_a_function\.
+[^Luenberger1998p150]: @Luenberger_1998_Investment_Science\, p. 150.
 [^Markowitz1952]: @Markowitz_1952_Portfolio_selection\.
 [^Markowitz1959]: @Markowitz_1959_Portfolio_Selection_Efficient_Diversification\.
 [^Markowitz1959p172]: @Markowitz_1959_Portfolio_Selection_Efficient_Diversification\, p. 172.
@@ -377,7 +378,10 @@ $$ \sigma_{t}^{2} = \frac{\left|\vec{\mu} - r_{f} \, \vec{1}\right|^2}{ (\vec{\m
 The tangent portfolio is the portfolio with the maximum
 [Sharpe ratio](https://en.wikipedia.org/wiki/Sharpe_ratio), $S_i$.
 
-$$ S_i = \frac{ r_i - r_f }{ \sigma_i }  \label{eq:sharpe_ratio} $$
+$$ S_i \equiv \frac{ r_i - r_f }{ \sigma_i }  \label{eq:sharpe_ratio} $$
+
+The Sharpe ratio is a measure of how much excess return an asset had over a risk-free asset,
+adjusted for the risk as measured by the standard deviation of return.
 
 TODO:
 
@@ -455,7 +459,7 @@ $$ \mathbb{E}(r_i) = r_f + \beta_i \left( \mathbb{E}(r_m) - r_f \right) $$
 
 -   [Treynor ratio](https://en.wikipedia.org/wiki/Treynor_ratio)
 
-$$ T_i = \frac{ r_i - r_f }{ \beta_i }  \label{eq:treynor_ratio} $$
+$$ T_i \equiv \frac{ r_i - r_f }{ \beta_i }  \label{eq:treynor_ratio} $$
 
 -   Gibbons, M., Ross, S., & Shanken, J. (1989). [A test of the efficiency of a given portfolio](https://www.jstor.org/stable/1913625). [^Gibbons1989]
 -   Luenberger, D.G. (1998). *Investment Science*. [^Luenberger1998]
