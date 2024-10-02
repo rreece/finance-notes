@@ -162,7 +162,7 @@ An example of the efficient frontier and the no-shorts frontier is shown
 in @fig-markowitz-portfolio-btc-2024-09-13\.
 
 ![The efficient frontier and no-shorts frontier for a few example assets,
-    using historical daily data from 2014-01-02 to 2024-08-30, 10 years and 9 months.
+    using daily data from 2014-01-02 to 2024-08-30, 10 years and 8 months.
     ](img/markowitz-portfolio-btc-2024-09-13.png){#fig-markowitz-portfolio-btc-2024-09-13}
 
 [^Das2016]: @Das_2016_Data_Science_Theories_Models_Algorithms\.
@@ -206,7 +206,7 @@ This is how we estimate $V$ (and $\mu$).
     -   See [Hierarchical Risk Parity](#hierarchical-risk-parity)
 
 ![The correlation matrix of a few example assets
-    using historical daily data from 2014-01-02 to 2024-08-30, 10 years and 9 months.
+    using daily data from 2014-01-02 to 2024-08-30, 10 years and 8 months.
     ](img/corr-gldm-btc-2024-09-14.png){#fig-corr-gldm-btc-2024-09-14}
 
 TODO:
@@ -454,7 +454,7 @@ SML:
 $$ \mathbb{E}(r_i) = r_f + \beta_i \left( \mathbb{E}(r_m) - r_f \right) $$
 
 ![The Capital Asset Pricing Model (CAPM) applied to a few example assets
-    using historical daily data from 2014-01-02 to 2024-08-30, 10 years and 9 months.
+    using daily data from 2014-01-02 to 2024-08-30, 10 years and 8 months.
     ](img/capm-btc-2024-09-13.png){#fig-capm-btc-2024-09-13}
 
 -   [Treynor ratio](https://en.wikipedia.org/wiki/Treynor_ratio)
