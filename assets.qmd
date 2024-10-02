@@ -12,7 +12,7 @@ TODO
 Asset classes
 --------------------------------------------
 
--   stocks: ETFs, mutual funds
+-   stocks: individual stocks, ETFs, mutual funds
 -   bonds: treasuries, corporate bonds, municipal bonds
 -   real estate, REITs
 -   commodities, metals
