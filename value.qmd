@@ -14,6 +14,18 @@ TODO:
 -   Reading a 10-K
 
 
+Margin of safety
+--------------------------------------------
+
+-   [Margin of safety](https://en.wikipedia.org/wiki/Margin_of_safety_(financial))
+-   [Benjamin Graham](https://en.wikipedia.org/wiki/Benjamin_Graham) (1894-1976)
+    -   *The Intellegent Investor* (1949) [^Graham2003]
+
+![The cost of loss [@Graham_2003_The_Intellegent_Investor_Revised_ed\, p. 526]\.](img/graham-cost-of-loss.png){#fig-graham-cost-of-loss}
+
+[^Graham2003]: @Graham_2003_The_Intellegent_Investor_Revised_ed\.
+
+
 Buffett Indicator
 --------------------------------------------
 
@@ -25,8 +37,10 @@ Buffett Indicator
 Misc
 --------------------------------------------
 
--   [Benjamin Graham](https://en.wikipedia.org/wiki/Benjamin_Graham) (1894-1976)
-    -   *The Intellegent Investor* (1949) [^Graham2003]
+-   [Benjamin Graham formula](https://en.wikipedia.org/wiki/Benjamin_Graham_formula)
+-   [Discounted cash flow](https://en.wikipedia.org/wiki/Discounted_cash_flow)
+-   [Market Rules to Remember](https://en.wikipedia.org/wiki/Market_Rules_to_Remember) - Bob Farrell (1998), Merrill Lynch
+-   [Magic formula investing](https://en.wikipedia.org/wiki/Magic_formula_investing) - Joel Greenblatt
+-   [Value investing](https://en.wikipedia.org/wiki/Value_investing)
 
-[^Graham2003]: @Graham_2003_The_Intellegent_Investor_Revised_ed\.
 
