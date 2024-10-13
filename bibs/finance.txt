@@ -1,5 +1,6 @@
 Aronson, D. (2007). *Evidence-Based Technical Analysis*. Wiley.
 Black, F. & Litterman, R. (1991). Asset allocation. *Journal of Fixed Income*, 1, 7--18.
+Buffett, W. (2017). *Berkshire Hathaway Letters to Shareholders 1965-2016*. Explorist Productions.
 Cass, D. & Stiglitz, J.E. (1970). The structure of investor preferences and asset returns, and separability in portfolio allocation: A contribution to the pure theory of mutual funds. *Journal of Economic Theory*, 2.
 Black, F. & Litterman, R. (1992). Global portfolio optimization. *Financial Analysts Journal*, 48, 28--43.
 Chamberlain, G. (1983). A characterization of the distributions that imply mean-variance utility functions. *Journal of Economic Theory*, 29, 185--201.
