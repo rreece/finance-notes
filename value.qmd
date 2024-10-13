@@ -37,6 +37,7 @@ Buffett Indicator
 Misc
 --------------------------------------------
 
+-   [Benjamin Graham formula](https://en.wikipedia.org/wiki/Benjamin_Graham_formula)
 -   [Discounted cash flow](https://en.wikipedia.org/wiki/Discounted_cash_flow)
 -   [Market Rules to Remember](https://en.wikipedia.org/wiki/Market_Rules_to_Remember) - Bob Farrell (1998), Merrill Lynch
 -   [Magic formula investing](https://en.wikipedia.org/wiki/Magic_formula_investing) - Joel Greenblatt
