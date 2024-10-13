@@ -53,7 +53,10 @@ $$ \sigma^2 = \vec{w}^\intercal \, V \, \vec{w} = \sum_{ij} w_{i} \, V_{ij} \, w
 
 TODO: Show above  [^Luenberger1998p150]
 
-The *Markowitz portfolio problem*: [^Markowitz1959p172]
+
+::: {.callout-note}
+### The *Markowitz portfolio problem* [^Markowitz1959p172]
+
 Given an $n$-dimensional vector of expected returns, $\vec{\mu}$,
 an $n\times{}n$-dimensional expected covariance matrix, $V$,
 an $m\times{}n$-dimensional constraint matrix, $A$,
@@ -72,6 +75,9 @@ such that
 $$ \vec{w}^\intercal \, \vec{1} = \sum_i w_i = 1 $$
 
 $$ \vec{w}^\intercal \, \vec{\mu} = \sum_i w_i \, \mu_i = r_{\ast} $$
+
+:::
+
 
 There are a lot of topics to discuss about solving for the efficient frontier:
 
