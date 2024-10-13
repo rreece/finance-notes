@@ -38,7 +38,6 @@ Misc
 --------------------------------------------
 
 -   [Discounted cash flow](https://en.wikipedia.org/wiki/Discounted_cash_flow)
--   [Margin of safety](https://en.wikipedia.org/wiki/Margin_of_safety_(financial))
 -   [Market Rules to Remember](https://en.wikipedia.org/wiki/Market_Rules_to_Remember) - Bob Farrell (1998), Merrill Lynch
 -   [Magic formula investing](https://en.wikipedia.org/wiki/Magic_formula_investing) - Joel Greenblatt
 -   [Value investing](https://en.wikipedia.org/wiki/Value_investing)
