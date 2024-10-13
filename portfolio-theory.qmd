@@ -6,7 +6,8 @@ date: today
 Introduction
 --------------------------------------------
 
-TODO
+TODO: Given some menu of possible investments, what mix should we hold?
+How should we hold value through time?
 
 
 Modern portfolio theory
