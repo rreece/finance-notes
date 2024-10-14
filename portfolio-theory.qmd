@@ -72,9 +72,9 @@ $$ \vec{w}_{\ast} = \underset{w}{\mathrm{argmin}}\ \vec{w}^\intercal \, V \, \ve
 
 such that
 
-$$ \vec{w} \cdot \vec{\mu} = r_{\ast} $$
+$$ \vec{w} \cdot \vec{1} = 1 $$
 
-$$ \vec{w} \cdot \vec{1} = \sum_i w_i = 1 $$
+$$ \vec{w} \cdot \vec{\mu} = r_{\ast} $$
 
 $$ A \, \vec{w} \geq \vec{b} $$
 
