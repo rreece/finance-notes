@@ -55,7 +55,7 @@ TODO: Show above  [^Luenberger1998p150]
 
 
 ::: {.callout-note}
-### The *Markowitz portfolio problem* [^Markowitz1959p172]
+### *Markowitz portfolio problem* [^Markowitz1959p172]
 
 Given an $n$-dimensional vector of expected returns, $\vec{\mu}$,
 an $n\times{}n$-dimensional expected covariance matrix, $V$,
