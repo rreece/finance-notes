@@ -76,7 +76,7 @@ $$ \vec{w}^\intercal \, \vec{1} = \sum_i w_i = 1 $$
 
 $$ \vec{w}^\intercal \, \vec{\mu} = \sum_i w_i \, \mu_i = r_{\ast} $$
 
-$$ A \, \vec{w} = \vec{b} $$
+$$ A \, \vec{w} \geq \vec{b} $$
 
 :::
 
