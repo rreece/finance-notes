@@ -25,19 +25,19 @@ US sectors
 
 Table: Classification of stock sectures by [Morningstar Stock Sector Structure](https://www.morningstar.com/content/dam/marketing/apac/au/pdfs/Legal/StockSectorStructure_Factsheet.pdf) (2011). {#tbl-us-sectors}
 
-| Super Sector    | Sector                  |  Approx. Something |
-|:----------------|:------------------------|-------------------:|
-| Defensive       | Consumer Staples        |               80 M |
-|                 | Health Care             |              6.3 M |
-|                 | Utilities               |                 11 |
-| Sensitive       | Energy                  |                 11 |
-|                 | Industrials             |                 11 |
-|                 | Technology              |                 11 |
-|                 | Communications          |                 11 |
-| Cyclical        | Consumer Discretionary  |                 11 |
-|                 | Materials               |                 11 |
-|                 | Financials              |                 11 |
-|                 | Real Estate             |                 11 |
+| Super Sector    | Sector                  |  Vangard ETF |
+|:----------------|:------------------------|-------------:|
+| Defensive       | Consumer Staples        |          VDC |
+|                 | Health Care             |          VHT |
+|                 | Utilities               |          VPU |
+| Sensitive       | Energy                  |          VDE |
+|                 | Industrials             |          VIS |
+|                 | Technology              |          VGT |
+|                 | Communications          |          VOX |
+| Cyclical        | Consumer Discretionary  |          VCR |
+|                 | Materials               |          VAW |
+|                 | Financials              |          VFH |
+|                 | Real Estate             |          VNQ |
 
 
 Active vs passive
