@@ -23,6 +23,32 @@ Asset classes
 US sectors
 --------------------------------------------
 
-TODO
+Table: Classification of stock sectures by [Morningstar Stock Sector Structure](https://www.morningstar.com/content/dam/marketing/apac/au/pdfs/Legal/StockSectorStructure_Factsheet.pdf) (2011). {#tbl-us-sectors}
+
+| Super Sector    | Sector                  |  Approx. Something |
+|:----------------|:------------------------|-------------------:|
+| Defensive       | Consumer Staples        |               80 M |
+|                 | Health Care             |              6.3 M |
+|                 | Utilities               |                 11 |
+| Sensitive       | Energy                  |                 11 |
+|                 | Industrials             |                 11 |
+|                 | Technology              |                 11 |
+|                 | Communications          |                 11 |
+| Cyclical        | Consumer Discretionary  |                 11 |
+|                 | Materials               |                 11 |
+|                 | Financials              |                 11 |
+|                 | Real Estate             |                 11 |
+
+
+Active vs passive
+--------------------------------------------
+
+-   Brinson, G.P., Hood, L.R., & Beebower, G.L. (1986). Determinants of portfolio performance. [^Brinson1986]
+-   Brinson, G. P., Singer, B.D., & Beebower, G.L. (1991). Determinants of portfolio performance II: An update. [^Brinson1991]
+-   Hood, R.L. (2005). Determinants of portfolio performance: 20 years later. [^Hood2005]
+
+[^Brinson1986]: @Brinson_1986_Determinants_of_portfolio_performance\.
+[^Brinson1991]: @Brinson_1991_Determinants_of_portfolio_performance_II\.
+[^Hood2005]: @Hood_2005_Determinants_of_portfolio_performance_20_years\.
 
 
