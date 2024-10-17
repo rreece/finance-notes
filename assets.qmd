@@ -23,6 +23,32 @@ Asset classes
 US sectors
 --------------------------------------------
 
-TODO
+Table: Classification of stock sectures by [Morningstar Stock Sector Structure](https://www.morningstar.com/content/dam/marketing/apac/au/pdfs/Legal/StockSectorStructure_Factsheet.pdf) (2011). {#tbl-us-sectors}
+
+| Super Sector    | Sector                  |  Vangard ETF |
+|:----------------|:------------------------|-------------:|
+| Defensive       | Consumer Staples        |          VDC |
+|                 | Health Care             |          VHT |
+|                 | Utilities               |          VPU |
+| Sensitive       | Energy                  |          VDE |
+|                 | Industrials             |          VIS |
+|                 | Technology              |          VGT |
+|                 | Communications          |          VOX |
+| Cyclical        | Consumer Discretionary  |          VCR |
+|                 | Materials               |          VAW |
+|                 | Financials              |          VFH |
+|                 | Real Estate             |          VNQ |
+
+
+Active vs passive
+--------------------------------------------
+
+-   Brinson, G.P., Hood, L.R., & Beebower, G.L. (1986). Determinants of portfolio performance. [^Brinson1986]
+-   Brinson, G. P., Singer, B.D., & Beebower, G.L. (1991). Determinants of portfolio performance II: An update. [^Brinson1991]
+-   Hood, R.L. (2005). Determinants of portfolio performance: 20 years later. [^Hood2005]
+
+[^Brinson1986]: @Brinson_1986_Determinants_of_portfolio_performance\.
+[^Brinson1991]: @Brinson_1991_Determinants_of_portfolio_performance_II\.
+[^Hood2005]: @Hood_2005_Determinants_of_portfolio_performance_20_years\.
 
 
