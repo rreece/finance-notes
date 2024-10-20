@@ -13,9 +13,11 @@ How should we hold value through time?
 Modern portfolio theory
 --------------------------------------------
 
+### History and pedagogy
+
 Keywords:
 
--   [Modern portfolio theory](https://en.wikipedia.org/wiki/Modern_portfolio_theory)
+-   [Modern portfolio theory](https://en.wikipedia.org/wiki/Modern_portfolio_theory) (MPT)
 -   [Harry Markowitz](https://en.wikipedia.org/wiki/Harry_Markowitz) (1927-2023)
 -   [Markowitz model](https://en.wikipedia.org/wiki/Markowitz_model)
 -   [Rayleigh quotient](https://en.wikipedia.org/wiki/Rayleigh_quotient)
@@ -43,6 +45,8 @@ Lecture notes:
 -   Sigman, K. (2005). [Notes on fund theorems](https://www.columbia.edu/~ks20/FE-Notes/4700-07-Notes-funds.pdf).
 
 
+### Markowitz portfolio problem
+
 Return of a portfolio:
 
 $$ r = \vec{w}^\intercal \, \vec{r} = \sum_i w_{i} \, r_{i} $$
@@ -54,8 +58,7 @@ $$ \sigma^2 = \vec{w}^\intercal \, V \, \vec{w} = \sum_{ij} w_{i} \, V_{ij} \, w
 TODO: Show above  [^Luenberger1998p150]
 
 
-::: {.callout-note}
-### *Markowitz portfolio problem* [^Markowitz1959p172]
+::: {.callout-note title="Markowitz portfolio problem"}
 
 Given an $n$-dimensional vector of expected returns, $\vec{\mu}$,
 an $n\times{}n$-dimensional expected covariance matrix, $V$,
@@ -66,7 +69,7 @@ solve for the portfolio weights, $\vec{w}_{\ast}$, an $n$-dimensional vector,
 that are *efficient*, *i.e.* those
 that minimize the standard deviation of the portfolio return, $\sigma$,
 for a given target return.
-Return $(\vec{w}_{\ast}, \sigma_{\ast})$.
+Return $(\vec{w}_{\ast}, \sigma_{\ast})$. [^Markowitz1959p172]
 
 $$ \vec{w}_{\ast} = \underset{w}{\mathrm{argmin}}\ \vec{w}^\intercal \, V \, \vec{w} $$
 
@@ -75,6 +78,8 @@ such that
 $$ \vec{w} \cdot \vec{1} = 1 $$
 
 $$ \vec{w} \cdot \vec{\mu} = r_{\ast} $$
+
+and with further optional constraints
 
 $$ A \, \vec{w} \geq \vec{b} $$
 
@@ -130,7 +135,7 @@ where
 
 $$ \xi = (c - b \, r_{\ast}) \, a \, / \, d $$
 
-It's not trivial, but equivalently, the efficient frontier portfolio can be written
+The efficient frontier portfolio can be equivalently written
 
 \begin{align}
 \vec{w}_{\ast} &= \xi \, \vec{w}_{v} + (1-\xi) \, \vec{w}_{t} \\
@@ -152,6 +157,9 @@ scanning from $\sigma_{v}$ to $\sigma_\mathrm{max}$.
 
 In general, depending on the correlations of the assets, the efficient frontier portfolios will
 short various positions, indicated by having negative weights.
+
+
+### No-shorts frontier
 
 If one adds an additional constraint to the Markowitz portfolio problem as stated,
 requiring that we don't short any positions
@@ -194,6 +202,20 @@ in @fig-markowitz-portfolio-btc-2024-09-13\.
 
 Quadratic programming and convex optimization are discussed in more detail
 in the section on [Convex optimization](#convex-optimization).
+
+
+### Lessons of MPT
+
+Markowitz:
+
+>   [I]n trying to make variance small it is not enough to invest in many
+>   securities. It is necessary to avoid investing in securities with
+>   high covariances among themselves. We should diversify across industries
+>   because firms in different industries, especially industries with
+>   different economic characteristics, have lower covariances than firms
+>   within an industry. [^Markowitz1952p89]
+
+[^Markowitz1952p89]: @Markowitz_1952_Portfolio_selection\, p. 89.
 
 
 Estimation of covariance matrices
