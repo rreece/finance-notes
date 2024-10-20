@@ -217,6 +217,11 @@ Markowitz:
 
 [^Markowitz1952p89]: @Markowitz_1952_Portfolio_selection\, p. 89.
 
+Dalio: "The Holy Grail", see @fig-dalio-holy-grail\.
+
+![TODO: Citation needed.
+    ](img/dalio-holy-grail.jpg){#fig-dalio-holy-grail}
+
 
 Estimation of covariance matrices
 --------------------------------------------
@@ -578,6 +583,9 @@ Criticisms of MPT:
 ### Error propagation
 
 -   TODO
+-   Lo, A.W. (2002). [The statistics of Sharpe ratios](https://www.jstor.org/stable/4480405). [^Lo2002]
+
+[^Lo2002]: @Lo_2002_The_statistics_of_Sharpe_ratios\.
 
 
 ### Downside risk
