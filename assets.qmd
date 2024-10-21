@@ -23,7 +23,7 @@ Asset classes
 US sectors
 --------------------------------------------
 
-There are 11 Sectors in the [standard classification by MSCI](https://en.wikipedia.org/wiki/Global_Industry_Classification_Standard), see @tbl-us-sectors.
+There are 11 sectors in the [standard classification by MSCI](https://en.wikipedia.org/wiki/Global_Industry_Classification_Standard), see @tbl-us-sectors.
 
 Table: The 11 sectors in the [standard classification by MSCI](https://en.wikipedia.org/wiki/Global_Industry_Classification_Standard). Classification of super sectors by [Morningstar Stock Sector Structure](https://www.morningstar.com/content/dam/marketing/apac/au/pdfs/Legal/StockSectorStructure_Factsheet.pdf) (2011), where C=Cyclical, D=Defensive, S=Sensitive. Market cap data is from [this blog](https://www.visualcapitalist.com/largest-company-market-cap-sp-500-market-concentration/) (2024). {#tbl-us-sectors}
 

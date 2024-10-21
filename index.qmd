@@ -6,7 +6,7 @@ They are written from my perspective as someone with a background
 in physics and machine learning.
 
 If you find any of this interesting, let me know
-at Twitter [&#64;RyanDavidReece](https://twitter.com/RyanDavidReece).
+on Twitter [&#64;RyanDavidReece](https://twitter.com/RyanDavidReece).
 
 ![](img/corr-gldm-btc-2024-09-14.png)
 
