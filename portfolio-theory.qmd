@@ -71,6 +71,8 @@ that minimize the standard deviation of the portfolio return, $\sigma$,
 for a given target return.
 Return $(\vec{w}_{\ast}, \sigma_{\ast})$. [^Markowitz1959p172]
 
+Solve
+
 $$ \vec{w}_{\ast} = \underset{w}{\mathrm{argmin}}\ \vec{w}^\intercal \, V \, \vec{w} $$
 
 such that
