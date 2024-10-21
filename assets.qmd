@@ -27,19 +27,19 @@ There are 11 Sectors in the [standard classification by MSCI](https://en.wikiped
 
 Table: The 11 sectors in the [standard classification by MSCI](https://en.wikipedia.org/wiki/Global_Industry_Classification_Standard). Classification of super sectors by [Morningstar Stock Sector Structure](https://www.morningstar.com/content/dam/marketing/apac/au/pdfs/Legal/StockSectorStructure_Factsheet.pdf) (2011), where C=Cyclical, D=Defensive, S=Sensitive. Market cap data is from [this blog](https://www.visualcapitalist.com/largest-company-market-cap-sp-500-market-concentration/) (2024). {#tbl-us-sectors}
 
-|  #  | Sector                   | Super Sector | Market Cap [T$] | Market Cap [%] | Largest Co   | Co share [%] | Vanguard ETF |
-|----:|:-------------------------|:-------------|----------------:|---------------:|:-------------| ------------:|:-------------|
-|  1  | Technology               | S            |            15.3 |           31.7 | Microsoft    |         22.3 | VGT          |
-|  2  | Financials               | C            |             6.1 |           12.7 | Berkshire    |         12.9 | VFH          |
-|  3  | Healthcare               | D            |             5.6 |           11.6 | Eli Lilly    |         13.5 | VHT          |
-|  4  | Consumer discretionary   | C            |             4.9 |           10.2 | Amazon       |         38.8 | VCR          |
-|  5  | Communications           | S            |             4.6 |            9.5 | Alphabet     |         25.8 | VOX          |
-|  6  | Industrials              | S            |             3.9 |            8.1 | GE Aerospace |          4.7 | VIS          |
-|  7  | Consumer staples         | D            |             3.0 |            6.2 | Walmart      |         14.7 | VDC          |
-|  8  | Energy                   | S            |             1.7 |            3.5 | Exxon Mobil  |         30.9 | VDE          |
-|  9  | Real estate              | C            |             1.1 |            2.3 | Prologis     |         10.5 | VNQ          |
-| 10  | Utilities                | D            |             1.0 |            2.1 | NextEra      |         14.0 | VPU          |
-| 11  | Materials                | C            |             1.0 |            2.1 | Linde        |         21.4 | VAW          |
+|  #  | Sector         | Super Sector | Market Cap [T$] | Market Cap [%] | Largest Co   | Co share [%] | Vanguard ETF |
+|----:|:---------------|:-------------|----------------:|---------------:|:-------------| ------------:|:-------------|
+|  1  | Technology     | S            |            15.3 |           31.7 | Microsoft    |         22.3 | VGT          |
+|  2  | Financials     | C            |             6.1 |           12.7 | Berkshire    |         12.9 | VFH          |
+|  3  | Healthcare     | D            |             5.6 |           11.6 | Eli Lilly    |         13.5 | VHT          |
+|  4  | Discretionary  | C            |             4.9 |           10.2 | Amazon       |         38.8 | VCR          |
+|  5  | Communications | S            |             4.6 |            9.5 | Alphabet     |         25.8 | VOX          |
+|  6  | Industrials    | S            |             3.9 |            8.1 | GE Aerospace |          4.7 | VIS          |
+|  7  | Staples        | D            |             3.0 |            6.2 | Walmart      |         14.7 | VDC          |
+|  8  | Energy         | S            |             1.7 |            3.5 | Exxon Mobil  |         30.9 | VDE          |
+|  9  | Real estate    | C            |             1.1 |            2.3 | Prologis     |         10.5 | VNQ          |
+| 10  | Utilities      | D            |             1.0 |            2.1 | NextEra      |         14.0 | VPU          |
+| 11  | Materials      | C            |             1.0 |            2.1 | Linde        |         21.4 | VAW          |
 
 
 Active vs passive
