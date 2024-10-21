@@ -85,12 +85,6 @@ and with further optional constraints
 
 $$ A \, \vec{w} \geq \vec{b} $$
 
-then with
-
-$$ \sigma_{\ast} = \vec{w}_{\ast}^\intercal \, V \, \vec{w}_{\ast} $$
-
-return $(\vec{w}_{\ast}, \sigma_{\ast})$.
-
 :::
 
 
