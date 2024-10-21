@@ -155,6 +155,10 @@ TODO: Note calculation order of $\vec{w}_{v}(\mu, V)$
 and $\vec{w}_{t}(\mu, V, r_{f})$, then calculate $r_{\ast}(\sigma_{\ast})$,
 scanning from $\sigma_{v}$ to $\sigma_\mathrm{max}$.
 
+![The "Markowitz Bullet", the efficient frontier shown in
+    @Markowitz_1959_Portfolio_Selection_Efficient_Diversification, p. 152.
+    ](img/markowitz-bullet-1959.png){#fig-markowitz-bullet-1959}
+
 In general, depending on the correlations of the assets, the efficient frontier portfolios will
 short various positions, indicated by having negative weights.
 
