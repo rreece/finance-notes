@@ -73,7 +73,7 @@ Return $(\vec{w}_{\ast}, \sigma_{\ast})$. [^Markowitz1959p172]
 
 Solve
 
-$$ \vec{w}_{\ast} = \underset{w}{\mathrm{argmin}}\ \vec{w}^\intercal \, V \, \vec{w} $$
+$$ \vec{w}_{\ast} = \underset{w}{\mathrm{argmin}}\ \vec{w}^\intercal \, V \, \vec{w}, \sigma_{\ast} = \vec{w}_{\ast}^\intercal \, V \, \vec{w}_{\ast} $$
 
 such that
 
