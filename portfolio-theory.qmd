@@ -243,7 +243,7 @@ This is how we estimate $V$ (and $\mu$).
 -   Covariance estimation and asset trees
     -   [Stock correlation network](https://en.wikipedia.org/wiki/Stock_correlation_network)
     -   Mantegna, R.N. (1998). [Hierarchical structure in financial markets](https://arxiv.org/abs/cond-mat/9802256). [^Mantegna1998]
-    -   Onnela, J.P., Chakraborti, A., Kaski, K., Kertesz, J., & Kanto, A. (2003). [Dynamics of market correlations: Taxonomy and portfolio analysis](http://arXiv.org/abs/cond-mat/0302546v1). [^Onnela2003]
+    -   Onnela, J.P., Chakraborti, A., Kaski, K., Kert&eacute;sz, J., & Kanto, A. (2003). [Dynamics of market correlations: Taxonomy and portfolio analysis](http://arXiv.org/abs/cond-mat/0302546v1). [^Onnela2003]
     -   Onnela, J.P., Kaski, K., & Kert&eacute;sz, J. (2004). Clustering and information in correlation based financial networks. [^Onnela2004]
     -   See [Hierarchical Risk Parity](#hierarchical-risk-parity)
 
@@ -632,6 +632,14 @@ Hierarchical risk parity
     -   [hudsonthames.org](https://hudsonthames.org/an-introduction-to-the-hierarchical-risk-parity-algorithm/)
     -   [quantpedia.com](https://quantpedia.com/hierarchical-risk-parity/)
     -   [developer.nvidia.com](https://developer.nvidia.com/blog/hierarchical-risk-parity-on-rapids-an-ml-approach-to-portfolio-allocation/)
+
+Distances between two assest:
+
+$$ d_{ij} = \sqrt{\frac{1}{2} \left( 1 - \rho_{ij} \right)}  \label{eq:hrp_distance} $$
+
+Euclidean distance between d-space distances:
+
+$$ \tilde{d}_{ij} = \sqrt{ \sum_{n}^{n} \left( d_{ni} - d_{nj} \right)^{2} } \label{eq:hrp_tilde_distance} $$
 
 [^Lohre2020]: @Lohre_2020_Hierarchical_Risk_Parity_Accounting_for_tail\.
 [^LopezDePrado2016]: @Lopez_2016_Building_diversified_portfolios_that_outperform\.
