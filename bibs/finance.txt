@@ -23,7 +23,7 @@ Ledoit, O. & Wolf, M. (2003). Improved estimation of the covariance matrix of st
 Ledoit, O. & Wolf, M. (2001). Honey, I shrunk the sample covariance matrix. http://www.ledoit.net/honey.pdf
 Levy, H. & Markowitz, H.M. (1979). Approximating expected utility by a function of mean and variance. *American Economic Review*, 69, 308--317.
 Lo, A.W. (2002). The statistics of Sharpe ratios. *Financial Analysts Journal*, 58(4), 36--52. https://www.jstor.org/stable/4480405
-Lohre, H., Rother, C., & Sch{\"a}fer, K.A. (2020). Hierarchical Risk Parity: Accounting for tail dependencies in multi-asset multi-factor allocations. In E. Jurczenko (ed.), *Machine Learning and Asset Management* (pp. 332--368). Iste and Wiley.
+Lohre, H., Rother, C., & Sch{\"a}fer, K.A. (2020). Hierarchical Risk Parity: Accounting for tail dependencies in multi-asset multi-factor allocations. In E. Jurczenko (ed.), *Machine Learning and Asset Management* (pp. 332--368). Iste and Wiley. https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=3513399
 Luenberger, D.G. (1998). *Investment Science*. Oxford University Press.
 Mantegna, R.N. (1998). Hierarchical structure in financial markets. https://arxiv.org/abs/cond-mat/9802256
 Markowitz, H.M. (1952). Portfolio selection. *Journal of Finance*, 7, 77--91. https://www.jstor.org/stable/2975974
@@ -34,8 +34,8 @@ Markowitz, H.M. (2005). Market efficiency: A theoretical distinction and so what
 Markowitz, H.M., Starer, D., Fram, H., & Gerber, S. (2019). Avoiding the downside: A practical review of the Critical Line Algorithm for mean-semivariance portfolio optimization. https://www.hudsonbaycapital.com/documents/FG/hudsonbay/research/599440_paper.pdf
 Merton, R.C. (1969). Lifetime portfolio selection under uncertainty: The continuous-time case. *Review of Economics and Statistics*, 51, 247--257. https://www.jstor.org/stable/1926560
 Merton, R.C. (1972). An analytic derivation of the efficient portfolio frontier. *Journal of Financial and Quantitative Analysis*, 7, 1851--1872. https://www.jstor.org/stable/2329621
-Onnela, J.P., Chakraborti, A., Kaski, K., Kertesz, J., & Kanto, A. (2003). Dynamics of market correlations: Taxonomy and portfolio analysis. http://arXiv.org/abs/cond-mat/0302546v1
-Onnela, J.P., Kaski, K., & Kert{\'e}sz, J. (2004). Clustering and information in correlation based financial networks. *European Physical Journal B*, 38, 353--362.
+Onnela, J.P., Chakraborti, A., Kaski, K., Kert{\'e}sz, J., & Kanto, A. (2003). Dynamics of market correlations: Taxonomy and portfolio analysis. http://arXiv.org/abs/cond-mat/0302546v1
+Onnela, J.P., Kaski, K., & Kert{\'e}sz, J. (2004). Clustering and information in correlation based financial networks. *European Physical Journal B*, 38, 353--362. https://link.springer.com/article/10.1140/epjb/e2004-00128-7
 Owen, J. & Rabinovitch, R. (1983). On the class of elliptical distributions and their applications to the theory of portfolio choice. *Journal of Finance*, 38, 745--752.
 L{\'o}pez de Prado, M. (2016). Building diversified portfolios that outperform out-of-sample. *Journal of Portfolio Management*. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708678
 L{\'o}pez de Prado, M. (2018). *Advances in Financial Machine Learning*. Wiley.
