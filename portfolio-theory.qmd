@@ -633,16 +633,18 @@ Hierarchical risk parity
     -   [quantpedia.com](https://quantpedia.com/hierarchical-risk-parity/)
     -   [developer.nvidia.com](https://developer.nvidia.com/blog/hierarchical-risk-parity-on-rapids-an-ml-approach-to-portfolio-allocation/)
 
-Distances between two assest:
+Correlation distance between two assets:
 
 $$ d_{ij} = \sqrt{\frac{1}{2} \left( 1 - \rho_{ij} \right)}  \label{eq:hrp_distance} $$
 
-Euclidean distance between d-space distances:
+Euclidean distance between two assets in $N$-assest space:
 
 $$ \tilde{d}_{ij} = \sqrt{ \sum_{n}^{n} \left( d_{ni} - d_{nj} \right)^{2} } \label{eq:hrp_tilde_distance} $$
+
+Note that $\tilde{d}_{ij}$ a function of the entire correlation matrix over all assets,
+whereas $d_{ij}$ is defined for asset pairs.
 
 [^Lohre2020]: @Lohre_2020_Hierarchical_Risk_Parity_Accounting_for_tail\.
 [^LopezDePrado2016]: @Lopez_2016_Building_diversified_portfolios_that_outperform\.
 [^LopezDePrado2018]: @Lopez_2018_Advances_in_Financial_Machine_Learning\.
-
 
