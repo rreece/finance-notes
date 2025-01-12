@@ -39,6 +39,8 @@ Onnela, J.P., Kaski, K., & Kert{\'e}sz, J. (2004). Clustering and information in
 Owen, J. & Rabinovitch, R. (1983). On the class of elliptical distributions and their applications to the theory of portfolio choice. *Journal of Finance*, 38, 745--752.
 L{\'o}pez de Prado, M. (2016). Building diversified portfolios that outperform out-of-sample. *Journal of Portfolio Management*. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708678
 L{\'o}pez de Prado, M. (2018). *Advances in Financial Machine Learning*. Wiley.
+Raffinot, T. (2018). Hierarchical clustering-based asset allocation. *Journal of Portfolio Management*, 44, 89--99. https://www.proquest.com/docview/2196551795
+Raffinot, T. (2018). The hierarchical equal risk contribution portfolio. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3237540
 Rockafellar, R.T. & Uryasev, S. (2000). Optimization of conditional value-at-risk. *Journal of Risk*, 2, 21--42. https://sites.math.washington.edu/~rtr/papers/rtr179-CVaR1.pdf
 Rom, B.M. & Ferguson, K. (1993). Post-modern portfolio theory comes of age. *Journal of Investing*. [Winter 1993]
 Roy, A.D. (1952). Safety first and the holding of assets. *Econometrica*, 20, 431--449. https://www.jstor.org/stable/1907413
