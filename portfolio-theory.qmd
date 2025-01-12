@@ -644,7 +644,7 @@ Euclidean distance between two assets in $N$-assest space:
 
 $$ \tilde{d}_{ij} = \sqrt{ \sum_{n}^{n} \left( d_{ni} - d_{nj} \right)^{2} } \label{eq:hrp_tilde_distance} $$
 
-Note that $\tilde{d}_{ij}$ a function of the entire correlation matrix over all assets,
+Note that $\tilde{d}_{ij}$ is a function of the entire correlation matrix over all assets,
 whereas $d_{ij}$ is defined for asset pairs.
 
 [^Hudson2024]: @Hudson_2024_The_Modern_Guide_to_Portfolio_Optimization\.
