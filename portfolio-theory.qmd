@@ -627,7 +627,10 @@ Hierarchical risk parity
 -   Hierarchical Risk Parity (HRP)
 -   L&oacute;pez de Prado, M. (2016). [Building diversified portfolios that outperform out-of-sample](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708678). [^LopezDePrado2016]
 -   L&oacute;pez de Prado, M. (2018). *Advances in Financial Machine Learning*. [^LopezDePrado2018]
+-   Raffinot, T. (2018). Hierarchical clustering-based asset allocation. (HCAA) [^Raffinot2018a]
+-   Raffinot, T. (2018). The hierarchical equal risk contribution portfolio. (HERC) [^Raffinot2018b]
 -   Lohre, H., Rother, C., & Sch&auml;fer, K.A. (2020). Hierarchical Risk Parity: Accounting for tail dependencies in multi-asset multi-factor allocations. [^Lohre2020]
+-   Hudson & Thames. (2024). The Modern Guide to Portfolio Optimization. [^Hudson2024]
 -   Blogs:
     -   [hudsonthames.org](https://hudsonthames.org/an-introduction-to-the-hierarchical-risk-parity-algorithm/)
     -   [quantpedia.com](https://quantpedia.com/hierarchical-risk-parity/)
@@ -644,7 +647,11 @@ $$ \tilde{d}_{ij} = \sqrt{ \sum_{n}^{n} \left( d_{ni} - d_{nj} \right)^{2} } \la
 Note that $\tilde{d}_{ij}$ a function of the entire correlation matrix over all assets,
 whereas $d_{ij}$ is defined for asset pairs.
 
+[^Hudson2024]: @Hudson_2024_The_Modern_Guide_to_Portfolio_Optimization\.
 [^Lohre2020]: @Lohre_2020_Hierarchical_Risk_Parity_Accounting_for_tail\.
 [^LopezDePrado2016]: @Lopez_2016_Building_diversified_portfolios_that_outperform\.
 [^LopezDePrado2018]: @Lopez_2018_Advances_in_Financial_Machine_Learning\.
+[^Raffinot2018a]: @Raffinot_2018_Hierarchical_clustering_based_asset_allocation\.
+[^Raffinot2018b]: @Raffinot_2018_The_hierarchical_equal_risk_contribution_portfolio\.
+
 

@@ -14,6 +14,7 @@ Fama, E.F. & French, K.R. (1992). The cross-section of expected stock returns. *
 Gibbons, M., Ross, S., & Shanken, J. (1989). A test of the efficiency of a given portfolio. *Econometrica*, 57, 1121--1152. https://www.jstor.org/stable/1913625
 Graham, B. (2003). *The Intellegent Investor, Revised ed.*. Harper. [(Originally published in 1949)]
 Hood, R.L. (2005). Determinants of portfolio performance: 20 years later. *Financial Analysts Journal*, 61(5), 6--8.
+Hudson & Thames. (2024). The Modern Guide to Portfolio Optimization. https://github.com/hudson-and-thames/guide_to_modern_portfolio_optimization
 Jagannathan, R. & Ma, T. (2003). Risk reduction in large portfolios: Why imposing the wrong constraints helps. *Journal of Finance*, 58(4), 1651--1683. https://www.jstor.org/stable/3648224
 Jensen, M. (1968). The performance of mutual funds in the period 1945-1964. *Journal of Finance*, 23, 389--416. https://www.jstor.org/stable/2325404
 Karatzas, I., Lehoczky, J.P., Sethi, S.P., & Shreve, S.E (1986). Explicit solution of a general consumption/investment problem. *Mathematics of Operations Research*, 11, 261--294. https://www.jstor.org/stable/3689808
@@ -39,6 +40,8 @@ Onnela, J.P., Kaski, K., & Kert{\'e}sz, J. (2004). Clustering and information in
 Owen, J. & Rabinovitch, R. (1983). On the class of elliptical distributions and their applications to the theory of portfolio choice. *Journal of Finance*, 38, 745--752.
 L{\'o}pez de Prado, M. (2016). Building diversified portfolios that outperform out-of-sample. *Journal of Portfolio Management*. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708678
 L{\'o}pez de Prado, M. (2018). *Advances in Financial Machine Learning*. Wiley.
+Raffinot, T. (2018). Hierarchical clustering-based asset allocation. *Journal of Portfolio Management*, 44, 89--99. https://www.proquest.com/docview/2196551795
+Raffinot, T. (2018). The hierarchical equal risk contribution portfolio. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3237540
 Rockafellar, R.T. & Uryasev, S. (2000). Optimization of conditional value-at-risk. *Journal of Risk*, 2, 21--42. https://sites.math.washington.edu/~rtr/papers/rtr179-CVaR1.pdf
 Rom, B.M. & Ferguson, K. (1993). Post-modern portfolio theory comes of age. *Journal of Investing*. [Winter 1993]
 Roy, A.D. (1952). Safety first and the holding of assets. *Econometrica*, 20, 431--449. https://www.jstor.org/stable/1907413
