@@ -627,8 +627,8 @@ Hierarchical risk parity
 -   Hierarchical Risk Parity (HRP)
 -   L&oacute;pez de Prado, M. (2016). [Building diversified portfolios that outperform out-of-sample](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708678). [^LopezDePrado2016]
 -   L&oacute;pez de Prado, M. (2018). *Advances in Financial Machine Learning*. [^LopezDePrado2018]
--   Raffinot, T. (2018). Hierarchical clustering-based asset allocation. [^Raffinot2018a]
--   Raffinot, T. (2018). The hierarchical equal risk contribution portfolio. [^Raffinot2018b]
+-   Raffinot, T. (2018). Hierarchical clustering-based asset allocation. (HCAA) [^Raffinot2018a]
+-   Raffinot, T. (2018). The hierarchical equal risk contribution portfolio. (HERC) [^Raffinot2018b]
 -   Lohre, H., Rother, C., & Sch&auml;fer, K.A. (2020). Hierarchical Risk Parity: Accounting for tail dependencies in multi-asset multi-factor allocations. [^Lohre2020]
 -   Blogs:
     -   [hudsonthames.org](https://hudsonthames.org/an-introduction-to-the-hierarchical-risk-parity-algorithm/)
