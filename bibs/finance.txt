@@ -14,6 +14,7 @@ Fama, E.F. & French, K.R. (1992). The cross-section of expected stock returns. *
 Gibbons, M., Ross, S., & Shanken, J. (1989). A test of the efficiency of a given portfolio. *Econometrica*, 57, 1121--1152. https://www.jstor.org/stable/1913625
 Graham, B. (2003). *The Intellegent Investor, Revised ed.*. Harper. [(Originally published in 1949)]
 Hood, R.L. (2005). Determinants of portfolio performance: 20 years later. *Financial Analysts Journal*, 61(5), 6--8.
+Hudson & Thames. (2024). The Modern Guide to Portfolio Optimization. https://github.com/hudson-and-thames/guide_to_modern_portfolio_optimization
 Jagannathan, R. & Ma, T. (2003). Risk reduction in large portfolios: Why imposing the wrong constraints helps. *Journal of Finance*, 58(4), 1651--1683. https://www.jstor.org/stable/3648224
 Jensen, M. (1968). The performance of mutual funds in the period 1945-1964. *Journal of Finance*, 23, 389--416. https://www.jstor.org/stable/2325404
 Karatzas, I., Lehoczky, J.P., Sethi, S.P., & Shreve, S.E (1986). Explicit solution of a general consumption/investment problem. *Mathematics of Operations Research*, 11, 261--294. https://www.jstor.org/stable/3689808
