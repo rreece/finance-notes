@@ -640,9 +640,9 @@ Correlation distance between two assets:
 
 $$ d_{ij} = \sqrt{\frac{1}{2} \left( 1 - \rho_{ij} \right)}  \label{eq:hrp_distance} $$
 
-Euclidean distance between two assets in $N$-assest space:
+Euclidean distance between two assets in $n$-assest space:
 
-$$ \tilde{d}_{ij} = \sqrt{ \sum_{n}^{n} \left( d_{ni} - d_{nj} \right)^{2} } \label{eq:hrp_tilde_distance} $$
+$$ \tilde{d}_{ij} = \sqrt{ \sum_{k=1}^{n} \left( d_{ki} - d_{kj} \right)^{2} } \label{eq:hrp_tilde_distance} $$
 
 Note that $\tilde{d}_{ij}$ is a function of the entire correlation matrix over all assets,
 whereas $d_{ij}$ is defined for asset pairs.
