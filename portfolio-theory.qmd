@@ -647,6 +647,8 @@ $$ \tilde{d}_{ij} = \sqrt{ \sum_{k=1}^{n} \left( d_{ki} - d_{kj} \right)^{2} } \
 Note that $\tilde{d}_{ij}$ is a function of the entire correlation matrix over all assets,
 whereas $d_{ij}$ is defined for asset pairs.
 
+![Dendrogram after hierarchical clustering.](img/dendrogram.png){#fig-dendrogram}
+
 [^Hudson2024]: @Hudson_2024_The_Modern_Guide_to_Portfolio_Optimization\.
 [^Lohre2020]: @Lohre_2020_Hierarchical_Risk_Parity_Accounting_for_tail\.
 [^LopezDePrado2016]: @Lopez_2016_Building_diversified_portfolios_that_outperform\.
