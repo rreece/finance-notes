@@ -1,4 +1,5 @@
 Aronson, D. (2007). *Evidence-Based Technical Analysis*. Wiley.
+Bodnar, T., Mazur, S., & Podg{\'o}rski, K. (2016). Singular inverse Wishart distribution and its application to portfolio theory. *Journal of Multivariate Analysis*, 143, 314--326. https://www.sciencedirect.com/science/article/pii/S0047259X15002353
 Black, F. & Litterman, R. (1991). Asset allocation. *Journal of Fixed Income*, 1, 7--18.
 Brinson, G.P., Hood, L.R., & Beebower, G.L. (1986). Determinants of portfolio performance. *Financial Analysts Journal*, 42, 39--44.
 Brinson, G. P., Singer, B.D., & Beebower, G.L. (1991). Determinants of portfolio performance II: An update. *Financial Analysts Journal*, 47(3), 40--48.
