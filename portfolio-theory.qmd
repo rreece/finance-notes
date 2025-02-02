@@ -259,11 +259,6 @@ TODO:
 -   Online mean and covariance
 -   Shrinkage estimators
 
-More:
-
--   Bodnar, T., Mazur, S., & Podg&oacute;rski, K. (2016). Singular inverse Wishart distribution and its application to portfolio theory. [^Bodnar2016]
-
-[^Bodnar2016]: @Bodnar_2016_Singular_inverse_Wishart_distribution_and_its\.
 [^Coqueret2014]: @Coqueret_2014_Estimating_covariance_matrices_for_portfolio\.
 [^Ledoit2001]: @Ledoit_2001_Honey_I_shrunk_the_sample_covariance_matrix\.
 [^Ledoit2003]: @Ledoit_2003_Improved_estimation_of_the_covariance_matrix\.
@@ -593,9 +588,12 @@ Criticisms of MPT:
 
 ### Error propagation
 
--   TODO
 -   Lo, A.W. (2002). [The statistics of Sharpe ratios](https://www.jstor.org/stable/4480405). [^Lo2002]
+-   Bodnar, T. & Schmid, W. (2011). On the exact distribution of the estimated expected utility portfolio weights: Theory and applications. [^Bodnar2011]
+-   Bodnar, T., Mazur, S., & Podg&oacute;rski, K. (2016). Singular inverse Wishart distribution and its application to portfolio theory. [^Bodnar2016]
 
+[^Bodnar2011]: @Bodnar_2011_On_the_exact_distribution_of_the_estimated\.
+[^Bodnar2016]: @Bodnar_2016_Singular_inverse_Wishart_distribution_and_its\.
 [^Lo2002]: @Lo_2002_The_statistics_of_Sharpe_ratios\.
 
 
