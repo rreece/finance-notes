@@ -20,7 +20,6 @@ Keywords:
 -   [Modern portfolio theory](https://en.wikipedia.org/wiki/Modern_portfolio_theory) (MPT)
 -   [Harry Markowitz](https://en.wikipedia.org/wiki/Harry_Markowitz) (1927-2023)
 -   [Markowitz model](https://en.wikipedia.org/wiki/Markowitz_model)
--   [Rayleigh quotient](https://en.wikipedia.org/wiki/Rayleigh_quotient)
 -   [Sharpe ratio](https://en.wikipedia.org/wiki/Sharpe_ratio)
 
 Historical background:
@@ -210,6 +209,15 @@ Quadratic programming and convex optimization are discussed in more detail
 in the section on [Convex optimization](#convex-optimization).
 
 
+### Efficient-market hypothesis
+
+-   [Efficient-market hypothesis](https://en.wikipedia.org/wiki/Efficient-market_hypothesis)
+-   [Eugene Fama](https://en.wikipedia.org/wiki/Eugene_Fama) (b. 1939)
+-   Fama, E. (1970). [Efficient capital markets: A review of theory and empirical work](http://www.e-m-h.org/Fama70.pdf). [^Fama1970]
+
+[^Fama1970]: @Fama_1970_Efficient_capital_markets_A_review_of_theory\.
+
+
 ### Lessons of MPT
 
 Markowitz:
@@ -236,16 +244,10 @@ This is how we estimate $V$ (and $\mu$).
 
 -   [Algorithms for calculating variance](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance)
 -   [Estimation of covariance matrices](https://en.wikipedia.org/wiki/Estimation_of_covariance_matrices)
--   [Shrinkage](https://en.wikipedia.org/wiki/Shrinkage_(statistics))
-    -   Ledoit, O. & Wolf, M. (2001). [Honey, I shrunk the sample covariance matrix](http://www.ledoit.net/honey.pdf). [^Ledoit2001]
-    -   Ledoit, O. & Wolf, M. (2003). [Improved estimation of the covariance matrix of stock returns with an application to portfolio selection](http://www.ledoit.net/ole2.pdf). [^Ledoit2003]
     -   Coqueret, G. & Milhau, V. (2014). [Estimating covariance matrices for portfolio optimization](https://web.archive.org/web/20230928050136/https://www.gcoqueret.com/files/Estim_cov.pdf) [^Coqueret2014]
--   Covariance estimation and asset trees
-    -   [Stock correlation network](https://en.wikipedia.org/wiki/Stock_correlation_network)
-    -   Mantegna, R.N. (1998). [Hierarchical structure in financial markets](https://arxiv.org/abs/cond-mat/9802256). [^Mantegna1998]
-    -   Onnela, J.P., Chakraborti, A., Kaski, K., Kert&eacute;sz, J., & Kanto, A. (2003). [Dynamics of market correlations: Taxonomy and portfolio analysis](http://arXiv.org/abs/cond-mat/0302546v1). [^Onnela2003]
-    -   Onnela, J.P., Kaski, K., & Kert&eacute;sz, J. (2004). Clustering and information in correlation based financial networks. [^Onnela2004]
-    -   See [Hierarchical Risk Parity](#hierarchical-risk-parity)
+    -   Fan, J., Liao, Y., & Liu, H. (2015). [An overview on the estimation of large covariance and precision matrices](https://arxiv.org/abs/1504.02995). [^Fan2015]
+-   Precision matrices
+    -   Bax, K., Taufer, E., & Paterlini, S. (2022). [A generalized precision matrix for t-Student distributions in portfolio optimization](https://arxiv.org/abs/2203.13740). [^Bax2022]
 
 ![The correlation matrix of a few example assets
     using daily data from 2014-01-02 to 2024-08-30, 10 years and 8 months.
@@ -257,14 +259,28 @@ TODO:
 -   Rolling mean and covariance
 -   Exponential moving mean and covariance
 -   Online mean and covariance
--   Shrinkage estimators
+-   Why are precision matrices sparse?
 
+[^Bax2022]: @Bax_2022_A_generalized_precision_matrix_for_t_Student\.
 [^Coqueret2014]: @Coqueret_2014_Estimating_covariance_matrices_for_portfolio\.
+[^Fan2015]: @Fan_2015_An_overview_on_the_estimation_of_large_covariance\.
+
+
+### Shrinkage estimators
+
+-   [Shrinkage](https://en.wikipedia.org/wiki/Shrinkage_(statistics))
+-   Ledoit, O. & Wolf, M. (2001). [Honey, I shrunk the sample covariance matrix](http://www.ledoit.net/honey.pdf). [^Ledoit2001]
+-   Ledoit, O. & Wolf, M. (2003). [Improved estimation of the covariance matrix of stock returns with an application to portfolio selection](http://www.ledoit.net/ole2.pdf). [^Ledoit2003]
+
 [^Ledoit2001]: @Ledoit_2001_Honey_I_shrunk_the_sample_covariance_matrix\.
 [^Ledoit2003]: @Ledoit_2003_Improved_estimation_of_the_covariance_matrix\.
-[^Mantegna1998]: @Mantegna_1998_Hierarchical_structure_in_financial_markets\.
-[^Onnela2003]: @Onnela_2003_Dynamics_of_market_correlations_Taxonomy\.
-[^Onnela2004]: @Onnela_2004_Clustering_and_information_in_correlation_based\.
+
+
+### Heteroskedasticity
+
+-   [Heteroskedasticity-consistent standard errors](https://en.wikipedia.org/wiki/Heteroskedasticity-consistent_standard_errors)
+-   [Autoregressive conditional heteroskedasticity](https://en.wikipedia.org/wiki/Autoregressive_conditional_heteroskedasticity)
+-   [Newey-West estimator](https://en.wikipedia.org/wiki/Newey%E2%80%93West_estimator)
 
 
 Convex optimization
@@ -431,16 +447,6 @@ TODO:
 -   Related to the efficient-market hypothesis: in equilibrium, the tangent portfolio becomes the market portfolio
 
 
-Efficient-market hypothesis
---------------------------------------------
-
--   [Efficient-market hypothesis](https://en.wikipedia.org/wiki/Efficient-market_hypothesis)
--   [Eugene Fama](https://en.wikipedia.org/wiki/Eugene_Fama) (b. 1939)
--   Fama, E. (1970). [Efficient capital markets: A review of theory and empirical work](http://www.e-m-h.org/Fama70.pdf). [^Fama1970]
-
-[^Fama1970]: @Fama_1970_Efficient_capital_markets_A_review_of_theory\.
-
-
 Capital asset pricing model
 --------------------------------------------
 
@@ -577,13 +583,15 @@ Postmodern portfolio theory
 
 Criticisms of MPT:
 
-1.  Sensitivity of portfolio weights to the estimates of $\hat{\mu}$ and $\hat{V}$.
-    -   Error propagation
-2.  Problem of induction
+1.  Problem of induction
     -   Past performance is no guarantee of future results
     -   Criticisms of using historical estimators of $\hat{\mu}$ and $\hat{V}$
+2.  Sensitivity of portfolio weights to the estimates of $\hat{\mu}$ and $\hat{V}$.
+    -   Error propagation
+    -   Heteroskedasticity
 3.  Variance is not a good measure of risk
     -   Downside risk is better
+4.  Criticisms of the Efficient Market Hypothesis
 
 
 ### Error propagation
@@ -624,15 +632,20 @@ $$ \mathrm{TSD}(r_i, r_t) = \sqrt{\mathrm{TSV}(r_i, r_t)}  \label{eq:target_semi
 [^Sortino2010]: @Sortino_2010_The_Sortino_Framework_for_Constructing_Portfolios\.
 
 
-Hierarchical risk parity
+Hierarchical risk analysis
 --------------------------------------------
 
+-   Asset trees
+    -   [Stock correlation network](https://en.wikipedia.org/wiki/Stock_correlation_network)
+    -   Mantegna, R.N. (1998). [Hierarchical structure in financial markets](https://arxiv.org/abs/cond-mat/9802256). [^Mantegna1998]
+    -   Onnela, J.P., Chakraborti, A., Kaski, K., Kert&eacute;sz, J., & Kanto, A. (2003). [Dynamics of market correlations: Taxonomy and portfolio analysis](http://arXiv.org/abs/cond-mat/0302546v1). [^Onnela2003]
+    -   Onnela, J.P., Kaski, K., & Kert&eacute;sz, J. (2004). Clustering and information in correlation based financial networks. [^Onnela2004]
 -   Hierarchical Risk Parity (HRP)
--   L&oacute;pez de Prado, M. (2016). [Building diversified portfolios that outperform out-of-sample](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708678). [^LopezDePrado2016]
--   L&oacute;pez de Prado, M. (2018). *Advances in Financial Machine Learning*. [^LopezDePrado2018]
+    -   L&oacute;pez de Prado, M. (2016). [Building diversified portfolios that outperform out-of-sample](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708678). [^LopezDePrado2016]
+    -   L&oacute;pez de Prado, M. (2018). *Advances in Financial Machine Learning*. [^LopezDePrado2018]
+    -   Lohre, H., Rother, C., & Sch&auml;fer, K.A. (2020). Hierarchical Risk Parity: Accounting for tail dependencies in multi-asset multi-factor allocations. [^Lohre2020]
 -   Raffinot, T. (2018). Hierarchical clustering-based asset allocation. (HCAA) [^Raffinot2018a]
 -   Raffinot, T. (2018). The hierarchical equal risk contribution portfolio. (HERC) [^Raffinot2018b]
--   Lohre, H., Rother, C., & Sch&auml;fer, K.A. (2020). Hierarchical Risk Parity: Accounting for tail dependencies in multi-asset multi-factor allocations. [^Lohre2020]
 -   Hudson & Thames. (2024). The Modern Guide to Portfolio Optimization. [^Hudson2024]
 -   Blogs:
     -   [hudsonthames.org](https://hudsonthames.org/an-introduction-to-the-hierarchical-risk-parity-algorithm/)
@@ -656,6 +669,9 @@ whereas $d_{ij}$ is defined for asset pairs.
 [^Lohre2020]: @Lohre_2020_Hierarchical_Risk_Parity_Accounting_for_tail\.
 [^LopezDePrado2016]: @Lopez_2016_Building_diversified_portfolios_that_outperform\.
 [^LopezDePrado2018]: @Lopez_2018_Advances_in_Financial_Machine_Learning\.
+[^Mantegna1998]: @Mantegna_1998_Hierarchical_structure_in_financial_markets\.
+[^Onnela2003]: @Onnela_2003_Dynamics_of_market_correlations_Taxonomy\.
+[^Onnela2004]: @Onnela_2004_Clustering_and_information_in_correlation_based\.
 [^Raffinot2018a]: @Raffinot_2018_Hierarchical_clustering_based_asset_allocation\.
 [^Raffinot2018b]: @Raffinot_2018_The_hierarchical_equal_risk_contribution_portfolio\.
 

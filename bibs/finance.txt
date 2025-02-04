@@ -1,4 +1,5 @@
 Aronson, D. (2007). *Evidence-Based Technical Analysis*. Wiley.
+Bax, K., Taufer, E., & Paterlini, S. (2022). A generalized precision matrix for t-Student distributions in portfolio optimization. https://arxiv.org/abs/2203.13740
 Bodnar, T. & Schmid, W. (2011). On the exact distribution of the estimated expected utility portfolio weights: Theory and applications. *Statistics & Risk Modeling*, 28, 319--342.
 Bodnar, T., Mazur, S., & Podg{\'o}rski, K. (2016). Singular inverse Wishart distribution and its application to portfolio theory. *Journal of Multivariate Analysis*, 143, 314--326. https://www.sciencedirect.com/science/article/pii/S0047259X15002353
 Black, F. & Litterman, R. (1991). Asset allocation. *Journal of Fixed Income*, 1, 7--18.
@@ -13,6 +14,7 @@ Das, S. (2016). *Data Science: Theories, Models, Algorithms, and Analytics*. htt
 Elton, E.J., Gruber, M.J., Brown, S.J., & Goetzmann, W.N. (2014). *Modern Portfolio Theory and Investment Analysis*, (9th ed.). Wiley. 
 Fama, E.F. (1970). Efficient capital markets: A review of theory and empirical work. *Journal of Finance*, 25(2), 383--417. http://www.e-m-h.org/Fama70.pdf
 Fama, E.F. & French, K.R. (1992). The cross-section of expected stock returns. *Journal of Finance*, 47, 427. https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1992.tb04398.x
+Fan, J., Liao, Y., & Liu, H. (2015). An overview on the estimation of large covariance and precision matrices. https://arxiv.org/abs/1504.02995
 Gibbons, M., Ross, S., & Shanken, J. (1989). A test of the efficiency of a given portfolio. *Econometrica*, 57, 1121--1152. https://www.jstor.org/stable/1913625
 Graham, B. (2003). *The Intellegent Investor, Revised ed.*. Harper. [(Originally published in 1949)]
 Hood, R.L. (2005). Determinants of portfolio performance: 20 years later. *Financial Analysts Journal*, 61(5), 6--8.
