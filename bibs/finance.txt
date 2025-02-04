@@ -15,6 +15,7 @@ Elton, E.J., Gruber, M.J., Brown, S.J., & Goetzmann, W.N. (2014). *Modern Portfo
 Fama, E.F. (1970). Efficient capital markets: A review of theory and empirical work. *Journal of Finance*, 25(2), 383--417. http://www.e-m-h.org/Fama70.pdf
 Fama, E.F. & French, K.R. (1992). The cross-section of expected stock returns. *Journal of Finance*, 47, 427. https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1992.tb04398.x
 Fan, J., Liao, Y., & Liu, H. (2015). An overview on the estimation of large covariance and precision matrices. https://arxiv.org/abs/1504.02995
+Finch, T. (2009). Incremental calculation of weighted mean and variance. https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=5f77d0594f66e49cc0e8c2b8177ead33b7137183
 Gibbons, M., Ross, S., & Shanken, J. (1989). A test of the efficiency of a given portfolio. *Econometrica*, 57, 1121--1152. https://www.jstor.org/stable/1913625
 Graham, B. (2003). *The Intellegent Investor, Revised ed.*. Harper. [(Originally published in 1949)]
 Hood, R.L. (2005). Determinants of portfolio performance: 20 years later. *Financial Analysts Journal*, 61(5), 6--8.
