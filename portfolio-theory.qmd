@@ -243,6 +243,7 @@ Estimation of covariance matrices
 This is how we estimate $V$ (and $\mu$).
 
 -   [Algorithms for calculating variance](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance)
+    -   Finch, T. (2009). [Incremental calculation of weighted mean and variance](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=5f77d0594f66e49cc0e8c2b8177ead33b7137183). [^Finch2009]
 -   [Estimation of covariance matrices](https://en.wikipedia.org/wiki/Estimation_of_covariance_matrices)
     -   Coqueret, G. & Milhau, V. (2014). [Estimating covariance matrices for portfolio optimization](https://web.archive.org/web/20230928050136/https://www.gcoqueret.com/files/Estim_cov.pdf) [^Coqueret2014]
     -   Fan, J., Liao, Y., & Liu, H. (2015). [An overview on the estimation of large covariance and precision matrices](https://arxiv.org/abs/1504.02995). [^Fan2015]
@@ -264,6 +265,7 @@ TODO:
 [^Bax2022]: @Bax_2022_A_generalized_precision_matrix_for_t_Student\.
 [^Coqueret2014]: @Coqueret_2014_Estimating_covariance_matrices_for_portfolio\.
 [^Fan2015]: @Fan_2015_An_overview_on_the_estimation_of_large_covariance\.
+[^Finch2009]: @Finch_2009_Incremental_calculation_of_weighted_mean\.
 
 
 ### Shrinkage estimators
