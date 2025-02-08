@@ -9,6 +9,24 @@ Introduction
 TODO: Given some menu of possible investments, what mix should we hold?
 How should we hold value through time?
 
+Mean-variance analysis is part of fundamental analysis, specifically
+within modern portfolio theory (MPT). Developed by Harry Markowitz in 1952
+and later expanded by William Sharpe, it focuses on analyzing fundamental
+characteristics of securities, specifically their expected returns (mean)
+and risk (variance), to construct optimal portfolios.
+
+While technical analysis looks at price patterns and trading volumes to predict
+future movements, mean-variance analysis examines the underlying statistical
+properties of assets and their relationships to each other through correlations
+and covariances. This approach aims to find portfolios that maximize expected
+return for a given level of risk, or minimize risk for a given expected return,
+creating what's known as the efficient frontier.
+
+The key distinction is that mean-variance analysis relies on fundamental properties
+of the assets (their return distributions and correlations) rather than chart
+patterns or technical indicators. It forms part of the theoretical foundation
+for quantitative fundamental analysis in portfolio management.
+
 
 Modern portfolio theory
 --------------------------------------------
@@ -29,6 +47,9 @@ Historical background:
 -   Markowitz, H.M. (1959). *Portfolio Selection: Efficient Diversification of Investments*. [^Markowitz1959]
 -   Merton, R.C. (1972). [An analytic derivation of the efficient portfolio frontier](https://www.jstor.org/stable/2329621). [^Merton1972]
 -   Levy, H. & Markowitz, H.M. (1979). Approximating expected utility by a function of mean and variance. [^Levy1979]
+-   In 1990, Harry Markowitz, Merton Miller, and William F. Sharpe were awarded
+    the Nobel Prize in Economics "for their pioneering work in the theory of
+    financial economics".
 -   Markowitz, H.M. (1990). Nobel lecture: [Foundations of portfolio theory](https://www.nobelprize.org/uploads/2018/06/markowitz-lecture.pdf). [^Markowitz1990]
 -   Markowitz, H.M. (2005). Market efficiency: A theoretical distinction and so what? [^Markowitz2005]
 
@@ -276,13 +297,6 @@ TODO:
 
 [^Ledoit2001]: @Ledoit_2001_Honey_I_shrunk_the_sample_covariance_matrix\.
 [^Ledoit2003]: @Ledoit_2003_Improved_estimation_of_the_covariance_matrix\.
-
-
-### Heteroskedasticity
-
--   [Heteroskedasticity-consistent standard errors](https://en.wikipedia.org/wiki/Heteroskedasticity-consistent_standard_errors)
--   [Autoregressive conditional heteroskedasticity](https://en.wikipedia.org/wiki/Autoregressive_conditional_heteroskedasticity)
--   [Newey-West estimator](https://en.wikipedia.org/wiki/Newey%E2%80%93West_estimator)
 
 
 Convex optimization
@@ -585,11 +599,13 @@ Postmodern portfolio theory
 
 Criticisms of MPT:
 
-1.  Problem of induction
+1.  Sensitivity of portfolio weights to the estimates of $\hat{\mu}$ and $\hat{V}$.
+    -   Error propagation
+    -   Even assuming Gaussian distributed returns
+2.  Problem of induction
     -   Past performance is no guarantee of future results
     -   Criticisms of using historical estimators of $\hat{\mu}$ and $\hat{V}$
-2.  Sensitivity of portfolio weights to the estimates of $\hat{\mu}$ and $\hat{V}$.
-    -   Error propagation
+    -   Non-Gaussian distributed returns
     -   Heteroskedasticity
 3.  Variance is not a good measure of risk
     -   Downside risk is better
@@ -607,6 +623,13 @@ Criticisms of MPT:
 [^Lo2002]: @Lo_2002_The_statistics_of_Sharpe_ratios\.
 
 
+### Heteroskedasticity
+
+-   [Heteroskedasticity-consistent standard errors](https://en.wikipedia.org/wiki/Heteroskedasticity-consistent_standard_errors)
+-   [Autoregressive conditional heteroskedasticity](https://en.wikipedia.org/wiki/Autoregressive_conditional_heteroskedasticity)
+-   [Newey-West estimator](https://en.wikipedia.org/wiki/Newey%E2%80%93West_estimator)
+
+
 ### Downside risk
 
 -   [Downside risk](https://en.wikipedia.org/wiki/Downside_risk), semi-variance, semi-deviation, target semi-variance (TSV), target semi-deviation
@@ -620,6 +643,14 @@ $$ \mathrm{TSD}(r_i, r_t) = \sqrt{\mathrm{TSV}(r_i, r_t)}  \label{eq:target_semi
 -   [Sortino ratio](https://en.wikipedia.org/wiki/Sortino_ratio)
 
 [^Markowitz2019]: @Markowitz_2019_Avoiding_the_downside_A_practical_review\.
+
+
+### Criticisms of the Efficient Market Hypothesis
+
+-   Bessembinder, H. & Chan, K. (1998). [Market efficiency and the returns to technical analysis](https://www.jstor.org/stable/3666289). [^Bessembinder1998]
+-   TODO: Room for fundamentally-motivated indicator analysis --- sits between fundamental analysis and technical analysis.
+
+[^Bessembinder1998]: @Bessembinder_1998_Market_efficiency_and_the_returns_to_technical\.
 
 
 ### More
