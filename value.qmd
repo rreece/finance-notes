@@ -9,9 +9,20 @@ Introduction
 TODO: Price data is pretty easy to come by, but where does one scrape
 up-to-date earnings data?
 
-TODO:
 
--   Reading a 10-K
+P/E ratio
+--------------------------------------------
+
+Tables of P/E by US industry:
+
+-   [Aswath Damodaran (NYU)](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/pedata.html)
+-   [fullratio.com](https://fullratio.com/pe-ratio-by-industry)
+
+P/E ratio by S&P500 sector:
+
+-   [worldperatio.com](https://worldperatio.com/sp-500-sectors/)
+-   [macromicro.me](https://en.macromicro.me/collections/5749/industry-forward-pe-ratio/48243/s5cond-forward-pe-ratio) - Forward P/E
+-   [yardeni.com](https://yardeni.com/charts/sp-500-sectors-forward-p-e-ratios/) - Forward P/E over time
 
 
 Margin of safety
@@ -36,6 +47,13 @@ Buffett Indicator
 -   Buffett, W. (2017). *Berkshire Hathaway Letters to Shareholders 1965-2016*. [^Buffett2017]
 
 [^Buffett2017]: @Buffett_2017_Berkshire_Hathaway_Letters_to_Shareholders\.
+
+
+Reading a 10-K
+--------------------------------------------
+
+-   [How to read a 10-K/10-Q](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/how-read)
+-   Find a particular company's 10-K filings using the search for the SEC's [EDGAR database](https://www.sec.gov/search-filings). 
 
 
 Misc
