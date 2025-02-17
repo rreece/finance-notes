@@ -268,7 +268,10 @@ This is how we estimate $V$ (and $\mu$).
 -   [Estimation of covariance matrices](https://en.wikipedia.org/wiki/Estimation_of_covariance_matrices)
     -   Coqueret, G. & Milhau, V. (2014). [Estimating covariance matrices for portfolio optimization](https://web.archive.org/web/20230928050136/https://www.gcoqueret.com/files/Estim_cov.pdf) [^Coqueret2014]
     -   Fan, J., Liao, Y., & Liu, H. (2015). [An overview on the estimation of large covariance and precision matrices](https://arxiv.org/abs/1504.02995). [^Fan2015]
+    -   Ayyala, D.N. (2020). High-dimensional statistical inference: Theoretical development to data analytics. [^Ayyala2020]
 -   Precision matrices
+    -   Marsaglia, G. (1964). Conditional means and covariances of normal variables with singular covariance matrix. [^Marsaglia1964]
+    -   Galloway, M. (2019). [Shrinking characteristics of precision matrix estimators: An illustration via regression](https://mattxgalloway.com/oral_manuscript/). [^Galloway2019]
     -   Bax, K., Taufer, E., & Paterlini, S. (2022). [A generalized precision matrix for t-Student distributions in portfolio optimization](https://arxiv.org/abs/2203.13740). [^Bax2022]
 
 ![The correlation matrix of a few example assets
@@ -283,10 +286,13 @@ TODO:
 -   Online mean and covariance
 -   Why are precision matrices sparse?
 
+[^Ayyala2020]: @Ayyala_2020_High_dimensional_statistical_inference\.
 [^Bax2022]: @Bax_2022_A_generalized_precision_matrix_for_t_Student\.
 [^Coqueret2014]: @Coqueret_2014_Estimating_covariance_matrices_for_portfolio\.
 [^Fan2015]: @Fan_2015_An_overview_on_the_estimation_of_large_covariance\.
 [^Finch2009]: @Finch_2009_Incremental_calculation_of_weighted_mean\.
+[^Galloway2019]: @Galloway_2019_Shrinking_characteristics_of_precision_matrix\.
+[^Marsaglia1964]: @Marsaglia_1964_Conditional_means_and_covariances_of_normal\.
 
 
 ### Shrinkage estimators
