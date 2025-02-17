@@ -1,4 +1,5 @@
 Aronson, D. (2007). *Evidence-Based Technical Analysis*. Wiley.
+Ayyala, D.N. (2020). High-dimensional statistical inference: Theoretical development to data analytics. In A.S.R. Srinivasa Rao and C.R. Rao (Eds.), *Handbook of Statistics* (pp. 289--335). Elsevier.
 Bax, K., Taufer, E., & Paterlini, S. (2022). A generalized precision matrix for t-Student distributions in portfolio optimization. https://arxiv.org/abs/2203.13740
 Bessembinder, H. & Chan, K. (1998). Market efficiency and the returns to technical analysis. *Financial Management*, 27, 5--17. https://www.jstor.org/stable/3666289
 Bodnar, T. & Schmid, W. (2011). On the exact distribution of the estimated expected utility portfolio weights: Theory and applications. *Statistics & Risk Modeling*, 28, 319--342.
@@ -17,6 +18,7 @@ Fama, E.F. (1970). Efficient capital markets: A review of theory and empirical w
 Fama, E.F. & French, K.R. (1992). The cross-section of expected stock returns. *Journal of Finance*, 47, 427. https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1992.tb04398.x
 Fan, J., Liao, Y., & Liu, H. (2015). An overview on the estimation of large covariance and precision matrices. https://arxiv.org/abs/1504.02995
 Finch, T. (2009). Incremental calculation of weighted mean and variance. https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=5f77d0594f66e49cc0e8c2b8177ead33b7137183
+Galloway, M. (2019). Shrinking characteristics of precision matrix estimators: An illustration via regression. https://mattxgalloway.com/oral_manuscript/
 Gibbons, M., Ross, S., & Shanken, J. (1989). A test of the efficiency of a given portfolio. *Econometrica*, 57, 1121--1152. https://www.jstor.org/stable/1913625
 Graham, B. (2003). *The Intellegent Investor, Revised ed.*. Harper. [(Originally published in 1949)]
 Hood, R.L. (2005). Determinants of portfolio performance: 20 years later. *Financial Analysts Journal*, 61(5), 6--8.
@@ -39,6 +41,7 @@ Markowitz, H.M. (1959). *Portfolio Selection: Efficient Diversification of Inves
 Markowitz, H.M. (1990). Nobel lecture: Foundations of portfolio theory. https://www.nobelprize.org/uploads/2018/06/markowitz-lecture.pdf
 Markowitz, H.M. (2005). Market efficiency: A theoretical distinction and so what? *Financial Analysts Journal*, 61, 17--30.
 Markowitz, H.M., Starer, D., Fram, H., & Gerber, S. (2019). Avoiding the downside: A practical review of the Critical Line Algorithm for mean-semivariance portfolio optimization. https://www.hudsonbaycapital.com/documents/FG/hudsonbay/research/599440_paper.pdf
+Marsaglia, G. (1964). Conditional means and covariances of normal variables with singular covariance matrix. *Journal of the American Statistical Association*, 59, 1203--1204.
 Merton, R.C. (1969). Lifetime portfolio selection under uncertainty: The continuous-time case. *Review of Economics and Statistics*, 51, 247--257. https://www.jstor.org/stable/1926560
 Merton, R.C. (1972). An analytic derivation of the efficient portfolio frontier. *Journal of Financial and Quantitative Analysis*, 7, 1851--1872. https://www.jstor.org/stable/2329621
 Onnela, J.P., Chakraborti, A., Kaski, K., Kert{\'e}sz, J., & Kanto, A. (2003). Dynamics of market correlations: Taxonomy and portfolio analysis. http://arXiv.org/abs/cond-mat/0302546v1
