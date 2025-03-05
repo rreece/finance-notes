@@ -261,38 +261,91 @@ Dalio: "The Holy Grail", see @fig-dalio-holy-grail\.
 Estimation of covariance matrices
 --------------------------------------------
 
+### Overview
+
 This is how we estimate $V$ (and $\mu$).
 
--   [Algorithms for calculating variance](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance)
-    -   Finch, T. (2009). [Incremental calculation of weighted mean and variance](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=5f77d0594f66e49cc0e8c2b8177ead33b7137183). [^Finch2009]
 -   [Estimation of covariance matrices](https://en.wikipedia.org/wiki/Estimation_of_covariance_matrices)
-    -   Coqueret, G. & Milhau, V. (2014). [Estimating covariance matrices for portfolio optimization](https://web.archive.org/web/20230928050136/https://www.gcoqueret.com/files/Estim_cov.pdf) [^Coqueret2014]
-    -   Fan, J., Liao, Y., & Liu, H. (2015). [An overview on the estimation of large covariance and precision matrices](https://arxiv.org/abs/1504.02995). [^Fan2015]
-    -   Ayyala, D.N. (2020). High-dimensional statistical inference: Theoretical development to data analytics. [^Ayyala2020]
--   Precision matrices
-    -   Marsaglia, G. (1964). Conditional means and covariances of normal variables with singular covariance matrix. [^Marsaglia1964]
-    -   Galloway, M. (2019). [Shrinking characteristics of precision matrix estimators: An illustration via regression](https://mattxgalloway.com/oral_manuscript/). [^Galloway2019]
-    -   Bax, K., Taufer, E., & Paterlini, S. (2022). [A generalized precision matrix for t-Student distributions in portfolio optimization](https://arxiv.org/abs/2203.13740). [^Bax2022]
+-   Marsaglia, G. (1964). [Conditional means and covariances of normal variables with singular covariance matrix](https://apps.dtic.mil/sti/tr/pdf/AD0299080.pdf). [^Marsaglia1964]
+-   Coqueret, G. & Milhau, V. (2014). [Estimating covariance matrices for portfolio optimization](https://web.archive.org/web/20230928050136/https://www.gcoqueret.com/files/Estim_cov.pdf) [^Coqueret2014]
+-   Fan, J., Liao, Y., & Liu, H. (2015). [An overview on the estimation of large covariance and precision matrices](https://arxiv.org/abs/1504.02995). [^Fan2015]
+-   Ayyala, D.N. (2020). High-dimensional statistical inference: Theoretical development to data analytics. [^Ayyala2020]
 
 ![The correlation matrix of a few example assets
     using daily data from 2014-01-02 to 2024-08-30, 10 years and 8 months.
     ](img/corr-gldm-btc-2024-09-14.png){#fig-corr-gldm-btc-2024-09-14}
 
+[^Ayyala2020]: @Ayyala_2020_High_dimensional_statistical_inference\.
+[^Coqueret2014]: @Coqueret_2014_Estimating_covariance_matrices_for_portfolio\.
+[^Fan2015]: @Fan_2015_An_overview_on_the_estimation_of_large_covariance\.
+[^Marsaglia1964]: @Marsaglia_1964_Conditional_means_and_covariances_of_normal\.
+
+
+### Sample mean and covariance
+
 TODO:
 
 -   Sample mean and covariance
 -   Rolling mean and covariance
--   Exponential moving mean and covariance
--   Online mean and covariance
--   Why are precision matrices sparse?
 
-[^Ayyala2020]: @Ayyala_2020_High_dimensional_statistical_inference\.
-[^Bax2022]: @Bax_2022_A_generalized_precision_matrix_for_t_Student\.
-[^Coqueret2014]: @Coqueret_2014_Estimating_covariance_matrices_for_portfolio\.
-[^Fan2015]: @Fan_2015_An_overview_on_the_estimation_of_large_covariance\.
+
+### Online mean and covariance
+
+-   [Algorithms for calculating variance](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance)
+-   Neely, P.M. (1966). [Comparison of several algorithms for computation of means, standard deviations and correlation coefficients](https://dl.acm.org/doi/pdf/10.1145/365719.365958). [^Neely1966]
+-   Ling, R.F. (1974). Comparison of several algorithms for computing sample means and variances. [^Ling1974]
+-   Chan, T.F., Golub, G.H., & LeVeque, R.J. (1979). [Updating formulae and a pairwise algorithm for computing sample variances](http://infolab.stanford.edu/pub/cstr/reports/cs/tr/79/773/CS-TR-79-773.pdf). [^Chan1979]
+-   P&eacute;bay, P. (2008). [Formulas for robust, one-pass parallel computation of covariances and arbitrary-order statistical moments](https://www.osti.gov/servlets/purl/1028931). [^Pebay2008]
+-   Finch, T. (2009). [Incremental calculation of weighted mean and variance](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=5f77d0594f66e49cc0e8c2b8177ead33b7137183). [^Finch2009]
+-   Meng, X. (2015). [Simpler online updates for arbitrary-order central moments](https://arxiv.org/abs/1510.04923). [^Meng2015]
+-   P&eacute;bay, P., Terriberry, T.B., Kolla, H. & Bennett, J. (2016). [Numerically stable, scalable formulas for parallel and online computation of higher-order multivariate central moments with arbitrary weights](https://link.springer.com/article/10.1007/s00180-015-0637-z). [^Pebay2016]
+-   Schubert, E. & Gertz, M. (2018). Numerically stable parallel computation of (co-)variance. [^Schubert2018]
+-   Cook, J.D. (?). [Accurately computing running variance](https://www.johndcook.com/blog/standard_deviation/).
+
+Univariate central moments:
+
+$$ \mu_{p} = \mathbb{E}\left[(x - \mu_{1})^{p}\right] $$
+
+$$ M_{p} = \sum_{i}^{n} (x_i - \mu_{1})^{p} $$
+
+$$ \hat{\mu}_{p} = \frac{M_{p}}{n} \,, \qquad \hat{\mu} = \frac{M_{1}}{n} \,, \qquad \hat{\sigma}^2 = \frac{M_{2}}{n} $$
+
+Online mean:
+
+$$ \delta \equiv x_n - \mu_{n - 1} $$
+
+$$ \mu_{n} = \mu_{n-1} + \frac{\delta}{n} $$
+
+Online variance:
+
+$$ M_{2,n} = M_{2,n-1} + \delta \left( \delta - \frac{\delta}{n} \right) = M_{2,n-1} + \frac{n-1}{n} \delta^2 $$
+
+$$ \hat{\sigma}^2 = \frac{M_{2,n}}{n-1} $$
+
+where the $n-1$ includes Bessel's correction for sample variance.
+
+Online covariance:
+
+$$ C_{n} = C_{n-1} + \frac{n-1}{n} \delta_x \delta_y $$
+
+$$ \hat{V}_{xy} = \frac{C_{n}}{n-1} $$
+
+Matrix form:
+
+$$ C_{n} = {C}_{n-1} + \frac{n-1}{n} \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right)^\intercal $$
+
+TODO:
+
+-   Exponential moving mean and covariance
+
+[^Chan1979]: @Chan_1979_Updating_formulae_and_a_pairwise_algorithm\.
 [^Finch2009]: @Finch_2009_Incremental_calculation_of_weighted_mean\.
-[^Galloway2019]: @Galloway_2019_Shrinking_characteristics_of_precision_matrix\.
-[^Marsaglia1964]: @Marsaglia_1964_Conditional_means_and_covariances_of_normal\.
+[^Ling1974]: @Ling_1974_Comparison_of_several_algorithms_for_computing\.
+[^Meng2015]: @Meng_2015_Simpler_online_updates_for_arbitrary_order_central\.
+[^Neely1966]: @Neely_1966_Comparison_of_several_algorithms_for_computation\.
+[^Pebay2008]: @Pebay_2008_Formulas_for_robust_one_pass_parallel_computation\.
+[^Pebay2016]: @Pebay_2016_Numerically_stable_scalable_formulas_for_parallel\.
+[^Schubert2018]: @Schubert_2018_Numerically_stable_parallel_computation\.
 
 
 ### Shrinkage estimators
@@ -303,6 +356,22 @@ TODO:
 
 [^Ledoit2001]: @Ledoit_2001_Honey_I_shrunk_the_sample_covariance_matrix\.
 [^Ledoit2003]: @Ledoit_2003_Improved_estimation_of_the_covariance_matrix\.
+
+
+### Precision matrices
+
+-   Precision matrices
+-   Galloway, M. (2019). [Shrinking characteristics of precision matrix estimators: An illustration via regression](https://mattxgalloway.com/oral_manuscript/). [^Galloway2019]
+-   Bax, K., Taufer, E., & Paterlini, S. (2022). [A generalized precision matrix for t-Student distributions in portfolio optimization](https://arxiv.org/abs/2203.13740). [^Bax2022]
+-   Dutta, S. & Jain, S. (2023). [Precision versus shrinkage: A comparative analysis of covariance estimation methods for portfolio allocation](https://arxiv.org/abs/2305.11298). [^Dutta2023]
+
+TODO:
+
+-   Why are precision matrices sparse?
+
+[^Bax2022]: @Bax_2022_A_generalized_precision_matrix_for_t_Student\.
+[^Galloway2019]: @Galloway_2019_Shrinking_characteristics_of_precision_matrix\.
+[^Dutta2023]: @Dutta_2023_Precision_versus_shrinkage_A_comparative_analysis\.
 
 
 Convex optimization

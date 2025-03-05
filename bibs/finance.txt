@@ -5,14 +5,16 @@ Bessembinder, H. & Chan, K. (1998). Market efficiency and the returns to technic
 Bodnar, T. & Schmid, W. (2011). On the exact distribution of the estimated expected utility portfolio weights: Theory and applications. *Statistics & Risk Modeling*, 28, 319--342.
 Bodnar, T., Mazur, S., & Podg{\'o}rski, K. (2016). Singular inverse Wishart distribution and its application to portfolio theory. *Journal of Multivariate Analysis*, 143, 314--326. https://www.sciencedirect.com/science/article/pii/S0047259X15002353
 Black, F. & Litterman, R. (1991). Asset allocation. *Journal of Fixed Income*, 1, 7--18.
+Black, F. & Litterman, R. (1992). Global portfolio optimization. *Financial Analysts Journal*, 48, 28--43.
 Brinson, G.P., Hood, L.R., & Beebower, G.L. (1986). Determinants of portfolio performance. *Financial Analysts Journal*, 42, 39--44.
 Brinson, G. P., Singer, B.D., & Beebower, G.L. (1991). Determinants of portfolio performance II: An update. *Financial Analysts Journal*, 47(3), 40--48.
 Buffett, W. (2017). *Berkshire Hathaway Letters to Shareholders 1965-2016*. Explorist Productions.
 Cass, D. & Stiglitz, J.E. (1970). The structure of investor preferences and asset returns, and separability in portfolio allocation: A contribution to the pure theory of mutual funds. *Journal of Economic Theory*, 2.
-Black, F. & Litterman, R. (1992). Global portfolio optimization. *Financial Analysts Journal*, 48, 28--43.
 Chamberlain, G. (1983). A characterization of the distributions that imply mean-variance utility functions. *Journal of Economic Theory*, 29, 185--201.
+Chan, T.F., Golub, G.H., & LeVeque, R.J. (1979). Updating formulae and a pairwise algorithm for computing sample variances. Stanford University. http://infolab.stanford.edu/pub/cstr/reports/cs/tr/79/773/CS-TR-79-773.pdf [Technical Report STAN-CS-79-773]
 Coqueret, G. & Milhau, V. (2014). Estimating covariance matrices for portfolio optimization. https://web.archive.org/web/20230928050136/https://www.gcoqueret.com/files/Estim_cov.pdf
 Das, S. (2016). *Data Science: Theories, Models, Algorithms, and Analytics*. http://srdas.github.io/Papers/DSA_Book.pdf
+Dutta, S. & Jain, S. (2023). Precision versus shrinkage: A comparative analysis of covariance estimation methods for portfolio allocation. https://arxiv.org/abs/2305.11298
 Elton, E.J., Gruber, M.J., Brown, S.J., & Goetzmann, W.N. (2014). *Modern Portfolio Theory and Investment Analysis*, (9th ed.). Wiley. 
 Fama, E.F. (1970). Efficient capital markets: A review of theory and empirical work. *Journal of Finance*, 25(2), 383--417. http://www.e-m-h.org/Fama70.pdf
 Fama, E.F. & French, K.R. (1992). The cross-section of expected stock returns. *Journal of Finance*, 47, 427. https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1992.tb04398.x
@@ -31,8 +33,11 @@ Kwok, Y.K. (2017). Lecture notes: Fundamentals of Mathematical Finance. https://
 Ledoit, O. & Wolf, M. (2003). Improved estimation of the covariance matrix of stock returns with an application to portfolio selection. *Journal of Empirical Finance*, 10, 603--621. http://www.ledoit.net/ole2.pdf
 Ledoit, O. & Wolf, M. (2001). Honey, I shrunk the sample covariance matrix. http://www.ledoit.net/honey.pdf
 Levy, H. & Markowitz, H.M. (1979). Approximating expected utility by a function of mean and variance. *American Economic Review*, 69, 308--317.
+Ling, R.F. (1974). Comparison of several algorithms for computing sample means and variances. *Journal of the American Statistical Association*, 69, 859--866.
 Lo, A.W. (2002). The statistics of Sharpe ratios. *Financial Analysts Journal*, 58(4), 36--52. https://www.jstor.org/stable/4480405
 Lohre, H., Rother, C., & Sch{\"a}fer, K.A. (2020). Hierarchical Risk Parity: Accounting for tail dependencies in multi-asset multi-factor allocations. In E. Jurczenko (ed.), *Machine Learning and Asset Management* (pp. 332--368). Iste and Wiley. https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=3513399
+L{\'o}pez de Prado, M. (2016). Building diversified portfolios that outperform out-of-sample. *Journal of Portfolio Management*. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708678
+L{\'o}pez de Prado, M. (2018). *Advances in Financial Machine Learning*. Wiley.
 Luenberger, D.G. (1998). *Investment Science*. Oxford University Press.
 Mantegna, R.N. (1998). Hierarchical structure in financial markets. https://arxiv.org/abs/cond-mat/9802256
 Markowitz, H.M. (1952). Portfolio selection. *Journal of Finance*, 7, 77--91. https://www.jstor.org/stable/2975974
@@ -42,18 +47,21 @@ Markowitz, H.M. (1990). Nobel lecture: Foundations of portfolio theory. https://
 Markowitz, H.M. (2005). Market efficiency: A theoretical distinction and so what? *Financial Analysts Journal*, 61, 17--30.
 Markowitz, H.M., Starer, D., Fram, H., & Gerber, S. (2019). Avoiding the downside: A practical review of the Critical Line Algorithm for mean-semivariance portfolio optimization. https://www.hudsonbaycapital.com/documents/FG/hudsonbay/research/599440_paper.pdf
 Marsaglia, G. (1964). Conditional means and covariances of normal variables with singular covariance matrix. *Journal of the American Statistical Association*, 59, 1203--1204.
+Meng, X. (2015). Simpler online updates for arbitrary-order central moments. https://arxiv.org/abs/1510.04923
 Merton, R.C. (1969). Lifetime portfolio selection under uncertainty: The continuous-time case. *Review of Economics and Statistics*, 51, 247--257. https://www.jstor.org/stable/1926560
 Merton, R.C. (1972). An analytic derivation of the efficient portfolio frontier. *Journal of Financial and Quantitative Analysis*, 7, 1851--1872. https://www.jstor.org/stable/2329621
+Neely, P.M. (1966). Comparison of several algorithms for computation of means, standard deviations and correlation coefficients. *Communications of the ACM*, 9, 496--499. https://dl.acm.org/doi/pdf/10.1145/365719.365958
 Onnela, J.P., Chakraborti, A., Kaski, K., Kert{\'e}sz, J., & Kanto, A. (2003). Dynamics of market correlations: Taxonomy and portfolio analysis. http://arXiv.org/abs/cond-mat/0302546v1
 Onnela, J.P., Kaski, K., & Kert{\'e}sz, J. (2004). Clustering and information in correlation based financial networks. *European Physical Journal B*, 38, 353--362. https://link.springer.com/article/10.1140/epjb/e2004-00128-7
 Owen, J. & Rabinovitch, R. (1983). On the class of elliptical distributions and their applications to the theory of portfolio choice. *Journal of Finance*, 38, 745--752.
-L{\'o}pez de Prado, M. (2016). Building diversified portfolios that outperform out-of-sample. *Journal of Portfolio Management*. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708678
-L{\'o}pez de Prado, M. (2018). *Advances in Financial Machine Learning*. Wiley.
+P{\'e}bay, P. (2008). Formulas for robust, one-pass parallel computation of covariances and arbitrary-order statistical moments. Sandia National Laboratories. https://www.osti.gov/servlets/purl/1028931 [Technical Report SAND2008-6212]
+P{\'e}bay, P., Terriberry, T.B., Kolla, H. & Bennett, J. (2016). Numerically stable, scalable formulas for parallel and online computation of higher-order multivariate central moments with arbitrary weights. *Computational Statistics*, 31, 1305--1325. https://link.springer.com/article/10.1007/s00180-015-0637-z
 Raffinot, T. (2018). Hierarchical clustering-based asset allocation. *Journal of Portfolio Management*, 44, 89--99. https://www.proquest.com/docview/2196551795
 Raffinot, T. (2018). The hierarchical equal risk contribution portfolio. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3237540
 Rockafellar, R.T. & Uryasev, S. (2000). Optimization of conditional value-at-risk. *Journal of Risk*, 2, 21--42. https://sites.math.washington.edu/~rtr/papers/rtr179-CVaR1.pdf
 Rom, B.M. & Ferguson, K. (1993). Post-modern portfolio theory comes of age. *Journal of Investing*. [Winter 1993]
 Roy, A.D. (1952). Safety first and the holding of assets. *Econometrica*, 20, 431--449. https://www.jstor.org/stable/1907413
+Schubert, E. & Gertz, M. (2018). Numerically stable parallel computation of (co-)variance. *Proceedings of the 30th International Conference on Scientific and Statistical Database Management, SSDBM18*.
 Sharpe, W.F. (1963). A simplified model for portfolio analysis. *Management Science*, 9, 277--293.
 Sharpe, W.F. (1964). Capital asset prices: A theory of market equilibrium under conditions of risk. *Journal of Finance*, 19, 425--442.
 Sharpe, W.F. (1990). Nobel lecture: Capital asset prices with and without negative holdings. https://www.nobelprize.org/uploads/2018/06/sharpe-lecture.pdf
