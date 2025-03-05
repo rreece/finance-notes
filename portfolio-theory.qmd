@@ -264,6 +264,7 @@ Estimation of covariance matrices
 This is how we estimate $V$ (and $\mu$).
 
 -   [Algorithms for calculating variance](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance)
+    -   Ling, R.F. (1974). Comparison of several algorithms for computing sample means and variances. [^Ling1974]
     -   Chan, T.F., Golub, G.H., & LeVeque, R.J. (1979). [Updating formulae and a pairwise algorithm for computing sample variances](http://infolab.stanford.edu/pub/cstr/reports/cs/tr/79/773/CS-TR-79-773.pdf). [^Chan1979]
     -   P&eacute;bay, P. (2008). [Formulas for robust, one-pass parallel computation of covariances and arbitrary-order statistical moments](https://www.osti.gov/servlets/purl/1028931). [^Pebay2008]
     -   Finch, T. (2009). [Incremental calculation of weighted mean and variance](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=5f77d0594f66e49cc0e8c2b8177ead33b7137183). [^Finch2009]
@@ -301,6 +302,7 @@ TODO:
 [^Fan2015]: @Fan_2015_An_overview_on_the_estimation_of_large_covariance\.
 [^Finch2009]: @Finch_2009_Incremental_calculation_of_weighted_mean\.
 [^Galloway2019]: @Galloway_2019_Shrinking_characteristics_of_precision_matrix\.
+[^Ling1974]: @Ling_1974_Comparison_of_several_algorithms_for_computing\.
 [^Marsaglia1964]: @Marsaglia_1964_Conditional_means_and_covariances_of_normal\.
 [^Meng2015]: @Meng_2015_Simpler_online_updates_for_arbitrary_order_central\.
 [^Pebay2008]: @Pebay_2008_Formulas_for_robust_one_pass_parallel_computation\.

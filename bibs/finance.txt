@@ -33,6 +33,7 @@ Kwok, Y.K. (2017). Lecture notes: Fundamentals of Mathematical Finance. https://
 Ledoit, O. & Wolf, M. (2003). Improved estimation of the covariance matrix of stock returns with an application to portfolio selection. *Journal of Empirical Finance*, 10, 603--621. http://www.ledoit.net/ole2.pdf
 Ledoit, O. & Wolf, M. (2001). Honey, I shrunk the sample covariance matrix. http://www.ledoit.net/honey.pdf
 Levy, H. & Markowitz, H.M. (1979). Approximating expected utility by a function of mean and variance. *American Economic Review*, 69, 308--317.
+Ling, R.F. (1974). Comparison of several algorithms for computing sample means and variances. *Journal of the American Statistical Association*, 69, 859--866.
 Lo, A.W. (2002). The statistics of Sharpe ratios. *Financial Analysts Journal*, 58(4), 36--52. https://www.jstor.org/stable/4480405
 Lohre, H., Rother, C., & Sch{\"a}fer, K.A. (2020). Hierarchical Risk Parity: Accounting for tail dependencies in multi-asset multi-factor allocations. In E. Jurczenko (ed.), *Machine Learning and Asset Management* (pp. 332--368). Iste and Wiley. https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=3513399
 L{\'o}pez de Prado, M. (2016). Building diversified portfolios that outperform out-of-sample. *Journal of Portfolio Management*. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708678
