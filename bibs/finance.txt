@@ -1,9 +1,11 @@
 Aronson, D. (2007). *Evidence-Based Technical Analysis*. Wiley.
 Ayyala, D.N. (2020). High-dimensional statistical inference: Theoretical development to data analytics. In A.S.R. Srinivasa Rao and C.R. Rao (Eds.), *Handbook of Statistics* (pp. 289--335). Elsevier.
+Bailey, D.H & L{\'o}pez de Prado, M. (2013). An open-source implementation of the critical-line algorithm for portfolio optimization. *Algorithms*, 6, 169--196. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2197616
 Bax, K., Taufer, E., & Paterlini, S. (2022). A generalized precision matrix for t-Student distributions in portfolio optimization. https://arxiv.org/abs/2203.13740
 Bessembinder, H. & Chan, K. (1998). Market efficiency and the returns to technical analysis. *Financial Management*, 27, 5--17. https://www.jstor.org/stable/3666289
 Bodnar, T. & Schmid, W. (2011). On the exact distribution of the estimated expected utility portfolio weights: Theory and applications. *Statistics & Risk Modeling*, 28, 319--342.
 Bodnar, T., Mazur, S., & Podg{\'o}rski, K. (2016). Singular inverse Wishart distribution and its application to portfolio theory. *Journal of Multivariate Analysis*, 143, 314--326. https://www.sciencedirect.com/science/article/pii/S0047259X15002353
+Boyd, S. & Vandenberghe, L. (2004). *Convex Optimization*. Cambridge University Press. https://web.stanford.edu/~boyd/cvxbook/
 Black, F. & Litterman, R. (1991). Asset allocation. *Journal of Fixed Income*, 1, 7--18.
 Black, F. & Litterman, R. (1992). Global portfolio optimization. *Financial Analysts Journal*, 48, 28--43.
 Brinson, G.P., Hood, L.R., & Beebower, G.L. (1986). Determinants of portfolio performance. *Financial Analysts Journal*, 42, 39--44.
