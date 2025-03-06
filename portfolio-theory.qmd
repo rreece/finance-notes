@@ -308,35 +308,74 @@ $$ \mu_{p} = \mathbb{E}\left[(x - \mu_{1})^{p}\right] $$
 
 $$ M_{p} = \sum_{i}^{n} (x_i - \mu_{1})^{p} $$
 
-$$ \hat{\mu}_{p} = \frac{M_{p}}{n} \,, \qquad \hat{\mu} = \frac{M_{1}}{n} \,, \qquad \hat{\sigma}^2 = \frac{M_{2}}{n} $$
+$$ \mu_{p} = \frac{M_{p}}{n} \,, \qquad \mu = \frac{M_{1}}{n} \,, \qquad \sigma^2 = \frac{M_{2}}{n} $$
 
 Online mean:
 
 $$ \delta \equiv x_n - \mu_{n - 1} $$
 
-$$ \mu_{n} = \mu_{n-1} + \frac{\delta}{n} $$
+$$ \hat{\mu}_{n} = \mu_{n-1} + \frac{\delta}{n} $$
 
 Online variance:
 
-$$ M_{2,n} = M_{2,n-1} + \delta \left( \delta - \frac{\delta}{n} \right) = M_{2,n-1} + \frac{n-1}{n} \delta^2 $$
+$$ S_{n} = M_{2,n} $$
 
-$$ \hat{\sigma}^2 = \frac{M_{2,n}}{n-1} $$
+$$ \hat{\sigma}^2 = \frac{S_{n}}{n-1} $$
 
 where the $n-1$ includes Bessel's correction for sample variance.
 
+Incrementally,
+
+$$ S_{n} = S_{n-1} + (x_n - \mu_{n - 1}) (x_n - \mu_n) $$
+
+Note that for $n > 1$,
+
+$$ (x_n - \mu_n) = \frac{n-1}{n} (x_n - \mu_{n - 1}) $$
+
+Therefore,
+
+$$ S_{n} = S_{n-1} + \frac{n-1}{n} (x_n - \mu_{n - 1}) (x_n - \mu_{n - 1}) $$
+
+$$ S_{n} = S_{n-1} + \frac{n-1}{n} \delta^2 = S_{n-1} + \delta \left( \delta - \frac{\delta}{n} \right) $$
+
 Online covariance:
 
-$$ C_{n} = C_{n-1} + \frac{n-1}{n} \delta_x \delta_y $$
+$$ C_{n} = C_{n-1} + (x_n - \bar{x}_{n - 1}) (y_n - \bar{y}_n) $$
+
+$$ C_{n} = C_{n-1} + \frac{n-1}{n} (x_n - \bar{x}_{n - 1}) (y_n - \bar{y}_{n - 1}) = C_{n-1} + \frac{n-1}{n} \delta_x \delta_y $$
 
 $$ \hat{V}_{xy} = \frac{C_{n}}{n-1} $$
 
 Matrix form:
 
-$$ C_{n} = {C}_{n-1} + \frac{n-1}{n} \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right)^\intercal $$
+$$ C_{n} = {C}_{n-1} + \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal $$
 
-TODO:
+$$ C_{n} = {C}_{n-1} + \frac{n-1}{n} \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right)^\intercal = {C}_{n-1} + \frac{n-1}{n} S(\vec{x}_{n}, \vec{\mu}_{n-1}) $$
 
--   Exponential moving mean and covariance
+Noting that the update term for the online covariance is a term in a scatter matrix, $S$,
+using the currently observed data, $\vec{x}_{n}$, and the previous means, $\vec{\mu}_{n-1}$.
+
+Weighted mean:
+
+$$ \hat{\mu}_{n} = \mu_{n-1} + \frac{w_{n,n}}{W_n} \delta = \mu_{n-1} + \frac{w_{n,n}}{W_n} (x_n - \mu_{n - 1}) $$
+
+Weighted covariance: TODO: Does this work for covariance or just variance?
+
+$$ C_{n} = \frac{W_n - w_{n,n}}{W_{n-1}} {C}_{n-1} + w_{n,n} \left( x_{n} - \bar{x}_{n-1} \right) \left( y_{n} - \bar{y}_{n} \right) $$
+
+$$ C_{n} = \frac{W_n - w_{n,n}}{W_{n-1}} {C}_{n-1} + w_{n,n} \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal $$
+
+Exponential-weighted mean:
+
+$$ \alpha = 1 - \mathrm{exp}\left( \frac{-\Delta{}t}{\tau} \right) \simeq \frac{\Delta{}t}{\tau} $$
+
+$$ \hat{\mu}_{n} = \mu_{n-1} + \alpha (x_{n} - \mu_{n-1}) = (1 - \alpha) \mu_{n-1} + \alpha x_{n} $$
+
+Exponential-weighted covariance:
+
+$$ C_{n} = (1 - \alpha) {C}_{n-1} + \alpha \left( x_{n} - \bar{x}_{n-1} \right) \left( y_{n} - \bar{y}_{n} \right) $$
+
+$$ C_{n} = (1 - \alpha) {C}_{n-1} + \alpha \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal $$
 
 [^Chan1979]: @Chan_1979_Updating_formulae_and_a_pairwise_algorithm\.
 [^Finch2009]: @Finch_2009_Incremental_calculation_of_weighted_mean\.
