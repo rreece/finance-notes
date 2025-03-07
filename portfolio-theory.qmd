@@ -344,22 +344,24 @@ $$ S_{n} = S_{n-1} + \frac{n-1}{n} \delta^2 = S_{n-1} + \delta \left( \delta - \
 
 Online covariance:
 
-$$ C_{n}(x, y) = C_{n-1} + (x_n - \bar{x}_{n - 1}) (y_n - \bar{y}_n) $$
+$$ C_{n}(x, y) = C_{n-1} + (x_n - \bar{x}_{n - 1}) (y_n - \bar{y}_n) = C_{n-1} + \delta_{x} \delta_{y}^\prime $$
 
-$$ C_{n}(x, y) = C_{n-1} + \frac{n-1}{n} (x_n - \bar{x}_{n - 1}) (y_n - \bar{y}_{n - 1}) = C_{n-1} + \frac{n-1}{n} \delta_x \delta_y $$
+$$ C_{n}(x, y) = C_{n-1} + \frac{n-1}{n} (x_n - \bar{x}_{n - 1}) (y_n - \bar{y}_{n - 1}) = C_{n-1} + \frac{n-1}{n} \delta_{x} \delta_{y} $$
 
 $$ \hat{V}_{xy} = \frac{C_{n}(x, y)}{n-1} $$
 
 Matrix form:
 
-$$ C_{n} = {C}_{n-1} + \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal = {C}_{n-1} + \vec{\delta} \vec{\varepsilon} \intercal $$
+$$ C_{n} = {C}_{n-1} + \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal = {C}_{n-1} + \vec{\delta} \: \vec{\delta^\prime}^\intercal $$
 
 $$ C_{n} = {C}_{n-1} + \frac{n-1}{n} \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right)^\intercal = {C}_{n-1} + \frac{n-1}{n} S(\vec{x}_{n}, \vec{\mu}_{n-1}) $$
 
 $$ \hat{V} = \frac{C_{n}}{n-1} $$
 
-Noting that the update term for the online covariance is a term in a scatter matrix, $S$,
+Note that the update term for the online covariance is a term in a scatter matrix, $S$,
 using the currently observed data, $\vec{x}_{n}$, and the previous means, $\vec{\mu}_{n-1}$.
+But also note that the $\vec{\delta} \: \vec{\delta^\prime}^\intercal$ is also convenient
+because it comes naturally normalized can be readily generalized for weighting.
 
 Weighted mean:
 
