@@ -63,6 +63,10 @@ Lecture notes:
 -   Kwok, Y.K. (2017). Lecture notes: [Fundamentals of Mathematical Finance](https://www.math.hkust.edu.hk/~maykwok/MATH4512.htm). [^Kwok2017]
     -   In particular, [Lecture 2](https://www.math.hkust.edu.hk/~maykwok/courses/MATH4512/lecture%20notes/MATH4512_T2.pdf)
 -   Sigman, K. (2005). [Notes on fund theorems](https://www.columbia.edu/~ks20/FE-Notes/4700-07-Notes-funds.pdf).
+-   Ireland, P. (2013). Lecture notes: [Principles of Macroeconomics](http://irelandp.com/ec132.html).
+-   Ireland, P. (2024). Lecture notes: [Mathematics for Economists](http://irelandp.com/econ7720.html).
+-   Ireland, P. (2025). Lecture notes: [Financial Economics](http://irelandp.com/econ3379.html).
+    -   In particular, [Lecture 6](http://irelandp.com/econ3379/notes/ch06slides.pdf)
 
 
 ### Markowitz portfolio problem
