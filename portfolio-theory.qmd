@@ -340,17 +340,19 @@ $$ S_{n} = S_{n-1} + \frac{n-1}{n} \delta^2 = S_{n-1} + \delta \left( \delta - \
 
 Online covariance:
 
-$$ C_{n} = C_{n-1} + (x_n - \bar{x}_{n - 1}) (y_n - \bar{y}_n) $$
+$$ C_{n}(x, y) = C_{n-1} + (x_n - \bar{x}_{n - 1}) (y_n - \bar{y}_n) $$
 
-$$ C_{n} = C_{n-1} + \frac{n-1}{n} (x_n - \bar{x}_{n - 1}) (y_n - \bar{y}_{n - 1}) = C_{n-1} + \frac{n-1}{n} \delta_x \delta_y $$
+$$ C_{n}(x, y) = C_{n-1} + \frac{n-1}{n} (x_n - \bar{x}_{n - 1}) (y_n - \bar{y}_{n - 1}) = C_{n-1} + \frac{n-1}{n} \delta_x \delta_y $$
 
-$$ \hat{V}_{xy} = \frac{C_{n}}{n-1} $$
+$$ \hat{V}_{xy} = \frac{C_{n}(x, y)}{n-1} $$
 
 Matrix form:
 
 $$ C_{n} = {C}_{n-1} + \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal $$
 
 $$ C_{n} = {C}_{n-1} + \frac{n-1}{n} \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right)^\intercal = {C}_{n-1} + \frac{n-1}{n} S(\vec{x}_{n}, \vec{\mu}_{n-1}) $$
+
+$$ \hat{V}_{xy} = \frac{C_{n}}{n-1} $$
 
 Noting that the update term for the online covariance is a term in a scatter matrix, $S$,
 using the currently observed data, $\vec{x}_{n}$, and the previous means, $\vec{\mu}_{n-1}$.
@@ -359,17 +361,29 @@ Weighted mean:
 
 $$ \hat{\mu}_{n} = \mu_{n-1} + \frac{w_{n,n}}{W_n} \delta = \mu_{n-1} + \frac{w_{n,n}}{W_n} (x_n - \mu_{n - 1}) $$
 
+where
+
+$$ W_{n} = \sum_{i=1}^{n} w_{n,i} $$
+
 Weighted covariance: TODO: Does this work for covariance or just variance?
 
 $$ C_{n} = \frac{W_n - w_{n,n}}{W_{n-1}} {C}_{n-1} + w_{n,n} \left( x_{n} - \bar{x}_{n-1} \right) \left( y_{n} - \bar{y}_{n} \right) $$
 
 $$ C_{n} = \frac{W_n - w_{n,n}}{W_{n-1}} {C}_{n-1} + w_{n,n} \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal $$
 
+where
+
+$$ \hat{V}_{xy} = \frac{C_{n}}{W_{n}} $$
+
 Exponential-weighted mean:
 
 $$ \alpha = 1 - \mathrm{exp}\left( \frac{-\Delta{}t}{\tau} \right) \simeq \frac{\Delta{}t}{\tau} $$
 
 $$ \hat{\mu}_{n} = \mu_{n-1} + \alpha (x_{n} - \mu_{n-1}) = (1 - \alpha) \mu_{n-1} + \alpha x_{n} $$
+
+where by summing a geometric series, one can show that for exponential weighting
+
+$$ W_{n} = 1 $$
 
 Exponential-weighted covariance:
 
