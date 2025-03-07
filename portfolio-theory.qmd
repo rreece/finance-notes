@@ -360,8 +360,8 @@ $$ \hat{V} = \frac{C_{n}}{n-1} $$
 
 Note that the update term for the online covariance is a term in a scatter matrix, $S$,
 using the currently observed data, $\vec{x}_{n}$, and the previous means, $\vec{\mu}_{n-1}$.
-But also note that the $\vec{\delta} \: \vec{\delta^\prime}^\intercal$ is also convenient
-because it comes naturally normalized can be readily generalized for weighting.
+But also note that the $\vec{\delta} \: \vec{\delta^\prime}^\intercal$ form is also
+convenient because it comes naturally normalized and can be readily generalized for weighting.
 
 Weighted mean:
 
