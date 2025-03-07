@@ -344,22 +344,24 @@ $$ S_{n} = S_{n-1} + \frac{n-1}{n} \delta^2 = S_{n-1} + \delta \left( \delta - \
 
 Online covariance:
 
-$$ C_{n}(x, y) = C_{n-1} + (x_n - \bar{x}_{n - 1}) (y_n - \bar{y}_n) $$
+$$ C_{n}(x, y) = C_{n-1} + (x_n - \bar{x}_{n - 1}) (y_n - \bar{y}_n) = C_{n-1} + \delta_{x} \delta_{y}^\prime $$
 
-$$ C_{n}(x, y) = C_{n-1} + \frac{n-1}{n} (x_n - \bar{x}_{n - 1}) (y_n - \bar{y}_{n - 1}) = C_{n-1} + \frac{n-1}{n} \delta_x \delta_y $$
+$$ C_{n}(x, y) = C_{n-1} + \frac{n-1}{n} (x_n - \bar{x}_{n - 1}) (y_n - \bar{y}_{n - 1}) = C_{n-1} + \frac{n-1}{n} \delta_{x} \delta_{y} $$
 
 $$ \hat{V}_{xy} = \frac{C_{n}(x, y)}{n-1} $$
 
 Matrix form:
 
-$$ C_{n} = {C}_{n-1} + \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal $$
+$$ C_{n} = {C}_{n-1} + \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal = {C}_{n-1} + \vec{\delta} \: \vec{\delta^\prime}^\intercal $$
 
 $$ C_{n} = {C}_{n-1} + \frac{n-1}{n} \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right)^\intercal = {C}_{n-1} + \frac{n-1}{n} S(\vec{x}_{n}, \vec{\mu}_{n-1}) $$
 
-$$ \hat{V}_{xy} = \frac{C_{n}}{n-1} $$
+$$ \hat{V} = \frac{C_{n}}{n-1} $$
 
-Noting that the update term for the online covariance is a term in a scatter matrix, $S$,
+Note that the update term for the online covariance is a term in a scatter matrix, $S$,
 using the currently observed data, $\vec{x}_{n}$, and the previous means, $\vec{\mu}_{n-1}$.
+But also note that the $\vec{\delta} \: \vec{\delta^\prime}^\intercal$ form is also
+convenient because it comes naturally normalized and can be readily generalized for weighting.
 
 Weighted mean:
 
@@ -369,7 +371,7 @@ where
 
 $$ W_{n} = \sum_{i=1}^{n} w_{n,i} $$
 
-Weighted covariance: TODO: Does this work for covariance or just variance?
+Weighted covariance:
 
 $$ C_{n} = \frac{W_n - w_{n,n}}{W_{n-1}} {C}_{n-1} + w_{n,n} \left( x_{n} - \bar{x}_{n-1} \right) \left( y_{n} - \bar{y}_{n} \right) $$
 
@@ -377,7 +379,7 @@ $$ C_{n} = \frac{W_n - w_{n,n}}{W_{n-1}} {C}_{n-1} + w_{n,n} \left( \vec{x}_{n} 
 
 where
 
-$$ \hat{V}_{xy} = \frac{C_{n}}{W_{n}} $$
+$$ \hat{V} = \frac{C_{n}}{W_{n}} $$
 
 Exponential-weighted mean:
 
