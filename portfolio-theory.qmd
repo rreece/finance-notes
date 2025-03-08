@@ -58,15 +58,16 @@ Lecture notes:
 -   Armerin, F. (2023). Lecture notes: [More on mean-variance analysis](https://people.kth.se/~armerin/FinInsMathRwanda/Lecture10.pdf).
 -   Das, S.R. (2016). [*Data Science: Theories, Models, Algorithms, and Analytics*](http://srdas.github.io/Papers/DSA_Book.pdf). [^Das2016]
     -   Also: Das, S.R. (2017). [Being mean with variance: Markowitz optimization](https://srdas.github.io/MLBook/PortfolioOptimization.html).
+-   Ireland, P. (2013). Lecture notes: [Principles of Macroeconomics](http://irelandp.com/ec132.html).
+-   Ireland, P. (2024). Lecture notes: [Mathematics for Economists](http://irelandp.com/econ7720.html).
+-   Ireland, P. (2025). Lecture notes: [Financial Economics](http://irelandp.com/econ3379.html).
+    -   In particular, [Lecture 6](http://irelandp.com/econ3379/notes/ch06slides.pdf)
 -   Kasa, K. (2023). [Lecture notes by Ken Kasa (SFU)](https://www.sfu.ca/~kkasa/econ815_23.html)
     -   In particular, [Lecture 7](https://www.sfu.ca/~kkasa/Econ815_Lecture7.pdf)
 -   Kwok, Y.K. (2017). Lecture notes: [Fundamentals of Mathematical Finance](https://www.math.hkust.edu.hk/~maykwok/MATH4512.htm). [^Kwok2017]
     -   In particular, [Lecture 2](https://www.math.hkust.edu.hk/~maykwok/courses/MATH4512/lecture%20notes/MATH4512_T2.pdf)
 -   Sigman, K. (2005). [Notes on fund theorems](https://www.columbia.edu/~ks20/FE-Notes/4700-07-Notes-funds.pdf).
--   Ireland, P. (2013). Lecture notes: [Principles of Macroeconomics](http://irelandp.com/ec132.html).
--   Ireland, P. (2024). Lecture notes: [Mathematics for Economists](http://irelandp.com/econ7720.html).
--   Ireland, P. (2025). Lecture notes: [Financial Economics](http://irelandp.com/econ3379.html).
-    -   In particular, [Lecture 6](http://irelandp.com/econ3379/notes/ch06slides.pdf)
+-   Tam, A.S. (2021). [Lagrangians and portfolio optimization](https://www.adrian.idv.hk/2021-06-22-kkt/).
 
 
 ### Markowitz portfolio problem
