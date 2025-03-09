@@ -280,6 +280,13 @@ This is how we estimate $V$ (and $\mu$).
     using daily data from 2014-01-02 to 2024-08-30, 10 years and 8 months.
     ](img/corr-gldm-btc-2024-09-14.png){#fig-corr-gldm-btc-2024-09-14}
 
+Software:
+
+-   [github.com/robertmartin8/PyPortfolioOpt](https://github.com/robertmartin8/PyPortfolioOpt)
+-   [github.com/microprediction/precise](https://github.com/microprediction/precise)
+-   [mlfinlab](https://random-docs.readthedocs.io/en/latest/index.html)
+-   [scikit-portfolio](https://scikit-portfolio.github.io/scikit-portfolio)
+
 [^Ayyala2020]: @Ayyala_2020_High_dimensional_statistical_inference\.
 [^Coqueret2014]: @Coqueret_2014_Estimating_covariance_matrices_for_portfolio\.
 [^Fan2015]: @Fan_2015_An_overview_on_the_estimation_of_large_covariance\.
@@ -836,6 +843,7 @@ Hierarchical risk analysis
 -   Raffinot, T. (2018). Hierarchical clustering-based asset allocation. (HCAA) [^Raffinot2018a]
 -   Raffinot, T. (2018). The hierarchical equal risk contribution portfolio. (HERC) [^Raffinot2018b]
 -   Hudson & Thames. (2024). The Modern Guide to Portfolio Optimization. [^Hudson2024]
+-   Cotton, P. (2024). [Hierarchical minimum variance portfolios: A unifying approach using Schur complements](https://github.com/microprediction/precise/blob/main/academic/Schur_Complementary_Portfolios_Peter_Cotton.pdf). [^Cotton2024]
 -   Blogs:
     -   [hudsonthames.org](https://hudsonthames.org/an-introduction-to-the-hierarchical-risk-parity-algorithm/)
     -   [quantpedia.com](https://quantpedia.com/hierarchical-risk-parity/)
@@ -854,6 +862,7 @@ whereas $d_{ij}$ is defined for asset pairs.
 
 ![Dendrogram after hierarchical clustering.](img/dendrogram.png){#fig-dendrogram}
 
+[^Cotton2024]: @Cotton_2024_Hierarchical_minimum_variance_portfolios\.
 [^Hudson2024]: @Hudson_2024_The_Modern_Guide_to_Portfolio_Optimization\.
 [^Lohre2020]: @Lohre_2020_Hierarchical_Risk_Parity_Accounting_for_tail\.
 [^LopezDePrado2016]: @Lopez_2016_Building_diversified_portfolios_that_outperform\.
