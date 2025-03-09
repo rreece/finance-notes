@@ -125,38 +125,38 @@ It can be shown[^ItCanBeShown] that there is an analytic solution where:
 
 $$ a \equiv \vec{1}^\intercal \, V^{-1} \, \vec{1}, \qquad  b \equiv \vec{1}^\intercal \, V^{-1} \, \vec{\mu}, \qquad c \equiv \vec{\mu}^\intercal \, V^{-1} \, \vec{\mu}, \qquad d \equiv a\,c - b^2 $$
 
-There are two efficient portfolios of note: the minimum variance portfolio, $\vec{w}_v$,
-and the tangent portfolio, $\vec{w}_t$.
+There are two efficient portfolios of note: the minimum variance portfolio, $\vec{w}_\mathrm{min}$,
+and the tangent portfolio, $\vec{w}_\mathrm{tan}$.
 
 The *minimum variance portfolio* is
 
-$$ \vec{w}_{v} = \frac{V^{-1} \, \vec{1}}{a} = \frac{V^{-1} \, \vec{1}}{\vec{1}^\intercal \, V^{-1} \, \vec{1}} $$
+$$ \vec{w}_\mathrm{min} = \frac{V^{-1} \, \vec{1}}{a} = \frac{V^{-1} \, \vec{1}}{\vec{1}^\intercal \, V^{-1} \, \vec{1}} $$
 
 It has a return
 
-$$ r_{v} = \vec{w}_{v} \cdot \vec{\mu} = \frac{\vec{1}^\intercal \, V^{-1} \, \vec{\mu}}{a} = \frac{b}{a} $$
+$$ r_\mathrm{min} = \vec{w}_\mathrm{min} \cdot \vec{\mu} = \frac{\vec{1}^\intercal \, V^{-1} \, \vec{\mu}}{a} = \frac{b}{a} $$
 
 and a variance
 
-$$ \sigma_{v}^2 = \vec{w}_{v}^\intercal \, V \, \vec{w}_{v} = \left( \frac{\vec{1}^\intercal \, V^{-1}}{a} \right) V \left( \frac{V^{-1} \, \vec{1}}{a} \right) = \frac{\vec{1}^\intercal \, V^{-1} \, \vec{1}}{a^2} = \frac{1}{a} $$
+$$ \sigma_\mathrm{min}^2 = \vec{w}_\mathrm{min}^\intercal \, V \, \vec{w}_\mathrm{min} = \left( \frac{\vec{1}^\intercal \, V^{-1}}{a} \right) V \left( \frac{V^{-1} \, \vec{1}}{a} \right) = \frac{\vec{1}^\intercal \, V^{-1} \, \vec{1}}{a^2} = \frac{1}{a} $$
 
 The *tangent portfolio* is
 
-$$ \vec{w}_{t} = \frac{V^{-1} \, \vec{\mu}}{b} = \frac{V^{-1} \, \vec{\mu}}{\vec{1}^\intercal \, V^{-1} \, \vec{\mu}} $$
+$$ \vec{w}_\mathrm{tan} = \frac{V^{-1} \, \vec{\mu}}{b} = \frac{V^{-1} \, \vec{\mu}}{\vec{1}^\intercal \, V^{-1} \, \vec{\mu}} $$
 
 It has a return
 
-$$ r_{t} = \vec{w}_{t} \cdot \vec{\mu} = \frac{\vec{\mu}^\intercal \, V^{-1} \, \vec{\mu}}{b} = \frac{c}{b} $$
+$$ r_\mathrm{tan} = \vec{w}_\mathrm{tan} \cdot \vec{\mu} = \frac{\vec{\mu}^\intercal \, V^{-1} \, \vec{\mu}}{b} = \frac{c}{b} $$
 
 and a variance
 
-$$ \sigma_{t}^2 = \vec{w}_{t}^\intercal \, V \, \vec{w}_{t} = \left( \frac{\vec{\mu}^\intercal \, V^{-1}}{b} \right) V \left( \frac{V^{-1} \, \vec{\mu}}{b} \right) = \frac{\vec{\mu}^\intercal \, V^{-1} \, \vec{\mu}}{b^2} = \frac{c}{b^2} $$
+$$ \sigma_\mathrm{tan}^2 = \vec{w}_\mathrm{tan}^\intercal \, V \, \vec{w}_\mathrm{tan} = \left( \frac{\vec{\mu}^\intercal \, V^{-1}}{b} \right) V \left( \frac{V^{-1} \, \vec{\mu}}{b} \right) = \frac{\vec{\mu}^\intercal \, V^{-1} \, \vec{\mu}}{b^2} = \frac{c}{b^2} $$
 
 The efficient frontier can be written as a linear combination of any two efficient portfolios.
 This is discussed in more detail in the section on [Fund theorems](#fund-theorems).
 Written as a combination of the minimum variance and the tangent portfolios gives
 
-$$ \vec{w}_{\ast} = \xi \, \vec{w}_{v} + (1-\xi) \, \vec{w}_{t} $$
+$$ \vec{w}_{\ast} = \xi \, \vec{w}_\mathrm{min} + (1-\xi) \, \vec{w}_\mathrm{tan} $$
 
 where
 
@@ -165,22 +165,22 @@ $$ \xi = (c - b \, r_{\ast}) \, a \, / \, d $$
 The efficient frontier portfolio can be equivalently written
 
 \begin{align}
-\vec{w}_{\ast} &= \xi \, \vec{w}_{v} + (1-\xi) \, \vec{w}_{t} \\
-      &= \left( \frac{c - b \, r_{\ast}}{d} \right) a \, \vec{w}_{v} + \left( \frac{a \, r_{\ast} - b}{d} \right) b \, \vec{w}_{t} \\
+\vec{w}_{\ast} &= \xi \, \vec{w}_\mathrm{min} + (1-\xi) \, \vec{w}_\mathrm{tan} \\
+      &= \left( \frac{c - b \, r_{\ast}}{d} \right) a \, \vec{w}_\mathrm{min} + \left( \frac{a \, r_{\ast} - b}{d} \right) b \, \vec{w}_\mathrm{tan} \\
       &= \left( \frac{c - b \, r_{\ast}}{d} \right) V^{-1} \, \vec{1} + \left( \frac{a \, r_{\ast} - b}{d} \right) V^{-1} \, \vec{\mu}
 \end{align}
 
 Along the frontier, the return is
 
-$$ r_{\ast} = \xi \, r_{v} + (1-\xi) \, r_{t} $$
+$$ r_{\ast} = \xi \, r_\mathrm{min} + (1-\xi) \, r_\mathrm{tan} $$
 
 The variance is
 
 $$ \sigma^2_{\ast} = \frac{a}{d} \, r_{\ast}^{2} - \frac{2 \, b}{d} \, r_{\ast} + \frac{c}{d} $$
 
-TODO: Note calculation order of $\vec{w}_{v}(\mu, V)$
-and $\vec{w}_{t}(\mu, V, r_{f})$, then calculate $r_{\ast}(\sigma_{\ast})$,
-scanning from $\sigma_{v}$ to $\sigma_\mathrm{max}$.
+TODO: Note calculation order of $\vec{w}_\mathrm{min}(\mu, V)$
+and $\vec{w}_\mathrm{tan}(\mu, V, r_\mathrm{f})$, then calculate $r_{\ast}(\sigma_{\ast})$,
+scanning from $\sigma_\mathrm{min}$ to $\sigma_\mathrm{max}$.
 
 ![The "Markowitz Bullet", the efficient frontier shown in
     @Markowitz_1959_Portfolio_Selection_Efficient_Diversification, p. 152.
@@ -408,6 +408,20 @@ $$ C_{n} = (1 - \alpha) {C}_{n-1} + \alpha \left( \vec{x}_{n} - \vec{\mu}_{n-1} 
 [^Schubert2018]: @Schubert_2018_Numerically_stable_parallel_computation\.
 
 
+### Compound annual growth rate
+
+The value of an asset compounding at rate $r(t)$ per day
+with frequency, $k=252$, trading days per year is
+
+$$ a(t) = a(t_{0}) \left( 1 + r(t) \right)^{\frac{t}{k}} $$
+
+The Compound Annual Growth Rate (CAGR) is
+
+$$ r_\mathrm{CAGR} = \left( \frac{a(t)}{a(t_{0})} \right)^{\frac{k}{t}} - 1 $$
+
+$$ \hat{\mu}_\mathrm{CAGR} = r_\mathrm{CAGR} $$
+
+
 ### Shrinkage estimators
 
 -   [Shrinkage](https://en.wikipedia.org/wiki/Shrinkage_(statistics))
@@ -531,7 +545,7 @@ we go from holding asset 2 to 1. Let's reparameterize so that $\xi \rightarrow (
 ### One-fund theorem
 
 Now we consider adding the posibility of holding a risk-free asset
-with a risk-free return, $r_{f}$.
+with a risk-free return, $r_\mathrm{f}$.
 
 *One-fund theorem*:
 
@@ -549,15 +563,15 @@ asset.
 
 The portfolio weights are
 
-$$ \vec{w}_{\ast} = \kappa \, \vec{w}_{f} + (1-\kappa) \, \vec{w}_{t} $$
+$$ \vec{w}_{\ast} = \kappa \, \vec{w}_\mathrm{f} + (1-\kappa) \, \vec{w}_\mathrm{tan} $$
 
 The portfolio return is
 
-$$ r_{\ast} = \kappa \, r_{f} + (1-\kappa) \, r_{t} $$
+$$ r_{\ast} = \kappa \, r_\mathrm{f} + (1-\kappa) \, r_\mathrm{tan} $$
 
 The portfolio standard deviation is
 
-$$ \sigma_{\ast} = \left| 1-\kappa \right| \sigma_{t} $$
+$$ \sigma_{\ast} = \left| 1-\kappa \right| \sigma_\mathrm{tan} $$
 
 Since the efficient frontier is a linear combination of the risk-free, "cash",
 and a single portfolio of risky assets, "stocks", then it forms a line in
@@ -570,7 +584,7 @@ have deployed into risky assets in the market.
 
 The functional form of the Capital Allocation Line is
 
-$$ r_\mathrm{CAL}(\sigma) = r_{f} + \sigma \, \sqrt{ a \, r_{f}^{2} - 2 \, b \, r_{f} + c} $$
+$$ r_\mathrm{CAL}(\sigma) = r_\mathrm{f} + \sigma \, \sqrt{ a \, r_\mathrm{f}^{2} - 2 \, b \, r_\mathrm{f} + c} $$
 
 TODO: Double-check the expression and example values of this slope.
 
@@ -581,20 +595,20 @@ risk-free rate of return.
 
 The *tangent portfolio with a risk-free asset* is
 
-$$ \vec{w}_{t}  = \frac{V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}{\vec{1}^\intercal \, V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})} $$
+$$ \vec{w}_\mathrm{tan}  = \frac{V^{-1} \, (\vec{\mu} - r_\mathrm{f} \, \vec{1})}{\vec{1}^\intercal \, V^{-1} \, (\vec{\mu} - r_\mathrm{f} \, \vec{1})} $$
 
 It has a return
 
-$$ r_{t} = \vec{\mu} \cdot \vec{w}_t = \frac{c - b \, r_{f}}{b - a \, r_{f}} $$
+$$ r_\mathrm{tan} = \vec{\mu} \cdot \vec{w}_\mathrm{tan} = \frac{c - b \, r_\mathrm{f}}{b - a \, r_\mathrm{f}} $$
 
 and a variance
 
-$$ \sigma_{t}^{2} = \frac{\left|\vec{\mu} - r_{f} \, \vec{1}\right|^2}{ (\vec{\mu} - r_{f} \, \vec{1})^\intercal \, V^{-1} \, (\vec{\mu} - r_{f} \, \vec{1})}  = \frac{a \, r_{f}^2 - 2 \, b \, r_{f} + c}{(b - a \, r_{f})^2} $$
+$$ \sigma_\mathrm{tan}^{2} = \frac{\left|\vec{\mu} - r_\mathrm{f} \, \vec{1}\right|^2}{ (\vec{\mu} - r_\mathrm{f} \, \vec{1})^\intercal \, V^{-1} \, (\vec{\mu} - r_\mathrm{f} \, \vec{1})}  = \frac{a \, r_\mathrm{f}^2 - 2 \, b \, r_\mathrm{f} + c}{(b - a \, r_\mathrm{f})^2} $$
 
 The tangent portfolio is the portfolio with the maximum
 [Sharpe ratio](https://en.wikipedia.org/wiki/Sharpe_ratio), $S_i$.
 
-$$ S_i \equiv \frac{ r_i - r_f }{ \sigma_i }  \label{eq:sharpe_ratio} $$
+$$ S_i \equiv \frac{ r_i - r_\mathrm{f} }{ \sigma_i }  \label{eq:sharpe_ratio} $$
 
 The Sharpe ratio is a measure of how much excess return an asset had over a risk-free asset,
 adjusted for the risk as measured by the standard deviation of return.
@@ -634,22 +648,22 @@ $\alpha_{i}$ and $\beta_{i}$ can be calculated via linear regression:
 
 SCL:
 
-$$ r_{it} - r_f = \hat{\alpha}_i + \hat{\beta}_i \, (r_{mt} - r_f) + \varepsilon_{it}  \label{eq:alpha_beta_regression} $$
+$$ r_{it} - r_\mathrm{f} = \hat{\alpha}_i + \hat{\beta}_i \, (r_{mt} - r_\mathrm{f}) + \varepsilon_{it}  \label{eq:alpha_beta_regression} $$
 
 The [Security Characteristic Line (SCL)](https://en.wikipedia.org/wiki/Security_characteristic_line)
 is the line in $r_i$ vs $r_m$,
 fit to a particular asset, $i$, with its slope, $\hat{\beta}_{i}$,
-and its $(r_i - r_f)$ intercept, $\hat{\alpha}_i$.
+and its $(r_i - r_\mathrm{f})$ intercept, $\hat{\alpha}_i$.
 
 [Jensen's alpha](https://en.wikipedia.org/wiki/Jensen%27s_alpha)
 uses the same form, but at a particular time point, using a historical
 fit for $\hat{\beta}_{i}$, but not $\alpha_{i}$.
 
-$$ \alpha_{i} = (r_i - r_f) - \hat{\beta}_{i} \, (r_m - r_f)  \label{eq:jensen_alpha} $$
+$$ \alpha_{i} = (r_i - r_\mathrm{f}) - \hat{\beta}_{i} \, (r_m - r_\mathrm{f})  \label{eq:jensen_alpha} $$
 
 TODO: Compare with this:
 
-$$ \alpha_{i} = (r_i - r_f) - \hat{\beta}_{i} \, (\mu_{m} - r_f) $$
+$$ \alpha_{i} = (r_i - r_\mathrm{f}) - \hat{\beta}_{i} \, (\mu_{m} - r_\mathrm{f}) $$
 
 The [Security Market Line (SML)](https://en.wikipedia.org/wiki/Security_market_line),
 thought in $r_i$ vs $\beta_i$ space, goes through the market portfolio at
@@ -657,7 +671,7 @@ thought in $r_i$ vs $\beta_i$ space, goes through the market portfolio at
 
 SML: 
 
-$$ \mathbb{E}(r_i) = r_f + \beta_i \left( \mathbb{E}(r_m) - r_f \right) $$
+$$ \mathbb{E}(r_i) = r_\mathrm{f} + \beta_i \left( \mathbb{E}(r_m) - r_\mathrm{f} \right) $$
 
 ![The Capital Asset Pricing Model (CAPM) applied to a few example assets
     using daily data from 2014-01-02 to 2024-08-30, 10 years and 8 months.
@@ -665,7 +679,7 @@ $$ \mathbb{E}(r_i) = r_f + \beta_i \left( \mathbb{E}(r_m) - r_f \right) $$
 
 -   [Treynor ratio](https://en.wikipedia.org/wiki/Treynor_ratio)
 
-$$ T_i \equiv \frac{ r_i - r_f }{ \beta_i }  \label{eq:treynor_ratio} $$
+$$ T_i \equiv \frac{ r_i - r_\mathrm{f} }{ \beta_i }  \label{eq:treynor_ratio} $$
 
 -   Gibbons, M., Ross, S., & Shanken, J. (1989). [A test of the efficiency of a given portfolio](https://www.jstor.org/stable/1913625). [^Gibbons1989]
 -   Luenberger, D.G. (1998). *Investment Science*. [^Luenberger1998]
@@ -778,9 +792,9 @@ Criticisms of MPT:
 -   Markowitz, H.M., Starer, D., Fram, H., & Gerber, S. (2019). [Avoiding the downside: A practical review of the Critical Line Algorithm for mean-semivariance portfolio optimization](https://www.hudsonbaycapital.com/documents/FG/hudsonbay/research/599440_paper.pdf). [^Markowitz2019b]
 -   [Mean-Semivariance frontier](https://scikit-portfolio.github.io/scikit-portfolio/efficient_semivariance/) in [scikit-portfolio](https://scikit-portfolio.github.io/scikit-portfolio/)
 
-$$ \mathrm{TSV}(r_i, r_t) = \mathbb{E}\left[ (r_i - r_t)^2 \: \mathbb{1}_{\{r_i < r_t\}} \right]  \label{eq:target_semi_variance} $$
+$$ \mathrm{TSV}(r_i, r_\mathrm{tan}) = \mathbb{E}\left[ (r_i - r_\mathrm{tan})^2 \: \mathbb{1}_{\{r_i < r_\mathrm{tan}\}} \right]  \label{eq:target_semi_variance} $$
 
-$$ \mathrm{TSD}(r_i, r_t) = \sqrt{\mathrm{TSV}(r_i, r_t)}  \label{eq:target_semi_deviation} $$
+$$ \mathrm{TSD}(r_i, r_\mathrm{tan}) = \sqrt{\mathrm{TSV}(r_i, r_\mathrm{tan})}  \label{eq:target_semi_deviation} $$
 
 -   [Sortino ratio](https://en.wikipedia.org/wiki/Sortino_ratio)
 
