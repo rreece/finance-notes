@@ -284,6 +284,7 @@ Software:
 
 -   [github.com/robertmartin8/PyPortfolioOpt](https://github.com/robertmartin8/PyPortfolioOpt)
 -   [github.com/microprediction/precise](https://github.com/microprediction/precise)
+-   [mlfinlab](https://random-docs.readthedocs.io/en/latest/index.html)
 -   [scikit-portfolio](https://scikit-portfolio.github.io/scikit-portfolio)
 
 [^Ayyala2020]: @Ayyala_2020_High_dimensional_statistical_inference\.
