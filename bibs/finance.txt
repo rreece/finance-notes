@@ -64,6 +64,7 @@ Raffinot, T. (2018). The hierarchical equal risk contribution portfolio. https:/
 Rockafellar, R.T. & Uryasev, S. (2000). Optimization of conditional value-at-risk. *Journal of Risk*, 2, 21--42. https://sites.math.washington.edu/~rtr/papers/rtr179-CVaR1.pdf
 Rom, B.M. & Ferguson, K. (1993). Post-modern portfolio theory comes of age. *Journal of Investing*. [Winter 1993]
 Roy, A.D. (1952). Safety first and the holding of assets. *Econometrica*, 20, 431--449. https://www.jstor.org/stable/1907413
+Schlingemann, F.P. & Stulz, R.M. (2022). Have exchange-listed firms become less important for the economy? *Journal of Financial Economics*, 143, 927--958.
 Schubert, E. & Gertz, M. (2018). Numerically stable parallel computation of (co-)variance. *Proceedings of the 30th International Conference on Scientific and Statistical Database Management, SSDBM18*.
 Sharpe, W.F. (1963). A simplified model for portfolio analysis. *Management Science*, 9, 277--293.
 Sharpe, W.F. (1964). Capital asset prices: A theory of market equilibrium under conditions of risk. *Journal of Finance*, 19, 425--442.

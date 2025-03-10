@@ -42,6 +42,23 @@ Table: The 11 sectors in the [standard classification by MSCI](https://en.wikipe
 | 11  | Materials      | C            |             1.0 |            2.1 | Linde        |         21.4 | VAW          |
 
 
+Stock market is not the economy
+--------------------------------------------
+
+-   Small businesses employ nearly half of the American workforce and represent 43.5% of America’s GDP.
+-   Only [13% (2,790)](https://www.advisorpedia.com/chart-center/number-of-public-companies-v-private-us/) of US companies with over $100 million in revenue are publicly traded.
+-   Private equity is becoming more influential.
+-   Schlingemann, F.P. & Stulz, R.M. (2022). Have exchange-listed firms become less important for the economy? [^Schlingemann2022]
+
+[^Schlingemann2022]: HERE
+
+
+Global stock markets
+--------------------------------------------
+
+-   TODO
+
+
 Active vs passive
 --------------------------------------------
 
