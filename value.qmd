@@ -44,6 +44,7 @@ Buffett Indicator
 -   [Longtermtrends: Buffett Indicator](https://www.longtermtrends.net/market-cap-to-gdp-the-buffett-indicator/)
 -   [Longtermtrends: S&P 500 P/E Ratio](https://www.longtermtrends.net/sp500-price-earnings-shiller-pe-ratio/)
 -   [multpl.com: Shiller P/E](https://www.multpl.com/shiller-pe)
+-   [Warren Buffett](https://en.wikipedia.org/wiki/Warren_Buffett) (b. 1930)
 -   Buffett, W. (2017). *Berkshire Hathaway Letters to Shareholders 1965-2016*. [^Buffett2017]
 
 [^Buffett2017]: @Buffett_2017_Berkshire_Hathaway_Letters_to_Shareholders\.
@@ -56,9 +57,35 @@ Reading a 10-K
 -   Find a particular company's 10-K filings using the search for the SEC's [EDGAR database](https://www.sec.gov/search-filings). 
 
 
+Graham's special paradox of mathematics and investment
+--------------------------------------------
+
+As a physicist, I support the skillful application of mathematics.
+In these notes, we have used some calculus, linear algebra, and numerical
+optimizations.
+
+Still, noting Graham:
+
+>   [T]here is a special paradox in the relationship between mathematics and
+>   investment attitudes on common stocks, which is this: Mathematics is
+>   ordinarily considered as producing precise and dependable results;
+>   but in the stock market the more elaborate and abstruse the mathematics
+>   the more uncertain and speculative are the conclusions we draw therefrom.
+>   In 44 years of Wall Street experience and study I have never seen
+>   dependable calculations made about common stock values, or related
+>   investment policies, that went beyond simple arithmetic or the most
+>   elementary algebra. Whenever calculus is brought in, or higher algebra,
+>   you could take it as a warning signal that the operator was trying to
+>   substitute theory for experience, and usually also to give to speculation
+>   the deceptive guise of investment. [^Graham2003p570]
+
+[^Graham2003p570]: @Graham_2003_The_Intellegent_Investor_Revised_ed\, p. 570.
+
+
 Misc
 --------------------------------------------
 
+-   [Mr. Market by Benjamin Graham](http://csinvesting.org/wp-content/uploads/2013/10/Mr-Market-by-Ben-Graham.pdf) - Chapter 8 from *The Intelligent Investor* with commentary by Jason Zweig
 -   [Benjamin Graham formula](https://en.wikipedia.org/wiki/Benjamin_Graham_formula)
 -   [Discounted cash flow](https://en.wikipedia.org/wiki/Discounted_cash_flow)
 -   [Market Rules to Remember](https://en.wikipedia.org/wiki/Market_Rules_to_Remember) - Bob Farrell (1998), Merrill Lynch
