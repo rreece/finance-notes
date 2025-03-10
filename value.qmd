@@ -56,6 +56,31 @@ Reading a 10-K
 -   Find a particular company's 10-K filings using the search for the SEC's [EDGAR database](https://www.sec.gov/search-filings). 
 
 
+Graham's special paradox of mathematics and investment
+--------------------------------------------
+
+As a physicist, I support the skillful application of mathematics.
+In these notes, we have used some calculus, linear algebra, and numerical
+optimizations.
+
+Still, noting Graham:
+
+>   [T]here is a special paradox in the relationship between mathematics and
+>   investment attitudes on common stocks, which is this: Mathematics is
+>   ordinarily considered as producing precise and dependable results;
+>   but in the stock market the more elaborate and abstruse the mathematics
+>   the more uncertain and speculative are the conclusions we draw therefrom.
+>   In 44 years of Wall Street experience and study I have never seen
+>   dependable calculations made about common stock values, or related
+>   investment policies, that went beyond simple arithmetic or the most
+>   elementary algebra. Whenever calculus is brought in, or higher algebra,
+>   you could take it as a warning signal that the operator was trying to
+>   substitute theory for experience, and usually also to give to speculation
+>   the deceptive guise of investment. [^Graham2003p570]
+
+[^Graham2003p570]: @Graham_2003_The_Intellegent_Investor_Revised_ed\, p. 570.
+
+
 Misc
 --------------------------------------------
 
