@@ -470,7 +470,7 @@ This is how we minimize $\sigma$.
     -   Tam, A.S. (2021). [Lagrangians and portfolio optimization](https://www.adrian.idv.hk/2021-06-22-kkt/).
 -   Markowitz's  Critical Line Algorithm (CLA)
     -   Markowitz, H.M. (1956). The optimization of a quadratic function subject to linear constraints. [^Markowitz1956]
-    -   Bailey, D.H & L&oacute;pez de Prado, M. (2013). [An open-source implementation of the critical-line algorithm for portfolio optimization](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2197616). [^Bailey2013]
+    -   Bailey, D.H. & L&oacute;pez de Prado, M. (2013). [An open-source implementation of the critical-line algorithm for portfolio optimization](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2197616). [^Bailey2013]
     -   Markowitz, H.M., Starer, D., Fram, H., & Gerber, S. (2019). [Avoiding the downside: A practical review of the Critical Line Algorithm for mean-semivariance portfolio optimization](https://www.hudsonbaycapital.com/documents/FG/hudsonbay/research/599440_paper.pdf). [^Markowitz2019a]
 -   Boyd, S. & Vandenberghe, L. (2004). [*Convex Optimization*](https://web.stanford.edu/~boyd/cvxbook/). [^Boyd2004]
     -   Course website at Stanford: [Convex Optimization I](https://web.stanford.edu/class/ee364a/)
