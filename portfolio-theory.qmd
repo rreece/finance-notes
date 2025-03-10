@@ -156,23 +156,23 @@ The efficient frontier can be written as a linear combination of any two efficie
 This is discussed in more detail in the section on [Fund theorems](#fund-theorems).
 Written as a combination of the minimum variance and the tangent portfolios gives
 
-$$ \vec{w}_{\ast} = \xi \, \vec{w}_\mathrm{min} + (1-\xi) \, \vec{w}_\mathrm{tan} $$
+$$ \vec{w}_{\ast} = \psi \, \vec{w}_\mathrm{min} + (1-\psi) \, \vec{w}_\mathrm{tan} $$
 
 where
 
-$$ \xi = (c - b \, r_{\ast}) \, a \, / \, d $$
+$$ \psi = (c - b \, r_{\ast}) \, a \, / \, d $$
 
 The efficient frontier portfolio can be equivalently written
 
 \begin{align}
-\vec{w}_{\ast} &= \xi \, \vec{w}_\mathrm{min} + (1-\xi) \, \vec{w}_\mathrm{tan} \\
+\vec{w}_{\ast} &= \psi \, \vec{w}_\mathrm{min} + (1-\psi) \, \vec{w}_\mathrm{tan} \\
       &= \left( \frac{c - b \, r_{\ast}}{d} \right) a \, \vec{w}_\mathrm{min} + \left( \frac{a \, r_{\ast} - b}{d} \right) b \, \vec{w}_\mathrm{tan} \\
       &= \left( \frac{c - b \, r_{\ast}}{d} \right) V^{-1} \, \vec{1} + \left( \frac{a \, r_{\ast} - b}{d} \right) V^{-1} \, \vec{\mu}
 \end{align}
 
 Along the frontier, the return is
 
-$$ r_{\ast} = \xi \, r_\mathrm{min} + (1-\xi) \, r_\mathrm{tan} $$
+$$ r_{\ast} = \psi \, r_\mathrm{min} + (1-\psi) \, r_\mathrm{tan} $$
 
 The variance is
 
@@ -538,15 +538,15 @@ Kasa:
 >   Any portfolio on the efficient frontier can be written as a linear
 >   combination of two fixed efficient portfolios.
 
-$$ \vec{w}_{\ast} = \xi \, \vec{w}_{1} + (1-\xi) \, \vec{w}_{2} $$
+$$ \vec{w}_{\ast} = \psi \, \vec{w}_{1} + (1-\psi) \, \vec{w}_{2} $$
 
-TODO: reparameterize? [^TODOxi]
+TODO: reparameterize? [^TODOpsi]
 
 [^Merton1972b]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio\.
 [^Merton1972p1858]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio\, p. 1858.
 [^Tobin1958]: @Tobin_1958_Liquidity_preference_as_behavior_towards_risk\.
-[^TODOxi]: TODO: Throughout this we have parameterized $\xi$ such as it goes from 0 to 1,
-we go from holding asset 2 to 1. Let's reparameterize so that $\xi \rightarrow (1-\xi)$.
+[^TODOpsi]: TODO: Throughout this we have parameterized $\psi$ such as it goes from 0 to 1,
+we go from holding asset 2 to 1. Let's reparameterize so that $\psi \rightarrow (1-\psi)$.
 
 
 ### One-fund theorem
