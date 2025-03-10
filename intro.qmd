@@ -14,6 +14,30 @@ an, ea tale volumus vel. At porro soleat est. Debet facilis admodum an sed,
 at falli feugiat est.
 
 
+The portfolio problem
+--------------------------------------------
+
+-   TODO
+
+
+Growth vs value investing
+--------------------------------------------
+
+-   TODO
+
+
+Active vs passive investing
+--------------------------------------------
+
+-   Brinson, G.P., Hood, L.R., & Beebower, G.L. (1986). Determinants of portfolio performance. [^Brinson1986]
+-   Brinson, G. P., Singer, B.D., & Beebower, G.L. (1991). Determinants of portfolio performance II: An update. [^Brinson1991]
+-   Hood, R.L. (2005). Determinants of portfolio performance: 20 years later. [^Hood2005]
+
+[^Brinson1986]: @Brinson_1986_Determinants_of_portfolio_performance\.
+[^Brinson1991]: @Brinson_1991_Determinants_of_portfolio_performance_II\.
+[^Hood2005]: @Hood_2005_Determinants_of_portfolio_performance_20_years\.
+
+
 Why isn't technical analysis discussed here?
 ------------------------------------------------
 
@@ -21,4 +45,5 @@ TODO:
 
 -   "Technical analysis" is mostly bullshit
 -   @Aronson_2007_Evidence_Based_Technical_Analysis
+
 
