@@ -28,7 +28,7 @@ TODO: Figure
 The Compound Annual Growth Rate (CAGR), using the sampling frequency
 of $\ell=252$ trading days per year, is
 
-$$ r_\mathrm{CAGR}(t) = \left( \frac{a(t)}{a(t_{1})} \right)^{\frac{\ell}{t}} - 1 $$
+$$ r_\mathrm{CAGR}(t) = \left( \frac{a(t)}{a(t_{0})} \right)^{\frac{\ell}{t - t_{0}}} - 1 $$
 
 
 Active vs passive investing
