@@ -395,15 +395,14 @@ $$ \alpha = 1 - \mathrm{exp}\left( \frac{-\Delta{}t}{\tau} \right) \simeq \frac{
 
 $$ \hat{\mu}_{n} = \mu_{n-1} + \alpha (x_{n} - \mu_{n-1}) = (1 - \alpha) \mu_{n-1} + \alpha x_{n} $$
 
-where by summing a geometric series, one can show that for exponential weighting
-
-$$ W_{n} = 1 $$
-
 Exponential-weighted covariance:
 
 $$ C_{n} = (1 - \alpha) {C}_{n-1} + \alpha \left( x_{n} - \bar{x}_{n-1} \right) \left( y_{n} - \bar{y}_{n} \right) $$
 
 $$ C_{n} = (1 - \alpha) {C}_{n-1} + \alpha \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal $$
+
+where by summing a geometric series, one can show that for exponential weighting, $W_{n} = 1$,
+so $\hat{V} = C_{n}$.
 
 [^Chan1979]: @Chan_1979_Updating_formulae_and_a_pairwise_algorithm\.
 [^Finch2009]: @Finch_2009_Incremental_calculation_of_weighted_mean\.
@@ -413,20 +412,6 @@ $$ C_{n} = (1 - \alpha) {C}_{n-1} + \alpha \left( \vec{x}_{n} - \vec{\mu}_{n-1} 
 [^Pebay2008]: @Pebay_2008_Formulas_for_robust_one_pass_parallel_computation\.
 [^Pebay2016]: @Pebay_2016_Numerically_stable_scalable_formulas_for_parallel\.
 [^Schubert2018]: @Schubert_2018_Numerically_stable_parallel_computation\.
-
-
-### Compound annual growth rate
-
-The value of an asset compounding at rate $r(t)$ per day
-with frequency, $k=252$, trading days per year is
-
-$$ a(t) = a(t_{0}) \left( 1 + r(t) \right)^{\frac{t}{k}} $$
-
-The Compound Annual Growth Rate (CAGR) is
-
-$$ r_\mathrm{CAGR} = \left( \frac{a(t)}{a(t_{0})} \right)^{\frac{k}{t}} - 1 $$
-
-$$ \hat{\mu}_\mathrm{CAGR} = r_\mathrm{CAGR} $$
 
 
 ### Shrinkage estimators
@@ -460,7 +445,6 @@ Convex optimization
 
 This is how we minimize $\sigma$.
 
--   Affine combinations and convex sets
 -   [Linear programming](https://en.wikipedia.org/wiki/Linear_programming)
     -   [George Dantzig](https://en.wikipedia.org/wiki/George_Dantzig) (1914-2005)
 -   [Quadratic programming](https://en.wikipedia.org/wiki/Quadratic_programming)
@@ -476,6 +460,7 @@ This is how we minimize $\sigma$.
     -   Course website at Stanford: [Convex Optimization I](https://web.stanford.edu/class/ee364a/)
     -   [Convex Optimization Short Course](https://web.stanford.edu/~boyd/papers/cvx_short_course.html)
     -   Boyd Lectures on youtube: [1](https://www.youtube.com/watch?v=kV1ru-Inzl4), [2](https://www.youtube.com/watch?v=2H4_7izio9Y), [3](https://www.youtube.com/watch?v=1menqhfNzzo), [4](https://www.youtube.com/watch?v=U2HRwA7XePU), [5](https://www.youtube.com/watch?v=AAjG1TQcL7c), [6](https://www.youtube.com/watch?v=d2jF3SXcFQ8), [7](https://www.youtube.com/watch?v=P_SuSVZnrT0), [8](https://www.youtube.com/watch?v=wsRznzNgTS0), [9](https://www.youtube.com/watch?v=whE03c84ahA), [10](https://www.youtube.com/watch?v=N3V2AdTImJE), [11](https://www.youtube.com/watch?v=trs0RI39uWI), [12](https://www.youtube.com/watch?v=ankx1lGi5jI)
+    -   Affine combinations and convex sets
 -   Software:
     -   [CVXPY](https://www.cvxpy.org/)
     -   [robertmartin8/PyPortfolioOpt](https://github.com/robertmartin8/PyPortfolioOpt)
@@ -558,9 +543,8 @@ with a risk-free return, $r_\mathrm{f}$.
 
 Kwok:
 
->   Any efficient portfolio [on the Capital Allocation Line] can be
->   expressed as a combination of the risk free asset and the
->   portfolio (or fund) represented by $M$.
+>   Any efficient portfolio can be expressed as a [linear] combination of
+>   the risk free asset and the portfolio (or fund) represented by $M$.
 
 Kasa:
 
