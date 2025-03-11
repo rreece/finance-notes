@@ -25,10 +25,6 @@ Compound growth
 
 TODO: Figure
 
-The value of an asset compounding at rate $r(t)$ per day is
-
-$$ a(t) = a(t_{1}) \prod_{t=1}^{T} \left( 1 + r(t) \right) $$
-
 The Compound Annual Growth Rate (CAGR), using the sampling frequency
 of $\ell=252$ trading days per year, is
 
