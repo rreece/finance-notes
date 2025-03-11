@@ -10,6 +10,12 @@ TODO: Price data is pretty easy to come by, but where does one scrape
 up-to-date earnings data?
 
 
+Growth vs value investing
+--------------------------------------------
+
+-   TODO
+
+
 P/E ratio
 --------------------------------------------
 

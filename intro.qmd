@@ -20,15 +20,26 @@ The portfolio problem
 -   TODO
 
 
-Growth vs value investing
+Compound growth
 --------------------------------------------
 
--   TODO
+TODO: Figure
+
+The value of an asset compounding at rate $r(t)$ per day is
+
+$$ a(t) = a(t_{1}) \prod_{t=1}^{T} \left( 1 + r(t) \right) $$
+
+The Compound Annual Growth Rate (CAGR), using the sampling frequency
+of $\ell=252$ trading days per year, is
+
+$$ r_\mathrm{CAGR}(t) = \left( \frac{a(t)}{a(t_{1})} \right)^{\frac{\ell}{t}} - 1 $$
 
 
 Active vs passive investing
 --------------------------------------------
 
+-   Trading vs investing
+-   Dollar Cost Averaging (DCA)
 -   Brinson, G.P., Hood, L.R., & Beebower, G.L. (1986). Determinants of portfolio performance. [^Brinson1986]
 -   Brinson, G. P., Singer, B.D., & Beebower, G.L. (1991). Determinants of portfolio performance II: An update. [^Brinson1991]
 -   Hood, R.L. (2005). Determinants of portfolio performance: 20 years later. [^Hood2005]
