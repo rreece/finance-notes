@@ -65,10 +65,11 @@ Rockafellar, R.T. & Uryasev, S. (2000). Optimization of conditional value-at-ris
 Rom, B.M. & Ferguson, K. (1993). Post-modern portfolio theory comes of age. *Journal of Investing*. [Winter 1993]
 Roy, A.D. (1952). Safety first and the holding of assets. *Econometrica*, 20, 431--449. https://www.jstor.org/stable/1907413
 Schlingemann, F.P. & Stulz, R.M. (2022). Have exchange-listed firms become less important for the economy? *Journal of Financial Economics*, 143, 927--958.
-Schubert, E. & Gertz, M. (2018). Numerically stable parallel computation of (co-)variance. *Proceedings of the 30th International Conference on Scientific and Statistical Database Management, SSDBM18*.
+Schubert, E. & Gertz, M. (2018). Numerically stable parallel computation of (co-)variance. *Proceedings of the 30th International Conference on Scientific and Statistical Database Management, SSDBM18*. https://ds.ifi.uni-heidelberg.de/files/Team/eschubert/publications/SSDBM18-covariance-slides.pdf
 Sharpe, W.F. (1963). A simplified model for portfolio analysis. *Management Science*, 9, 277--293.
 Sharpe, W.F. (1964). Capital asset prices: A theory of market equilibrium under conditions of risk. *Journal of Finance*, 19, 425--442.
 Sharpe, W.F. (1990). Nobel lecture: Capital asset prices with and without negative holdings. https://www.nobelprize.org/uploads/2018/06/sharpe-lecture.pdf
 Sharpe, W.F. (1999). *Portfolio Theory and Capital Markets*. McGraw-Hill. [(Originally published in 1970)]
 Sortino, F. (2010). *The Sortino Framework for Constructing Portfolios*. Elsevier.
 Tobin, J. (1958). Liquidity preference as behavior towards risk. *Review of Economic Studies*, 25, 65--86. https://doi.org/10.2307/2296205
+Welford, B.P. (1962). Note on a method for calculating corrected sums of squares and products. *Technometrics*, 4, 419--420.
