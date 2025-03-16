@@ -311,10 +311,11 @@ TODO:
 -   Chan, T.F., Golub, G.H., & LeVeque, R.J. (1979). [Updating formulae and a pairwise algorithm for computing sample variances](http://infolab.stanford.edu/pub/cstr/reports/cs/tr/79/773/CS-TR-79-773.pdf). [^Chan1979]
 -   P&eacute;bay, P. (2008). [Formulas for robust, one-pass parallel computation of covariances and arbitrary-order statistical moments](https://www.osti.gov/servlets/purl/1028931). [^Pebay2008]
 -   Finch, T. (2009). [Incremental calculation of weighted mean and variance](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=5f77d0594f66e49cc0e8c2b8177ead33b7137183). [^Finch2009]
+-   Cook, J.D. (2014). [Accurately computing running variance](https://www.johndcook.com/blog/standard_deviation/).
 -   Meng, X. (2015). [Simpler online updates for arbitrary-order central moments](https://arxiv.org/abs/1510.04923). [^Meng2015]
 -   P&eacute;bay, P., Terriberry, T.B., Kolla, H. & Bennett, J. (2016). [Numerically stable, scalable formulas for parallel and online computation of higher-order multivariate central moments with arbitrary weights](https://link.springer.com/article/10.1007/s00180-015-0637-z). [^Pebay2016]
 -   Schubert, E. & Gertz, M. (2018). Numerically stable parallel computation of (co-)variance. [^Schubert2018]
--   Cook, J.D. (?). [Accurately computing running variance](https://www.johndcook.com/blog/standard_deviation/).
+-   Chen, C. (2019). [Welford algorithm for updating variance](https://changyaochen.github.io/welford/).
 
 Univariate central moments:
 
@@ -352,7 +353,7 @@ $$ S_{n} = S_{n-1} + \frac{n-1}{n} (x_n - \mu_{n - 1}) (x_n - \mu_{n - 1}) $$
 
 $$ S_{n} = S_{n-1} + \frac{n-1}{n} \delta^2 = S_{n-1} + \delta \left( \delta - \frac{\delta}{n} \right) $$
 
-Online covariance:
+Online covariance (Welford algorithm):
 
 $$ C_{n}(x, y) = C_{n-1} + (x_n - \bar{x}_{n - 1}) (y_n - \bar{y}_n) = C_{n-1} + \delta_{x} \delta_{y}^\prime $$
 
@@ -362,9 +363,9 @@ $$ \hat{V}_{xy} = \frac{C_{n}(x, y)}{n-1} $$
 
 Matrix form:
 
-$$ C_{n} = {C}_{n-1} + \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal = {C}_{n-1} + \vec{\delta} \: \vec{\delta^\prime}^\intercal $$
+$$ C_{n} = C_{n-1} + \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal = C_{n-1} + \vec{\delta} \: \vec{\delta^\prime}^\intercal $$
 
-$$ C_{n} = {C}_{n-1} + \frac{n-1}{n} \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right)^\intercal = {C}_{n-1} + \frac{n-1}{n} S(\vec{x}_{n}, \vec{\mu}_{n-1}) $$
+$$ C_{n} = C_{n-1} + \frac{n-1}{n} \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right)^\intercal = C_{n-1} + \frac{n-1}{n} S(\vec{x}_{n}, \vec{\mu}_{n-1}) $$
 
 $$ \hat{V} = \frac{C_{n}}{n-1} $$
 
@@ -383,9 +384,9 @@ $$ W_{n} = \sum_{i=1}^{n} w_{n,i} $$
 
 Weighted covariance:
 
-$$ C_{n} = \frac{W_n - w_{n,n}}{W_{n-1}} {C}_{n-1} + w_{n,n} \left( x_{n} - \bar{x}_{n-1} \right) \left( y_{n} - \bar{y}_{n} \right) $$
+$$ C_{n} = \frac{W_n - w_{n,n}}{W_{n-1}} C_{n-1} + w_{n,n} \left( x_{n} - \bar{x}_{n-1} \right) \left( y_{n} - \bar{y}_{n} \right) $$
 
-$$ C_{n} = \frac{W_n - w_{n,n}}{W_{n-1}} {C}_{n-1} + w_{n,n} \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal $$
+$$ C_{n} = \frac{W_n - w_{n,n}}{W_{n-1}} C_{n-1} + w_{n,n} \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal $$
 
 where
 
@@ -399,12 +400,20 @@ $$ \hat{\mu}_{n} = \mu_{n-1} + \alpha (x_{n} - \mu_{n-1}) = (1 - \alpha) \mu_{n-
 
 Exponential-weighted covariance:
 
-$$ C_{n} = (1 - \alpha) {C}_{n-1} + \alpha \left( x_{n} - \bar{x}_{n-1} \right) \left( y_{n} - \bar{y}_{n} \right) $$
+$$ C_{n} = (1 - \alpha) C_{n-1} + \alpha \left( x_{n} - \bar{x}_{n-1} \right) \left( y_{n} - \bar{y}_{n} \right) $$
 
-$$ C_{n} = (1 - \alpha) {C}_{n-1} + \alpha \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal $$
+$$ C_{n} = (1 - \alpha) C_{n-1} + \alpha \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal $$
 
 where by summing a geometric series, one can show that for exponential weighting, $W_{n} = 1$,
 so $\hat{V} = C_{n}$.
+
+Rolling mean (reverse Welford algorithm):
+
+$$ \vec{\mu}_{n-1} = \vec{\mu}_{n} - \frac{1}{n-1} \left( \vec{x}_{n} - \vec{\mu}_{n} \right) $$
+
+Rolling covariance (reverse Welford algorithm):
+
+$$ C_{n-1} = C_{n} - \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal = C_{n} - \vec{\delta} \: \vec{\delta^\prime}^\intercal $$
 
 [^Chan1979]: @Chan_1979_Updating_formulae_and_a_pairwise_algorithm\.
 [^Finch2009]: @Finch_2009_Incremental_calculation_of_weighted_mean\.
