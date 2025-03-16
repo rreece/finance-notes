@@ -73,3 +73,4 @@ Sharpe, W.F. (1999). *Portfolio Theory and Capital Markets*. McGraw-Hill. [(Orig
 Sortino, F. (2010). *The Sortino Framework for Constructing Portfolios*. Elsevier.
 Tobin, J. (1958). Liquidity preference as behavior towards risk. *Review of Economic Studies*, 25, 65--86. https://doi.org/10.2307/2296205
 Welford, B.P. (1962). Note on a method for calculating corrected sums of squares and products. *Technometrics*, 4, 419--420.
+Youngs, E.A. & Cramer, E.M. (1971). Some results relevant to choice of sum and sum-of-product algorithms. *Technometrics*, 13, 657--665. https://www.jstor.org/stable/1267176

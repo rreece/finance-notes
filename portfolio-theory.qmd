@@ -306,6 +306,7 @@ TODO:
 -   [Algorithms for calculating variance](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance)
 -   Welford, B.P. (1962). Note on a method for calculating corrected sums of squares and products. [^Welford1962]
 -   Neely, P.M. (1966). [Comparison of several algorithms for computation of means, standard deviations and correlation coefficients](https://dl.acm.org/doi/pdf/10.1145/365719.365958). [^Neely1966]
+-   Youngs, E.A. & Cramer, E.M. (1971). [Some results relevant to choice of sum and sum-of-product algorithms](https://www.jstor.org/stable/1267176). [^Youngs1971]
 -   Ling, R.F. (1974). Comparison of several algorithms for computing sample means and variances. [^Ling1974]
 -   Chan, T.F., Golub, G.H., & LeVeque, R.J. (1979). [Updating formulae and a pairwise algorithm for computing sample variances](http://infolab.stanford.edu/pub/cstr/reports/cs/tr/79/773/CS-TR-79-773.pdf). [^Chan1979]
 -   P&eacute;bay, P. (2008). [Formulas for robust, one-pass parallel computation of covariances and arbitrary-order statistical moments](https://www.osti.gov/servlets/purl/1028931). [^Pebay2008]
@@ -414,6 +415,7 @@ so $\hat{V} = C_{n}$.
 [^Pebay2016]: @Pebay_2016_Numerically_stable_scalable_formulas_for_parallel\.
 [^Schubert2018]: @Schubert_2018_Numerically_stable_parallel_computation\.
 [^Welford1962]: @Welford_1962_Note_on_a_method_for_calculating_corrected_sums\.
+[^Youngs1971]: @Youngs_1971_Some_results_relevant_to_choice_of_sum_and_sum\.
 
 
 ### Shrinkage estimators
