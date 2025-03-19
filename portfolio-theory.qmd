@@ -727,8 +727,9 @@ Factor models
 ### Carhart four-factor model
 
 -   [Carhart four-factor model](https://en.wikipedia.org/wiki/Carhart_four-factor_model)
--   TODO
+-   Yontar, T. & Benham, F. (2016). [US small cap equity: Which benchmark is best?](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2770660). [^Yontar2016]
 
+[^Yontar2016]: @Yontar_2016_US_small_cap_equity_Which_benchmark_is_best\.
 
 
 Risk preferences
