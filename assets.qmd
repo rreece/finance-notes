@@ -20,6 +20,9 @@ Asset classes
 -   collectables
 
 
+![Investment returns by asset class  (source: [themeasureofaplan.com](https://themeasureofaplan.com/investment-returns-by-asset-class/)).](img/investment-returns-by-asset-class.png){#fig-investment-returns-by-asset-class}
+
+
 US sectors
 --------------------------------------------
 
