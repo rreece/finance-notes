@@ -92,6 +92,7 @@ Misc
 --------------------------------------------
 
 -   Alden, Lyn. (?). [How to invest in stocks](https://www.lynalden.com/how-to-invest-in-stocks/).
+-   [The Measure of a Plan](https://themeasureofaplan.com/)
 -   [Mr. Market by Benjamin Graham](http://csinvesting.org/wp-content/uploads/2013/10/Mr-Market-by-Ben-Graham.pdf) - Chapter 8 from *The Intelligent Investor* with commentary by Jason Zweig
 -   Wikipedia:
     -   [Benjamin Graham formula](https://en.wikipedia.org/wiki/Benjamin_Graham_formula)

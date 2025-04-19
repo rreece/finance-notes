@@ -48,7 +48,7 @@ Table: The 11 sectors in the [standard classification by MSCI](https://en.wikipe
 Stock market is not the economy
 --------------------------------------------
 
--   Small businesses employ nearly half of the American workforce and represent 43.5% of America’s GDP.
+-   Small businesses employ nearly half of the American workforce and represent [43.5% of America’s GDP](https://www.uschamber.com/small-business/small-business-data-center).
 -   Only [13% (2,790)](https://www.advisorpedia.com/chart-center/number-of-public-companies-v-private-us/) of US companies with over $100 million in revenue are publicly traded.
 -   Schlingemann, F.P. & Stulz, R.M. (2022). Have exchange-listed firms become less important for the economy? [^Schlingemann2022]
 -   Riley, N.J. (2021). [The equity market and GDP: Less linked than you might think](https://www.bostontrustwalden.com/the-equity-market-and-gdp-less-linked-than-you-might-think/).
