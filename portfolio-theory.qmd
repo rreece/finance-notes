@@ -260,7 +260,7 @@ Markowitz:
 
 Dalio: "The Holy Grail", see @fig-dalio-holy-grail\.
 
-![TODO: Citation needed.
+![TODO: Citation needed. See: [financhill.com](https://financhill.com/blog/investing/ray-dalio-holy-grail-explained).
     ](img/dalio-holy-grail.jpg){#fig-dalio-holy-grail}
 
 
