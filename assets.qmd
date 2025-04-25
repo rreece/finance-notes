@@ -19,8 +19,9 @@ Asset classes
 -   cryptocurrency
 -   collectables
 
+![Investment returns for asset classes by decade (source: [awealthofcommonsense.com](https://awealthofcommonsense.com/2025/04/investing-in-an-uncertain-world/)).](img/asset-class-returns-by-decade.png){#fig-asset-class-returns-by-decade}
 
-![Investment returns by asset class  (source: [themeasureofaplan.com](https://themeasureofaplan.com/investment-returns-by-asset-class/)).](img/investment-returns-by-asset-class.png){#fig-investment-returns-by-asset-class}
+![Investment returns for asset classes by year  (source: [themeasureofaplan.com](https://themeasureofaplan.com/investment-returns-by-asset-class/)).](img/investment-returns-by-asset-class.png){#fig-investment-returns-by-asset-class}
 
 
 US sectors

@@ -21,8 +21,8 @@ book:
 #    in physics and machine learning.
 
   page-navigation: true
-  site-url: https://rreece.github.io/quarto-example
-  repo-url: https://github.com/rreece/quarto-example
+  site-url: https://rreece.github.io/finance-notes
+  repo-url: https://github.com/rreece/finance-notes
   favicon: img/markdown-favicon-196x196.png
 #  cover-image: img/corr-gldm-btc-2024-09-14.png
 #  image: "quarto-dark-bg.jpeg"
