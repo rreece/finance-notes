@@ -48,6 +48,8 @@ Active vs passive investing
 
 ![Annualized returns of holding the S&P500 (source: [awealthofcommonsense.com](https://awealthofcommonsense.com/2024/09/31-years-of-stock-market-returns/)).](img/sp500-returns-carlson-2024-09-01.png){#fig-sp500-returns-carlson}
 
+![TODO (source: [awealthofcommonsense.com](https://awealthofcommonsense.com/2025/05/warren-buffett-on-time-horizons/)).](img/sp500-odds-of-positive-returns-over-various-hold.png){#fig-sp500-odds-of-positive-returns-over-various-hold}
+
 [^Brinson1986]: @Brinson_1986_Determinants_of_portfolio_performance\.
 [^Brinson1991]: @Brinson_1991_Determinants_of_portfolio_performance_II\.
 [^Hood2005]: @Hood_2005_Determinants_of_portfolio_performance_20_years\.
