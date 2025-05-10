@@ -15,18 +15,6 @@ and later expanded by William Sharpe, it focuses on analyzing fundamental
 characteristics of securities, specifically their expected returns (mean)
 and risk (variance), to construct optimal portfolios.
 
-While technical analysis looks at price patterns and trading volumes to predict
-future movements, mean-variance analysis examines the underlying statistical
-properties of assets and their relationships to each other through correlations
-and covariances. This approach aims to find portfolios that maximize expected
-return for a given level of risk, or minimize risk for a given expected return,
-creating what's known as the efficient frontier.
-
-The key distinction is that mean-variance analysis relies on fundamental properties
-of the assets (their return distributions and correlations) rather than chart
-patterns or technical indicators. It forms part of the theoretical foundation
-for quantitative fundamental analysis in portfolio management.
-
 
 Modern portfolio theory
 --------------------------------------------
