@@ -13,6 +13,8 @@ accusamus. Probo aliquam pri id. Mutat singulis ad vis, eam euismod pertinax
 an, ea tale volumus vel. At porro soleat est. Debet facilis admodum an sed,
 at falli feugiat est.
 
+TODO
+
 My favorite personal finance blogs:
 
 -   [A Wealth of Common Sense](https://awealthofcommonsense.com)
@@ -34,7 +36,9 @@ $$ r_\mathrm{CAGR}(t) = \left( \frac{a(t)}{a(t_{0})} \right)^{\ell/(t - t_{0})} 
 The portfolio problem
 --------------------------------------------
 
--   TODO
+What mix of assets should I hold to preserve and accrue value over time?
+
+TODO
 
 
 Active vs passive investing
@@ -46,7 +50,7 @@ Active vs passive investing
 -   Brinson, G. P., Singer, B.D., & Beebower, G.L. (1991). Determinants of portfolio performance II: An update. [^Brinson1991]
 -   Hood, R.L. (2005). Determinants of portfolio performance: 20 years later. [^Hood2005]
 
-![TODO (source: [awealthofcommonsense.com](https://awealthofcommonsense.com/2025/05/warren-buffett-on-time-horizons/)).](img/sp500-odds-of-positive-returns-over-various-hold.png){#fig-sp500-odds-of-positive-returns-over-various-hold}
+![How often was the S&P 500 higher over various holding periods since 1950 (source: [awealthofcommonsense.com](https://awealthofcommonsense.com/2025/05/warren-buffett-on-time-horizons/)).](img/sp500-odds-of-positive-returns-over-various-hold.png){#fig-sp500-odds-of-positive-returns-over-various-hold}
 
 ![Annualized returns of holding the S&P500 (source: [awealthofcommonsense.com](https://awealthofcommonsense.com/2024/09/31-years-of-stock-market-returns/)).](img/sp500-returns-carlson-2024-09-01.png){#fig-sp500-returns-carlson}
 
@@ -62,5 +66,6 @@ TODO:
 
 -   "Technical analysis" is mostly bullshit
 -   @Aronson_2007_Evidence_Based_Technical_Analysis
+
 
 
