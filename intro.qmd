@@ -46,9 +46,9 @@ Active vs passive investing
 -   Brinson, G. P., Singer, B.D., & Beebower, G.L. (1991). Determinants of portfolio performance II: An update. [^Brinson1991]
 -   Hood, R.L. (2005). Determinants of portfolio performance: 20 years later. [^Hood2005]
 
-![Annualized returns of holding the S&P500 (source: [awealthofcommonsense.com](https://awealthofcommonsense.com/2024/09/31-years-of-stock-market-returns/)).](img/sp500-returns-carlson-2024-09-01.png){#fig-sp500-returns-carlson}
-
 ![TODO (source: [awealthofcommonsense.com](https://awealthofcommonsense.com/2025/05/warren-buffett-on-time-horizons/)).](img/sp500-odds-of-positive-returns-over-various-hold.png){#fig-sp500-odds-of-positive-returns-over-various-hold}
+
+![Annualized returns of holding the S&P500 (source: [awealthofcommonsense.com](https://awealthofcommonsense.com/2024/09/31-years-of-stock-market-returns/)).](img/sp500-returns-carlson-2024-09-01.png){#fig-sp500-returns-carlson}
 
 [^Brinson1986]: @Brinson_1986_Determinants_of_portfolio_performance\.
 [^Brinson1991]: @Brinson_1991_Determinants_of_portfolio_performance_II\.
