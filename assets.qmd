@@ -51,6 +51,8 @@ Stock market is not the economy
 
 -   Small businesses employ nearly half of the American workforce and represent [43.5% of America’s GDP](https://www.uschamber.com/small-business/small-business-data-center).
 -   Only [13% (2,790)](https://www.advisorpedia.com/chart-center/number-of-public-companies-v-private-us/) of US companies with over $100 million in revenue are publicly traded.
+-   US GDP in 2024: [$29.2T](https://www.bea.gov/sites/default/files/2025-04/gdp1q25-adv.pdf)
+-   China's GDP in 2024: [$18.6T](https://www.visualcapitalist.com/visualizing-chinas-18-6-trillion-economy-by-sector-in-2024/)
 -   Schlingemann, F.P. & Stulz, R.M. (2022). Have exchange-listed firms become less important for the economy? [^Schlingemann2022]
 -   Riley, N.J. (2021). [The equity market and GDP: Less linked than you might think](https://www.bostontrustwalden.com/the-equity-market-and-gdp-less-linked-than-you-might-think/).
 -   Private equity is becoming more influential.
