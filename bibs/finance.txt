@@ -1,4 +1,7 @@
+Anarkulova, A., Cederburg, S. & O'Doherty, M.S. (2025). Beyond the status quo: A critical assessment of lifecycle investment advice. https://ssrn.com/abstract=4590406
 Aronson, D. (2007). *Evidence-Based Technical Analysis*. Wiley.
+Asness, C.S. (1996). Why not 100% equities. *The Journal of Portfolio Management*, 22, 29--34. https://doi.org/10.3905/jpm.1996.29
+Asness, C.S., Israelov, R., & Liew, J.M. (2011). International diversification works (eventually). *Financial Analysts Journal*, 67, 24--38. https://doi.org/10.2469/faj.v67.n3.1
 Ayyala, D.N. (2020). High-dimensional statistical inference: Theoretical development to data analytics. In A.S.R. Srinivasa Rao and C.R. Rao (Eds.), *Handbook of Statistics* (pp. 289--335). Elsevier.
 Bailey, D.H. & L{\'o}pez de Prado, M. (2013). An open-source implementation of the critical-line algorithm for portfolio optimization. *Algorithms*, 6, 169--196. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2197616
 Bax, K., Taufer, E., & Paterlini, S. (2022). A generalized precision matrix for t-Student distributions in portfolio optimization. https://arxiv.org/abs/2203.13740
