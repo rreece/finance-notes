@@ -64,5 +64,11 @@ Global stock markets
 --------------------------------------------
 
 -   TODO
+-   Asness, C.S. (1996). [Why not 100% equities](https://doi.org/10.3905/jpm.1996.29). [^Asness1996]
+-   Asness, C.S., Israelov, R., & Liew, J.M. (2011). [International diversification works (eventually)](https://doi.org/10.2469/faj.v67.n3.1). [^Asness2011]
+-   Anarkulova, A., Cederburg, S. & O'Doherty, M.S. (2025). [Beyond the status quo: A critical assessment of lifecycle investment advice](https://ssrn.com/abstract=4590406). [^Anarkulova2025]
 
+[^Anarkulova2025]: @Anarkulova_2025_Beyond_the_status_quo_A_critical_assessment\.
+[^Asness1996]: @Asness_1996_Why_not_100_equities\.
+[^Asness2011]: @Asness_2011_International_diversification_works_eventually\.
 
