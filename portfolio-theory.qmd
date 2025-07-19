@@ -691,9 +691,13 @@ Black-Litterman model
 
 -   Black, F. & Litterman, R. (1991). Asset allocation.[^Black1991]
 -   Black, F. & Litterman, R. (1992). Global portfolio optimization. [^Black1992]
+-   He, G. & Litterman, R. (2002). The intuition behind Black-Litterman model portfolios. [^He2002]
+-   Meucci, A. (2008). The Black-Litterman approach: Original model and extensions. [^Meucci2008]
 
 [^Black1991]: @Black_1991_Asset_allocation\.
 [^Black1992]: @Black_1992_Global_portfolio_optimization\.
+[^He2002]: @He_2002_The_intuition_behind_Black_Litterman_model\.
+[^Meucci2008]: @Meucci_2008_The_Black_Litterman_approach_Original_model\.
 
 
 Factor models
