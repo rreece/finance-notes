@@ -21,9 +21,9 @@ Coqueret, G. & Milhau, V. (2014). Estimating covariance matrices for portfolio o
 Cotton, P. (2024). Hierarchical minimum variance portfolios: A unifying approach using Schur complements. https://github.com/microprediction/precise/blob/main/academic/Schur_Complementary_Portfolios_Peter_Cotton.pdf
 Das, S. (2016). *Data Science: Theories, Models, Algorithms, and Analytics*. http://srdas.github.io/Papers/DSA_Book.pdf
 Davis, J.H., Brandl-Cheng, L., & Khang, K. (2024). Megatrends and the US economy, 1890-2040. https://ssrn.com/abstract=4702028
-Koop, G.M. (2013). Forecasting with medium and large Bayesian VARs. *Journal of Applied Econometrics*, 28, 177--203. https://ssrn.com/abstract=1514412
 Dutta, S. & Jain, S. (2023). Precision versus shrinkage: A comparative analysis of covariance estimation methods for portfolio allocation. https://arxiv.org/abs/2305.11298
 Elton, E.J., Gruber, M.J., Brown, S.J., & Goetzmann, W.N. (2014). *Modern Portfolio Theory and Investment Analysis*, (9th ed.). Wiley. 
+Estrada, J. (2007). Mean-semivariance optimization: A heuristic approach. https://ssrn.com/abstract=1028206
 Fama, E.F. (1970). Efficient capital markets: A review of theory and empirical work. *Journal of Finance*, 25(2), 383--417. http://www.e-m-h.org/Fama70.pdf
 Fama, E.F. & French, K.R. (1992). The cross-section of expected stock returns. *Journal of Finance*, 47, 427. https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1992.tb04398.x
 Fan, J., Liao, Y., & Liu, H. (2015). An overview on the estimation of large covariance and precision matrices. https://arxiv.org/abs/1504.02995
@@ -38,6 +38,7 @@ Jagannathan, R. & Ma, T. (2003). Risk reduction in large portfolios: Why imposin
 Jensen, M. (1968). The performance of mutual funds in the period 1945-1964. *Journal of Finance*, 23, 389--416. https://www.jstor.org/stable/2325404
 Karatzas, I., Lehoczky, J.P., Sethi, S.P., & Shreve, S.E (1986). Explicit solution of a general consumption/investment problem. *Mathematics of Operations Research*, 11, 261--294. https://www.jstor.org/stable/3689808
 Kelly, J.L. (1956). A new interpretation of information rate. *Bell System Technical Journal*, 35, 917--926. https://www.princeton.edu/~wbialek/rome/refs/kelly_56.pdf
+Koop, G.M. (2013). Forecasting with medium and large Bayesian VARs. *Journal of Applied Econometrics*, 28, 177--203. https://ssrn.com/abstract=1514412
 Kwok, Y.K. (2017). Lecture notes: Fundamentals of Mathematical Finance. https://www.math.hkust.edu.hk/~maykwok/MATH4512.htm
 Ledoit, O. & Wolf, M. (2003). Improved estimation of the covariance matrix of stock returns with an application to portfolio selection. *Journal of Empirical Finance*, 10, 603--621. http://www.ledoit.net/ole2.pdf
 Ledoit, O. & Wolf, M. (2001). Honey, I shrunk the sample covariance matrix. http://www.ledoit.net/honey.pdf
