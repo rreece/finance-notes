@@ -268,7 +268,7 @@ Importantly, $x_i$ and $x_j$ are _conditionally independent_ iff $P_{ij} = 0$.
 TODO: Expand on why precision matrices are often naturally sparse as related to Gaussian Graphical Models.
 See discussion in Chan & Kroese. [^Chan2025]
 
-We have the off-diagonal terms of precision as
+We have that the off-diagonal terms of precision are
 
 $$ \Omega_{ij} = - \frac{1}{\tau_{i}} P_{ij} \frac{1}{\tau_{j}} $$
 
