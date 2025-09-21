@@ -200,7 +200,7 @@ We will derive something similar to the variance-correlation decomposition, $\Si
 except for precision. To motivate its form, it helps to know that a conditional covariance matrix
 is the inverse of a precision matrix of a partition.
 
-Schur complement lemma (TODO: prove or motivate):
+Schur complement lemma (TODO: prove or motivate): [^Bishop2024p76]
 
 $$ \Sigma_{A|B} = \Omega_{AA}^{-1} = \Sigma_{AA} - \Sigma_{AB} \Sigma_{BB}^{-1} \Sigma_{BA} $$
 
@@ -333,6 +333,7 @@ More:
 -   Dutta, S. & Jain, S. (2023). [Precision versus shrinkage: A comparative analysis of covariance estimation methods for portfolio allocation](https://arxiv.org/abs/2305.11298). [^Dutta2023]
 
 [^Bax2022]: @Bax_2022_A_generalized_precision_matrix_for_t_Student\.
+[^Bishop2024p76]: @Bishop_2024_Deep_Learning_Foundations_and_Concepts\, p. 76--81.
 [^Bolla2023]: @Bolla_2023_Partitioned_covariance_matrices_and_partial\.
 [^Chan2025]: @Chan_2025_Statistical_Modeling_and_Computation\, p. 371--2.
 [^Dempster1972]: @Dempster_1972_Covariance_selection\.

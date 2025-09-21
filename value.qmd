@@ -1,5 +1,5 @@
 ---
-title: "Value Investing"
+title: "Value investing"
 date: today
 ---
 

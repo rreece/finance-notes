@@ -7,6 +7,7 @@ Bailey, D.H. & L{\'o}pez de Prado, M. (2013). An open-source implementation of t
 Banerjee, O., d'Aspremont, A., & Ghaoui, L.E. (2005). Sparse covariance selection via robust maximum likelihood estimation. https://arxiv.org/abs/cs/0506023
 Bax, K., Taufer, E., & Paterlini, S. (2022). A generalized precision matrix for t-Student distributions in portfolio optimization. https://arxiv.org/abs/2203.13740
 Bessembinder, H. & Chan, K. (1998). Market efficiency and the returns to technical analysis. *Financial Management*, 27, 5--17. https://www.jstor.org/stable/3666289
+Bishop, C.M. (2024). *Deep Learning: Foundations and Concepts*. Springer.
 Bodnar, T. & Schmid, W. (2011). On the exact distribution of the estimated expected utility portfolio weights: Theory and applications. *Statistics & Risk Modeling*, 28, 319--342.
 Bodnar, T., Mazur, S., & Podg{\'o}rski, K. (2016). Singular inverse Wishart distribution and its application to portfolio theory. *Journal of Multivariate Analysis*, 143, 314--326. https://www.sciencedirect.com/science/article/pii/S0047259X15002353
 Bolla, M. (2023). Partitioned covariance matrices and partial correlations. https://math.bme.hu/~marib/tobbvalt/tv6ad.pdf
