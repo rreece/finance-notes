@@ -56,6 +56,9 @@ $$ V_{ij} = \frac{1}{N-1} \sum_{k=1}^{N} (x_{ik} - \bar{x}_{i}) ( x_{jk} - \bar{
 Online mean and covariance
 --------------------------------------------
 
+This discusses how one can calculate a continuously updated covariance
+estimate one data sample at a time.
+
 -   [Algorithms for calculating variance](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance)
 -   Welford, B.P. (1962). Note on a method for calculating corrected sums of squares and products. [^Welford1962]
 -   Neely, P.M. (1966). [Comparison of several algorithms for computation of means, standard deviations and correlation coefficients](https://dl.acm.org/doi/pdf/10.1145/365719.365958). [^Neely1966]
@@ -209,7 +212,7 @@ $$ \Omega = \Sigma^{-1} $$
 
 We will derive something similar to the variance-correlation decomposition, $\Sigma = D R D$,
 except for precision. To motivate its form, it helps to know that a conditional covariance matrix
-is the inverse of a precision matrix of a partition.
+is the inverse of a diagonal partition of a precision matrix.
 
 Schur complement lemma (TODO: prove or motivate): [^Bishop2024p76]
 
