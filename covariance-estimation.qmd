@@ -362,17 +362,24 @@ Graphical lasso
 
 -   [Graphical lasso](https://en.wikipedia.org/wiki/Graphical_lasso)
 -   [Graphical lasso in the scikit-learn user guide](https://scikit-learn.org/stable/modules/covariance.html#sparse-inverse-covariance)
--   Banerjee, O., d'Aspremont, A., & Ghaoui, L.E. (2005). [Sparse covariance selection via robust maximum likelihood estimation](https://arxiv.org/abs/cs/0506023).
--   Friedman, J., Hastie, T. and Tibshirani, R. (2008). [Sparse inverse covariance estimation with the graphical lasso](https://www.asc.ohio-state.edu/statistics/statgen/joul_aut2015/2008-Friedman-Hastie-Tibshirani.pdf).
--   Mazumder, R. & Hastie, T. (2011). [The graphical lasso: New insights and alternatives](https://arxiv.org/abs/1111.5479).
--   Chang, B. (2015). [An introduction to graphical lasso](https://bochang.me/gmrg/files/Bo_05152015.pdf).
--   Maxime, A. (2015). [Inverse covariance matrix regularization for minimum variance portfolio](https://www.geneve-finance.ch/file.cfm?contentid=950).
--   Erickson, S. & Ryd&eacute;n, T. (2025). [Inverse covariance and partial correlation matrix estimation via joint partial regression](https://arxiv.org/abs/2502.08414).
+-   Banerjee, O., d'Aspremont, A., & Ghaoui, L.E. (2005). [Sparse covariance selection via robust maximum likelihood estimation](https://arxiv.org/abs/cs/0506023). [^Banerjee2005]
+-   Friedman, J., Hastie, T. and Tibshirani, R. (2008). [Sparse inverse covariance estimation with the graphical lasso](https://www.asc.ohio-state.edu/statistics/statgen/joul_aut2015/2008-Friedman-Hastie-Tibshirani.pdf). [^Friedman2008]
+-   Mazumder, R. & Hastie, T. (2011). [The graphical lasso: New insights and alternatives](https://arxiv.org/abs/1111.5479). [^Mazumder2011]
+-   Chang, B. (2015). [An introduction to graphical lasso](https://bochang.me/gmrg/files/Bo_05152015.pdf). [^Chang2015]
+-   Maxime, A. (2015). [Inverse covariance matrix regularization for minimum variance portfolio](https://www.geneve-finance.ch/file.cfm?contentid=950). [^Maxime2015]
+-   Erickson, S. & Ryd&eacute;n, T. (2025). [Inverse covariance and partial correlation matrix estimation via joint partial regression](https://arxiv.org/abs/2502.08414). [^Erickson2025]
 
 Graphical lasso:
 
 $$ \hat{\Omega} = \underset{\Omega}{\mathrm{argmin}} \: \left( \mathrm{tr}(S \Omega) - \mathrm{log}(\mathrm{det}(\Omega)) + g \left\lVert \Omega \right\lVert_\mathrm{1} \right) $$
 
 where $\left\lVert \Omega \right\lVert_\mathrm{1}$ is the sum of the absolute values of off-diagonal elements of $\Omega$.
+
+[^Banerjee2005]: @Banerjee_2005_Sparse_covariance_selection_via_robust_maximum\.
+[^Chang2015]: @Chang_2015_An_introduction_to_graphical_lasso\.
+[^Erickson2025]: @Erickson_2025_Inverse_covariance_and_partial_correlation_matrix\.
+[^Friedman2008]: @Friedman_2008_Sparse_inverse_covariance_estimation\.
+[^Maxime2015]: @Maxime_2015_Inverse_covariance_matrix_regularization\.
+[^Mazumder2011]: @Mazumder_2011_The_graphical_lasso_New_insights_and_alternatives\.
 
 
