@@ -200,7 +200,7 @@ where
 $$ D = \mathrm{diag}(\sigma_{1}, \ldots, \sigma_{n}) $$
 
 
-Precision and partial correlation
+Precision-partial-correlation decomposition
 --------------------------------------------
 
 Precision:
@@ -296,8 +296,8 @@ $$
 $$
 
 In order to factor-out a minus sign and consistently get the diagonal elements $\Omega_{ii}$ to come out positive
-(and $P_{ii} = 1$),
-we can define the partial correlation matrix as
+and have $P_{ii} = 1$,
+we can define the partial correlation matrix as [^Erickson2025a]
 
 $$ P = - T \: \Omega \: T + 2 I $$
 
@@ -311,7 +311,7 @@ $$ \tau_{i} = \frac{1}{\sqrt{\Omega_{ii}}} $$
 
 are the partial standard deviations.
 
-So equivalently, the precision-partial-correlation decomposition is
+So equivalently, the _precision-partial-correlation decomposition_ is
 
 $$ \Omega = T^{-1} (-P + 2I) T^{-1} $$
 
@@ -345,7 +345,7 @@ More:
 
 [^Bax2022]: @Bax_2022_A_generalized_precision_matrix_for_t_Student\.
 [^Bishop2024p76]: @Bishop_2024_Deep_Learning_Foundations_and_Concepts\, p. 76--81.
-    TODO: Need to clarify which detail rely on the data being Gaussian.
+    TODO: Need to clarify which details rely on the data being Gaussian.
     Claude warns:      
     For any multivariate distribution with finite second moments:
     $\mathrm{cov}(x_{1}|x_{2}) = \Sigma_{11} - \Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21}$    
@@ -355,6 +355,10 @@ More:
 [^Dempster1972]: @Dempster_1972_Covariance_selection\.
 [^Dutta2023]: @Dutta_2023_Precision_versus_shrinkage_A_comparative_analysis\.
 [^Edwards1995]: @Edwards_1995_Introduction_to_Graphical_Modelling\.
+[^Erickson2025a]: This form is nicely clarified in @Erickson_2025_Inverse_covariance_and_partial_correlation_matrix\.
+    If one does not add $2I$, then you have to use a convention where $P_{ii} = -1$.
+    In either convention, the off-diagonals are what is meaningful,
+    and $P_{ij} > 0$ indicates a positive partial correlation.
 [^Galloway2019]: @Galloway_2019_Shrinking_characteristics_of_precision_matrix\.
 [^Knuiman1978]: @Knuiman_1978_Covariance_selection\.
 [^Lauritzen1996]: @Lauritzen_1996_Graphical_Models\.
@@ -384,7 +388,7 @@ Graphical lasso
 -   Mazumder, R. & Hastie, T. (2011). [The graphical lasso: New insights and alternatives](https://arxiv.org/abs/1111.5479). [^Mazumder2011]
 -   Chang, B. (2015). [An introduction to graphical lasso](https://bochang.me/gmrg/files/Bo_05152015.pdf). [^Chang2015]
 -   Maxime, A. (2015). [Inverse covariance matrix regularization for minimum variance portfolio](https://www.geneve-finance.ch/file.cfm?contentid=950). [^Maxime2015]
--   Erickson, S. & Ryd&eacute;n, T. (2025). [Inverse covariance and partial correlation matrix estimation via joint partial regression](https://arxiv.org/abs/2502.08414). [^Erickson2025]
+-   Erickson, S. & Ryd&eacute;n, T. (2025). [Inverse covariance and partial correlation matrix estimation via joint partial regression](https://arxiv.org/abs/2502.08414). [^Erickson2025b]
 
 Graphical lasso:
 
@@ -394,9 +398,41 @@ where $\left\lVert \Omega \right\lVert_\mathrm{1}$ is the sum of the absolute va
 
 [^Banerjee2005]: @Banerjee_2005_Sparse_covariance_selection_via_robust_maximum\.
 [^Chang2015]: @Chang_2015_An_introduction_to_graphical_lasso\.
-[^Erickson2025]: @Erickson_2025_Inverse_covariance_and_partial_correlation_matrix\.
+[^Erickson2025b]: @Erickson_2025_Inverse_covariance_and_partial_correlation_matrix\.
 [^Friedman2008]: @Friedman_2008_Sparse_inverse_covariance_estimation\.
 [^Maxime2015]: @Maxime_2015_Inverse_covariance_matrix_regularization\.
 [^Mazumder2011]: @Mazumder_2011_The_graphical_lasso_New_insights_and_alternatives\.
+
+
+Eigendecomposition
+--------------------------------------------
+
+Eigendecomposition of $\Sigma$:
+
+$$ \Sigma = Q \: \Lambda \: Q^{-1} $$
+
+where
+
+$$ \Lambda = \mathrm{diag}(\lambda_{1}, \ldots, \lambda_{n}) $$
+
+contains the eigenvalues of $\Sigma$ and
+
+$$ Q = \mathrm{cols}(\vec{q}_{1}, \ldots, \vec{q}_{n}) $$
+
+contains the eigenvectors.
+Note that since $\Sigma$ is symmetric that guarantees that $Q$ is orthogonal, $Q^{-1} = Q^{\intercal}$.
+
+For any analytic function, $f$,
+
+$$ f(\Sigma) = Q \: f(\Lambda) \: Q^{-1} = Q \: \mathrm{diag}(f(\lambda)) \: Q^{-1} $$
+
+Sqrt covariance matrix:
+
+$$ \sqrt{\Sigma} = Q \: \sqrt{\Lambda} \: Q^{-1} = Q \: \mathrm{diag}(\sqrt{\lambda}) \: Q^{-1} $$
+
+See: 
+
+-   [Open Source Quant: Square root of a portfolio covariance matrix](https://osquant.com/papers/square-root-of-covariance-matrix/)
+-   [Principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis)
 
 
