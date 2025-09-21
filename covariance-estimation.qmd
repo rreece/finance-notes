@@ -8,7 +8,7 @@ date: today
 Introduction
 --------------------------------------------
 
-This is how we estimate $V$ (and $\mu$).
+This is where we discuss how to estimate $\Sigma$.
 
 -   [Estimation of covariance matrices](https://en.wikipedia.org/wiki/Estimation_of_covariance_matrices)
 -   Marsaglia, G. (1964). [Conditional means and covariances of normal variables with singular covariance matrix](https://apps.dtic.mil/sti/tr/pdf/AD0299080.pdf). [^Marsaglia1964]
@@ -227,11 +227,11 @@ $$ \tau_{i}^{2} = \left[\Sigma_{A|B}\right]_{ii} = \Omega_{ii}^{-1} = \frac{1}{\
 
 since $\Omega_{ii}$ is a scalar.
 
-Let us partition our observable variables into two sets:
+Now let us partition our observable variables into two sets:
 
 $$ A = \{ x_{i}, x_{j} \} \qquad B = \{ \mathrm{rest} \} $$
 
-That is equivalent to the covariance of the residuals when fitting the rest of the variables (TODO: motivate).
+The conditional covariance is equivalent to the covariance of the residuals when fitting the rest of the variables (TODO: motivate).
 
 $$ \Sigma_{ij|\mathrm{rest}} = \mathrm{cov}(x_{i}, x_{j} | \mathrm{rest}) = \mathrm{cov}(\varepsilon_{i}, \varepsilon_{j}) $$
 
@@ -265,7 +265,7 @@ $$ P_{ij} = \mathrm{corr}(x_{i}, x_{j} | \mathrm{rest}) = \mathrm{corr}(\varepsi
 
 Importantly, $x_i$ and $x_j$ are _conditionally independent_ iff $P_{ij} = 0$.
 
-TODO: Expand on why are precision matrices sparse.
+TODO: Expand on why precision matrices are often naturally sparse as related to Gaussian Graphical Models.
 See discussion in Chan & Kroese. [^Chan2025]
 
 Combining our results shows that $\Omega$ can be factored as
