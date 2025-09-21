@@ -97,4 +97,4 @@ Whittaker, J. (1990). *Graphical Models in Applied Multivariate Statistics*.
 Wong, F., Carter, C. K., & Kohn, R. (2003). Efficient estimation of covariance selection models. *Biometrika*, 90, 809--830. https://www.jstor.org/stable/30042090
 Yontar, T. & Benham, F. (2016). US small cap equity: Which benchmark is best? Meketa Investment Group. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2770660
 Youngs, E.A. & Cramer, E.M. (1971). Some results relevant to choice of sum and sum-of-product algorithms. *Technometrics*, 13, 657--665. https://www.jstor.org/stable/1267176
-Zhang, F. (2005). *The Schur Complement and its Applications*.
+Zhang, F. (2005). *The Schur Complement and its Applications*. Springer.
