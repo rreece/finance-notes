@@ -6,7 +6,7 @@ date: today
 Introduction
 --------------------------------------------
 
-TODO: Given some menu of possible investments, what mix should we hold?
+Given some menu of possible investments, what mix should we hold?
 How should we hold value through time?
 
 Mean-variance analysis is part of fundamental analysis, specifically
