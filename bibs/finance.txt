@@ -8,6 +8,7 @@ Bax, K., Taufer, E., & Paterlini, S. (2022). A generalized precision matrix for 
 Bessembinder, H. & Chan, K. (1998). Market efficiency and the returns to technical analysis. *Financial Management*, 27, 5--17. https://www.jstor.org/stable/3666289
 Bodnar, T. & Schmid, W. (2011). On the exact distribution of the estimated expected utility portfolio weights: Theory and applications. *Statistics & Risk Modeling*, 28, 319--342.
 Bodnar, T., Mazur, S., & Podg{\'o}rski, K. (2016). Singular inverse Wishart distribution and its application to portfolio theory. *Journal of Multivariate Analysis*, 143, 314--326. https://www.sciencedirect.com/science/article/pii/S0047259X15002353
+Bolla, M. (2023). Partitioned covariance matrices and partial correlations. https://math.bme.hu/~marib/tobbvalt/tv6ad.pdf
 Boyd, S. & Vandenberghe, L. (2004). *Convex Optimization*. Cambridge University Press. https://web.stanford.edu/~boyd/cvxbook/
 Black, F. & Litterman, R. (1991). Asset allocation. *Journal of Fixed Income*, 1, 7--18.
 Black, F. & Litterman, R. (1992). Global portfolio optimization. *Financial Analysts Journal*, 48, 28--43.
@@ -16,12 +17,15 @@ Brinson, G. P., Singer, B.D., & Beebower, G.L. (1991). Determinants of portfolio
 Buffett, W. (2017). *Berkshire Hathaway Letters to Shareholders 1965-2016*. Explorist Productions.
 Cass, D. & Stiglitz, J.E. (1970). The structure of investor preferences and asset returns, and separability in portfolio allocation: A contribution to the pure theory of mutual funds. *Journal of Economic Theory*, 2.
 Chamberlain, G. (1983). A characterization of the distributions that imply mean-variance utility functions. *Journal of Economic Theory*, 29, 185--201.
+Chan, J.C.C. & Kroese, D.P. (2025). *Statistical Modeling and Computation* (2nd ed.). Springer.
 Chan, T.F., Golub, G.H., & LeVeque, R.J. (1979). Updating formulae and a pairwise algorithm for computing sample variances. Stanford University. http://infolab.stanford.edu/pub/cstr/reports/cs/tr/79/773/CS-TR-79-773.pdf [Technical Report STAN-CS-79-773]
 Coqueret, G. & Milhau, V. (2014). Estimating covariance matrices for portfolio optimization. https://web.archive.org/web/20230928050136/https://www.gcoqueret.com/files/Estim_cov.pdf
 Cotton, P. (2024). Hierarchical minimum variance portfolios: A unifying approach using Schur complements. https://github.com/microprediction/precise/blob/main/academic/Schur_Complementary_Portfolios_Peter_Cotton.pdf
 Das, S. (2016). *Data Science: Theories, Models, Algorithms, and Analytics*. http://srdas.github.io/Papers/DSA_Book.pdf
 Davis, J.H., Brandl-Cheng, L., & Khang, K. (2024). Megatrends and the US economy, 1890-2040. https://ssrn.com/abstract=4702028
+Dempster, A.P. (1972). Covariance selection. *Biometrics*, 28, 157--175. https://www.jstor.org/stable/2528966
 Dutta, S. & Jain, S. (2023). Precision versus shrinkage: A comparative analysis of covariance estimation methods for portfolio allocation. https://arxiv.org/abs/2305.11298
+Edwards, D. (1995). *Introduction to Graphical Modelling*.
 Elton, E.J., Gruber, M.J., Brown, S.J., & Goetzmann, W.N. (2014). *Modern Portfolio Theory and Investment Analysis*, (9th ed.). Wiley. 
 Estrada, J. (2007). Mean-semivariance optimization: A heuristic approach. https://ssrn.com/abstract=1028206
 Fama, E.F. (1970). Efficient capital markets: A review of theory and empirical work. *Journal of Finance*, 25(2), 383--417. http://www.e-m-h.org/Fama70.pdf
@@ -38,8 +42,10 @@ Jagannathan, R. & Ma, T. (2003). Risk reduction in large portfolios: Why imposin
 Jensen, M. (1968). The performance of mutual funds in the period 1945-1964. *Journal of Finance*, 23, 389--416. https://www.jstor.org/stable/2325404
 Karatzas, I., Lehoczky, J.P., Sethi, S.P., & Shreve, S.E (1986). Explicit solution of a general consumption/investment problem. *Mathematics of Operations Research*, 11, 261--294. https://www.jstor.org/stable/3689808
 Kelly, J.L. (1956). A new interpretation of information rate. *Bell System Technical Journal*, 35, 917--926. https://www.princeton.edu/~wbialek/rome/refs/kelly_56.pdf
+Knuiman, M. (1978). Covariance selection. *Advances in Applied Probability*, 10, 123--130. https://www.jstor.org/stable/1427014
 Koop, G.M. (2013). Forecasting with medium and large Bayesian VARs. *Journal of Applied Econometrics*, 28, 177--203. https://ssrn.com/abstract=1514412
 Kwok, Y.K. (2017). Lecture notes: Fundamentals of Mathematical Finance. https://www.math.hkust.edu.hk/~maykwok/MATH4512.htm
+Lauritzen, S. (1996). *Graphical Models*.
 Ledoit, O. & Wolf, M. (2003). Improved estimation of the covariance matrix of stock returns with an application to portfolio selection. *Journal of Empirical Finance*, 10, 603--621. http://www.ledoit.net/ole2.pdf
 Ledoit, O. & Wolf, M. (2001). Honey, I shrunk the sample covariance matrix. http://www.ledoit.net/honey.pdf
 Levy, H. & Markowitz, H.M. (1979). Approximating expected utility by a function of mean and variance. *American Economic Review*, 69, 308--317.
@@ -81,5 +87,8 @@ Sharpe, W.F. (1999). *Portfolio Theory and Capital Markets*. McGraw-Hill. [(Orig
 Sortino, F. (2010). *The Sortino Framework for Constructing Portfolios*. Elsevier.
 Tobin, J. (1958). Liquidity preference as behavior towards risk. *Review of Economic Studies*, 25, 65--86. https://doi.org/10.2307/2296205
 Welford, B.P. (1962). Note on a method for calculating corrected sums of squares and products. *Technometrics*, 4, 419--420.
+Whittaker, J. (1990). *Graphical Models in Applied Multivariate Statistics*.
+Wong, F., Carter, C. K., & Kohn, R. (2003). Efficient estimation of covariance selection models. *Biometrika*, 90, 809--830. https://www.jstor.org/stable/30042090
 Yontar, T. & Benham, F. (2016). US small cap equity: Which benchmark is best? Meketa Investment Group. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2770660
 Youngs, E.A. & Cramer, E.M. (1971). Some results relevant to choice of sum and sum-of-product algorithms. *Technometrics*, 13, 657--665. https://www.jstor.org/stable/1267176
+Zhang, F. (2005). *The Schur Complement and its Applications*.
