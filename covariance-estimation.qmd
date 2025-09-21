@@ -1,0 +1,378 @@
+---
+date: today
+---
+
+# Covariance estimation {#sec-covariance-estimation}
+
+
+Introduction
+--------------------------------------------
+
+This is how we estimate $V$ (and $\mu$).
+
+-   [Estimation of covariance matrices](https://en.wikipedia.org/wiki/Estimation_of_covariance_matrices)
+-   Marsaglia, G. (1964). [Conditional means and covariances of normal variables with singular covariance matrix](https://apps.dtic.mil/sti/tr/pdf/AD0299080.pdf). [^Marsaglia1964]
+-   Coqueret, G. & Milhau, V. (2014). [Estimating covariance matrices for portfolio optimization](https://web.archive.org/web/20230928050136/https://www.gcoqueret.com/files/Estim_cov.pdf) [^Coqueret2014]
+-   Fan, J., Liao, Y., & Liu, H. (2015). [An overview on the estimation of large covariance and precision matrices](https://arxiv.org/abs/1504.02995). [^Fan2015]
+-   Ayyala, D.N. (2020). High-dimensional statistical inference: Theoretical development to data analytics. [^Ayyala2020]
+
+![The correlation matrix of a few example assets
+    using daily data from 2014-01-02 to 2024-08-30, 10 years and 8 months.
+    ](img/corr-gldm-btc-2024-09-14.png){#fig-corr-gldm-btc-2024-09-14}
+
+Software:
+
+-   [robertmartin8/PyPortfolioOpt](https://github.com/robertmartin8/PyPortfolioOpt)
+-   [microprediction/precise](https://github.com/microprediction/precise)
+-   [mlfinlab](https://random-docs.readthedocs.io/en/latest/index.html)
+-   [scikit-portfolio](https://scikit-portfolio.github.io/scikit-portfolio)
+
+[^Ayyala2020]: @Ayyala_2020_High_dimensional_statistical_inference\.
+[^Coqueret2014]: @Coqueret_2014_Estimating_covariance_matrices_for_portfolio\.
+[^Fan2015]: @Fan_2015_An_overview_on_the_estimation_of_large_covariance\.
+[^Marsaglia1964]: @Marsaglia_1964_Conditional_means_and_covariances_of_normal\.
+
+
+Sample mean and covariance
+--------------------------------------------
+
+TODO:
+
+-   Sample mean and covariance
+-   Rolling mean and covariance
+
+
+Online mean and covariance
+--------------------------------------------
+
+-   [Algorithms for calculating variance](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance)
+-   Welford, B.P. (1962). Note on a method for calculating corrected sums of squares and products. [^Welford1962]
+-   Neely, P.M. (1966). [Comparison of several algorithms for computation of means, standard deviations and correlation coefficients](https://dl.acm.org/doi/pdf/10.1145/365719.365958). [^Neely1966]
+-   Youngs, E.A. & Cramer, E.M. (1971). [Some results relevant to choice of sum and sum-of-product algorithms](https://www.jstor.org/stable/1267176). [^Youngs1971]
+-   Ling, R.F. (1974). Comparison of several algorithms for computing sample means and variances. [^Ling1974]
+-   Chan, T.F., Golub, G.H., & LeVeque, R.J. (1979). [Updating formulae and a pairwise algorithm for computing sample variances](http://infolab.stanford.edu/pub/cstr/reports/cs/tr/79/773/CS-TR-79-773.pdf). [^Chan1979]
+-   P&eacute;bay, P. (2008). [Formulas for robust, one-pass parallel computation of covariances and arbitrary-order statistical moments](https://www.osti.gov/servlets/purl/1028931). [^Pebay2008]
+-   Finch, T. (2009). [Incremental calculation of weighted mean and variance](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=5f77d0594f66e49cc0e8c2b8177ead33b7137183). [^Finch2009]
+-   Cook, J.D. (2014). [Accurately computing running variance](https://www.johndcook.com/blog/standard_deviation/).
+-   Meng, X. (2015). [Simpler online updates for arbitrary-order central moments](https://arxiv.org/abs/1510.04923). [^Meng2015]
+-   P&eacute;bay, P., Terriberry, T.B., Kolla, H. & Bennett, J. (2016). [Numerically stable, scalable formulas for parallel and online computation of higher-order multivariate central moments with arbitrary weights](https://link.springer.com/article/10.1007/s00180-015-0637-z). [^Pebay2016]
+-   Schubert, E. & Gertz, M. (2018). Numerically stable parallel computation of (co-)variance. [^Schubert2018]
+-   Chen, C. (2019). [Welford algorithm for updating variance](https://changyaochen.github.io/welford/).
+
+Univariate central moments:
+
+$$ \mu_{p} = \mathbb{E}\left[(x - \mu_{1})^{p}\right] $$
+
+$$ M_{p} = \sum_{i}^{n} (x_i - \mu_{1})^{p} $$
+
+$$ \mu_{p} = \frac{M_{p}}{n} \,, \qquad \mu = \frac{M_{1}}{n} \,, \qquad \sigma^2 = \frac{M_{2}}{n} $$
+
+Online mean:
+
+$$ \delta \equiv x_n - \mu_{n - 1} $$
+
+$$ \hat{\mu}_{n} = \mu_{n-1} + \frac{\delta}{n} $$
+
+Online variance:
+
+$$ S_{n} = M_{2,n} $$
+
+$$ \hat{\sigma}^2 = \frac{S_{n}}{n-1} $$
+
+where the $n-1$ includes Bessel's correction for sample variance.
+
+Incrementally,
+
+$$ S_{n} = S_{n-1} + (x_n - \mu_{n - 1}) (x_n - \mu_n) $$
+
+Note that for $n > 1$,
+
+$$ (x_n - \mu_n) = \frac{n-1}{n} (x_n - \mu_{n - 1}) $$
+
+Therefore,
+
+$$ S_{n} = S_{n-1} + \frac{n-1}{n} (x_n - \mu_{n - 1}) (x_n - \mu_{n - 1}) $$
+
+$$ S_{n} = S_{n-1} + \frac{n-1}{n} \delta^2 = S_{n-1} + \delta \left( \delta - \frac{\delta}{n} \right) $$
+
+Online covariance (Welford algorithm):
+
+$$ C_{n}(x, y) = C_{n-1} + (x_n - \bar{x}_{n - 1}) (y_n - \bar{y}_n) = C_{n-1} + \delta_{x} \delta_{y}^\prime $$
+
+$$ C_{n}(x, y) = C_{n-1} + \frac{n-1}{n} (x_n - \bar{x}_{n - 1}) (y_n - \bar{y}_{n - 1}) = C_{n-1} + \frac{n-1}{n} \delta_{x} \delta_{y} $$
+
+$$ \hat{V}_{xy} = \frac{C_{n}(x, y)}{n-1} $$
+
+Matrix form:
+
+$$ C_{n} = C_{n-1} + \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal = C_{n-1} + \vec{\delta} \: \vec{\delta^\prime}^\intercal $$
+
+$$ C_{n} = C_{n-1} + \frac{n-1}{n} \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right)^\intercal = C_{n-1} + \frac{n-1}{n} S(\vec{x}_{n}, \vec{\mu}_{n-1}) $$
+
+$$ \hat{V} = \frac{C_{n}}{n-1} $$
+
+Note that the update term for the online covariance is a term in a scatter matrix, $S$,
+using the currently observed data, $\vec{x}_{n}$, and the previous means, $\vec{\mu}_{n-1}$.
+But also note that the $\vec{\delta} \: \vec{\delta^\prime}^\intercal$ form is also
+convenient because it comes naturally normalized and can be readily generalized for weighting.
+
+Weighted mean:
+
+$$ \hat{\mu}_{n} = \mu_{n-1} + \frac{w_{n,n}}{W_n} \delta = \mu_{n-1} + \frac{w_{n,n}}{W_n} (x_n - \mu_{n - 1}) $$
+
+where
+
+$$ W_{n} = \sum_{i=1}^{n} w_{n,i} $$
+
+Weighted covariance:
+
+$$ C_{n} = \frac{W_n - w_{n,n}}{W_{n-1}} C_{n-1} + w_{n,n} \left( x_{n} - \bar{x}_{n-1} \right) \left( y_{n} - \bar{y}_{n} \right) $$
+
+$$ C_{n} = \frac{W_n - w_{n,n}}{W_{n-1}} C_{n-1} + w_{n,n} \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal $$
+
+where
+
+$$ \hat{V} = \frac{C_{n}}{W_{n}} $$
+
+Exponential-weighted mean:
+
+$$ \alpha = 1 - \mathrm{exp}\left( \frac{-\Delta{}t}{\tau} \right) \simeq \frac{\Delta{}t}{\tau} $$
+
+$$ \hat{\mu}_{n} = \mu_{n-1} + \alpha (x_{n} - \mu_{n-1}) = (1 - \alpha) \mu_{n-1} + \alpha x_{n} $$
+
+Exponential-weighted covariance:
+
+$$ C_{n} = (1 - \alpha) C_{n-1} + \alpha \left( x_{n} - \bar{x}_{n-1} \right) \left( y_{n} - \bar{y}_{n} \right) $$
+
+$$ C_{n} = (1 - \alpha) C_{n-1} + \alpha \left( \vec{x}_{n} - \vec{\mu}_{n-1} \right) \left( \vec{x}_{n} - \vec{\mu}_{n} \right)^\intercal $$
+
+where by summing a geometric series, one can show that for exponential weighting, $W_{n} = 1$,
+so $\hat{V} = C_{n}$.
+
+[^Chan1979]: @Chan_1979_Updating_formulae_and_a_pairwise_algorithm\.
+[^Finch2009]: @Finch_2009_Incremental_calculation_of_weighted_mean\.
+[^Ling1974]: @Ling_1974_Comparison_of_several_algorithms_for_computing\.
+[^Meng2015]: @Meng_2015_Simpler_online_updates_for_arbitrary_order_central\.
+[^Neely1966]: @Neely_1966_Comparison_of_several_algorithms_for_computation\.
+[^Pebay2008]: @Pebay_2008_Formulas_for_robust_one_pass_parallel_computation\.
+[^Pebay2016]: @Pebay_2016_Numerically_stable_scalable_formulas_for_parallel\.
+[^Schubert2018]: @Schubert_2018_Numerically_stable_parallel_computation\.
+[^Welford1962]: @Welford_1962_Note_on_a_method_for_calculating_corrected_sums\.
+[^Youngs1971]: @Youngs_1971_Some_results_relevant_to_choice_of_sum_and_sum\.
+
+
+Variance-correlation decomposition
+--------------------------------------------
+
+Covariance:
+
+$$ \Sigma_{ij} = \mathrm{cov}(x_{i}, x_{j}) = \mathbb{E}[(x_{i} - \mu_{i})(x_{j} - \mu_{j})] = \mathbb{E}[x_{i} x_{j}] - \mu_{i} \mu_{j} $$
+
+Standard deviation:
+
+$$ \sigma_{i} = \sqrt{\Sigma_{ii}} $$
+
+Correlation:
+
+$$ R_{ij} = \frac{\Sigma_{ij}}{\sqrt{\Sigma_{ii}\Sigma_{jj}}} = \frac{\Sigma_{ij}}{\sigma_{i}\sigma_{j}} $$
+
+Beta:
+
+$$ \beta_{i} = \frac{\mathrm{cov}(x_{i}, x_{m})}{\mathrm{var}(x_{m})} = \frac{\Sigma_{im}}{\Sigma_{mm}} = R_{im} \frac{\sigma_{i}}{\sigma_{m}} $$
+
+Variance-correlation decomposition:
+
+$$ \Sigma = D R D $$
+
+where
+
+$$ D = \mathrm{diag}(\sigma_{1}, \ldots, \sigma_{n}) $$
+
+
+Precision and partial correlation
+--------------------------------------------
+
+Precision:
+
+$$ \Omega = \Sigma^{-1} $$
+
+We will derive something similar to the variance-correlation decomposition, $\Sigma = D R D$,
+except for precision. To motivate its form, it helps to know that a conditional covariance matrix
+is the inverse of a precision matrix of a partition.
+
+Schur complement lemma (TODO: prove or motivate):
+
+$$ \Sigma_{A|B} = \Omega_{AA}^{-1} = \Sigma_{AA} - \Sigma_{AB} \Sigma_{BB}^{-1} \Sigma_{BA} $$
+
+First, let us consider a partition where $A$ is only one variable and $B$ has the rest.
+
+$$ A = \{ x_{i} \} \qquad B = \{ \mathrm{rest} \} $$
+
+In this case, $\Omega_{AA}^{-1} = \Omega_{ii}^{-1}$
+shows that the diagonal elements of the precision, $\Omega_{ii}$,
+are related to partial variances given by
+
+$$ \tau_{i}^{2} = \left[\Sigma_{A|B}\right]_{ii} = \Omega_{ii}^{-1} = \frac{1}{\Omega_{ii}} $$
+
+since $\Omega_{ii}$ is a scalar.
+
+Let us partition our observable variables into two sets:
+
+$$ A = \{ x_{i}, x_{j} \} \qquad B = \{ \mathrm{rest} \} $$
+
+That is equivalent to the covariance of the residuals when fitting the rest of the variables (TODO: motivate).
+
+$$ \Sigma_{ij|\mathrm{rest}} = \mathrm{cov}(x_{i}, x_{j} | \mathrm{rest}) = \mathrm{cov}(\varepsilon_{i}, \varepsilon_{j}) $$
+
+Again, looking at $\Omega_{AA}^{-1}$, we have
+
+$$
+\Sigma_{A|B} = \Omega_{AA}^{-1} = 
+\begin{pmatrix}
+  \Omega_{ii} & \Omega_{ij} \\
+  \Omega_{ji} & \Omega_{jj}
+\end{pmatrix}^{-1} = 
+\frac{1}{\Delta}
+\begin{pmatrix}
+  \Omega_{jj} & - \Omega_{ij} \\
+  - \Omega_{ji} & \Omega_{ii}
+\end{pmatrix}
+$$
+
+where $\Delta \equiv \mathrm{det} \Omega_{AA}$.
+From this we note that the off-diagonal elements of $\Omega_{ij}$ are proportional to the negative conditional covariance.
+
+Similar to the definition of correlation, $R_{ij}$, we define the (off-diagonal) _partial correlation_ as
+
+$$
+P_{ij} = \frac{\left[\Sigma_{A|B}\right]_{ij}}{\sqrt{\left[\Sigma_{A|B}\right]_{ii}\left[\Sigma_{A|B}\right]_{jj}}} = \frac{-\frac{1}{\Delta}\Omega_{ij}}{\sqrt{\frac{1}{\Delta}\Omega_{jj}\frac{1}{\Delta}\Omega_{ii}}} = \frac{-\Omega_{ij}}{\sqrt{\Omega_{ii}\Omega_{jj}}} = - \tau_{i} \Omega_{ij} \tau_{j}
+$$
+
+and equivalently
+
+$$ P_{ij} = \mathrm{corr}(x_{i}, x_{j} | \mathrm{rest}) = \mathrm{corr}(\varepsilon_{i}, \varepsilon_{j}) $$
+
+Importantly, $x_i$ and $x_j$ are _conditionally independent_ iff $P_{ij} = 0$.
+
+TODO: Expand on why are precision matrices sparse.
+See discussion in Chan & Kroese. [^Chan2025]
+
+Combining our results shows that $\Omega$ can be factored as
+
+$$
+\Omega = 
+\begin{pmatrix}
+  \frac{1}{\tau_1} & 0 & 0 & \cdots & 0 \\
+  0 & \frac{1}{\tau_2} & 0 & \cdots & 0 \\
+  0 & 0 & \frac{1}{\tau_3} & \cdots & 0 \\
+  \vdots & \vdots & \vdots & \ddots & \vdots \\
+  0 & 0 & 0 & \cdots & \frac{1}{\tau_n}
+\end{pmatrix}
+\begin{pmatrix}
+  1 & - P_{12} & - P_{13} & \cdots & - P_{1n}\\
+  - P_{21} & 1 & - P_{23} & \cdots & - P_{2n} \\
+  - P_{31} & - P_{32} & 1 & \cdots & - P_{3n} \\
+  \vdots   &  \vdots  & \vdots  & \ddots & \vdots \\
+  - P_{n1} & - P_{n2} & - P_{n3} & \cdots & 1
+\end{pmatrix}
+\begin{pmatrix}
+  \frac{1}{\tau_1} & 0 & 0 & \cdots & 0 \\
+  0 & \frac{1}{\tau_2} & 0 & \cdots & 0 \\
+  0 & 0 & \frac{1}{\tau_3} & \cdots & 0 \\
+  \vdots & \vdots & \vdots & \ddots & \vdots \\
+  0 & 0 & 0 & \cdots & \frac{1}{\tau_n}
+\end{pmatrix}
+$$
+
+In order to factor-out a minus sign and consistently get the diagonal elements $\Omega_{ii}$ to come out positive
+(and $P_{ii} = 1$),
+we can define the partial correlation matrix as
+
+$$ P = - T \: \Omega \: T + 2 I $$
+
+where
+
+$$ T = \mathrm{diag}(\tau_{1}, \ldots, \tau_{n}) $$
+
+and
+
+$$ \tau_{i} = \frac{1}{\sqrt{\Omega_{ii}}} $$
+
+are the partial standard deviations.
+
+So equivalently, the precision-partial-correlation decomposition is
+
+$$ \Omega = T^{-1} (-P + 2I) T^{-1} $$
+
+See: 
+
+-   [Covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix)
+-   [Partial correlation](https://en.wikipedia.org/wiki/Partial_correlation)
+-   Dempster, A.P. (1972). [Covariance selection](https://www.jstor.org/stable/2528966). [^Dempster1972]
+-   Knuiman, M. (1978). [Covariance selection](https://www.jstor.org/stable/1427014). [^Knuiman1978]
+-   Whittaker, J. (1990). *Graphical Models in Applied Multivariate Statistics*. [^Whittaker1990]
+-   Edwards, D. (1995). *Introduction to Graphical Modelling*. [^Edwards1995]
+-   Lauritzen, S. (1996). *Graphical Models*. [^Lauritzen1996]
+-   Wong, F., Carter, C. K., & Kohn, R. (2003). [Efficient estimation of covariance selection models](https://www.jstor.org/stable/30042090). [^Wong2003]
+-   Zhang, F. (2005). *The Schur Complement and its Applications*. [^Zhang2005]
+-   Bolla, M. (2023). [Partitioned covariance matrices and partial correlations](https://math.bme.hu/~marib/tobbvalt/tv6ad.pdf). [^Bolla2023]
+
+Timeline of graphical models by Claude:
+
+-   1972: Dempster establishes covariance selection and precision matrix sparsity
+-   1990: Whittaker provides comprehensive GGM textbook treatment
+-   1995: Edwards expands the graphical modeling framework
+-   1996: Lauritzen gives rigorous mathematical foundations including partial correlation formulas
+-   2003: Wong et al. formalize the precision matrix factorization
+-   2007+: Modern computational methods (graphical lasso, etc.) build on these foundations
+
+More:
+
+-   Galloway, M. (2019). [Shrinking characteristics of precision matrix estimators: An illustration via regression](https://mattxgalloway.com/oral_manuscript/). [^Galloway2019]
+-   Bax, K., Taufer, E., & Paterlini, S. (2022). [A generalized precision matrix for t-Student distributions in portfolio optimization](https://arxiv.org/abs/2203.13740). [^Bax2022]
+-   Dutta, S. & Jain, S. (2023). [Precision versus shrinkage: A comparative analysis of covariance estimation methods for portfolio allocation](https://arxiv.org/abs/2305.11298). [^Dutta2023]
+
+[^Bax2022]: @Bax_2022_A_generalized_precision_matrix_for_t_Student\.
+[^Bolla2023]: @Bolla_2023_Partitioned_covariance_matrices_and_partial\.
+[^Chan2025]: @Chan_2025_Statistical_Modeling_and_Computation\, p. 371--2.
+[^Dempster1972]: @Dempster_1972_Covariance_selection\.
+[^Dutta2023]: @Dutta_2023_Precision_versus_shrinkage_A_comparative_analysis\.
+[^Edwards1995]: @Edwards_1995_Introduction_to_Graphical_Modelling\.
+[^Galloway2019]: @Galloway_2019_Shrinking_characteristics_of_precision_matrix\.
+[^Knuiman1978]: @Knuiman_1978_Covariance_selection\.
+[^Lauritzen1996]: @Lauritzen_1996_Graphical_Models\.
+[^Whittaker1990]: @Whittaker_1990_Graphical_Models_in_Applied_Multivariate\.
+[^Wong2003]: @Wong_2003_Efficient_estimation_of_covariance_selection\.
+[^Zhang2005]: @Zhang_2005_The_Schur_Complement_and_its_Applications\.
+
+
+Shrinkage estimators
+--------------------------------------------
+
+-   [Shrinkage](https://en.wikipedia.org/wiki/Shrinkage_(statistics))
+-   Ledoit, O. & Wolf, M. (2001). [Honey, I shrunk the sample covariance matrix](http://www.ledoit.net/honey.pdf). [^Ledoit2001]
+-   Ledoit, O. & Wolf, M. (2003). [Improved estimation of the covariance matrix of stock returns with an application to portfolio selection](http://www.ledoit.net/ole2.pdf). [^Ledoit2003]
+
+[^Ledoit2001]: @Ledoit_2001_Honey_I_shrunk_the_sample_covariance_matrix\.
+[^Ledoit2003]: @Ledoit_2003_Improved_estimation_of_the_covariance_matrix\.
+
+
+Graphical lasso
+--------------------------------------------
+
+-   [Graphical lasso](https://en.wikipedia.org/wiki/Graphical_lasso)
+-   [Graphical lasso in the scikit-learn user guide](https://scikit-learn.org/stable/modules/covariance.html#sparse-inverse-covariance)
+-   Banerjee, O., d'Aspremont, A., & Ghaoui, L.E. (2005). [Sparse covariance selection via robust maximum likelihood estimation](https://arxiv.org/abs/cs/0506023).
+-   Friedman, J., Hastie, T. and Tibshirani, R. (2008). [Sparse inverse covariance estimation with the graphical lasso](https://www.asc.ohio-state.edu/statistics/statgen/joul_aut2015/2008-Friedman-Hastie-Tibshirani.pdf).
+-   Mazumder, R. & Hastie, T. (2011). [The graphical lasso: New insights and alternatives](https://arxiv.org/abs/1111.5479).
+-   Chang, B. (2015). [An introduction to graphical lasso](https://bochang.me/gmrg/files/Bo_05152015.pdf).
+-   Maxime, A. (2015). [Inverse covariance matrix regularization for minimum variance portfolio](https://www.geneve-finance.ch/file.cfm?contentid=950).
+-   Erickson, S. & Ryd&eacute;n, T. (2025). [Inverse covariance and partial correlation matrix estimation via joint partial regression](https://arxiv.org/abs/2502.08414).
+
+Graphical lasso:
+
+$$ \hat{\Omega} = \underset{\Omega}{\mathrm{argmin}} \: \left( \mathrm{tr}(S \Omega) - \mathrm{log}(\mathrm{det}(\Omega)) + g \left\lVert \Omega \right\lVert_\mathrm{1} \right) $$
+
+where $\left\lVert \Omega \right\lVert_\mathrm{1}$ is the sum of the absolute values of off-diagonal elements of $\Omega$.
+
+

@@ -12,6 +12,8 @@ book:
     - intro.qmd
     - assets.qmd
     - portfolio-theory.qmd
+    - covariance-estimation.qmd
+    - convex-optimization.qmd
     - value.qmd
     - references.qmd
 
