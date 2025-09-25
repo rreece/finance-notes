@@ -52,6 +52,12 @@ Sample covariance:
 
 $$ V_{ij} = \frac{1}{N-1} \sum_{k=1}^{N} (x_{ik} - \bar{x}_{i}) ( x_{jk} - \bar{x}_{j} ) $$
 
+Scatter matrix:
+
+$$ S = \sum_{k=1}^{N} \left( \vec{x}_{k} - \vec{\mu} \right) \left( \vec{x}_{k} - \vec{\mu} \right)^\intercal $$
+
+$$ V = \frac{1}{N-1} S $$
+
 
 Online mean and covariance
 --------------------------------------------
