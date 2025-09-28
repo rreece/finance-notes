@@ -251,7 +251,7 @@ Markowitz:
 
 [^Markowitz1952p89]: @Markowitz_1952_Portfolio_selection\, p. 89.
 
-Dalio: "The Holy Grail", see @fig-dalio-holy-grail\.
+Dalio: ["The Holy Grail of investing"](https://youtube.com/shorts/1ks75G7tQ0g?si=BX4cbQ5jzstCpCT9), see @fig-dalio-holy-grail\.
 
 ![TODO: Citation needed. See: [financhill.com](https://financhill.com/blog/investing/ray-dalio-holy-grail-explained).
     ](img/dalio-holy-grail.jpg){#fig-dalio-holy-grail}
