@@ -40,6 +40,8 @@ What mix of assets should I hold to preserve and accrue value over time?
 
 TODO
 
+This is the subject of @sec-portfolio-theory.
+
 
 Active vs passive investing
 --------------------------------------------

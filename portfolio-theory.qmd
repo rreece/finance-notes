@@ -1,7 +1,9 @@
 ---
-title: "Portfolio theory"
 date: today
 ---
+
+# Portfolio theory {#sec-portfolio-theory}
+
 
 Introduction
 --------------------------------------------
@@ -535,14 +537,15 @@ Criticisms of MPT:
 1.  Sensitivity of portfolio weights to the estimates of $\hat{\mu}$ and $\hat{V}$.
     -   Error propagation
     -   Even assuming Gaussian distributed returns
-2.  Problem of induction
+2.  Variance is not a good measure of risk
+    -   Downside risk is better
+3.  Problem of induction
     -   Past performance is no guarantee of future results
     -   Criticisms of using historical estimators of $\hat{\mu}$ and $\hat{V}$
     -   Non-Gaussian distributed returns
     -   Heteroskedasticity
-3.  Variance is not a good measure of risk
-    -   Downside risk is better
 4.  Criticisms of the Efficient Market Hypothesis
+    -   To what degree are markets efficient?
 
 
 ### Error propagation
@@ -554,13 +557,6 @@ Criticisms of MPT:
 [^Bodnar2011]: @Bodnar_2011_On_the_exact_distribution_of_the_estimated\.
 [^Bodnar2016]: @Bodnar_2016_Singular_inverse_Wishart_distribution_and_its\.
 [^Lo2002]: @Lo_2002_The_statistics_of_Sharpe_ratios\.
-
-
-### Heteroskedasticity
-
--   [Heteroskedasticity-consistent standard errors](https://en.wikipedia.org/wiki/Heteroskedasticity-consistent_standard_errors)
--   [Autoregressive conditional heteroskedasticity](https://en.wikipedia.org/wiki/Autoregressive_conditional_heteroskedasticity)
--   [Newey-West estimator](https://en.wikipedia.org/wiki/Newey%E2%80%93West_estimator)
 
 
 ### Downside risk
@@ -578,6 +574,13 @@ $$ \mathrm{TSD}(r_i, r_\mathrm{tan}) = \sqrt{\mathrm{TSV}(r_i, r_\mathrm{tan})} 
 
 [^Estrada2007]: @Estrada_2007_Mean_semivariance_optimization_A_heuristic\.
 [^Markowitz2019b]: @Markowitz_2019_Avoiding_the_downside_A_practical_review\.
+
+
+### Heteroskedasticity
+
+-   [Heteroskedasticity-consistent standard errors](https://en.wikipedia.org/wiki/Heteroskedasticity-consistent_standard_errors)
+-   [Autoregressive conditional heteroskedasticity](https://en.wikipedia.org/wiki/Autoregressive_conditional_heteroskedasticity)
+-   [Newey-West estimator](https://en.wikipedia.org/wiki/Newey%E2%80%93West_estimator)
 
 
 ### Criticisms of the Efficient Market Hypothesis
