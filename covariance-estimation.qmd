@@ -408,7 +408,8 @@ $$ \hat{\Omega} = \underset{\Omega}{\mathrm{argmin}} \: \left( \mathrm{tr}(S \Om
 
 where $\left\lVert \Omega \right\lVert_\mathrm{1}$ is the sum of the absolute values of off-diagonal elements of $\Omega$.
 
-![Tuning the glass regularization parameter.](img/n_edges_v_g_lasso.png)
+![Tuning the glass regularization parameter.
+    ](img/n-edges-g-lasso.png){#fig-n-edges-g-lasso}
 
 [^Banerjee2005]: @Banerjee_2005_Sparse_covariance_selection_via_robust_maximum\.
 [^Chang2015]: @Chang_2015_An_introduction_to_graphical_lasso\.
