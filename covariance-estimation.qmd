@@ -11,9 +11,6 @@ Introduction
 This is where we discuss how to estimate $\Sigma$.
 
 -   [Estimation of covariance matrices](https://en.wikipedia.org/wiki/Estimation_of_covariance_matrices)
--   Marsaglia, G. (1964). [Conditional means and covariances of normal variables with singular covariance matrix](https://apps.dtic.mil/sti/tr/pdf/AD0299080.pdf). [^Marsaglia1964]
--   Coqueret, G. & Milhau, V. (2014). [Estimating covariance matrices for portfolio optimization](https://web.archive.org/web/20230928050136/https://www.gcoqueret.com/files/Estim_cov.pdf) [^Coqueret2014]
--   Fan, J., Liao, Y., & Liu, H. (2015). [An overview on the estimation of large covariance and precision matrices](https://arxiv.org/abs/1504.02995). [^Fan2015]
 -   Ayyala, D.N. (2020). High-dimensional statistical inference: Theoretical development to data analytics. [^Ayyala2020]
 
 ![The correlation matrix of a few example assets
@@ -28,9 +25,6 @@ Software:
 -   [scikit-portfolio](https://scikit-portfolio.github.io/scikit-portfolio)
 
 [^Ayyala2020]: @Ayyala_2020_High_dimensional_statistical_inference\.
-[^Coqueret2014]: @Coqueret_2014_Estimating_covariance_matrices_for_portfolio\.
-[^Fan2015]: @Fan_2015_An_overview_on_the_estimation_of_large_covariance\.
-[^Marsaglia1964]: @Marsaglia_1964_Conditional_means_and_covariances_of_normal\.
 
 
 Sample mean and covariance
@@ -46,17 +40,17 @@ $$ \Sigma_{ij} = \mathrm{cov}(x_{i}, x_{j}) = \mathbb{E}[(x_{i} - \mu_{i})(x_{j}
 
 Sample mean:
 
-$$ \bar{x}_{i} = \frac{1}{N} \sum_{k=1}^{N} x_{ik} $$
+$$ \bar{x}_{i} = \frac{1}{n} \sum_{k=1}^{n} x_{ik} $$
 
 Sample covariance:
 
-$$ V_{ij} = \frac{1}{N-1} \sum_{k=1}^{N} (x_{ik} - \bar{x}_{i}) ( x_{jk} - \bar{x}_{j} ) $$
+$$ V_{ij} = \frac{1}{n-1} \sum_{k=1}^{n} (x_{ik} - \bar{x}_{i}) ( x_{jk} - \bar{x}_{j} ) $$
 
 Scatter matrix:
 
-$$ S = \sum_{k=1}^{N} \left( \vec{x}_{k} - \vec{\mu} \right) \left( \vec{x}_{k} - \vec{\mu} \right)^\intercal $$
+$$ S = \sum_{k=1}^{n} \left( \vec{x}_{k} - \vec{\mu} \right) \left( \vec{x}_{k} - \vec{\mu} \right)^\intercal $$
 
-$$ V = \frac{1}{N-1} S $$
+$$ V = \frac{1}{n-1} S $$
 
 
 Online mean and covariance
@@ -332,6 +326,7 @@ See:
 
 -   [Covariance matrix](https://en.wikipedia.org/wiki/Covariance_matrix)
 -   [Partial correlation](https://en.wikipedia.org/wiki/Partial_correlation)
+-   Marsaglia, G. (1964). [Conditional means and covariances of normal variables with singular covariance matrix](https://apps.dtic.mil/sti/tr/pdf/AD0299080.pdf). [^Marsaglia1964]
 -   Dempster, A.P. (1972). [Covariance selection](https://www.jstor.org/stable/2528966). [^Dempster1972]
 -   Knuiman, M. (1978). [Covariance selection](https://www.jstor.org/stable/1427014). [^Knuiman1978]
 -   Whittaker, J. (1990). *Graphical Models in Applied Multivariate Statistics*. [^Whittaker1990]
@@ -375,6 +370,7 @@ More:
 [^Galloway2019]: @Galloway_2019_Shrinking_characteristics_of_precision_matrix\.
 [^Knuiman1978]: @Knuiman_1978_Covariance_selection\.
 [^Lauritzen1996]: @Lauritzen_1996_Graphical_Models\.
+[^Marsaglia1964]: @Marsaglia_1964_Conditional_means_and_covariances_of_normal\.
 [^Whittaker1990]: @Whittaker_1990_Graphical_Models_in_Applied_Multivariate\.
 [^Wong2003]: @Wong_2003_Efficient_estimation_of_covariance_selection\.
 [^Zhang2005]: @Zhang_2005_The_Schur_Complement_and_its_Applications\.
@@ -386,7 +382,9 @@ Shrinkage estimators
 -   [Shrinkage](https://en.wikipedia.org/wiki/Shrinkage_(statistics))
 -   Ledoit, O. & Wolf, M. (2001). [Honey, I shrunk the sample covariance matrix](http://www.ledoit.net/honey.pdf). [^Ledoit2001]
 -   Ledoit, O. & Wolf, M. (2003). [Improved estimation of the covariance matrix of stock returns with an application to portfolio selection](http://www.ledoit.net/ole2.pdf). [^Ledoit2003]
+-   Coqueret, G. & Milhau, V. (2014). [Estimating covariance matrices for portfolio optimization](https://web.archive.org/web/20230928050136/https://www.gcoqueret.com/files/Estim_cov.pdf) [^Coqueret2014]
 
+[^Coqueret2014]: @Coqueret_2014_Estimating_covariance_matrices_for_portfolio\.
 [^Ledoit2001]: @Ledoit_2001_Honey_I_shrunk_the_sample_covariance_matrix\.
 [^Ledoit2003]: @Ledoit_2003_Improved_estimation_of_the_covariance_matrix\.
 
@@ -400,6 +398,7 @@ Graphical lasso
 -   Friedman, J., Hastie, T. and Tibshirani, R. (2008). [Sparse inverse covariance estimation with the graphical lasso](https://www.asc.ohio-state.edu/statistics/statgen/joul_aut2015/2008-Friedman-Hastie-Tibshirani.pdf). [^Friedman2008]
 -   Mazumder, R. & Hastie, T. (2011). [The graphical lasso: New insights and alternatives](https://arxiv.org/abs/1111.5479). [^Mazumder2011]
 -   Chang, B. (2015). [An introduction to graphical lasso](https://bochang.me/gmrg/files/Bo_05152015.pdf). [^Chang2015]
+-   Fan, J., Liao, Y., & Liu, H. (2015). [An overview on the estimation of large covariance and precision matrices](https://arxiv.org/abs/1504.02995). [^Fan2015]
 -   Maxime, A. (2015). [Inverse covariance matrix regularization for minimum variance portfolio](https://www.geneve-finance.ch/file.cfm?contentid=950). [^Maxime2015]
 -   Erickson, S. & Ryd&eacute;n, T. (2025). [Inverse covariance and partial correlation matrix estimation via joint partial regression](https://arxiv.org/abs/2502.08414). [^Erickson2025b]
 
@@ -412,6 +411,7 @@ where $\left\lVert \Omega \right\lVert_\mathrm{1}$ is the sum of the absolute va
 [^Banerjee2005]: @Banerjee_2005_Sparse_covariance_selection_via_robust_maximum\.
 [^Chang2015]: @Chang_2015_An_introduction_to_graphical_lasso\.
 [^Erickson2025b]: @Erickson_2025_Inverse_covariance_and_partial_correlation_matrix\.
+[^Fan2015]: @Fan_2015_An_overview_on_the_estimation_of_large_covariance\.
 [^Friedman2008]: @Friedman_2008_Sparse_inverse_covariance_estimation\.
 [^Maxime2015]: @Maxime_2015_Inverse_covariance_matrix_regularization\.
 [^Mazumder2011]: @Mazumder_2011_The_graphical_lasso_New_insights_and_alternatives\.
