@@ -59,20 +59,6 @@ Online mean and covariance
 This discusses how one can calculate a continuously updated covariance
 estimate one data sample at a time.
 
--   [Algorithms for calculating variance](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance)
--   Welford, B.P. (1962). Note on a method for calculating corrected sums of squares and products. [^Welford1962]
--   Neely, P.M. (1966). [Comparison of several algorithms for computation of means, standard deviations and correlation coefficients](https://dl.acm.org/doi/pdf/10.1145/365719.365958). [^Neely1966]
--   Youngs, E.A. & Cramer, E.M. (1971). [Some results relevant to choice of sum and sum-of-product algorithms](https://www.jstor.org/stable/1267176). [^Youngs1971]
--   Ling, R.F. (1974). Comparison of several algorithms for computing sample means and variances. [^Ling1974]
--   Chan, T.F., Golub, G.H., & LeVeque, R.J. (1979). [Updating formulae and a pairwise algorithm for computing sample variances](http://infolab.stanford.edu/pub/cstr/reports/cs/tr/79/773/CS-TR-79-773.pdf). [^Chan1979]
--   P&eacute;bay, P. (2008). [Formulas for robust, one-pass parallel computation of covariances and arbitrary-order statistical moments](https://www.osti.gov/servlets/purl/1028931). [^Pebay2008]
--   Finch, T. (2009). [Incremental calculation of weighted mean and variance](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=5f77d0594f66e49cc0e8c2b8177ead33b7137183). [^Finch2009]
--   Cook, J.D. (2014). [Accurately computing running variance](https://www.johndcook.com/blog/standard_deviation/).
--   Meng, X. (2015). [Simpler online updates for arbitrary-order central moments](https://arxiv.org/abs/1510.04923). [^Meng2015]
--   P&eacute;bay, P., Terriberry, T.B., Kolla, H. & Bennett, J. (2016). [Numerically stable, scalable formulas for parallel and online computation of higher-order multivariate central moments with arbitrary weights](https://link.springer.com/article/10.1007/s00180-015-0637-z). [^Pebay2016]
--   Schubert, E. & Gertz, M. (2018). Numerically stable parallel computation of (co-)variance. [^Schubert2018]
--   Chen, C. (2019). [Welford algorithm for updating variance](https://changyaochen.github.io/welford/).
-
 Univariate central moments:
 
 $$ \mu_{p} = \mathbb{E}\left[(x - \mu_{1})^{p}\right] $$
@@ -162,6 +148,20 @@ $$ C_{n} = (1 - \alpha) C_{n-1} + \alpha \left( \vec{x}_{n} - \vec{\mu}_{n-1} \r
 
 where by summing a geometric series, one can show that for exponential weighting, $W_{n} = 1$,
 so $\hat{V} = C_{n}$.
+
+-   [Algorithms for calculating variance](https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance)
+-   Welford, B.P. (1962). Note on a method for calculating corrected sums of squares and products. [^Welford1962]
+-   Neely, P.M. (1966). [Comparison of several algorithms for computation of means, standard deviations and correlation coefficients](https://dl.acm.org/doi/pdf/10.1145/365719.365958). [^Neely1966]
+-   Youngs, E.A. & Cramer, E.M. (1971). [Some results relevant to choice of sum and sum-of-product algorithms](https://www.jstor.org/stable/1267176). [^Youngs1971]
+-   Ling, R.F. (1974). Comparison of several algorithms for computing sample means and variances. [^Ling1974]
+-   Chan, T.F., Golub, G.H., & LeVeque, R.J. (1979). [Updating formulae and a pairwise algorithm for computing sample variances](http://infolab.stanford.edu/pub/cstr/reports/cs/tr/79/773/CS-TR-79-773.pdf). [^Chan1979]
+-   P&eacute;bay, P. (2008). [Formulas for robust, one-pass parallel computation of covariances and arbitrary-order statistical moments](https://www.osti.gov/servlets/purl/1028931). [^Pebay2008]
+-   Finch, T. (2009). [Incremental calculation of weighted mean and variance](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=5f77d0594f66e49cc0e8c2b8177ead33b7137183). [^Finch2009]
+-   Cook, J.D. (2014). [Accurately computing running variance](https://www.johndcook.com/blog/standard_deviation/).
+-   Meng, X. (2015). [Simpler online updates for arbitrary-order central moments](https://arxiv.org/abs/1510.04923). [^Meng2015]
+-   P&eacute;bay, P., Terriberry, T.B., Kolla, H. & Bennett, J. (2016). [Numerically stable, scalable formulas for parallel and online computation of higher-order multivariate central moments with arbitrary weights](https://link.springer.com/article/10.1007/s00180-015-0637-z). [^Pebay2016]
+-   Schubert, E. & Gertz, M. (2018). Numerically stable parallel computation of (co-)variance. [^Schubert2018]
+-   Chen, C. (2019). [Welford algorithm for updating variance](https://changyaochen.github.io/welford/).
 
 [^Chan1979]: @Chan_1979_Updating_formulae_and_a_pairwise_algorithm\.
 [^Finch2009]: @Finch_2009_Incremental_calculation_of_weighted_mean\.
@@ -407,6 +407,8 @@ Graphical lasso:
 $$ \hat{\Omega} = \underset{\Omega}{\mathrm{argmin}} \: \left( \mathrm{tr}(S \Omega) - \mathrm{log}(\mathrm{det}(\Omega)) + g \left\lVert \Omega \right\lVert_\mathrm{1} \right) $$
 
 where $\left\lVert \Omega \right\lVert_\mathrm{1}$ is the sum of the absolute values of off-diagonal elements of $\Omega$.
+
+![Tuning the glass regularization parameter.](img/n_edges_v_g_lasso.png)
 
 [^Banerjee2005]: @Banerjee_2005_Sparse_covariance_selection_via_robust_maximum\.
 [^Chang2015]: @Chang_2015_An_introduction_to_graphical_lasso\.
