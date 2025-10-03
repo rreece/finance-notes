@@ -360,6 +360,7 @@ More:
     For any multivariate distribution with finite second moments:
     $\mathrm{cov}(x_{1}|x_{2}) = \Sigma_{11} - \Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21}$    
     But this only equals $\Omega_{11}^{-1}$ under Gaussianity.
+    See also @Styan_1983_Schur_complements_and_linear_statistical_models\.
 [^Bolla2023]: @Bolla_2023_Partitioned_covariance_matrices_and_partial\.
 [^Chan2025]: @Chan_2025_Statistical_Modeling_and_Computation\, p. 371--2.
 [^Dempster1972]: @Dempster_1972_Covariance_selection\.

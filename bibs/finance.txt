@@ -92,6 +92,7 @@ Sharpe, W.F. (1964). Capital asset prices: A theory of market equilibrium under 
 Sharpe, W.F. (1990). Nobel lecture: Capital asset prices with and without negative holdings. https://www.nobelprize.org/uploads/2018/06/sharpe-lecture.pdf
 Sharpe, W.F. (1999). *Portfolio Theory and Capital Markets*. McGraw-Hill. [(Originally published in 1970)]
 Sortino, F. (2010). *The Sortino Framework for Constructing Portfolios*. Elsevier.
+Styan, G.P.H. (1983). Schur complements and linear statistical models. In *Proceedings of the First International Tampere Seminar on Linear Statistical Models* (pp. 37--75). Tampere University.
 Tobin, J. (1958). Liquidity preference as behavior towards risk. *Review of Economic Studies*, 25, 65--86. https://doi.org/10.2307/2296205
 Welford, B.P. (1962). Note on a method for calculating corrected sums of squares and products. *Technometrics*, 4, 419--420.
 Whittaker, J. (1990). *Graphical Models in Applied Multivariate Statistics*.
