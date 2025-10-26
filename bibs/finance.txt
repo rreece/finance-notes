@@ -22,6 +22,7 @@ Chamberlain, G. (1983). A characterization of the distributions that imply mean-
 Chan, J.C.C. & Kroese, D.P. (2025). *Statistical Modeling and Computation* (2nd ed.). Springer.
 Chan, T.F., Golub, G.H., & LeVeque, R.J. (1979). Updating formulae and a pairwise algorithm for computing sample variances. Stanford University. http://infolab.stanford.edu/pub/cstr/reports/cs/tr/79/773/CS-TR-79-773.pdf [Technical Report STAN-CS-79-773]
 Chang, B. (2015). An introduction to graphical lasso. https://bochang.me/gmrg/files/Bo_05152015.pdf
+Condat, L. (2016). Fast projection onto the simplex and the $l_1$ ball. *Mathematical Programing Series A*, 158, 575--585. https://link.springer.com/content/pdf/10.1007/s10107-015-0946-6.pdf
 Coqueret, G. & Milhau, V. (2014). Estimating covariance matrices for portfolio optimization. https://web.archive.org/web/20230928050136/https://www.gcoqueret.com/files/Estim_cov.pdf
 Cotton, P. (2024). Hierarchical minimum variance portfolios: A unifying approach using Schur complements. https://github.com/microprediction/precise/blob/main/academic/Schur_Complementary_Portfolios_Peter_Cotton.pdf
 Das, S. (2016). *Data Science: Theories, Models, Algorithms, and Analytics*. http://srdas.github.io/Papers/DSA_Book.pdf
