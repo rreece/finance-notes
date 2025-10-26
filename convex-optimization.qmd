@@ -32,12 +32,37 @@ This is how we minimize $\sigma$.
     -   [scikit-portfolio](https://scikit-portfolio.github.io/scikit-portfolio/)
     -   [mdengler/cla](https://github.com/mdengler/cla/)
 
-TODO: Discuss optimizing the no-shorts frontier.
-
 [^Bailey2013]: @Bailey_2013_An_open_source_implementation_of_the_critical_line\.
 [^Boyd2004]: @Boyd_2004_Convex_Optimization\.
 [^Jagannathan2003]: @Jagannathan_2003_Risk_reduction_in_large_portfolios_Why_imposing\.
 [^Markowitz1956]: @Markowitz_1956_The_optimization_of_a_quadratic_function_subject\.
 [^Markowitz2019a]: @Markowitz_2019_Avoiding_the_downside_A_practical_review\.
 
+
+No-shorts efficient frontier
+--------------------------------------------
+
+Solve
+
+$$ \vec{w}_{\ast} = \underset{w}{\mathrm{argmin}}\ \vec{w}^\intercal \, V \, \vec{w} $$
+
+such that
+
+$$ \vec{w} \cdot \vec{1} = 1 $$
+
+$$ \vec{w} \cdot \vec{\mu} = r_{\ast} $$
+
+and with further optional constraints
+
+$$ A \, \vec{w} \geq \vec{b} $$
+
+TODO: Discuss optimizing the no-shorts frontier.
+
+
+Projection onto a simplex
+--------------------------------------------
+
+-   Condat, L. (2016). [Fast projection onto the simplex and the $l_1$ ball](https://link.springer.com/content/pdf/10.1007/s10107-015-0946-6.pdf). [^Condat2016]
+
+[^Condat2016]: @Condat_2016_Fast_projection_onto_the_simplex_and_the_l_1\.
 
