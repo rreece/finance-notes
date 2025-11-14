@@ -27,7 +27,7 @@ Compound growth
 
 ![How compounding affects the time to $1M.](img/time-to-1m-compounding.jpg){#fig-time-to-1m-compounding}
 
-![Compound growth.](img/compound-growth.png){#fig-compound-growth}
+![Compound growth from investing $500 per month.](img/compound-growth.png){#fig-compound-growth}
 
 The Compound Annual Growth Rate (CAGR), using the sampling frequency
 of $\ell=252$ trading days per year, is

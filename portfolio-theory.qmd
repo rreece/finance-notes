@@ -237,6 +237,10 @@ in @sec-convex-optimization.
 -   [Eugene Fama](https://en.wikipedia.org/wiki/Eugene_Fama) (b. 1939)
 -   Fama, E. (1970). [Efficient capital markets: A review of theory and empirical work](http://www.e-m-h.org/Fama70.pdf). [^Fama1970]
 
+See also:
+
+-   [Criticisms of the efficient market hypothesis](#criticisms-of-the-efficient-market-hypothesis)
+
 [^Fama1970]: @Fama_1970_Efficient_capital_markets_A_review_of_theory\.
 
 
@@ -588,6 +592,10 @@ $$ \mathrm{TSD}(r_i, r_\mathrm{tan}) = \sqrt{\mathrm{TSV}(r_i, r_\mathrm{tan})} 
 -   Bessembinder, H. & Chan, K. (1998). [Market efficiency and the returns to technical analysis](https://www.jstor.org/stable/3666289). [^Bessembinder1998]
 -   Asness, C.S. (2024). [The less-efficient market hypothesis](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4942046). [^Asness2024]
 -   TODO: Room for fundamentally-motivated indicator analysis --- sits between fundamental analysis and technical analysis.
+
+See also:
+
+-   [Efficient market hypothesis](#efficient-market-hypothesis)
 
 [^Asness2024]: @Asness_2024_The_less_efficient_market_hypothesis\.
 [^Bessembinder1998]: @Bessembinder_1998_Market_efficiency_and_the_returns_to_technical\.
