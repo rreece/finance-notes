@@ -583,11 +583,13 @@ $$ \mathrm{TSD}(r_i, r_\mathrm{tan}) = \sqrt{\mathrm{TSV}(r_i, r_\mathrm{tan})} 
 -   [Newey-West estimator](https://en.wikipedia.org/wiki/Newey%E2%80%93West_estimator)
 
 
-### Criticisms of the Efficient Market Hypothesis
+### Criticisms of the efficient market hypothesis
 
 -   Bessembinder, H. & Chan, K. (1998). [Market efficiency and the returns to technical analysis](https://www.jstor.org/stable/3666289). [^Bessembinder1998]
+-   Asness, C.S. (2024). [The less-efficient market hypothesis](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4942046). [^Asness2024]
 -   TODO: Room for fundamentally-motivated indicator analysis --- sits between fundamental analysis and technical analysis.
 
+[^Asness2024]: @Asness_2024_The_less_efficient_market_hypothesis\.
 [^Bessembinder1998]: @Bessembinder_1998_Market_efficiency_and_the_returns_to_technical\.
 
 
