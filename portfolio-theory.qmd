@@ -264,7 +264,7 @@ Dalio: ["The Holy Grail of investing"](https://youtube.com/shorts/1ks75G7tQ0g?si
 
 **Inverse variance portfolio**
 
-Let us look at the minimum variance portfolio, which does not depend on us estimating the returns.
+Let us look at the minimum variance portfolio, which does not depend on estimating the returns.
 
 $$ \vec{w}_\mathrm{min} = \frac{V^{-1} \, \vec{1}}{a} = \frac{V^{-1} \, \vec{1}}{\vec{1}^\intercal \, V^{-1} \, \vec{1}} $$
 
@@ -274,9 +274,9 @@ and then $V_{ii}^{-1}  = \frac{1}{V_{ii}} = \frac{1}{\sigma_{i}^{2}}$.
 Therefore the minimum variance portfolio for uncorrelated assets is the
 *inverse variance portfolio* (IVP):
 
-$$ \left[ \vec{w}_\mathrm{IVP} \right]_{i} = \frac{1}{\eta} \, \frac{1}{\sigma_{i}^{2}} $$
+$$ \left[ \vec{w}_\mathrm{IVP} \right]_{i} = \eta \, \frac{1}{\sigma_{i}^{2}} $$
 
-where $\eta$ is a normalization constant, $\eta = \sum_{i} \frac{1}{\sigma_{i}^{2}}$.
+where $\eta$ is a normalization constant, $\eta = \left( \sum_{i} \frac{1}{\sigma_{i}^{2}} \right)^{-1}$.
 
 
 Fund theorems
