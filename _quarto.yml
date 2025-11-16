@@ -9,7 +9,7 @@ book:
   date: today
   chapters:
     - index.qmd
-    - intro.qmd
+    - introduction.qmd
     - assets.qmd
     - portfolio-theory.qmd
     - covariance-estimation.qmd
