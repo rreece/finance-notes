@@ -30,6 +30,13 @@ P/E ratio by S&P500 sector:
 -   [macromicro.me](https://en.macromicro.me/collections/5749/industry-forward-pe-ratio/48243/s5cond-forward-pe-ratio) - Forward P/E
 -   [yardeni.com](https://yardeni.com/charts/sp-500-sectors-forward-p-e-ratios/) - Forward P/E over time
 
+Discussion:
+
+-   Estrada, J. (2005). [The Fed Model: A note](https://ssrn.com/abstract=841787). [^Estrada2005]
+-   [Fed model](https://en.wikipedia.org/wiki/Fed_model)
+
+[^Estrada2005]: @Estrada_2005_The_Fed_Model_A_note\.
+
 
 Margin of safety
 --------------------------------------------

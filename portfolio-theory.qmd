@@ -582,7 +582,9 @@ Criticisms of MPT:
 ### Downside risk
 
 -   [Downside risk](https://en.wikipedia.org/wiki/Downside_risk), semi-variance, semi-deviation, target semi-variance (TSV), target semi-deviation
--   Estrada, J. (2007). [Mean-semivariance optimization: A heuristic approach](https://ssrn.com/abstract=1028206). [^Estrada2007]
+-   Estrada, J. (2000). [The cost of equity in emerging markets: A downside risk approach](https://ssrn.com/abstract=170748). [^Estrada2000]
+-   Estrada, J. (2002). [Systematic risk in emerging markets: The D-CAPM](https://blog.iese.edu/jestrada/files/2012/06/RiskEMs-DCAPM.pdf). [^Estrada2002]
+-   Estrada, J. (2008). [Mean-semivariance optimization: A heuristic approach](https://ssrn.com/abstract=1028206). [^Estrada2008]
 -   Markowitz, H.M., Starer, D., Fram, H., & Gerber, S. (2019). [Avoiding the downside: A practical review of the Critical Line Algorithm for mean-semivariance portfolio optimization](https://www.hudsonbaycapital.com/documents/FG/hudsonbay/research/599440_paper.pdf). [^Markowitz2019b]
 -   [Mean-Semivariance frontier](https://scikit-portfolio.github.io/scikit-portfolio/efficient_semivariance/) in [scikit-portfolio](https://scikit-portfolio.github.io/scikit-portfolio/)
 
@@ -592,7 +594,9 @@ $$ \mathrm{TSD}(r_i, r_\mathrm{tan}) = \sqrt{\mathrm{TSV}(r_i, r_\mathrm{tan})} 
 
 -   [Sortino ratio](https://en.wikipedia.org/wiki/Sortino_ratio)
 
-[^Estrada2007]: @Estrada_2007_Mean_semivariance_optimization_A_heuristic\.
+[^Estrada2000]: @Estrada_2000_The_cost_of_equity_in_emerging_markets_A_downside\.
+[^Estrada2002]: @Estrada_2002_Systematic_risk_in_emerging_markets_The_D_CAPM\.
+[^Estrada2008]: @Estrada_2008_Mean_semivariance_optimization_A_heuristic\.
 [^Markowitz2019b]: @Markowitz_2019_Avoiding_the_downside_A_practical_review\.
 
 
