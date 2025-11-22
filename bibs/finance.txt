@@ -62,7 +62,7 @@ Jensen, M. (1968). The performance of mutual funds in the period 1945-1964. *Jou
 Karatzas, I., Lehoczky, J.P., Sethi, S.P., & Shreve, S.E (1986). Explicit solution of a general consumption/investment problem. *Mathematics of Operations Research*, 11, 261--294. https://www.jstor.org/stable/3689808
 Kelly, J.L. (1956). A new interpretation of information rate. *Bell System Technical Journal*, 35, 917--926. https://www.princeton.edu/~wbialek/rome/refs/kelly_56.pdf
 Knuiman, M. (1978). Covariance selection. *Advances in Applied Probability*, 10, 123--130. https://www.jstor.org/stable/1427014
-Kolari, J.W. & Pynn{\:o}nen, S. (2023). *Investment Valuation and Asset Pricing*. Palgrave Macmillan.
+Kolari, J.W. & Pynn{\"o}nen, S. (2023). *Investment Valuation and Asset Pricing*. Palgrave Macmillan.
 Koop, G.M. (2013). Forecasting with medium and large Bayesian VARs. *Journal of Applied Econometrics*, 28, 177--203. https://ssrn.com/abstract=1514412
 Kwok, Y.K. (2017). Lecture notes: Fundamentals of Mathematical Finance. https://www.math.hkust.edu.hk/~maykwok/MATH4512.htm
 Lauritzen, S. (1996). *Graphical Models*.
