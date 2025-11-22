@@ -1,8 +1,11 @@
 Anarkulova, A., Cederburg, S. & O'Doherty, M.S. (2025). Beyond the status quo: A critical assessment of lifecycle investment advice. https://ssrn.com/abstract=4590406
 Aronson, D. (2007). *Evidence-Based Technical Analysis*. Wiley.
 Asness, C.S. (1996). Why not 100% equities. *The Journal of Portfolio Management*, 22, 29--34. https://doi.org/10.3905/jpm.1996.29
-Asness, C.S., Israelov, R., & Liew, J.M. (2011). International diversification works (eventually). *Financial Analysts Journal*, 67, 24--38. https://doi.org/10.2469/faj.v67.n3.1
+Asness, C.S. (2014). Our model goes to six and saves value from redundancy along the way. https://www.aqr.com/Insights/Perspectives/Our-Model-Goes-to-Six-and-Saves-Value-From-Redundancy-Along-the-Way
 Asness, C.S. (2024). The less-efficient market hypothesis. *The Journal of Portfolio Management*. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4942046
+Asness, C. & Frazzini, A. (2013). The Devil in HML's Details. *Journal of Portfolio Management*, 39, 49--68. https://doi.org/10.3905/jpm.2013.39.4.049 
+Asness, C.S., Frazzini, A., & Pedersen, L.H. (2019). Quality minus junk. *Review of Accounting Studies*, 24, 34--112. https://doi.org/10.1007/s11142-018-9470-2
+Asness, C.S., Israelov, R., & Liew, J.M. (2011). International diversification works (eventually). *Financial Analysts Journal*, 67, 24--38. https://doi.org/10.2469/faj.v67.n3.1
 Ayyala, D.N. (2020). High-dimensional statistical inference: Theoretical development to data analytics. In A.S.R. Srinivasa Rao and C.R. Rao (Eds.), *Handbook of Statistics* (pp. 289--335). Elsevier.
 Bailey, D.H. & L{\'o}pez de Prado, M. (2013). An open-source implementation of the critical-line algorithm for portfolio optimization. *Algorithms*, 6, 169--196. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2197616
 Banerjee, O., d'Aspremont, A., & Ghaoui, L.E. (2005). Sparse covariance selection via robust maximum likelihood estimation. https://arxiv.org/abs/cs/0506023
@@ -37,8 +40,12 @@ Estrada, J. (2000). The cost of equity in emerging markets: A downside risk appr
 Estrada, J. (2002). Systematic risk in emerging markets: The D-CAPM. *Emerging Markets Review*, 3, 365--379. https://blog.iese.edu/jestrada/files/2012/06/RiskEMs-DCAPM.pdf
 Estrada, J. (2005). The Fed Model: A note. https://ssrn.com/abstract=841787
 Estrada, J. (2008). Mean-semivariance optimization: A heuristic approach. https://ssrn.com/abstract=1028206
+Fama, E.F. (1965). The behavior of stock-market prices. *The Journal of Business*, 38, 34--105. https://www.jstor.org/stable/2350752
 Fama, E.F. (1970). Efficient capital markets: A review of theory and empirical work. *Journal of Finance*, 25(2), 383--417. http://www.e-m-h.org/Fama70.pdf
+Fama, E.F. & MacBeth, J.D. (1973). Risk, return, and equilibrium: Empirical tests. *Journal of Political Economy*, 81, 607--636. https://doi.org/10.1086/260061
 Fama, E.F. & French, K.R. (1992). The cross-section of expected stock returns. *Journal of Finance*, 47, 427. https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1992.tb04398.x
+Fama, E.F. & French, K.R. (2015). A five-factor asset pricing model. *Journal of Financial Economics*, 116, 1--22. https://doi.org/10.1016/j.jfineco.2014.10.010
+Fama, E.F. & French, K.R. (2017). International tests of a five-factor asset pricing model. *Journal of Financial Economics*, 123, 441--463. https://doi.org/10.1016/j.jfineco.2014.10.010
 Fan, J., Liao, Y., & Liu, H. (2015). An overview on the estimation of large covariance and precision matrices. https://arxiv.org/abs/1504.02995
 Finch, T. (2009). Incremental calculation of weighted mean and variance. https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=5f77d0594f66e49cc0e8c2b8177ead33b7137183
 Friedman, J., Hastie, T. and Tibshirani, R. (2008). Sparse inverse covariance estimation with the graphical lasso. https://www.asc.ohio-state.edu/statistics/statgen/joul_aut2015/2008-Friedman-Hastie-Tibshirani.pdf

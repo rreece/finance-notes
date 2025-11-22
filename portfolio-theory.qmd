@@ -235,12 +235,14 @@ in @sec-convex-optimization.
 
 -   [Efficient-market hypothesis](https://en.wikipedia.org/wiki/Efficient-market_hypothesis)
 -   [Eugene Fama](https://en.wikipedia.org/wiki/Eugene_Fama) (b. 1939)
+-   Fama, E.F. (1965). [The behavior of stock-market prices](https://www.jstor.org/stable/2350752). [^Fama1965]
 -   Fama, E. (1970). [Efficient capital markets: A review of theory and empirical work](http://www.e-m-h.org/Fama70.pdf). [^Fama1970]
 
 See also:
 
 -   [Criticisms of the efficient market hypothesis](#criticisms-of-the-efficient-market-hypothesis)
 
+[^Fama1965]: @Fama_1965_The_behavior_of_stock_market_prices\.
 [^Fama1970]: @Fama_1970_Efficient_capital_markets_A_review_of_theory\.
 
 
@@ -512,9 +514,30 @@ Factor models
 ### Fama-French model
 
 -   [Fama-French model three-factor model](https://en.wikipedia.org/wiki/Fama%E2%80%93French_three-factor_model)
+-   Fama, E.F. & MacBeth, J.D. (1973). [Risk, return, and equilibrium: Empirical tests](https://doi.org/10.1086/260061). [^Fama1973]
 -   Fama, E.F. & French, K.R. (1992). [The cross-section of expected stock returns](https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1992.tb04398.x). [^Fama1992]
+-   Fama, E.F. & French, K.R. (2015). [A five-factor asset pricing model](https://doi.org/10.1016/j.jfineco.2014.10.010). [^Fama2015]
+-   Fama, E.F. & French, K.R. (2017). [International tests of a five-factor asset pricing model](https://doi.org/10.1016/j.jfineco.2014.10.010). [^Fama2017]
 
+Three-factor model:
+
+$$ r_{it} - r_{ft} = a_{i} + b_{i} \, (r_{mt} - r_{ft}) + s_{i} \, \mathrm{SMB}_{t} + h_{i} \, \mathrm{HML}_{t} + \varepsilon_{it} $$
+
+Five-factor model:
+
+$$ r_{it} - r_{ft} = a_{i} + b_{i} \, (r_{mt} - r_{ft}) + s_{i} \, \mathrm{SMB}_{t} + h_{i} \, \mathrm{HML}_{t} + r_{i} \, \mathrm{RMW}_{t} + c_{i} \, \mathrm{CMA}_{t} + \varepsilon_{it} $$
+
+-   $r_{m} - r_{f}$: The return spread between the capitalization weighted stock market and cash.
+-   SMB: The return spread of small minus large stocks (i.e., the size effect).
+-   HML: The return spread of cheap minus expensive stocks (i.e., the value effect).
+-   RMW: The return spread of the most profitable firms minus the least profitable.
+-   CMA: The return spread of firms that invest conservatively minus aggressively. [^Asness2014a]
+
+[^Asness2014a]: @Asness_2014_Our_model_goes_to_six_and_saves_value_from\.
+[^Fama1973]: @Fama_1973_Risk_return_and_equilibrium_Empirical_tests\.
 [^Fama1992]: @Fama_1992_The_cross_section_of_expected_stock_returns\.
+[^Fama2015]: @Fama_2015_A_five_factor_asset_pricing_model\.
+[^Fama2017]: @Fama_2017_International_tests_of_a_five_factor_asset_pricing\.
 
 
 ### Carhart four-factor model
@@ -522,7 +545,23 @@ Factor models
 -   [Carhart four-factor model](https://en.wikipedia.org/wiki/Carhart_four-factor_model)
 -   Yontar, T. & Benham, F. (2016). [US small cap equity: Which benchmark is best?](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2770660). [^Yontar2016]
 
+Four-factor model:
+
+$$ r_{it} - r_{ft} = a_{i} + b_{i} \, (r_{mt} - r_{ft}) + s_{i} \, \mathrm{SMB}_{t} + h_{i} \, \mathrm{HML}_{t} + u_{i} \, \mathrm{UMD}_{t} + \varepsilon_{it} $$
+
 [^Yontar2016]: @Yontar_2016_US_small_cap_equity_Which_benchmark_is_best\.
+
+
+### Asness six-factor model
+
+-   Asness, C. & Frazzini, A. (2013). The Devil in HML's Details. *Journal of Portfolio Management*, 39, 49--68. https://doi.org/10.3905/jpm.2013.39.4.049 
+-   Asness, C.S. (2014). [Our model goes to six and saves value from redundancy along the way](https://www.aqr.com/Insights/Perspectives/Our-Model-Goes-to-Six-and-Saves-Value-From-Redundancy-Along-the-Way). [^Asness2014b]
+
+Six-factor model:
+
+$$ r_{it} - r_{ft} = a_{i} + b_{i} \, (r_{mt} - r_{ft}) + s_{i} \, \mathrm{SMB}_{t} + h_{i} \, \mathrm{HML}_{t} + r_{i} \, \mathrm{RMW}_{t} + c_{i} \, \mathrm{CMA}_{t} + u_{i} \, \mathrm{UMD} + \varepsilon_{it} $$
+
+[^Asness2014b]: @Asness_2014_Our_model_goes_to_six_and_saves_value_from\.
 
 
 Risk preferences
