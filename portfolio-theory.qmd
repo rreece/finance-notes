@@ -431,11 +431,14 @@ Keywords:
 
 Background:
 
--   Jensen, M. (1968). [The performance of mutual funds in the period 1945-1964](https://www.jstor.org/stable/2325404). [^Jensen1968]
 -   Sharpe, W.F. (1963). A simplified model for portfolio analysis. [^Sharpe1963]
 -   Sharpe, W.F. (1964). Capital asset prices: A theory of market equilibrium under conditions of risk. [^Sharpe1964]
--   Sharpe, W.F. (1999). *Portfolio Theory and Capital Markets*. [^Sharpe1999]
+-   Lintner, J. (1965). [The valuation of risk assets and the selection of risky investments in stock portfolios and capital budgets](https://www.jstor.org/stable/1924119). [^Lintner1965]
+-   Jensen, M. (1968). [The performance of mutual funds in the period 1945-1964](https://www.jstor.org/stable/2325404). [^Jensen1968]
 -   Sharpe, W.F. (1990). Nobel lecture: [Capital asset prices with and without negative holdings](https://www.nobelprize.org/uploads/2018/06/sharpe-lecture.pdf). [^Sharpe1990]
+-   Sharpe, W.F. (1999). *Portfolio Theory and Capital Markets*. [^Sharpe1999]
+-   Fama, E.F. & French, K.R. (2004). [The capital ssset pricing model: Theory and evidence](https://www.jstor.org/stable/3216805). [^Fama2004]
+-   Kolari, J.W. & Pynn&ouml;nen, S. (2023). *Investment Valuation and Asset Pricing*. [^Kolari2023]
 
 $$ \beta_i = \frac{ \mathrm{Cov}(r_i, r_m) }{ \mathrm{Var}(r_m) } = \mathrm{Cor}(r_i, r_m) \: \frac{\sigma_i}{\sigma_m} \label{eq:sharpe_beta} $$
 
@@ -480,8 +483,11 @@ $$ T_i \equiv \frac{ r_i - r_\mathrm{f} }{ \beta_i }  \label{eq:treynor_ratio} $
 -   Gibbons, M., Ross, S., & Shanken, J. (1989). [A test of the efficiency of a given portfolio](https://www.jstor.org/stable/1913625). [^Gibbons1989]
 -   Luenberger, D.G. (1998). *Investment Science*. [^Luenberger1998]
 
-[^Jensen1968]: @Jensen_1968_The_performance_of_mutual_funds_in_the_period\.
+[^Fama2004]: @Fama_2004_The_capital_ssset_pricing_model_Theory\.
 [^Gibbons1989]: @Gibbons_1989_A_test_of_the_efficiency_of_a_given_portfolio\.
+[^Jensen1968]: @Jensen_1968_The_performance_of_mutual_funds_in_the_period\.
+[^Kolari2023]: @Kolari_2023_Investment_Valuation_and_Asset_Pricing\.
+[^Lintner1965]: @Lintner_1965_The_valuation_of_risk_assets_and_the_selection\.
 [^Luenberger1998]: @Luenberger_1998_Investment_Science\.
 [^Sharpe1963]: @Sharpe_1963_A_simplified_model_for_portfolio_analysis\.
 [^Sharpe1964]: @Sharpe_1964_Capital_asset_prices_A_theory_of_market\.

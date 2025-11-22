@@ -45,6 +45,7 @@ Fama, E.F. (1965). The behavior of stock-market prices. *The Journal of Business
 Fama, E.F. (1970). Efficient capital markets: A review of theory and empirical work. *Journal of Finance*, 25(2), 383--417. http://www.e-m-h.org/Fama70.pdf
 Fama, E.F. & MacBeth, J.D. (1973). Risk, return, and equilibrium: Empirical tests. *Journal of Political Economy*, 81, 607--636. https://doi.org/10.1086/260061
 Fama, E.F. & French, K.R. (1992). The cross-section of expected stock returns. *Journal of Finance*, 47, 427. https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1992.tb04398.x
+Fama, E.F. & French, K.R. (2004). The capital ssset pricing model: Theory and evidence. *The Journal of Economic Perspectives*, 18, 25--46. https://www.jstor.org/stable/3216805
 Fama, E.F. & French, K.R. (2015). A five-factor asset pricing model. *Journal of Financial Economics*, 116, 1--22. https://doi.org/10.1016/j.jfineco.2014.10.010
 Fama, E.F. & French, K.R. (2017). International tests of a five-factor asset pricing model. *Journal of Financial Economics*, 123, 441--463. https://doi.org/10.1016/j.jfineco.2014.10.010
 Fan, J., Liao, Y., & Liu, H. (2015). An overview on the estimation of large covariance and precision matrices. https://arxiv.org/abs/1504.02995
@@ -61,6 +62,7 @@ Jensen, M. (1968). The performance of mutual funds in the period 1945-1964. *Jou
 Karatzas, I., Lehoczky, J.P., Sethi, S.P., & Shreve, S.E (1986). Explicit solution of a general consumption/investment problem. *Mathematics of Operations Research*, 11, 261--294. https://www.jstor.org/stable/3689808
 Kelly, J.L. (1956). A new interpretation of information rate. *Bell System Technical Journal*, 35, 917--926. https://www.princeton.edu/~wbialek/rome/refs/kelly_56.pdf
 Knuiman, M. (1978). Covariance selection. *Advances in Applied Probability*, 10, 123--130. https://www.jstor.org/stable/1427014
+Kolari, J.W. & Pynn{\:o}nen, S. (2023). *Investment Valuation and Asset Pricing*. Palgrave Macmillan.
 Koop, G.M. (2013). Forecasting with medium and large Bayesian VARs. *Journal of Applied Econometrics*, 28, 177--203. https://ssrn.com/abstract=1514412
 Kwok, Y.K. (2017). Lecture notes: Fundamentals of Mathematical Finance. https://www.math.hkust.edu.hk/~maykwok/MATH4512.htm
 Lauritzen, S. (1996). *Graphical Models*.
@@ -68,6 +70,7 @@ Ledoit, O. & Wolf, M. (2003). Improved estimation of the covariance matrix of st
 Ledoit, O. & Wolf, M. (2001). Honey, I shrunk the sample covariance matrix. http://www.ledoit.net/honey.pdf
 Levy, H. & Markowitz, H.M. (1979). Approximating expected utility by a function of mean and variance. *American Economic Review*, 69, 308--317.
 Ling, R.F. (1974). Comparison of several algorithms for computing sample means and variances. *Journal of the American Statistical Association*, 69, 859--866.
+Lintner, J. (1965). The valuation of risk assets and the selection of risky investments in stock portfolios and capital budgets. *The Review of Economics and Statistics*, 47, 13--37. https://www.jstor.org/stable/1924119
 Lo, A.W. (2002). The statistics of Sharpe ratios. *Financial Analysts Journal*, 58(4), 36--52. https://www.jstor.org/stable/4480405
 Lohre, H., Rother, C., & Sch{\"a}fer, K.A. (2020). Hierarchical Risk Parity: Accounting for tail dependencies in multi-asset multi-factor allocations. In E. Jurczenko (ed.), *Machine Learning and Asset Management* (pp. 332--368). Iste and Wiley. https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=3513399
 L{\'o}pez de Prado, M. (2016). Building diversified portfolios that outperform out-of-sample. *Journal of Portfolio Management*. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2708678
