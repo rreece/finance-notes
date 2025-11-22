@@ -434,6 +434,7 @@ Background:
 -   Sharpe, W.F. (1963). A simplified model for portfolio analysis. [^Sharpe1963]
 -   Sharpe, W.F. (1964). Capital asset prices: A theory of market equilibrium under conditions of risk. [^Sharpe1964]
 -   Lintner, J. (1965). [The valuation of risk assets and the selection of risky investments in stock portfolios and capital budgets](https://www.jstor.org/stable/1924119). [^Lintner1965]
+-   Fama, E.F. (1968). [Risk, return and equilibrium: Some clarifying comments](https://www.jstor.org/stable/2325308). [^Fama1968]
 -   Jensen, M. (1968). [The performance of mutual funds in the period 1945-1964](https://www.jstor.org/stable/2325404). [^Jensen1968]
 -   Sharpe, W.F. (1990). Nobel lecture: [Capital asset prices with and without negative holdings](https://www.nobelprize.org/uploads/2018/06/sharpe-lecture.pdf). [^Sharpe1990]
 -   Sharpe, W.F. (1999). *Portfolio Theory and Capital Markets*. [^Sharpe1999]
@@ -483,6 +484,7 @@ $$ T_i \equiv \frac{ r_i - r_\mathrm{f} }{ \beta_i }  \label{eq:treynor_ratio} $
 -   Gibbons, M., Ross, S., & Shanken, J. (1989). [A test of the efficiency of a given portfolio](https://www.jstor.org/stable/1913625). [^Gibbons1989]
 -   Luenberger, D.G. (1998). *Investment Science*. [^Luenberger1998]
 
+[^Fama1968]: @Fama_1968_Risk_return_and_equilibrium_Some_clarifying\.
 [^Fama2004]: @Fama_2004_The_capital_ssset_pricing_model_Theory\.
 [^Gibbons1989]: @Gibbons_1989_A_test_of_the_efficiency_of_a_given_portfolio\.
 [^Jensen1968]: @Jensen_1968_The_performance_of_mutual_funds_in_the_period\.
