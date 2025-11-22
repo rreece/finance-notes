@@ -42,6 +42,7 @@ Estrada, J. (2002). Systematic risk in emerging markets: The D-CAPM. *Emerging M
 Estrada, J. (2005). The Fed Model: A note. https://ssrn.com/abstract=841787
 Estrada, J. (2008). Mean-semivariance optimization: A heuristic approach. https://ssrn.com/abstract=1028206
 Fama, E.F. (1965). The behavior of stock-market prices. *The Journal of Business*, 38, 34--105. https://www.jstor.org/stable/2350752
+Fama, E.F. (1968). Risk, return and equilibrium: Some clarifying comments. *The Journal of Finance*, 23, 29--40. https://www.jstor.org/stable/2325308
 Fama, E.F. (1970). Efficient capital markets: A review of theory and empirical work. *Journal of Finance*, 25(2), 383--417. http://www.e-m-h.org/Fama70.pdf
 Fama, E.F. & MacBeth, J.D. (1973). Risk, return, and equilibrium: Empirical tests. *Journal of Political Economy*, 81, 607--636. https://doi.org/10.1086/260061
 Fama, E.F. & French, K.R. (1992). The cross-section of expected stock returns. *Journal of Finance*, 47, 427. https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1992.tb04398.x
