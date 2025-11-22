@@ -21,6 +21,7 @@ Black, F. & Litterman, R. (1992). Global portfolio optimization. *Financial Anal
 Brinson, G.P., Hood, L.R., & Beebower, G.L. (1986). Determinants of portfolio performance. *Financial Analysts Journal*, 42, 39--44.
 Brinson, G. P., Singer, B.D., & Beebower, G.L. (1991). Determinants of portfolio performance II: An update. *Financial Analysts Journal*, 47(3), 40--48.
 Buffett, W. (2017). *Berkshire Hathaway Letters to Shareholders 1965-2016*. Explorist Productions.
+Carhart, M.M. (1997). On persistence in mutual fund performance. *The Journal of Finance*, 52, 57--82. https://www.jstor.org/stable/2329556
 Cass, D. & Stiglitz, J.E. (1970). The structure of investor preferences and asset returns, and separability in portfolio allocation: A contribution to the pure theory of mutual funds. *Journal of Economic Theory*, 2.
 Chamberlain, G. (1983). A characterization of the distributions that imply mean-variance utility functions. *Journal of Economic Theory*, 29, 185--201.
 Chan, J.C.C. & Kroese, D.P. (2025). *Statistical Modeling and Computation* (2nd ed.). Springer.

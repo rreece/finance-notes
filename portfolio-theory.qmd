@@ -517,15 +517,16 @@ Factor models
 -   Fama, E.F. & MacBeth, J.D. (1973). [Risk, return, and equilibrium: Empirical tests](https://doi.org/10.1086/260061). [^Fama1973]
 -   Fama, E.F. & French, K.R. (1992). [The cross-section of expected stock returns](https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1992.tb04398.x). [^Fama1992]
 -   Fama, E.F. & French, K.R. (2015). [A five-factor asset pricing model](https://doi.org/10.1016/j.jfineco.2014.10.010). [^Fama2015]
+-   Yontar, T. & Benham, F. (2016). [US small cap equity: Which benchmark is best?](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2770660). [^Yontar2016]
 -   Fama, E.F. & French, K.R. (2017). [International tests of a five-factor asset pricing model](https://doi.org/10.1016/j.jfineco.2014.10.010). [^Fama2017]
 
 Three-factor model:
 
-$$ r_{it} - r_{ft} = a_{i} + b_{i} \, (r_{mt} - r_{ft}) + s_{i} \, \mathrm{SMB}_{t} + h_{i} \, \mathrm{HML}_{t} + \varepsilon_{it} $$
+$$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{mt} - r_{ft}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \varepsilon_{it} $$
 
 Five-factor model:
 
-$$ r_{it} - r_{ft} = a_{i} + b_{i} \, (r_{mt} - r_{ft}) + s_{i} \, \mathrm{SMB}_{t} + h_{i} \, \mathrm{HML}_{t} + r_{i} \, \mathrm{RMW}_{t} + c_{i} \, \mathrm{CMA}_{t} + \varepsilon_{it} $$
+$$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{mt} - r_{ft}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \beta^\mathrm{p}_{i} \, \mathrm{RMW}_{t} + \beta^\mathrm{i}_{i} \, \mathrm{CMA}_{t} + \varepsilon_{it} $$
 
 -   $r_{m} - r_{f}$: The return spread between the capitalization weighted stock market and cash.
 -   SMB: The return spread of small minus large stocks (i.e., the size effect).
@@ -538,29 +539,31 @@ $$ r_{it} - r_{ft} = a_{i} + b_{i} \, (r_{mt} - r_{ft}) + s_{i} \, \mathrm{SMB}_
 [^Fama1992]: @Fama_1992_The_cross_section_of_expected_stock_returns\.
 [^Fama2015]: @Fama_2015_A_five_factor_asset_pricing_model\.
 [^Fama2017]: @Fama_2017_International_tests_of_a_five_factor_asset_pricing\.
+[^Yontar2016]: @Yontar_2016_US_small_cap_equity_Which_benchmark_is_best\.
 
 
 ### Carhart four-factor model
 
 -   [Carhart four-factor model](https://en.wikipedia.org/wiki/Carhart_four-factor_model)
--   Yontar, T. & Benham, F. (2016). [US small cap equity: Which benchmark is best?](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2770660). [^Yontar2016]
+-   Carhart, M.M. (1997). [On persistence in mutual fund performance](https://www.jstor.org/stable/2329556). [^Carhart1997]
 
 Four-factor model:
 
-$$ r_{it} - r_{ft} = a_{i} + b_{i} \, (r_{mt} - r_{ft}) + s_{i} \, \mathrm{SMB}_{t} + h_{i} \, \mathrm{HML}_{t} + u_{i} \, \mathrm{UMD}_{t} + \varepsilon_{it} $$
+$$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{mt} - r_{ft}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \beta^\mathrm{mom}_{i} \, \mathrm{PR1YR}_{t} + \varepsilon_{it} $$
 
-[^Yontar2016]: @Yontar_2016_US_small_cap_equity_Which_benchmark_is_best\.
+[^Carhart1997]: @Carhart_1997_On_persistence_in_mutual_fund_performance\.
 
 
 ### Asness six-factor model
 
--   Asness, C. & Frazzini, A. (2013). The Devil in HML's Details. *Journal of Portfolio Management*, 39, 49--68. https://doi.org/10.3905/jpm.2013.39.4.049 
+-   Asness, C. & Frazzini, A. (2013). [The Devil in HML's Details](https://doi.org/10.3905/jpm.2013.39.4.049). [^Asness2013]
 -   Asness, C.S. (2014). [Our model goes to six and saves value from redundancy along the way](https://www.aqr.com/Insights/Perspectives/Our-Model-Goes-to-Six-and-Saves-Value-From-Redundancy-Along-the-Way). [^Asness2014b]
 
 Six-factor model:
 
-$$ r_{it} - r_{ft} = a_{i} + b_{i} \, (r_{mt} - r_{ft}) + s_{i} \, \mathrm{SMB}_{t} + h_{i} \, \mathrm{HML}_{t} + r_{i} \, \mathrm{RMW}_{t} + c_{i} \, \mathrm{CMA}_{t} + u_{i} \, \mathrm{UMD} + \varepsilon_{it} $$
+$$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{mt} - r_{ft}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \beta^\mathrm{p}_{i} \, \mathrm{RMW}_{t} + \beta^\mathrm{i}_{i} \, \mathrm{CMA}_{t} + \beta^\mathrm{mom}_{i} \, \mathrm{UMD}_{t} + \varepsilon_{it} $$
 
+[^Asness2013]: @Asness_2013_The_Devil_in_HMLs_Details\.
 [^Asness2014b]: @Asness_2014_Our_model_goes_to_six_and_saves_value_from\.
 
 
