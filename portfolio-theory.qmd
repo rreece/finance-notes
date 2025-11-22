@@ -504,6 +504,13 @@ Factor models
 
 -   [Factor analysis](https://en.wikipedia.org/wiki/Factor_analysis)
 
+$$ r_{it} - r_{ft} = \alpha_{i} + \sum_{j} \beta_{ij} \, F_{jt} + \varepsilon_{it} $$
+
+-   Regression with historical data gives $\alpha_{i}$ and $\beta_{ij}$.
+-   $\beta_{ij}$ is called the factor loading for factor $j$.
+-   Estimate the factor premiums, $\lambda_j$, usually from historical return: $\lambda_j = \mathbb{E}(F_{jt})$.
+-   Expected return: $r_{i} = \sum_{j} \beta_{ij} \, \lambda_{j}$, where looking forward, it is usually assumed that $\alpha_{i} = 0$.
+
 
 ### Fama-French model
 
