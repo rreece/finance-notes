@@ -495,20 +495,6 @@ $$ T_i \equiv \frac{ r_i - r_\mathrm{f} }{ \beta_i }  \label{eq:treynor_ratio} $
 [^Sharpe1999]: @Sharpe_1999_Portfolio_Theory_and_Capital_Markets\.
 
 
-Black-Litterman model
---------------------------------------------
-
--   Black, F. & Litterman, R. (1991). Asset allocation.[^Black1991]
--   Black, F. & Litterman, R. (1992). Global portfolio optimization. [^Black1992]
--   He, G. & Litterman, R. (2002). The intuition behind Black-Litterman model portfolios. [^He2002]
--   Meucci, A. (2008). The Black-Litterman approach: Original model and extensions. [^Meucci2008]
-
-[^Black1991]: @Black_1991_Asset_allocation\.
-[^Black1992]: @Black_1992_Global_portfolio_optimization\.
-[^He2002]: @He_2002_The_intuition_behind_Black_Litterman_model\.
-[^Meucci2008]: @Meucci_2008_The_Black_Litterman_approach_Original_model\.
-
-
 Factor models
 --------------------------------------------
 
@@ -571,6 +557,21 @@ $$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{mt} - r_{ft}) + \b
 
 [^Asness2013]: @Asness_2013_The_Devil_in_HMLs_Details\.
 [^Asness2014b]: @Asness_2014_Our_model_goes_to_six_and_saves_value_from\.
+
+
+Black-Litterman model
+--------------------------------------------
+
+-   [Black-Litterman model](https://en.wikipedia.org/wiki/Black%E2%80%93Litterman_model)
+-   Black, F. & Litterman, R. (1991). Asset allocation.[^Black1991]
+-   Black, F. & Litterman, R. (1992). Global portfolio optimization. [^Black1992]
+-   He, G. & Litterman, R. (2002). The intuition behind Black-Litterman model portfolios. [^He2002]
+-   Meucci, A. (2008). The Black-Litterman approach: Original model and extensions. [^Meucci2008]
+
+[^Black1991]: @Black_1991_Asset_allocation\.
+[^Black1992]: @Black_1992_Global_portfolio_optimization\.
+[^He2002]: @He_2002_The_intuition_behind_Black_Litterman_model\.
+[^Meucci2008]: @Meucci_2008_The_Black_Litterman_approach_Original_model\.
 
 
 Risk preferences
