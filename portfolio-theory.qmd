@@ -478,7 +478,7 @@ SCL:
 $$ r_i - r_\mathrm{f} = \hat{\alpha}_i + \hat{\beta}_i \, (r_\mathrm{m} - r_\mathrm{f}) $$
 
 If one instead thinks of the SCL in $r - r_\mathrm{f}$ vs $\beta$ space, then the slope of
-an asset's SCL is the [Treynor ratio](https://en.wikipedia.org/wiki/Treynor_ratio)
+an asset's SCL is the [Treynor ratio](https://en.wikipedia.org/wiki/Treynor_ratio):
 
 $$ T_i \equiv \frac{ r_i - r_\mathrm{f} }{ \beta_i } $$
 
