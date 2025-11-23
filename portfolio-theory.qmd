@@ -63,14 +63,14 @@ Lecture notes:
 
 ### Markowitz portfolio problem
 
-Given an expected covariance, $V$, and expected returns, $\vec{r}$,
+Given an expected covariance, $V$, and expected returns, $\vec{\mu}$,
 we want to find the portfolio with the best return per risk.
 How to estimate $V$ will be discussed in more detail in 
 @sec-covariance-estimation.
 
 Return of a portfolio:
 
-$$ r = \vec{w}^\intercal \, \vec{r} = \sum_i w_{i} \, r_{i} $$
+$$ r = \vec{w}^\intercal \, \vec{\mu} = \sum_i w_{i} \, \mu_{i} $$
 
 Variance of a portfolio:
 
