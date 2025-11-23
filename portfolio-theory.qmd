@@ -63,14 +63,14 @@ Lecture notes:
 
 ### Markowitz portfolio problem
 
-Given an expected covariance, $V$, and expected returns, $r_i$,
+Given an expected covariance, $V$, and expected returns, $\vec{\mu}$,
 we want to find the portfolio with the best return per risk.
 How to estimate $V$ will be discussed in more detail in 
 @sec-covariance-estimation.
 
 Return of a portfolio:
 
-$$ r = \vec{w}^\intercal \, \vec{r} = \sum_i w_{i} \, r_{i} $$
+$$ r = \vec{w}^\intercal \, \vec{\mu} = \sum_i w_{i} \, \mu_{i} $$
 
 Variance of a portfolio:
 
@@ -404,12 +404,12 @@ $$ \sigma_\mathrm{tan}^{2} = \frac{\left|\vec{\mu} - r_\mathrm{f} \, \vec{1}\rig
 The tangent portfolio is the portfolio with the maximum
 [Sharpe ratio](https://en.wikipedia.org/wiki/Sharpe_ratio), $S_i$.
 
-$$ S_i \equiv \frac{ r_i - r_\mathrm{f} }{ \sigma_i }  \label{eq:sharpe_ratio} $$
+$$ S_i \equiv \frac{ r_i - r_\mathrm{f} }{ \sigma_i } $$
 
 The Sharpe ratio is a measure of how much excess return an asset had over a risk-free asset,
 adjusted for the risk as measured by the standard deviation of return.
 
-TODO:
+TODO: 
 
 -   Citation needed for the one-fund theorem
 -   Related to the efficient-market hypothesis: in equilibrium, the tangent portfolio becomes the market portfolio
@@ -441,45 +441,64 @@ Background:
 -   Fama, E.F. & French, K.R. (2004). [The capital ssset pricing model: Theory and evidence](https://www.jstor.org/stable/3216805). [^Fama2004]
 -   Kolari, J.W. & Pynn&ouml;nen, S. (2023). *Investment Valuation and Asset Pricing*. [^Kolari2023]
 
-$$ \beta_i = \frac{ \mathrm{Cov}(r_i, r_m) }{ \mathrm{Var}(r_m) } = \mathrm{Cor}(r_i, r_m) \: \frac{\sigma_i}{\sigma_m} \label{eq:sharpe_beta} $$
+The CAPM model return is
 
-Thought in $r_i$ vs $r_m$ space, accumulating points over time,
-$\alpha_{i}$ and $\beta_{i}$ can be calculated via linear regression:
+$$ r_\mathrm{CAPM} = r_\mathrm{f} + \alpha_i + \beta_i \, (r_\mathrm{m} - r_\mathrm{f}) $$
+
+Thought in $r - r_\mathrm{f}$ vs $r_\mathrm{m} - r_\mathrm{f}$ space, accumulating points over time,
+$\alpha_{i}$ and $\beta_{i}$ can be calculated via linear regression,
+minimizing the Sum Squared Errors:
+
+$$ \mathrm{SSE} = \sum_{t=1}^{T} \varepsilon_{it} = \sum_{t=1}^{T} \left( r_{it} - r_{\mathrm{CAPM}t} \right)^2 = \sum_{t=1}^{T} \left( r_{it} - r_{\mathrm{f}t} - \alpha_i - \beta_i \, (r_{\mathrm{m}t} - r_{\mathrm{f}t}) \right)^2 $$
+
+Let
+
+$$ r_i \equiv \mathbb{E}_{t}(r_{it}) $$
+
+Since the CAPM model is linear, the regression has the analytic solution
+of Ordinary Least Squares (OLS). It can be shown that [^ItCanBeShownOLS]
+
+$$ \hat{\beta}_i = \frac{ \mathrm{Cov}(r_i, r_\mathrm{m}) }{ \mathrm{Var}(r_\mathrm{m}) } = \mathrm{Cor}(r_i, r_\mathrm{m}) \: \frac{\sigma_i}{\sigma_\mathrm{m}} $$
+
+From which one can see that it is always the case that $\beta_\mathrm{m} = 1$.
+
+[Jensen's alpha](https://en.wikipedia.org/wiki/Jensen%27s_alpha)
+is a measure of how much an asset outperformed the CAPM return expected
+from the $\beta$ term, the sensitivity to the market.
+
+$$ \hat{\alpha}_{i} = r_i - r_\mathrm{f} - \hat{\beta}_{i} \, (r_\mathrm{m} - r_\mathrm{f})  $$
+
+The [Security Characteristic Line (SCL)](https://en.wikipedia.org/wiki/Security_characteristic_line)
+is the line in $r - r_\mathrm{f}$ vs $r_\mathrm{m}$,
+fit to a particular asset, $i$, with its slope, $\hat{\beta}_{i}$,
+and its intercept, $\hat{\alpha}_i$.
 
 SCL:
 
-$$ r_{it} - r_\mathrm{f} = \hat{\alpha}_i + \hat{\beta}_i \, (r_{mt} - r_\mathrm{f}) + \varepsilon_{it}  \label{eq:alpha_beta_regression} $$
+$$ r_i - r_\mathrm{f} = \hat{\alpha}_i + \hat{\beta}_i \, (r_\mathrm{m} - r_\mathrm{f}) $$
 
-The [Security Characteristic Line (SCL)](https://en.wikipedia.org/wiki/Security_characteristic_line)
-is the line in $r_i$ vs $r_m$,
-fit to a particular asset, $i$, with its slope, $\hat{\beta}_{i}$,
-and its $(r_i - r_\mathrm{f})$ intercept, $\hat{\alpha}_i$.
+If one instead thinks of the SCL in $r - r_\mathrm{f}$ vs $\beta$ space, then the slope of
+an asset's SCL is the [Treynor ratio](https://en.wikipedia.org/wiki/Treynor_ratio):
 
-[Jensen's alpha](https://en.wikipedia.org/wiki/Jensen%27s_alpha)
-uses the same form, but at a particular time point, using a historical
-fit for $\hat{\beta}_{i}$, but not $\alpha_{i}$.
-
-$$ \alpha_{i} = (r_i - r_\mathrm{f}) - \hat{\beta}_{i} \, (r_m - r_\mathrm{f})  \label{eq:jensen_alpha} $$
-
-TODO: Compare with this:
-
-$$ \alpha_{i} = (r_i - r_\mathrm{f}) - \hat{\beta}_{i} \, (\mu_{m} - r_\mathrm{f}) $$
+$$ T_i \equiv \frac{ r_i - r_\mathrm{f} }{ \beta_i } $$
 
 The [Security Market Line (SML)](https://en.wikipedia.org/wiki/Security_market_line),
-thought in $r_i$ vs $\beta_i$ space, goes through the market portfolio at
-($\beta_m$, $r_m$).
+thought in $r - r_\mathrm{f}$ vs $\beta$ space, goes through the market portfolio at
+($\beta_\mathrm{m}$ = 1, $r_\mathrm{m}$).
 
 SML: 
 
-$$ \mathbb{E}(r_i) = r_\mathrm{f} + \beta_i \left( \mathbb{E}(r_m) - r_\mathrm{f} \right) $$
+$$ r = r_\mathrm{f} + \beta \left( r_\mathrm{m} - r_\mathrm{f} \right) $$
 
 ![The Capital Asset Pricing Model (CAPM) applied to a few example assets
     using daily data from 2014-01-02 to 2024-08-30, 10 years and 8 months.
     ](img/capm-btc-2024-09-13.png){#fig-capm-btc-2024-09-13}
 
--   [Treynor ratio](https://en.wikipedia.org/wiki/Treynor_ratio)
+Assuming the simple form of the CAPM, the SML gives the predicted
+return of an asset with a given $\beta$, and assuming $\alpha = 0$.
+The $\alpha$ of an asset shows how much it outperformed above this line.
 
-$$ T_i \equiv \frac{ r_i - r_\mathrm{f} }{ \beta_i }  \label{eq:treynor_ratio} $$
+More:
 
 -   Gibbons, M., Ross, S., & Shanken, J. (1989). [A test of the efficiency of a given portfolio](https://www.jstor.org/stable/1913625). [^Gibbons1989]
 -   Luenberger, D.G. (1998). *Investment Science*. [^Luenberger1998]
@@ -495,22 +514,11 @@ $$ T_i \equiv \frac{ r_i - r_\mathrm{f} }{ \beta_i }  \label{eq:treynor_ratio} $
 [^Sharpe1964]: @Sharpe_1964_Capital_asset_prices_A_theory_of_market\.
 [^Sharpe1990]: @Sharpe_1990_Nobel_lecture_Capital_asset_prices_with\.
 [^Sharpe1999]: @Sharpe_1999_Portfolio_Theory_and_Capital_Markets\.
+[^ItCanBeShownOLS]: TODO: Work out OLS.
 
 
 Factor models
 --------------------------------------------
-
-### Factor analysis
-
--   [Factor analysis](https://en.wikipedia.org/wiki/Factor_analysis)
-
-$$ r_{it} - r_{ft} = \alpha_{i} + \sum_{j} \beta_{ij} \, F_{jt} + \varepsilon_{it} $$
-
--   Regression with historical data gives $\alpha_{i}$ and $\beta_{ij}$.
--   $\beta_{ij}$ is called the factor loading for factor $j$.
--   Estimate the factor premiums, $\lambda_j$, usually from historical return: $\lambda_j = \mathbb{E}(F_{jt})$.
--   Expected return: $r_{i} = \sum_{j} \beta_{ij} \, \lambda_{j}$, where looking forward, it is usually assumed that $\alpha_{i} = 0$.
-
 
 ### Fama-French model
 
@@ -523,11 +531,11 @@ $$ r_{it} - r_{ft} = \alpha_{i} + \sum_{j} \beta_{ij} \, F_{jt} + \varepsilon_{i
 
 Three-factor model:
 
-$$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{mt} - r_{ft}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \varepsilon_{it} $$
+$$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m}t} - r_{ft}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \varepsilon_{it} $$
 
 Five-factor model:
 
-$$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{mt} - r_{ft}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \beta^\mathrm{p}_{i} \, \mathrm{RMW}_{t} + \beta^\mathrm{i}_{i} \, \mathrm{CMA}_{t} + \varepsilon_{it} $$
+$$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m}t} - r_{ft}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \beta^\mathrm{p}_{i} \, \mathrm{RMW}_{t} + \beta^\mathrm{i}_{i} \, \mathrm{CMA}_{t} + \varepsilon_{it} $$
 
 -   $r_{m} - r_{f}$: The return spread between the capitalization weighted stock market and cash.
 -   SMB: The return spread of small minus large stocks (i.e., the size effect).
@@ -550,7 +558,7 @@ $$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{mt} - r_{ft}) + \b
 
 Four-factor model:
 
-$$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{mt} - r_{ft}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \beta^\mathrm{mom}_{i} \, \mathrm{PR1YR}_{t} + \varepsilon_{it} $$
+$$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m}t} - r_{\mathrm{f}t}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \beta^\mathrm{mom}_{i} \, \mathrm{PR1YR}_{t} + \varepsilon_{it} $$
 
 [^Carhart1997]: @Carhart_1997_On_persistence_in_mutual_fund_performance\.
 
@@ -562,10 +570,22 @@ $$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{mt} - r_{ft}) + \b
 
 Six-factor model:
 
-$$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{mt} - r_{ft}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \beta^\mathrm{p}_{i} \, \mathrm{RMW}_{t} + \beta^\mathrm{i}_{i} \, \mathrm{CMA}_{t} + \beta^\mathrm{mom}_{i} \, \mathrm{UMD}_{t} + \varepsilon_{it} $$
+$$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m}t} - r_{\mathrm{f}t}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \beta^\mathrm{p}_{i} \, \mathrm{RMW}_{t} + \beta^\mathrm{i}_{i} \, \mathrm{CMA}_{t} + \beta^\mathrm{mom}_{i} \, \mathrm{UMD}_{t} + \varepsilon_{it} $$
 
 [^Asness2013]: @Asness_2013_The_Devil_in_HMLs_Details\.
 [^Asness2014b]: @Asness_2014_Our_model_goes_to_six_and_saves_value_from\.
+
+
+### General factor analysis
+
+-   [Factor analysis](https://en.wikipedia.org/wiki/Factor_analysis)
+
+$$ r_{it} - r_{ft} = \alpha_{i} + \sum_{j} \beta_{ij} \, F_{jt} + \varepsilon_{it} $$
+
+-   Regression with historical data gives $\alpha_{i}$ and $\beta_{ij}$.
+-   $\beta_{ij}$ is called the factor loading for factor $j$.
+-   Estimate the factor premiums, $\lambda_j$, usually from historical return: $\lambda_j = \mathbb{E}_{t}(F_{jt}) = \bar{F}_{j}$.
+-   Expected return: $\hat{r}_{i} - \bar{r}_{f} = \sum_{j} \beta_{ij} \, \lambda_{j}$, where looking forward, it is usually assumed that $\alpha_{i} = 0$.
 
 
 Black-Litterman model
