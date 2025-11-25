@@ -625,7 +625,10 @@ Risk preferences
     -   Karatzas, I., Lehoczky, J.P., Sethi, S.P., & Shreve, S.E (1986). [Explicit solution of a general consumption/investment problem](https://www.jstor.org/stable/3689808). [^Karatzas1986]
 -   Conditional Value at Risk (CVaR) or [Expected shortfall](https://en.wikipedia.org/wiki/Expected_shortfall)
     -   Rockafellar, R.T. & Uryasev, S. (2000). [Optimization of conditional value-at-risk](https://sites.math.washington.edu/~rtr/papers/rtr179-CVaR1.pdf). [^Rockafellar2000]
+-   Lifecycle strategy
+    -   Anarkulova, A., Cederburg, S. & O'Doherty, M.S. (2025). [Beyond the status quo: A critical assessment of lifecycle investment advice](https://ssrn.com/abstract=4590406). [^Anarkulova2025b]
 
+[^Anarkulova2025b]: @Anarkulova_2025_Beyond_the_status_quo_A_critical_assessment\.
 [^Kelly1956]: @Kelly_1956_A_new_interpretation_of_information_rate\.
 [^Karatzas1986]: @Karatzas_1986_Explicit_solution_of_a_general\.
 [^Merton1969]: @Merton_1969_Lifetime_portfolio_selection_under_uncertainty\.
