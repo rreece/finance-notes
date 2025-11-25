@@ -460,13 +460,15 @@ of Ordinary Least Squares (OLS). It can be shown that [^ItCanBeShownOLS]
 
 $$ \hat{\beta}_i = \frac{ \mathrm{Cov}(r_i, r_\mathrm{m}) }{ \mathrm{Var}(r_\mathrm{m}) } = \mathrm{Cor}(r_i, r_\mathrm{m}) \: \frac{\sigma_i}{\sigma_\mathrm{m}} $$
 
+and
+
+$$ \hat{\alpha}_{i} = r_i - r_\mathrm{f} - \hat{\beta}_{i} \, (r_\mathrm{m} - r_\mathrm{f})  $$
+
 From which one can see that it is always the case that $\beta_\mathrm{m} = 1$.
 
 [Jensen's alpha](https://en.wikipedia.org/wiki/Jensen%27s_alpha)
 is a measure of how much an asset outperformed the CAPM return expected
 from the $\beta$ term, the sensitivity to the market.
-
-$$ \hat{\alpha}_{i} = r_i - r_\mathrm{f} - \hat{\beta}_{i} \, (r_\mathrm{m} - r_\mathrm{f})  $$
 
 The [Security Characteristic Line (SCL)](https://en.wikipedia.org/wiki/Security_characteristic_line)
 is the line in $r - r_\mathrm{f}$ vs $r_\mathrm{m}$,
@@ -537,7 +539,7 @@ Five-factor model:
 
 $$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m}t} - r_{ft}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \beta^\mathrm{p}_{i} \, \mathrm{RMW}_{t} + \beta^\mathrm{i}_{i} \, \mathrm{CMA}_{t} + \varepsilon_{it} $$
 
--   $r_{m} - r_{f}$: The return spread between the capitalization weighted stock market and cash.
+-   $r_\mathrm{m} - r_\mathrm{f}$: The return spread between the capitalization weighted stock market and cash.
 -   SMB: The return spread of small minus large stocks (i.e., the size effect).
 -   HML: The return spread of cheap minus expensive stocks (i.e., the value effect).
 -   RMW: The return spread of the most profitable firms minus the least profitable.
@@ -585,7 +587,17 @@ $$ r_{it} - r_{ft} = \alpha_{i} + \sum_{j} \beta_{ij} \, F_{jt} + \varepsilon_{i
 -   Regression with historical data gives $\alpha_{i}$ and $\beta_{ij}$.
 -   $\beta_{ij}$ is called the factor loading for factor $j$.
 -   Estimate the factor premiums, $\lambda_j$, usually from historical return: $\lambda_j = \mathbb{E}_{t}(F_{jt}) = \bar{F}_{j}$.
--   Expected return: $\hat{r}_{i} - \bar{r}_{f} = \sum_{j} \beta_{ij} \, \lambda_{j}$, where looking forward, it is usually assumed that $\alpha_{i} = 0$.
+-   Expected return: $\hat{r}_{i} = \bar{r}_\mathrm{f} + \sum_{j} \hat{\beta}_{ij} \, \bar{F}_{j}$, where looking forward, it is usually assumed that $\alpha_{i} = 0$.
+
+TODO: It can be shown that
+
+$$ \hat{\beta}_{ij} = \frac{ \mathrm{Cov}(r_{i}, F_{j}) }{ \mathrm{Var}(F_{j}) } = \mathrm{Cor}(r_i, F_{j}) \: \frac{\sigma_i}{\sigma^{F}_{j}} $$
+
+where in the simple case of CAPM, $F_\mathrm{m} = r_\mathrm{m} - r_\mathrm{f}$, and note that in general $\mathrm{Cov}(x - x_0, y) = \mathrm{Cov}(x, y)$.
+
+TODO: Actually, the above is wrong; only true for the univariate case! The general formula is
+
+$$ \hat{\beta}^{\intercal}_{ij} = \mathrm{Cov}(F, F)^{-1}_{ik} \, \mathrm{Cov}(F, r)_{kj} $$
 
 
 Black-Litterman model
