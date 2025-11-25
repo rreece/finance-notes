@@ -589,15 +589,11 @@ $$ r_{it} - r_{ft} = \alpha_{i} + \sum_{j} \beta_{ij} \, F_{jt} + \varepsilon_{i
 -   Estimate the factor premiums, $\lambda_j$, usually from historical return: $\lambda_j = \mathbb{E}_{t}(F_{jt}) = \bar{F}_{j}$.
 -   Expected return: $\hat{r}_{i} = \bar{r}_\mathrm{f} + \sum_{j} \hat{\beta}_{ij} \, \bar{F}_{j}$, where looking forward, it is usually assumed that $\alpha_{i} = 0$.
 
-TODO: It can be shown that
-
-$$ \hat{\beta}_{ij} = \frac{ \mathrm{Cov}(r_{i}, F_{j}) }{ \mathrm{Var}(F_{j}) } = \mathrm{Cor}(r_i, F_{j}) \: \frac{\sigma_i}{\sigma^{F}_{j}} $$
-
-where in the simple case of CAPM, $F_\mathrm{m} = r_\mathrm{m} - r_\mathrm{f}$, and note that in general $\mathrm{Cov}(x - x_0, y) = \mathrm{Cov}(x, y)$.
-
-TODO: Actually, the above is wrong; only true for the univariate case! The general formula is
+It can be shown that
 
 $$ \hat{\beta}^{\intercal}_{ij} = \mathrm{Cov}(F, F)^{-1}_{ik} \, \mathrm{Cov}(F, r)_{kj} $$
+
+where in the simple case of CAPM, $F_\mathrm{m} = r_\mathrm{m} - r_\mathrm{f}$, and note that in general $\mathrm{Cov}(x - x_0, y) = \mathrm{Cov}(x, y)$.
 
 
 Black-Litterman model
