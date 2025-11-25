@@ -591,7 +591,7 @@ $$ r_{it} - r_{ft} = \alpha_{i} + \sum_{j} \beta_{ij} \, F_{jt} + \varepsilon_{i
 
 It can be shown that
 
-$$ \hat{\beta}^{\intercal}_{ji} = \mathrm{Cov}(f, f)^{-1}_{jk} \, \mathrm{Cov}(f, r)_{ki} $$
+$$ \hat{\beta}^{\intercal}_{ji} = \sum_k \left[ \mathrm{Cov}(f, f)^{-1} \right]_{jk} \, \mathrm{Cov}(f, r)_{ki} $$
 
 where in the simple case of CAPM, $f_\mathrm{m} = r_\mathrm{m} - r_\mathrm{f}$, and note that in general $\mathrm{Cov}(x - x_0, y) = \mathrm{Cov}(x, y)$.
 
