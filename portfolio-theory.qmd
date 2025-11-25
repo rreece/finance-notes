@@ -596,6 +596,7 @@ $$ \hat{\beta}^{\intercal}_{ji} = \mathrm{Cov}(f, f)^{-1}_{jk} \, \mathrm{Cov}(f
 where in the simple case of CAPM, $f_\mathrm{m} = r_\mathrm{m} - r_\mathrm{f}$, and note that in general $\mathrm{Cov}(x - x_0, y) = \mathrm{Cov}(x, y)$.
 
 
+
 Black-Litterman model
 --------------------------------------------
 
