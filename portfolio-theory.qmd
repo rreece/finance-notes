@@ -533,11 +533,11 @@ Factor models
 
 Three-factor model:
 
-$$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m}t} - r_{ft}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \varepsilon_{it} $$
+$$ r_{it} - r_{\mathrm{f}t} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m}t} - r_{\mathrm{f}t}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \varepsilon_{it} $$
 
 Five-factor model:
 
-$$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m}t} - r_{ft}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \beta^\mathrm{p}_{i} \, \mathrm{RMW}_{t} + \beta^\mathrm{i}_{i} \, \mathrm{CMA}_{t} + \varepsilon_{it} $$
+$$ r_{it} - r_{\mathrm{f}t} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m}t} - r_{\mathrm{f}t}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \beta^\mathrm{p}_{i} \, \mathrm{RMW}_{t} + \beta^\mathrm{i}_{i} \, \mathrm{CMA}_{t} + \varepsilon_{it} $$
 
 -   $r_\mathrm{m} - r_\mathrm{f}$: The return spread between the capitalization weighted stock market and cash.
 -   SMB: The return spread of small minus large stocks (i.e., the size effect).
@@ -560,7 +560,7 @@ $$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m}t} - r_{
 
 Four-factor model:
 
-$$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m}t} - r_{\mathrm{f}t}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \beta^\mathrm{mom}_{i} \, \mathrm{PR1YR}_{t} + \varepsilon_{it} $$
+$$ r_{it} - r_{\mathrm{f}t} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m}t} - r_{\mathrm{f}t}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \beta^\mathrm{mom}_{i} \, \mathrm{PR1YR}_{t} + \varepsilon_{it} $$
 
 [^Carhart1997]: @Carhart_1997_On_persistence_in_mutual_fund_performance\.
 
@@ -572,7 +572,7 @@ $$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m}t} - r_{
 
 Six-factor model:
 
-$$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m}t} - r_{\mathrm{f}t}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \beta^\mathrm{p}_{i} \, \mathrm{RMW}_{t} + \beta^\mathrm{i}_{i} \, \mathrm{CMA}_{t} + \beta^\mathrm{mom}_{i} \, \mathrm{UMD}_{t} + \varepsilon_{it} $$
+$$ r_{it} - r_{\mathrm{f}t} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m}t} - r_{\mathrm{f}t}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \beta^\mathrm{p}_{i} \, \mathrm{RMW}_{t} + \beta^\mathrm{i}_{i} \, \mathrm{CMA}_{t} + \beta^\mathrm{mom}_{i} \, \mathrm{UMD}_{t} + \varepsilon_{it} $$
 
 [^Asness2013]: @Asness_2013_The_Devil_in_HMLs_Details\.
 [^Asness2014b]: @Asness_2014_Our_model_goes_to_six_and_saves_value_from\.
@@ -582,7 +582,7 @@ $$ r_{it} - r_{ft} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m}t} - r_{
 
 -   [Factor analysis](https://en.wikipedia.org/wiki/Factor_analysis)
 
-$$ r_{it} - r_{ft} = \alpha_{i} + \sum_{j} \beta_{ij} \, F_{jt} + \varepsilon_{it} $$
+$$ r_{it} - r_{\mathrm{f}t} = \alpha_{i} + \sum_{j} \beta_{ij} \, F_{jt} + \varepsilon_{it} $$
 
 -   Regression with historical data gives $\alpha_{i}$ and $\beta_{ij}$.
 -   $\beta_{ij}$ is called the factor loading for factor $j$.
@@ -591,7 +591,7 @@ $$ r_{it} - r_{ft} = \alpha_{i} + \sum_{j} \beta_{ij} \, F_{jt} + \varepsilon_{i
 
 It can be shown that
 
-$$ \hat{\beta}^{\intercal}_{ji} = \sum_k \big[ \mathrm{Cov}(f, f)^{-1} \big]_{jk} \, \big[ \mathrm{Cov}(f, r) \big]_{ki} $$
+$$ \big[ \hat{\beta}^{\intercal} \big]_{ji} = \sum_k \big[ \mathrm{Cov}(f, f)^{-1} \big]_{jk} \, \big[ \mathrm{Cov}(f, r) \big]_{ki} $$
 
 where in the simple case of CAPM, $f_\mathrm{m} = r_\mathrm{m} - r_\mathrm{f}$, and note that in general $\mathrm{Cov}(x - x_0, y) = \mathrm{Cov}(x, y)$.
 
@@ -625,7 +625,10 @@ Risk preferences
     -   Karatzas, I., Lehoczky, J.P., Sethi, S.P., & Shreve, S.E (1986). [Explicit solution of a general consumption/investment problem](https://www.jstor.org/stable/3689808). [^Karatzas1986]
 -   Conditional Value at Risk (CVaR) or [Expected shortfall](https://en.wikipedia.org/wiki/Expected_shortfall)
     -   Rockafellar, R.T. & Uryasev, S. (2000). [Optimization of conditional value-at-risk](https://sites.math.washington.edu/~rtr/papers/rtr179-CVaR1.pdf). [^Rockafellar2000]
+-   Lifecycle strategy
+    -   Anarkulova, A., Cederburg, S. & O'Doherty, M.S. (2025). [Beyond the status quo: A critical assessment of lifecycle investment advice](https://ssrn.com/abstract=4590406). [^Anarkulova2025b]
 
+[^Anarkulova2025b]: @Anarkulova_2025_Beyond_the_status_quo_A_critical_assessment\.
 [^Kelly1956]: @Kelly_1956_A_new_interpretation_of_information_rate\.
 [^Karatzas1986]: @Karatzas_1986_Explicit_solution_of_a_general\.
 [^Merton1969]: @Merton_1969_Lifetime_portfolio_selection_under_uncertainty\.
