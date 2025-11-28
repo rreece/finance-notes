@@ -43,6 +43,11 @@ Historical background:
 -   Markowitz, H.M. (1990). Nobel lecture: [Foundations of portfolio theory](https://www.nobelprize.org/uploads/2018/06/markowitz-lecture.pdf). [^Markowitz1990]
 -   Markowitz, H.M. (2005). Market efficiency: A theoretical distinction and so what? [^Markowitz2005]
 
+Pedagogy:
+
+-   Luenberger, D.G. (1998). Investment Science. [^Luenberger1998]
+-   Palomar, D.P. (2025). [*Portfolio Optimization: Theory and Application*](https://portfoliooptimizationbook.com/) [^Palomar2025]
+
 Lecture notes:
 
 -   Armerin, F. (2023). Lecture notes: [More on mean-variance analysis](https://people.kth.se/~armerin/FinInsMathRwanda/Lecture10.pdf).
@@ -59,6 +64,9 @@ Lecture notes:
     -   In particular, [Lecture 2](https://www.math.hkust.edu.hk/~maykwok/courses/MATH4512/lecture%20notes/MATH4512_T2.pdf)
 -   Sigman, K. (2005). [Notes on fund theorems](https://www.columbia.edu/~ks20/FE-Notes/4700-07-Notes-funds.pdf).
 -   Tam, A.S. (2021). [Lagrangians and portfolio optimization](https://www.adrian.idv.hk/2021-06-22-kkt/).
+
+[^Luenberger1998]: @Luenberger_1998_Investment_Science\.
+[^Palomar2025]: @Palomar_2025_Portfolio_Optimization_Theory_and_Application\.
 
 
 ### Markowitz portfolio problem
