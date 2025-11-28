@@ -95,6 +95,7 @@ Neely, P.M. (1966). Comparison of several algorithms for computation of means, s
 Onnela, J.P., Chakraborti, A., Kaski, K., Kert{\'e}sz, J., & Kanto, A. (2003). Dynamics of market correlations: Taxonomy and portfolio analysis. http://arXiv.org/abs/cond-mat/0302546v1
 Onnela, J.P., Kaski, K., & Kert{\'e}sz, J. (2004). Clustering and information in correlation based financial networks. *European Physical Journal B*, 38, 353--362. https://link.springer.com/article/10.1140/epjb/e2004-00128-7
 Owen, J. & Rabinovitch, R. (1983). On the class of elliptical distributions and their applications to the theory of portfolio choice. *Journal of Finance*, 38, 745--752.
+Palomar, D.P. (2025). *Portfolio Optimization: Theory and Application*. Cambridge University Press. https://portfoliooptimizationbook.com/
 P{\'e}bay, P. (2008). Formulas for robust, one-pass parallel computation of covariances and arbitrary-order statistical moments. Sandia National Laboratories. https://www.osti.gov/servlets/purl/1028931 [Technical Report SAND2008-6212]
 P{\'e}bay, P., Terriberry, T.B., Kolla, H. & Bennett, J. (2016). Numerically stable, scalable formulas for parallel and online computation of higher-order multivariate central moments with arbitrary weights. *Computational Statistics*, 31, 1305--1325. https://link.springer.com/article/10.1007/s00180-015-0637-z
 Raffinot, T. (2018). Hierarchical clustering-based asset allocation. *Journal of Portfolio Management*, 44, 89--99. https://www.proquest.com/docview/2196551795
