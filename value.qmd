@@ -19,6 +19,18 @@ Growth vs value investing
 [^Asness2019]: @Asness_2019_Quality_minus_junk\.
 
 
+Margin of safety
+--------------------------------------------
+
+-   [Margin of safety](https://en.wikipedia.org/wiki/Margin_of_safety_(financial))
+-   [Benjamin Graham](https://en.wikipedia.org/wiki/Benjamin_Graham) (1894-1976)
+    -   *The Intellegent Investor* (1949) [^Graham2003]
+
+![The cost of loss [@Graham_2003_The_Intellegent_Investor_Revised_ed\, p. 526]\.](img/graham-cost-of-loss.png){#fig-graham-cost-of-loss}
+
+[^Graham2003]: @Graham_2003_The_Intellegent_Investor_Revised_ed\.
+
+
 P/E ratio
 --------------------------------------------
 
@@ -35,22 +47,16 @@ P/E ratio by S&P500 sector:
 
 Discussion:
 
--   Estrada, J. (2005). [The Fed Model: A note](https://ssrn.com/abstract=841787). [^Estrada2005]
+-   Buchbinder, J. (2024). [Do good times make bad times? P/E ratios and forward returns](https://www.lpl.com/research/blog/do-good-times-make-bad-times-pe-ratios-and-forward-returns.html).
+-   Estrada, J. (2005). [The fed model: A note](https://ssrn.com/abstract=841787). [^Estrada2005]
 -   [Fed model](https://en.wikipedia.org/wiki/Fed_model)
 
+Bubbles:
+
+-   Marks, H. (2000). [bubble.com](https://www.oaktreecapital.com/docs/default-source/memos/2000-01-02-bubble.pdf).
+-   Marks, H. (2025). [On bubble watch](https://www.oaktreecapital.com/insights/memo/on-bubble-watch).
+
 [^Estrada2005]: @Estrada_2005_The_Fed_Model_A_note\.
-
-
-Margin of safety
---------------------------------------------
-
--   [Margin of safety](https://en.wikipedia.org/wiki/Margin_of_safety_(financial))
--   [Benjamin Graham](https://en.wikipedia.org/wiki/Benjamin_Graham) (1894-1976)
-    -   *The Intellegent Investor* (1949) [^Graham2003]
-
-![The cost of loss [@Graham_2003_The_Intellegent_Investor_Revised_ed\, p. 526]\.](img/graham-cost-of-loss.png){#fig-graham-cost-of-loss}
-
-[^Graham2003]: @Graham_2003_The_Intellegent_Investor_Revised_ed\.
 
 
 Buffett Indicator
@@ -111,5 +117,6 @@ Misc
     -   [Market Rules to Remember](https://en.wikipedia.org/wiki/Market_Rules_to_Remember) - Bob Farrell (1998), Merrill Lynch
     -   [Triple witching hour](https://en.wikipedia.org/wiki/Triple_witching_hour)
     -   [Value investing](https://en.wikipedia.org/wiki/Value_investing)
+-   [Yardeni Research: Roaring 2020s & 2030s](https://yardeni.com/charts/roaring-2020s-2030s/)
 
 
