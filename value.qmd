@@ -56,7 +56,7 @@ Bubbles:
 -   Marks, H. (2000). [bubble.com](https://www.oaktreecapital.com/docs/default-source/memos/2000-01-02-bubble.pdf).
 -   Marks, H. (2025). [On bubble watch](https://www.oaktreecapital.com/insights/memo/on-bubble-watch).
 
-[^Estrada2005]: @Estrada_2005_The_Fed_Model_A_note\.
+[^Estrada2005]: @Estrada_2005_The_fed_model_A_note\.
 
 
 Buffett Indicator
