@@ -636,7 +636,7 @@ Risk preferences
 -   Life-cycle strategy
     -   Modigliani, F. & Brumberg, R. (1954). Utility analysis and the consumption function: An interpretation of cross-section data. [^Modigliani1954]
     -   Scott, J.S., Shoven, J.B., Slavov, S.N. & Watson, J.G. (2023). The life-cycle model implies that most young people should not save for retirement. [^Scott2023]
-    -   Anarkulova, A., Cederburg, S. & O'Doherty, M.S. (2025). [Beyond the status quo: A critical assessment of lifecycle investment advice](https://ssrn.com/abstract=4590406). [^Anarkulova2025b]
+    -   Anarkulova, A., Cederburg, S., & O'Doherty, M.S. (2025). [Beyond the status quo: A critical assessment of lifecycle investment advice](https://ssrn.com/abstract=4590406). [^Anarkulova2025b]
 
 [^Anarkulova2025b]: @Anarkulova_2025_Beyond_the_status_quo_A_critical_assessment\.
 [^Kelly1956]: @Kelly_1956_A_new_interpretation_of_information_rate\.
