@@ -91,7 +91,7 @@ Meng, X. (2015). Simpler online updates for arbitrary-order central moments. htt
 Merton, R.C. (1969). Lifetime portfolio selection under uncertainty: The continuous-time case. *Review of Economics and Statistics*, 51, 247--257. https://www.jstor.org/stable/1926560
 Merton, R.C. (1972). An analytic derivation of the efficient portfolio frontier. *Journal of Financial and Quantitative Analysis*, 7, 1851--1872. https://www.jstor.org/stable/2329621
 Meucci, A. (2008). The Black-Litterman approach: Original model and extensions. https://ssrn.com/abstract=1117574
-Modigliani, F. & Brumberg, R. (1954). Utility alysis and the consumption function: An interpretation of cross-section data. In  K.K. Kurihara (ed.), *Post-Keynesian Economics*. New Brunswick.
+Modigliani, F. & Brumberg, R. (1954). Utility analysis and the consumption function: An interpretation of cross-section data. In  K.K. Kurihara (ed.), *Post-Keynesian Economics*. New Brunswick.
 Neely, P.M. (1966). Comparison of several algorithms for computation of means, standard deviations and correlation coefficients. *Communications of the ACM*, 9, 496--499. https://dl.acm.org/doi/pdf/10.1145/365719.365958
 Onnela, J.P., Chakraborti, A., Kaski, K., Kert{\'e}sz, J., & Kanto, A. (2003). Dynamics of market correlations: Taxonomy and portfolio analysis. http://arXiv.org/abs/cond-mat/0302546v1
 Onnela, J.P., Kaski, K., & Kert{\'e}sz, J. (2004). Clustering and information in correlation based financial networks. *European Physical Journal B*, 38, 353--362. https://link.springer.com/article/10.1140/epjb/e2004-00128-7
