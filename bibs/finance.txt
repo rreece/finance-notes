@@ -91,6 +91,7 @@ Meng, X. (2015). Simpler online updates for arbitrary-order central moments. htt
 Merton, R.C. (1969). Lifetime portfolio selection under uncertainty: The continuous-time case. *Review of Economics and Statistics*, 51, 247--257. https://www.jstor.org/stable/1926560
 Merton, R.C. (1972). An analytic derivation of the efficient portfolio frontier. *Journal of Financial and Quantitative Analysis*, 7, 1851--1872. https://www.jstor.org/stable/2329621
 Meucci, A. (2008). The Black-Litterman approach: Original model and extensions. https://ssrn.com/abstract=1117574
+Modigliani, F. & Brumberg, R. (1954). Utility alysis and the consumption function: An interpretation of cross-section data. In  K.K. Kurihara (ed.), *Post-Keynesian Economics*. New Brunswick.
 Neely, P.M. (1966). Comparison of several algorithms for computation of means, standard deviations and correlation coefficients. *Communications of the ACM*, 9, 496--499. https://dl.acm.org/doi/pdf/10.1145/365719.365958
 Onnela, J.P., Chakraborti, A., Kaski, K., Kert{\'e}sz, J., & Kanto, A. (2003). Dynamics of market correlations: Taxonomy and portfolio analysis. http://arXiv.org/abs/cond-mat/0302546v1
 Onnela, J.P., Kaski, K., & Kert{\'e}sz, J. (2004). Clustering and information in correlation based financial networks. *European Physical Journal B*, 38, 353--362. https://link.springer.com/article/10.1140/epjb/e2004-00128-7
@@ -105,6 +106,7 @@ Rom, B.M. & Ferguson, K. (1993). Post-modern portfolio theory comes of age. *Jou
 Roy, A.D. (1952). Safety first and the holding of assets. *Econometrica*, 20, 431--449. https://www.jstor.org/stable/1907413
 Schlingemann, F.P. & Stulz, R.M. (2022). Have exchange-listed firms become less important for the economy? *Journal of Financial Economics*, 143, 927--958.
 Schubert, E. & Gertz, M. (2018). Numerically stable parallel computation of (co-)variance. *Proceedings of the 30th International Conference on Scientific and Statistical Database Management, SSDBM18*. https://ds.ifi.uni-heidelberg.de/files/Team/eschubert/publications/SSDBM18-covariance-slides.pdf
+Scott, J.S., Shoven, J.B., Slavov, S.N. & Watson, J.G. (2023). The life-cycle model implies that most young people should not save for retirement. *The Journal of Retirement*, 10, 47--70.
 Sharpe, W.F. (1963). A simplified model for portfolio analysis. *Management Science*, 9, 277--293.
 Sharpe, W.F. (1964). Capital asset prices: A theory of market equilibrium under conditions of risk. *Journal of Finance*, 19, 425--442.
 Sharpe, W.F. (1990). Nobel lecture: Capital asset prices with and without negative holdings. https://www.nobelprize.org/uploads/2018/06/sharpe-lecture.pdf
