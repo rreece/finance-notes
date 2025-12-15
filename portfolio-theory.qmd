@@ -589,6 +589,7 @@ $$ r_{it} - r_{\mathrm{f}t} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m
 ### General factor analysis
 
 -   [Factor analysis](https://en.wikipedia.org/wiki/Factor_analysis)
+-   Fidelity. (2016). [An overview of factor investing](https://www.fidelity.com/bin-public/060_www_fidelity_com/documents/brokerage/overview-factor-investing.pdf).
 
 $$ r_{it} - r_{\mathrm{f}t} = \alpha_{i} + \sum_{j} \beta_{ij} \, F_{jt} + \varepsilon_{it} $$
 
