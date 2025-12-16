@@ -46,7 +46,7 @@ Historical background:
 Pedagogy:
 
 -   Luenberger, D.G. (1998). Investment Science. [^Luenberger1998]
--   Palomar, D.P. (2025). [*Portfolio Optimization: Theory and Application*](https://portfoliooptimizationbook.com/) [^Palomar2025]
+-   Palomar, D.P. (2025). [*Portfolio Optimization: Theory and Application*](https://portfoliooptimizationbook.com/). [^Palomar2025]
 
 Lecture notes:
 
@@ -589,6 +589,8 @@ $$ r_{it} - r_{\mathrm{f}t} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m
 ### General factor analysis
 
 -   [Factor analysis](https://en.wikipedia.org/wiki/Factor_analysis)
+-   Fidelity. (2016). [Putting factors to work](https://www.etf.com/docs/PuttingFactors_Work_Fidelity.pdf).
+-   Fidelity. (2016). [An overview of factor investing](https://www.fidelity.com/bin-public/060_www_fidelity_com/documents/brokerage/overview-factor-investing.pdf).
 
 $$ r_{it} - r_{\mathrm{f}t} = \alpha_{i} + \sum_{j} \beta_{ij} \, F_{jt} + \varepsilon_{it} $$
 
