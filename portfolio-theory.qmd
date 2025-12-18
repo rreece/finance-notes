@@ -601,11 +601,7 @@ $$ r_{it} - r_{\mathrm{f}t} = \alpha_{i} + \sum_{j} \beta_{ij} \, f_{jt} + \vare
 
 It can be shown from OLS that
 
-$$ \hat{\beta}_{ij}^\intercal = \sum_k \big[ \mathrm{cov}(\vec{f}, \vec{f})^{-1} \big]_{jk} \, \big[ \mathrm{cov}(\vec{f}, \vec{r}) \big]_{ki} $$
-
-or
-
-$$ \big[ \hat{\beta}^{\intercal} \big]_{ji} = \sum_k \big[ \mathrm{Cov}(f, f)^{-1} \big]_{jk} \, \big[ \mathrm{Cov}(f, r) \big]_{ki} $$
+$$ \big[ \hat{\beta}^{\intercal} \big]_{ji} = \sum_k \big[ \mathrm{cov}(\vec{f}, \vec{f})^{-1} \big]_{jk} \, \big[ \mathrm{cov}(\vec{f}, \vec{r}) \big]_{ki} $$
 
 The $\beta$ vector over factors can be calculated for each asset independently.
 
