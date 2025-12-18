@@ -45,7 +45,7 @@ Historical background:
 
 Pedagogy:
 
--   Luenberger, D.G. (1998). Investment Science. [^Luenberger1998]
+-   Luenberger, D.G. (1998). Investment Science. [^Luenberger1998a]
 -   Palomar, D.P. (2025). [*Portfolio Optimization: Theory and Application*](https://portfoliooptimizationbook.com/). [^Palomar2025]
 
 Lecture notes:
@@ -65,7 +65,7 @@ Lecture notes:
 -   Sigman, K. (2005). [Notes on fund theorems](https://www.columbia.edu/~ks20/FE-Notes/4700-07-Notes-funds.pdf).
 -   Tam, A.S. (2021). [Lagrangians and portfolio optimization](https://www.adrian.idv.hk/2021-06-22-kkt/).
 
-[^Luenberger1998]: @Luenberger_1998_Investment_Science\.
+[^Luenberger1998a]: @Luenberger_1998_Investment_Science\.
 [^Palomar2025]: @Palomar_2025_Portfolio_Optimization_Theory_and_Application\.
 
 
@@ -466,13 +466,13 @@ $$ r_i \equiv \mathbb{E}_{t}(r_{it}) $$
 Since the CAPM model is linear, the regression has the analytic solution
 of Ordinary Least Squares (OLS). It can be shown that [^ItCanBeShownOLS]
 
-$$ \hat{\beta}_i = \frac{ \mathrm{Cov}(r_i, r_\mathrm{m}) }{ \mathrm{Var}(r_\mathrm{m}) } = \mathrm{Cor}(r_i, r_\mathrm{m}) \: \frac{\sigma_i}{\sigma_\mathrm{m}} $$
+$$ \hat{\beta}_i = \frac{ \mathrm{cov}(r_i, r_\mathrm{m}) }{ \mathrm{var}(r_\mathrm{m}) } = \mathrm{cor}(r_i, r_\mathrm{m}) \: \frac{\sigma_i}{\sigma_\mathrm{m}} $$
 
 and
 
 $$ \hat{\alpha}_{i} = r_i - r_\mathrm{f} - \hat{\beta}_{i} \, (r_\mathrm{m} - r_\mathrm{f})  $$
 
-From which one can see that it is always the case that $\beta_\mathrm{m} = 1$.
+From which one can see that it is always the case that $\beta_\mathrm{m} = 1$ and $\alpha_\mathrm{m} = 0$.
 
 [Jensen's alpha](https://en.wikipedia.org/wiki/Jensen%27s_alpha)
 is a measure of how much an asset outperformed the CAPM return expected
@@ -511,7 +511,7 @@ The $\alpha$ of an asset shows how much it outperformed above this line.
 More:
 
 -   Gibbons, M., Ross, S., & Shanken, J. (1989). [A test of the efficiency of a given portfolio](https://www.jstor.org/stable/1913625). [^Gibbons1989]
--   Luenberger, D.G. (1998). *Investment Science*. [^Luenberger1998]
+-   Luenberger, D.G. (1998). *Investment Science*. [^Luenberger1998b]
 
 [^Fama1968]: @Fama_1968_Risk_return_and_equilibrium_Some_clarifying\.
 [^Fama2004]: @Fama_2004_The_capital_ssset_pricing_model_Theory\.
@@ -519,7 +519,7 @@ More:
 [^Jensen1968]: @Jensen_1968_The_performance_of_mutual_funds_in_the_period\.
 [^Kolari2023]: @Kolari_2023_Investment_Valuation_and_Asset_Pricing\.
 [^Lintner1965]: @Lintner_1965_The_valuation_of_risk_assets_and_the_selection\.
-[^Luenberger1998]: @Luenberger_1998_Investment_Science\.
+[^Luenberger1998b]: @Luenberger_1998_Investment_Science\.
 [^Sharpe1963]: @Sharpe_1963_A_simplified_model_for_portfolio_analysis\.
 [^Sharpe1964]: @Sharpe_1964_Capital_asset_prices_A_theory_of_market\.
 [^Sharpe1990]: @Sharpe_1990_Nobel_lecture_Capital_asset_prices_with\.
@@ -592,19 +592,26 @@ $$ r_{it} - r_{\mathrm{f}t} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m
 -   Fidelity. (2016). [Putting factors to work](https://www.etf.com/docs/PuttingFactors_Work_Fidelity.pdf).
 -   Fidelity. (2016). [An overview of factor investing](https://www.fidelity.com/bin-public/060_www_fidelity_com/documents/brokerage/overview-factor-investing.pdf).
 
-$$ r_{it} - r_{\mathrm{f}t} = \alpha_{i} + \sum_{j} \beta_{ij} \, F_{jt} + \varepsilon_{it} $$
+$$ r_{it} - r_{\mathrm{f}t} = \alpha_{i} + \sum_{j} \beta_{ij} \, f_{jt} + \varepsilon_{it} $$
 
--   Regression with historical data gives $\alpha_{i}$ and $\beta_{ij}$.
--   $\beta_{ij}$ is called the factor loading for factor $j$.
--   Estimate the factor premiums, $f_{j}$, usually from historical return: $f_{j} = \mathbb{E}_{t}(F_{jt}) = \bar{F}_{j}$.
--   Expected return: $\hat{r}_{i} = \bar{r}_\mathrm{f} + \sum_{j} \hat{\beta}_{ij} \, f_{j}$, where looking forward, it is usually assumed that $\alpha_{i} = 0$.
+-   Regression with historical data gives $\hat{\alpha}_{i}$ and $\hat{\beta}_{ij}$.
+-   $\beta_{ij}$ is called the factor loading or factor sensitivity for factor $j$.
+-   Estimate the factor premiums, $\hat{f}_{j}$, usually from historical return: $\hat{f}_{j} = \mathbb{E}_{t}(f_{jt})$.
+-   Expected return: $\hat{r}_{i} = \bar{r}_\mathrm{f} + \sum_{j} \hat{\beta}_{ij} \, \hat{f}_{j}$, where looking forward, it is usually assumed that $\alpha_{i} = 0$.
 
-It can be shown that
+It can be shown from OLS that
+
+$$ \hat{\beta}_{ij}^\intercal = \sum_k \big[ \mathrm{cov}(\vec{f}, \vec{f})^{-1} \big]_{jk} \, \big[ \mathrm{cov}(\vec{f}, \vec{r}) \big]_{ki} $$
+
+or
 
 $$ \big[ \hat{\beta}^{\intercal} \big]_{ji} = \sum_k \big[ \mathrm{Cov}(f, f)^{-1} \big]_{jk} \, \big[ \mathrm{Cov}(f, r) \big]_{ki} $$
 
-where in the simple case of CAPM, $f_\mathrm{m} = r_\mathrm{m} - r_\mathrm{f}$, and note that in general $\mathrm{Cov}(x - x_0, y) = \mathrm{Cov}(x, y)$.
+The $\beta$ vector over factors can be calculated for each asset independently.
 
+$$ \hat{\vec{\beta}}_{i} = \mathrm{cov}(\vec{f}, \vec{f})^{-1} \cdot \mathrm{cov}(\vec{f}, r_{i}) $$
+
+In the simple case of CAPM, there is a single factor, $f_\mathrm{m} = r_\mathrm{m} - r_\mathrm{f}$.
 
 
 Black-Litterman model

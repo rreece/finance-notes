@@ -10,15 +10,6 @@ TODO: Price data is pretty easy to come by, but where does one scrape
 up-to-date earnings data?
 
 
-Growth vs value investing
---------------------------------------------
-
--   TODO
--   Asness, C.S., Frazzini, A., & Pedersen, L.H. (2019). [Quality minus junk](https://doi.org/10.1007/s11142-018-9470-2). [^Asness2019]
-
-[^Asness2019]: @Asness_2019_Quality_minus_junk\.
-
-
 Margin of safety
 --------------------------------------------
 
@@ -29,6 +20,15 @@ Margin of safety
 ![The cost of loss [@Graham_2003_The_Intellegent_Investor_Revised_ed\, p. 526]\.](img/graham-cost-of-loss.png){#fig-graham-cost-of-loss}
 
 [^Graham2003]: @Graham_2003_The_Intellegent_Investor_Revised_ed\.
+
+
+Growth vs value investing
+--------------------------------------------
+
+-   TODO
+-   Asness, C.S., Frazzini, A., & Pedersen, L.H. (2019). [Quality minus junk](https://doi.org/10.1007/s11142-018-9470-2). [^Asness2019]
+
+[^Asness2019]: @Asness_2019_Quality_minus_junk\.
 
 
 P/E ratio
