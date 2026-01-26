@@ -570,7 +570,12 @@ Four-factor model:
 
 $$ r_{it} - r_{\mathrm{f}t} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m}t} - r_{\mathrm{f}t}) + \beta^\mathrm{s}_{i} \, \mathrm{SMB}_{t} + \beta^\mathrm{v}_{i} \, \mathrm{HML}_{t} + \beta^\mathrm{mom}_{i} \, \mathrm{PR1YR}_{t} + \varepsilon_{it} $$
 
+On using momentum:
+
+-   Jegadeesh, N. & Titman, S. (1993). [Returns to buying winners and selling losers: Implications for stock market efficiency](http://relative-performance.technicalanalysis.org.uk/JegadeeshTitman1993.pdf). [^Jegadeesh1993]
+
 [^Carhart1997]: @Carhart_1997_On_persistence_in_mutual_fund_performance\.
+[^Jegadeesh1993]: @Jegadeesh_1993_Returns_to_buying_winners_and_selling_losers\.
 
 
 ### Asness six-factor model
