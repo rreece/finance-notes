@@ -244,7 +244,7 @@ in @sec-convex-optimization.
 -   [Efficient-market hypothesis](https://en.wikipedia.org/wiki/Efficient-market_hypothesis)
 -   [Eugene Fama](https://en.wikipedia.org/wiki/Eugene_Fama) (b. 1939)
 -   Fama, E.F. (1965). [The behavior of stock-market prices](https://www.jstor.org/stable/2350752). [^Fama1965]
--   Fama, E. (1970). [Efficient capital markets: A review of theory and empirical work](http://www.e-m-h.org/Fama70.pdf). [^Fama1970]
+-   Fama, E.F. (1970). [Efficient capital markets: A review of theory and empirical work](http://www.e-m-h.org/Fama70.pdf). [^Fama1970]
 
 See also:
 
@@ -580,7 +580,7 @@ On using momentum:
 
 ### Asness six-factor model
 
--   Asness, C. & Frazzini, A. (2013). [The Devil in HML's Details](https://doi.org/10.3905/jpm.2013.39.4.049). [^Asness2013]
+-   Asness, C.S. & Frazzini, A. (2013). [The Devil in HML's Details](https://doi.org/10.3905/jpm.2013.39.4.049). [^Asness2013]
 -   Asness, C.S. (2014). [Our model goes to six and saves value from redundancy along the way](https://www.aqr.com/Insights/Perspectives/Our-Model-Goes-to-Six-and-Saves-Value-From-Redundancy-Along-the-Way). [^Asness2014b]
 
 Six-factor model:
