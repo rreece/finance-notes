@@ -1,0 +1,39 @@
+---
+date: today
+---
+
+# Forecasting {#sec-forecasting}
+
+
+Introduction
+--------------------------------------------
+
+TODO
+
+
+Indicator analysis
+--------------------------------------------
+
+TODO
+
+
+Autoregressive models
+--------------------------------------------
+
+Models:
+
+-   Vector autoregression models (VAR)
+-   Bayesian VAR
+-   Autoregressive conditional heteroskedasticity (ARCH)
+-   Autoregressive moving average (ARMA)
+-   Generalized autoregressive conditional heteroskedasticity (GARCH)
+-   Autoregressive integrated moving average (ARIMA)
+
+More:
+
+-   Davis, J.H., Brandl-Cheng, L., & Khang, K. (2024). [Megatrends and the U.S. economy, 1890-2040](https://ssrn.com/abstract=4702028). [^Davis2024]
+-   Koop, G.M. (2013). [Forecasting with medium and large Bayesian VARs](https://ssrn.com/abstract=1514412). [^Koop2013]
+
+[^Davis2024]: @Davis_2024_Megatrends_and_the_US_economy_1890_2040\.
+[^Koop2013]: @Koop_2013_Forecasting_with_medium_and_large_Bayesian_VARs\.
+

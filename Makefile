@@ -28,7 +28,7 @@ BIB_TXT_FILES := $(sort $(wildcard bibs/*.txt))
 ## main targets
 ##-----------------------------------------------------------------------------
 
-.PHONY: all html project_html pdf bib clean realclean check check_pdf publish destroy destroygit newdoc
+.PHONY: all html project_html pdf bib clean distclean realclean check check_pdf publish destroy destroygit newdoc
 
 all: project_html
 
@@ -75,9 +75,11 @@ clean:
 ## clean up everything including the output
 OUTS = $(OUTDIR) _freeze $(BIBLIO)
 
-realclean: clean
+distclean: clean
 	rm -rf $(OUTS)
 	$(PRINT) "make $@ done."
+
+realclean: distclean
 
 ## check that outputs exists for tests
 check:
