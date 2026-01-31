@@ -11,10 +11,11 @@ book:
     - index.qmd
     - introduction.qmd
     - assets.qmd
+    - value.qmd
     - portfolio-theory.qmd
     - covariance-estimation.qmd
     - convex-optimization.qmd
-    - value.qmd
+    - forecasting.qmd
     - references.qmd
 
 #  abstract: |
