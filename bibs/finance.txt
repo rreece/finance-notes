@@ -10,6 +10,7 @@ Ayyala, D.N. (2020). High-dimensional statistical inference: Theoretical develop
 Bailey, D.H. & L{\'o}pez de Prado, M. (2013). An open-source implementation of the critical-line algorithm for portfolio optimization. *Algorithms*, 6, 169--196. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2197616
 Banerjee, O., d'Aspremont, A., & Ghaoui, L.E. (2005). Sparse covariance selection via robust maximum likelihood estimation. https://arxiv.org/abs/cs/0506023
 Bax, K., Taufer, E., & Paterlini, S. (2022). A generalized precision matrix for t-Student distributions in portfolio optimization. https://arxiv.org/abs/2203.13740
+Becker, Y, Halffmann, P., & Sch{\"o}bel, A. (2024). Risk management in multi-objective portfolio optimization under uncertainty. https://arxiv.org/abs/2407.19936
 Bessembinder, H. & Chan, K. (1998). Market efficiency and the returns to technical analysis. *Financial Management*, 27, 5--17. https://www.jstor.org/stable/3666289
 Bishop, C.M. (2024). *Deep Learning: Foundations and Concepts*. Springer.
 Bodnar, T. & Schmid, W. (2011). On the exact distribution of the estimated expected utility portfolio weights: Theory and applications. *Statistics & Risk Modeling*, 28, 319--342.
@@ -51,6 +52,7 @@ Fama, E.F. & French, K.R. (2015). A five-factor asset pricing model. *Journal of
 Fama, E.F. & French, K.R. (2017). International tests of a five-factor asset pricing model. *Journal of Financial Economics*, 123, 441--463. https://doi.org/10.1016/j.jfineco.2014.10.010
 Fan, J., Liao, Y., & Liu, H. (2015). An overview on the estimation of large covariance and precision matrices. https://arxiv.org/abs/1504.02995
 Finch, T. (2009). Incremental calculation of weighted mean and variance. https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=5f77d0594f66e49cc0e8c2b8177ead33b7137183
+Fransisca, D.C., Sukono, Chaerani, D., & Halim, N.A. (2024). Robust portfolio mean-variance optimization for capital allocation in stock investment using the genetic algorithm: A systematic literature review. *Computation*, 12, 166. https://www.mdpi.com/2079-3197/12/8/166
 Friedman, J., Hastie, T. and Tibshirani, R. (2008). Sparse inverse covariance estimation with the graphical lasso. https://www.asc.ohio-state.edu/statistics/statgen/joul_aut2015/2008-Friedman-Hastie-Tibshirani.pdf
 Galloway, M. (2019). Shrinking characteristics of precision matrix estimators: An illustration via regression. https://mattxgalloway.com/oral_manuscript/
 Gibbons, M., Ross, S., & Shanken, J. (1989). A test of the efficiency of a given portfolio. *Econometrica*, 57, 1121--1152. https://www.jstor.org/stable/1913625
@@ -66,6 +68,7 @@ Kelly, J.L. (1956). A new interpretation of information rate. *Bell System Techn
 Knuiman, M. (1978). Covariance selection. *Advances in Applied Probability*, 10, 123--130. https://www.jstor.org/stable/1427014
 Kolari, J.W. & Pynn{\"o}nen, S. (2023). *Investment Valuation and Asset Pricing*. Palgrave Macmillan.
 Koop, G.M. (2013). Forecasting with medium and large Bayesian VARs. *Journal of Applied Econometrics*, 28, 177--203. https://ssrn.com/abstract=1514412
+Kristensen, L. & Vorobets, A. (2024). Portfolio optimization and parameter uncertainty. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4709317
 Kwok, Y.K. (2017). Lecture notes: Fundamentals of Mathematical Finance. https://www.math.hkust.edu.hk/~maykwok/MATH4512.htm
 Lauritzen, S. (1996). *Graphical Models*.
 Ledoit, O. & Wolf, M. (2003). Improved estimation of the covariance matrix of stock returns with an application to portfolio selection. *Journal of Empirical Finance*, 10, 603--621. http://www.ledoit.net/ole2.pdf
@@ -92,8 +95,11 @@ Meng, X. (2015). Simpler online updates for arbitrary-order central moments. htt
 Merton, R.C. (1969). Lifetime portfolio selection under uncertainty: The continuous-time case. *Review of Economics and Statistics*, 51, 247--257. https://www.jstor.org/stable/1926560
 Merton, R.C. (1972). An analytic derivation of the efficient portfolio frontier. *Journal of Financial and Quantitative Analysis*, 7, 1851--1872. https://www.jstor.org/stable/2329621
 Meucci, A. (2008). The Black-Litterman approach: Original model and extensions. https://ssrn.com/abstract=1117574
+Michaud, R.O. (1989). The Markowitz optimization enigma: Is 'optimized' optimal? *Financial Analysts Journal*, 45, 31--42.
+Michaud, R.O. & Michaud, R.O. (2008). *Efficient Asset Management*. Oxford University Press.
 Modigliani, F. & Brumberg, R. (1954). Utility analysis and the consumption function: An interpretation of cross-section data. In  K.K. Kurihara (ed.), *Post-Keynesian Economics*. New Brunswick.
 Neely, P.M. (1966). Comparison of several algorithms for computation of means, standard deviations and correlation coefficients. *Communications of the ACM*, 9, 496--499. https://dl.acm.org/doi/pdf/10.1145/365719.365958
+Oliveira, D.C., Guzman, G., & Firoozye, N. (2025). (Non-parametric) bootstrap robust optimization for portfolios and trading strategies. https://arxiv.org/abs/2510.12725
 Onnela, J.P., Chakraborti, A., Kaski, K., Kert{\'e}sz, J., & Kanto, A. (2003). Dynamics of market correlations: Taxonomy and portfolio analysis. http://arXiv.org/abs/cond-mat/0302546v1
 Onnela, J.P., Kaski, K., & Kert{\'e}sz, J. (2004). Clustering and information in correlation based financial networks. *European Physical Journal B*, 38, 353--362. https://link.springer.com/article/10.1140/epjb/e2004-00128-7
 Owen, J. & Rabinovitch, R. (1983). On the class of elliptical distributions and their applications to the theory of portfolio choice. *Journal of Finance*, 38, 745--752.

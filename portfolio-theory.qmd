@@ -582,6 +582,7 @@ On using momentum:
 
 -   Asness, C.S. & Frazzini, A. (2013). [The Devil in HML's Details](https://doi.org/10.3905/jpm.2013.39.4.049). [^Asness2013]
 -   Asness, C.S. (2014). [Our model goes to six and saves value from redundancy along the way](https://www.aqr.com/Insights/Perspectives/Our-Model-Goes-to-Six-and-Saves-Value-From-Redundancy-Along-the-Way). [^Asness2014b]
+-   Asness, C.S., Frazzini, A., & Pedersen, L.H. (2019). [Quality minus junk](https://doi.org/10.1007/s11142-018-9470-2). [^Asness2019]
 
 Six-factor model:
 
@@ -589,6 +590,7 @@ $$ r_{it} - r_{\mathrm{f}t} = \alpha_{i} + \beta^\mathrm{m}_{i} \, (r_{\mathrm{m
 
 [^Asness2013]: @Asness_2013_The_Devil_in_HMLs_Details\.
 [^Asness2014b]: @Asness_2014_Our_model_goes_to_six_and_saves_value_from\.
+[^Asness2019]: @Asness_2019_Quality_minus_junk\.
 
 
 ### General factor analysis
@@ -667,7 +669,7 @@ Postmodern portfolio theory
 Criticisms of MPT:
 
 1.  Sensitivity of portfolio weights to the estimates of $\hat{\mu}$ and $\hat{V}$.
-    -   Error propagation
+    -   Uncertainty estimation; Error propagation
     -   Even assuming Gaussian distributed returns
 2.  Variance is not a good measure of risk
     -   Downside risk is better
@@ -680,15 +682,28 @@ Criticisms of MPT:
     -   To what degree are markets efficient?
 
 
-### Error propagation
+### Uncertainty estimation
 
+-   Error propagation; resampling the efficieny frontier
+-   Michaud, R.O. (1989). The Markowitz optimization enigma: Is 'optimized' optimal? [^Michaud1989]
+-   Michaud, R.O. & Michaud, R.O. (2008). *Efficient Asset Management*. [^Michaud2008]
 -   Lo, A.W. (2002). [The statistics of Sharpe ratios](https://www.jstor.org/stable/4480405). [^Lo2002]
 -   Bodnar, T. & Schmid, W. (2011). On the exact distribution of the estimated expected utility portfolio weights: Theory and applications. [^Bodnar2011]
 -   Bodnar, T., Mazur, S., & Podg&oacute;rski, K. (2016). Singular inverse Wishart distribution and its application to portfolio theory. [^Bodnar2016]
+-   Becker, Y, Halffmann, P., & Sch&ouml;bel, A. (2024). Risk management in multi-objective portfolio optimization under uncertainty. [^Becker2024]
+-   Fransisca, D.C., Sukono, Chaerani, D., & Halim, N.A. (2024). Robust portfolio mean-variance optimization for capital allocation in stock investment using the genetic algorithm: A systematic literature review. [^Fransisca2024]
+-   Kristensen, L. & Vorobets, A. (2024). Portfolio optimization and parameter uncertainty. [^Kristensen2024]
+-   Oliveira, D.C., Guzman, G., & Firoozye, N. (2025). (Non-parametric) bootstrap robust optimization for portfolios and trading strategies. [^Oliveira2025]
 
+[^Becker2024]: @Becker_2024_Risk_management_in_multi_objective_portfolio\.
 [^Bodnar2011]: @Bodnar_2011_On_the_exact_distribution_of_the_estimated\.
 [^Bodnar2016]: @Bodnar_2016_Singular_inverse_Wishart_distribution_and_its\.
+[^Fransisca2024]: @Fransisca_2024_Robust_portfolio_mean_variance_optimization\.
+[^Kristensen2024]: @Kristensen_2024_Portfolio_optimization_and_parameter_uncertainty\.
 [^Lo2002]: @Lo_2002_The_statistics_of_Sharpe_ratios\.
+[^Michaud1989]: @Michaud_1989_The_Markowitz_optimization_enigma_Is_optimized\.
+[^Michaud2008]: @Michaud_2008_Efficient_Asset_Management\.
+[^Oliveira2025]: @Oliveira_2025_Non_parametric_bootstrap_robust_optimization\.
 
 
 ### Downside risk
