@@ -34,6 +34,7 @@ Cotton, P. (2024). Hierarchical minimum variance portfolios: A unifying approach
 Das, S. (2016). *Data Science: Theories, Models, Algorithms, and Analytics*. http://srdas.github.io/Papers/DSA_Book.pdf
 Davis, J.H., Brandl-Cheng, L., & Khang, K. (2024). Megatrends and the US economy, 1890-2040. https://ssrn.com/abstract=4702028
 Dempster, A.P. (1972). Covariance selection. *Biometrics*, 28, 157--175. https://www.jstor.org/stable/2528966
+Deng, W., Polak, P., Safikhani, A., & Shah, R. (2024). A unified framework for fast large-scale portfolio optimization. *Data Science in Science*, 3. https://doi.org/10.1080/26941899.2023.2295539
 Dutta, S. & Jain, S. (2023). Precision versus shrinkage: A comparative analysis of covariance estimation methods for portfolio allocation. https://arxiv.org/abs/2305.11298
 Edwards, D. (1995). *Introduction to Graphical Modelling*.
 Elton, E.J., Gruber, M.J., Brown, S.J., & Goetzmann, W.N. (2014). *Modern Portfolio Theory and Investment Analysis*, (9th ed.). Wiley. 
