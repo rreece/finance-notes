@@ -454,6 +454,8 @@ $$ \sqrt{\Sigma} = Q \: \sqrt{\Lambda} \: Q^{-1} = Q \: \mathrm{diag}(\sqrt{\lam
 See: 
 
 -   [Open Source Quant: Square root of a portfolio covariance matrix](https://osquant.com/papers/square-root-of-covariance-matrix/)
--   [Principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis)
+-   [Principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis) (PCA)
+-   Deng, W., Polak, P., Safikhani, A., & Shah, R. (2024). A unified framework for fast large-scale portfolio optimization. [^Deng2024]
 
+[^Deng2024]: @Deng_2024_A_unified_framework_for_fast_large_scale_portfolio\.
 
