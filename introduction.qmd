@@ -1,7 +1,6 @@
 ---
 title: "Introduction"
 date: today
-number-sections: false
 ---
 
 What is this?
@@ -41,7 +40,7 @@ Managing risk
 The portfolio problem: What mix of assets should I hold to preserve and accrue value over time?
 This is the subject of @sec-portfolio-theory.
 
-![The difference between gambling and investing becomes clearer over time (source: [cfainstitute.org](https://www.cfainstitute.org/insights/articles/investing-vs-gambling)).](img/gambling-vs-investing.png)
+![The difference between gambling and investing becomes clearer over time (source: [cfainstitute.org](https://www.cfainstitute.org/insights/articles/investing-vs-gambling)).](img/gambling-vs-investing.png){#fig-gambling-vs-investing}
 
 
 Active vs passive investing
