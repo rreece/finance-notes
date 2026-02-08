@@ -17,7 +17,12 @@ This is where we discuss how to estimate $\Sigma$.
     using daily data from 2014-01-02 to 2024-08-30, 10 years and 8 months.
     ](img/corr-gldm-btc-2024-09-14.png){#fig-corr-gldm-btc-2024-09-14}
 
-Software:
+
+See my project:
+
+-   [github.com/rreece/covariance_calculators](https://github.com/rreece/covariance_calculators)
+
+Other software:
 
 -   [robertmartin8/PyPortfolioOpt](https://github.com/robertmartin8/PyPortfolioOpt)
 -   [microprediction/precise](https://github.com/microprediction/precise)
