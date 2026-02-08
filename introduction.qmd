@@ -1,7 +1,6 @@
 ---
 title: "Introduction"
 date: today
-number-sections: false
 ---
 
 What is this?
