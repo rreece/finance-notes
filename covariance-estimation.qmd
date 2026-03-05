@@ -464,3 +464,11 @@ See:
 
 [^Deng2024]: @Deng_2024_A_unified_framework_for_fast_large_scale_portfolio\.
 
+
+Geometry of covariance
+--------------------------------------------
+
+-   Rousseeuw, P.J. & Molenberghs, G. (1994). The shape of correlation matrices. [^Rousseeuw1994]
+
+[^Rousseeuw1994]: @Rousseeuw_1994_The_shape_of_correlation_matrices\.
+
