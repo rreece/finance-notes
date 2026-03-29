@@ -422,6 +422,8 @@ TODO:
 -   Citation needed for the one-fund theorem
 -   Related to the efficient-market hypothesis: in equilibrium, the tangent portfolio becomes the market portfolio
 
+![Illustrative assets and an example efficient frontier.](img/markowitz-example.png){#fig-markowitz-example}
+
 
 Capital asset pricing model
 --------------------------------------------

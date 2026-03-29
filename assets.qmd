@@ -23,10 +23,6 @@ Asset classes
 
 ![Investment returns for asset classes by year  (source: [themeasureofaplan.com](https://themeasureofaplan.com/investment-returns-by-asset-class/)).](img/investment-returns-by-asset-class.png){#fig-investment-returns-by-asset-class}
 
-![Illustrative assets and an example effient frontier.](img/markowitz-example.png){#fig-markowitz-example}
-
-This is discussed in more detail in @sec-portfolio-theory.
-
 
 US sectors
 --------------------------------------------
