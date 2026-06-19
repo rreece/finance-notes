@@ -42,6 +42,8 @@ Kalman filter
 --------------------------------------------
 
 -   Kalman, R.E. (1960). A new approach to linear filtering and prediction problems. [^Kalman1960]
+-   [Kalman filter explained simply](https://thekalmanfilter.com/kalman-filter-explained-simply/)
+-   [How a Kalman filter works in pictures](https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/)
 
 [^Kalman1960]: @Kalman_1960_A_new_approach_to_linear_filtering_and_prediction\.
 
