@@ -37,3 +37,14 @@ More:
 [^Davis2024]: @Davis_2024_Megatrends_and_the_US_economy_1890_2040\.
 [^Koop2013]: @Koop_2013_Forecasting_with_medium_and_large_Bayesian_VARs\.
 
+
+Kalman filter
+--------------------------------------------
+
+-   Kalman, R.E. (1960). A new approach to linear filtering and prediction problems. [^Kalman1960]
+-   [Kalman filter explained simply](https://thekalmanfilter.com/kalman-filter-explained-simply/)
+-   [How a Kalman filter works in pictures](https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/)
+
+[^Kalman1960]: @Kalman_1960_A_new_approach_to_linear_filtering_and_prediction\.
+
+
