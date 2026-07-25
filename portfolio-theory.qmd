@@ -807,6 +807,16 @@ whereas $d_{ij}$ is defined for asset pairs.
 [^Raffinot2018b]: @Raffinot_2018_The_hierarchical_equal_risk_contribution_portfolio\.
 
 
+Backtesting
+--------------------------------------------
+
+-   Palomar, D.P. (2025). [*Portfolio Optimization: Theory and Application*](https://portfoliooptimizationbook.com/). [^Palomar2025ch8]
+-   Arnott, R., Harvey, C.R., & Markowitz, H. (2019). A backtesting protocol in the era of machine learning. [^Arnott2019]
+
+[^Arnott2019]: @Arnott_2019_A_backtesting_protocol_in_the_era_of_machine\.
+[^Palomar2025ch8]: @Palomar_2025_Portfolio_Optimization_Theory_and_Application\, ch. 8.
+
+
 Forecasting
 --------------------------------------------
 
