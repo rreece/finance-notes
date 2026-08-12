@@ -35,7 +35,7 @@ Historical background:
 -   Markowitz, H.M. (1952). Portfolio selection. [^Markowitz1952]
 -   Roy, A.D. (1952). [Safety first and the holding of assets](https://www.jstor.org/stable/1907413). [^Roy1952]
 -   Markowitz, H.M. (1959). *Portfolio Selection: Efficient Diversification of Investments*. [^Markowitz1959]
--   Merton, R.C. (1972). [An analytic derivation of the efficient portfolio frontier](https://www.jstor.org/stable/2329621). [^Merton1972]
+-   Merton, R.C. (1972). [An analytic derivation of the efficient portfolio frontier](https://www.jstor.org/stable/2329621). [^Merton1972a]
 -   Levy, H. & Markowitz, H.M. (1979). Approximating expected utility by a function of mean and variance. [^Levy1979]
 -   In 1990, Harry Markowitz, Merton Miller, and William F. Sharpe were awarded
     the Nobel Prize in Economics "for their pioneering work in the theory of
@@ -144,17 +144,26 @@ and a variance
 
 $$ \sigma_\mathrm{min}^2 = \vec{w}_\mathrm{min}^\intercal \, V \, \vec{w}_\mathrm{min} = \left( \frac{\vec{1}^\intercal \, V^{-1}}{a} \right) V \left( \frac{V^{-1} \, \vec{1}}{a} \right) = \frac{\vec{1}^\intercal \, V^{-1} \, \vec{1}}{a^2} = \frac{1}{a} $$
 
-The *tangent portfolio* is
+The *tangent portfolio* is the maximum-Sharpe portfolio, and so it depends on the
+risk-free rate of return, $r_\mathrm{f}$, as well as on $\vec{\mu}$ and $V$.
+It is derived in the section on the [One-fund theorem](#one-fund-theorem) below;
+quoting the result here because it is one of the two funds we want:
 
-$$ \vec{w}_\mathrm{tan} = \frac{V^{-1} \, \vec{\mu}}{b} = \frac{V^{-1} \, \vec{\mu}}{\vec{1}^\intercal \, V^{-1} \, \vec{\mu}} $$
+$$ \vec{w}_\mathrm{tan}(r_\mathrm{f}) = \frac{V^{-1} \, (\vec{\mu} - r_\mathrm{f} \, \vec{1})}{\vec{1}^\intercal \, V^{-1} \, (\vec{\mu} - r_\mathrm{f} \, \vec{1})} = \frac{V^{-1} \, (\vec{\mu} - r_\mathrm{f} \, \vec{1})}{b - a \, r_\mathrm{f}} $$
 
 It has a return
 
-$$ r_\mathrm{tan} = \vec{w}_\mathrm{tan} \cdot \vec{\mu} = \frac{\vec{\mu}^\intercal \, V^{-1} \, \vec{\mu}}{b} = \frac{c}{b} $$
+$$ r_\mathrm{tan} = \vec{w}_\mathrm{tan} \cdot \vec{\mu} = \frac{c - b \, r_\mathrm{f}}{b - a \, r_\mathrm{f}} $$
 
 and a variance
 
-$$ \sigma_\mathrm{tan}^2 = \vec{w}_\mathrm{tan}^\intercal \, V \, \vec{w}_\mathrm{tan} = \left( \frac{\vec{\mu}^\intercal \, V^{-1}}{b} \right) V \left( \frac{V^{-1} \, \vec{\mu}}{b} \right) = \frac{\vec{\mu}^\intercal \, V^{-1} \, \vec{\mu}}{b^2} = \frac{c}{b^2} $$
+$$ \sigma_\mathrm{tan}^2 = \vec{w}_\mathrm{tan}^\intercal \, V \, \vec{w}_\mathrm{tan} = \frac{(\vec{\mu} - r_\mathrm{f} \, \vec{1})^\intercal \, V^{-1} \, (\vec{\mu} - r_\mathrm{f} \, \vec{1})}{(b - a \, r_\mathrm{f})^2} = \frac{a \, r_\mathrm{f}^2 - 2 \, b \, r_\mathrm{f} + c}{(b - a \, r_\mathrm{f})^2} $$
+
+At $r_\mathrm{f} = 0$ these reduce to $\vec{w}_\mathrm{tan} = V^{-1} \vec{\mu} / b$,
+$r_\mathrm{tan} = c/b$ and $\sigma_\mathrm{tan}^2 = c/b^2$. That special case is worth
+keeping in view: it is a *different portfolio* from $\vec{w}_\mathrm{tan}(r_\mathrm{f})$
+whenever $r_\mathrm{f} \neq 0$, and the two are easy to conflate because both are
+called "the tangent portfolio."
 
 The efficient frontier can be written as a linear combination of any two efficient portfolios.
 This is discussed in more detail in the section on [Fund theorems](#fund-theorems).
@@ -162,17 +171,38 @@ Written as a combination of the minimum variance and the tangent portfolios give
 
 $$ \vec{w}_{\ast} = \psi \, \vec{w}_\mathrm{min} + (1-\psi) \, \vec{w}_\mathrm{tan} $$
 
-where
+where, solving $r_{\ast} = \psi \, r_\mathrm{min} + (1-\psi) \, r_\mathrm{tan}$ for $\psi$
+and using $r_\mathrm{tan} - r_\mathrm{min} = d \, / \, [\,a \, (b - a \, r_\mathrm{f})\,]$,
 
-$$ \psi = (c - b \, r_{\ast}) \, a \, / \, d $$
+$$ \psi = \frac{a \, \left[ (c - b \, r_{\ast}) + r_\mathrm{f} \, (a \, r_{\ast} - b) \right]}{d}, \qquad 1 - \psi = \frac{(a \, r_{\ast} - b) \, (b - a \, r_\mathrm{f})}{d} $$
+
+Both weights carry $r_\mathrm{f}$, because *which* frontier portfolio the tangent
+portfolio is depends on $r_\mathrm{f}$. Only at $r_\mathrm{f} = 0$ does this collapse to
+$\psi = (c - b \, r_{\ast}) \, a \, / \, d$.
 
 The efficient frontier portfolio can be equivalently written
 
 \begin{align}
 \vec{w}_{\ast} &= \psi \, \vec{w}_\mathrm{min} + (1-\psi) \, \vec{w}_\mathrm{tan} \\
-      &= \left( \frac{c - b \, r_{\ast}}{d} \right) a \, \vec{w}_\mathrm{min} + \left( \frac{a \, r_{\ast} - b}{d} \right) b \, \vec{w}_\mathrm{tan} \\
+      &= \left( \frac{(c - b \, r_{\ast}) + r_\mathrm{f} \, (a \, r_{\ast} - b)}{d} \right) V^{-1} \, \vec{1} + \left( \frac{a \, r_{\ast} - b}{d} \right) V^{-1} \, (\vec{\mu} - r_\mathrm{f} \, \vec{1}) \\
       &= \left( \frac{c - b \, r_{\ast}}{d} \right) V^{-1} \, \vec{1} + \left( \frac{a \, r_{\ast} - b}{d} \right) V^{-1} \, \vec{\mu}
 \end{align}
+
+using $a \, \vec{w}_\mathrm{min} = V^{-1} \vec{1}$ and
+$(b - a \, r_\mathrm{f}) \, \vec{w}_\mathrm{tan} = V^{-1} (\vec{\mu} - r_\mathrm{f} \vec{1})$
+in the second line. The $r_\mathrm{f}$ terms cancel in the third, as they must: the
+frontier is a property of $\vec{\mu}$ and $V$ alone. Only the *decomposition* into two
+funds depends on $r_\mathrm{f}$.
+
+::: {.callout-warning title="The last line is the one to implement"}
+The second line above is only valid with the $\vec{w}_\mathrm{tan}(r_\mathrm{f})$ and
+$\psi(r_\mathrm{f})$ defined here. Substituting $\vec{w}_\mathrm{tan}(r_\mathrm{f})$ into
+the $r_\mathrm{f} = 0$ form of the coefficients --- i.e. writing
+$\left(\frac{c - b r_{\ast}}{d}\right) a \, \vec{w}_\mathrm{min} + \left(\frac{a r_{\ast} - b}{d}\right) b \, \vec{w}_\mathrm{tan}$ ---
+gives weights that do not lie on the frontier at all, and the error grows with
+$r_\mathrm{f}$. Prefer the third line: it needs only $V^{-1} \vec{1}$ and
+$V^{-1} \vec{\mu}$, has no $r_\mathrm{f}$ in it, and cannot be got wrong this way.
+:::
 
 Along the frontier, the return is
 
@@ -182,9 +212,14 @@ The variance is
 
 $$ \sigma^2_{\ast} = \frac{a}{d} \, r_{\ast}^{2} - \frac{2 \, b}{d} \, r_{\ast} + \frac{c}{d} $$
 
-TODO: Note calculation order of $\vec{w}_\mathrm{min}(\mu, V)$
-and $\vec{w}_\mathrm{tan}(\mu, V, r_\mathrm{f})$, then calculate $r_{\ast}(\sigma_{\ast})$,
-scanning from $\sigma_\mathrm{min}$ to $\sigma_\mathrm{max}$.
+Note that $\sigma^2_{\ast}$ has no $r_\mathrm{f}$ in it either, consistent with the
+frontier being independent of the risk-free rate.
+
+To scan out the frontier: compute $a$, $b$, $c$, $d$ from $\vec{\mu}$ and $V$, then step
+$r_{\ast}$ over the range of interest, taking $\vec{w}_{\ast}$ from the third line above
+and $\sigma_{\ast}$ from $\sigma^2_{\ast}$. Neither step needs
+$\vec{w}_\mathrm{min}$ or $\vec{w}_\mathrm{tan}$, so neither inherits any rounding or
+clipping applied to those two for reporting.
 
 ![The "Markowitz Bullet", the efficient frontier shown in
     @Markowitz_1959_Portfolio_Selection_Efficient_Diversification, p. 152.
@@ -226,7 +261,7 @@ in @fig-markowitz-portfolio-btc-2024-09-13\.
 [^Markowitz1959p172]: @Markowitz_1959_Portfolio_Selection_Efficient_Diversification\, p. 172.
 [^Markowitz1990]: @Markowitz_1990_Nobel_lecture_Foundations_of_portfolio_theory\.
 [^Markowitz2005]: @Markowitz_2005_Market_efficiency_A_theoretical_distinction\.
-[^Merton1972]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio\.
+[^Merton1972a]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio\.
 [^ItCanBeShown]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio was the first
     to show there was an analytic solution to the Markowitz portfolio problem?
     For the analytic results descussed here, we generally follow
@@ -390,14 +425,23 @@ The functional form of the Capital Allocation Line is
 
 $$ r_\mathrm{CAL}(\sigma) = r_\mathrm{f} + \sigma \, \sqrt{ a \, r_\mathrm{f}^{2} - 2 \, b \, r_\mathrm{f} + c} $$
 
-TODO: Double-check the expression and example values of this slope.
+The slope is the Sharpe ratio of the tangent portfolio, which follows from
+$r_\mathrm{tan}$ and $\sigma_\mathrm{tan}$ below:
+
+$$ \frac{r_\mathrm{tan} - r_\mathrm{f}}{\sigma_\mathrm{tan}} = \frac{\left(a \, r_\mathrm{f}^{2} - 2 \, b \, r_\mathrm{f} + c\right) / (b - a \, r_\mathrm{f})}{\sqrt{a \, r_\mathrm{f}^{2} - 2 \, b \, r_\mathrm{f} + c} \, / \left|b - a \, r_\mathrm{f}\right|} = \sqrt{ a \, r_\mathrm{f}^{2} - 2 \, b \, r_\mathrm{f} + c} $$
+
+taking $b > a \, r_\mathrm{f}$, i.e. $r_\mathrm{f} < r_\mathrm{min}$, which is the case
+of interest --- otherwise the tangency is on the lower, inefficient branch.
+Note the radicand is $d/a + a\,(r_\mathrm{f} - b/a)^2 > 0$, so the slope is real for
+every $r_\mathrm{f}$.
 
 Note that while the shape of the efficient frontier is unchanged by
 introducing or varying the risk-free rate of return, which portfolio
 along the frontier that is the tangent portfolio will depend on the
 risk-free rate of return.
 
-The *tangent portfolio with a risk-free asset* is
+The *tangent portfolio with a risk-free asset*, quoted above in the
+[two-fund](#two-fund-theorem) discussion, is
 
 $$ \vec{w}_\mathrm{tan}  = \frac{V^{-1} \, (\vec{\mu} - r_\mathrm{f} \, \vec{1})}{\vec{1}^\intercal \, V^{-1} \, (\vec{\mu} - r_\mathrm{f} \, \vec{1})} $$
 
@@ -407,7 +451,7 @@ $$ r_\mathrm{tan} = \vec{\mu} \cdot \vec{w}_\mathrm{tan} = \frac{c - b \, r_\mat
 
 and a variance
 
-$$ \sigma_\mathrm{tan}^{2} = \frac{\left|\vec{\mu} - r_\mathrm{f} \, \vec{1}\right|^2}{ (\vec{\mu} - r_\mathrm{f} \, \vec{1})^\intercal \, V^{-1} \, (\vec{\mu} - r_\mathrm{f} \, \vec{1})}  = \frac{a \, r_\mathrm{f}^2 - 2 \, b \, r_\mathrm{f} + c}{(b - a \, r_\mathrm{f})^2} $$
+$$ \sigma_\mathrm{tan}^{2} = \frac{ (\vec{\mu} - r_\mathrm{f} \, \vec{1})^\intercal \, V^{-1} \, (\vec{\mu} - r_\mathrm{f} \, \vec{1}) }{ \left( \vec{1}^\intercal \, V^{-1} \, (\vec{\mu} - r_\mathrm{f} \, \vec{1}) \right)^2 }  = \frac{a \, r_\mathrm{f}^2 - 2 \, b \, r_\mathrm{f} + c}{(b - a \, r_\mathrm{f})^2} $$
 
 The tangent portfolio is the portfolio with the maximum
 [Sharpe ratio](https://en.wikipedia.org/wiki/Sharpe_ratio), $S_i$.
@@ -682,6 +726,117 @@ Criticisms of MPT:
     -   Heteroskedasticity
 4.  Criticisms of the Efficient Market Hypothesis
     -   To what degree are markets efficient?
+
+
+### Why the unconstrained solution explodes: $V^{-1}$ and near-collinear assets
+
+Criticism 1 above is usually stated as "the weights are sensitive to $\hat{\mu}$ and
+$\hat{V}$." That undersells it, and it hides *where* the sensitivity comes from. The
+mechanism is worth making precise, because it is the reason the analytic solution of the
+[Markowitz portfolio problem](#markowitz-portfolio-problem) can be simultaneously exactly
+correct and completely unusable.
+
+Every closed-form solution above runs through $V^{-1}$. Diagonalize
+$V = \sum_i \lambda_i \, \vec{v}_i \vec{v}_i^\intercal$ and expand the tangent portfolio in
+that eigenbasis:
+
+$$ \vec{w}_\mathrm{tan} \;\propto\; V^{-1} (\vec{\mu} - r_\mathrm{f} \vec{1}) \;=\; \sum_i \frac{\vec{v}_i \cdot (\vec{\mu} - r_\mathrm{f} \vec{1})}{\lambda_i} \, \vec{v}_i $$
+
+Each eigen-direction is amplified by $1/\lambda_i$. The smallest-variance directions --- the
+ones contributing *least* to portfolio risk --- dominate the weights. And the smallest
+eigenvalues belong to near-collinear combinations: portfolios that are long one asset and
+short a near-replica of it.
+
+**This is why adding assets makes things worse, not better.** Two things are easily
+conflated:
+
+- *Diversification, given known parameters.* Monotonically improved by more assets --- the
+  frontier can only move up and left, since setting a weight to zero is always available.
+  This is the intuition that says "more assets should smooth things out." It is correct.
+- *The inverse problem.* Monotonically degraded by more assets, because each asset that is
+  nearly a linear combination of the others contributes a new small $\lambda_i$ to the
+  spectrum, and thus a new direction along which $V^{-1}$ amplifies.
+
+Mean-variance optimization needs the second, so it inherits the second's pathology. Michaud's
+name for the result is the *estimation-error maximizer* [^Michaud1989]: the optimizer
+systematically overweights exactly those assets whose returns were overestimated and whose
+covariances were underestimated.
+
+Note the effect does not require estimation error at all. Near-collinearity is a property of
+the *true* $V$ when the universe contains redundant assets. Estimation error makes it worse ---
+and worse in a particular way, since the noise in $\hat{\mu}$ has a component along the
+near-null space, which is then divided by a tiny $\lambda$ --- but a universe of overlapping
+funds will produce enormous offsetting positions even with perfect parameters.
+
+#### A worked diagnostic
+
+The spectrum of $\hat{V}$ tells you immediately whether your universe has this problem. From
+a 20-asset run of the framework in
+[finance-notebooks](https://github.com/rreece/finance-notebooks), all of them US equity ETFs:
+
+| | |
+|---|---|
+| largest eigenvalue | $\sigma = 117\%$ |
+| smallest eigenvalue | $\sigma = 1.1\%$ |
+| condition number | $1.1 \times 10^{4}$ |
+| gross exposure $\sum_i \lvert w_i \rvert$ of the analytic tangent | $46\times$ |
+
+Decomposing that weight vector in the eigenbasis, **99.4% of $\lVert \vec{w} \rVert^2$ sits in
+the single smallest-variance mode**, and the three *largest* modes --- the market, size and
+sector factors one actually wants exposure to --- carry 0.0%. The offending eigenvector is
+
+$$ +0.755\;\mathrm{VOO} \;-\; 0.470\;\mathrm{VUG} \;-\; 0.450\;\mathrm{VTV} $$
+
+with everything else below 0.05. This is very nearly an accounting identity: VUG (large
+growth) and VTV (large value) partition essentially the same large-cap universe that VOO
+tracks, so the spread has 1.1% annualized volatility instead of ~17%. Any small difference
+in the estimated $\mu$'s across the three looks like a near-riskless arbitrage, so the
+optimizer takes about 23 units of it.
+
+The lesson is that $N$ was never the variable. Three near-identical assets would be just as
+badly behaved; twenty *genuinely distinct* ones (equities, treasuries, credit, gold, FX,
+commodities) would be fine. What matters is $\lambda_\mathrm{max}/\lambda_\mathrm{min}$, i.e.
+redundancy. The analytic solution is most informative on a small, well-conditioned universe;
+on a redundant one its real content is a statement about the conditioning of $\hat{V}$, not a
+portfolio recommendation. Tracking the condition number and the composition of the
+bottom eigenvector is a cheap and unusually legible diagnostic --- when the smallest mode is
+"an index fund minus its own constituents," that argues for pruning the universe rather than
+for tuning a regularization parameter.
+
+#### Constraints *are* regularization
+
+The standard responses --- shrink $\hat{V}$, or constrain the weights --- are usually presented as
+two different ideas, one statistical and one practical. They are the same idea.
+
+Jagannathan & Ma [^Jagannathan2003b] show that imposing no-short-sale and upper-bound
+constraints on the weights is **mathematically equivalent to solving the unconstrained
+problem with a shrunk covariance matrix**: the constraints' Lagrange multipliers enter
+$\hat{V}$ exactly where a shrinkage term would, subtracting from the covariances of assets at
+their upper bound and adding for those at their lower bound. Their striking conclusion is
+that constraining helps *even when the constraints are wrong* --- the variance reduction from
+the implied shrinkage outweighs the bias from the misspecification. Garlappi et al.
+[^Garlappi2009b] generalize this to constraints on the portfolio norm, recovering shrinkage
+estimators as special cases.
+
+So a pipeline that runs a box-constrained solve is not abandoning the theory for pragmatism;
+it is regularizing, by a route that happens to be easy to express to an optimizer. This is
+worth knowing mainly because it means shrinkage and constraints are *substitutes*: applying
+graphical lasso, a ridge, and tight box constraints at once is regularizing three times, and
+the combined strength is not something any one of the three knobs reports.
+
+Finally, on where to spend effort: Chopra & Ziemba [^Chopra1993] find that errors in the
+*means* are roughly an order of magnitude more costly, in cash-equivalent terms, than errors
+in variances, and larger still than errors in covariances. Estimating $\hat{\mu}$ well matters
+more than estimating $\hat{V}$ well. The sobering benchmark is DeMiguel et
+al. [^DeMiguel2009] --- across a range of datasets, naive $1/N$ allocation beats
+sample-based mean-variance out of sample, and the estimation window required for
+mean-variance to win grows to thousands of months as $N$ grows. Any optimizer worth running
+has to beat $1/N$ first.
+
+[^Chopra1993]: @Chopra_1993_The_effect_of_errors_in_means_variances\.
+[^DeMiguel2009]: @DeMiguel_2009_Optimal_versus_naive_diversification_How\.
+[^Garlappi2009b]: @Garlappi_2009_A_Generalized_Approach_to_Portfolio_Optimization\.
+[^Jagannathan2003b]: @Jagannathan_2003_Risk_reduction_in_large_portfolios_Why_imposing\.
 
 
 ### Uncertainty estimation

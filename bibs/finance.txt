@@ -30,11 +30,13 @@ Chamberlain, G. (1983). A characterization of the distributions that imply mean-
 Chan, J.C.C. & Kroese, D.P. (2025). *Statistical Modeling and Computation* (2nd ed.). Springer.
 Chan, T.F., Golub, G.H., & LeVeque, R.J. (1979). Updating formulae and a pairwise algorithm for computing sample variances. Stanford University. http://infolab.stanford.edu/pub/cstr/reports/cs/tr/79/773/CS-TR-79-773.pdf [Technical Report STAN-CS-79-773]
 Chang, B. (2015). An introduction to graphical lasso. https://bochang.me/gmrg/files/Bo_05152015.pdf
+Chopra, V.K. & Ziemba, W.T. (1993). The effect of errors in means, variances, and covariances on optimal portfolio choice. *Journal of Portfolio Management*, 19, 6--11. https://doi.org/10.3905/jpm.1993.409440
 Condat, L. (2016). Fast projection onto the simplex and the $l_1$ ball. *Mathematical Programing Series A*, 158, 575--585. https://link.springer.com/content/pdf/10.1007/s10107-015-0946-6.pdf
 Coqueret, G. & Milhau, V. (2014). Estimating covariance matrices for portfolio optimization. https://web.archive.org/web/20230928050136/https://www.gcoqueret.com/files/Estim_cov.pdf
 Cotton, P. (2024). Hierarchical minimum variance portfolios: A unifying approach using Schur complements. https://github.com/microprediction/precise/blob/main/academic/Schur_Complementary_Portfolios_Peter_Cotton.pdf
 Das, S. (2016). *Data Science: Theories, Models, Algorithms, and Analytics*. http://srdas.github.io/Papers/DSA_Book.pdf
 Davis, J.H., Brandl-Cheng, L., & Khang, K. (2024). Megatrends and the US economy, 1890-2040. https://ssrn.com/abstract=4702028
+DeMiguel, V., Garlappi, L., & Uppal, R. (2009). Optimal versus naive diversification: How inefficient is the 1/N portfolio strategy? *Review of Financial Studies*, 22, 1915--1953. https://doi.org/10.1093/rfs/hhm075
 Dempster, A.P. (1972). Covariance selection. *Biometrics*, 28, 157--175. https://www.jstor.org/stable/2528966
 Deng, W., Polak, P., Safikhani, A., & Shah, R. (2024). A unified framework for fast large-scale portfolio optimization. *Data Science in Science*, 3. https://doi.org/10.1080/26941899.2023.2295539
 Dutta, S. & Jain, S. (2023). Precision versus shrinkage: A comparative analysis of covariance estimation methods for portfolio allocation. https://arxiv.org/abs/2305.11298

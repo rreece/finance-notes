@@ -435,13 +435,13 @@ See:
 Adding additonal regularization (e.g. L1 turnover) with Glasso.
 
 -   Brodie, J., Daubechies, I., De Mol, C., Giannone, D., & Loris, I. (2008). Sparse and stable Markowitz portfolios. [^Brodie2008]
--   Garlappi, L., DeMiguel, V., Nogales, F. J., & Uppal, R. (2009). A generalized approach to portfolio optimization: Improving performance by constraining portfolio norms. [^Garlappi2009]
+-   Garlappi, L., DeMiguel, V., Nogales, F. J., & Uppal, R. (2009). A generalized approach to portfolio optimization: Improving performance by constraining portfolio norms. [^Garlappi2009a]
 -   Lee, T.H. & Seregina, E. (2011). Optimal portfolio using factor graphical lasso. [^Lee2011]
 -   Hautsch, N. & Voigt, S. (2017). Large-scale portfolio allocation under transaction costs and model uncertainty. [^Hautsch2017]
 -   Torri, G., Giacometti, R., & Paterlini, S. (2019). Sparse precision matrices for minimum variance portfolios. [^Torri2019]
 
 [^Brodie2008]: @Brodie_2008_Sparse_and_stable_Markowitz_portfolios\.
-[^Garlappi2009]: @Garlappi_2009_A_Generalized_Approach_to_Portfolio_Optimization\.
+[^Garlappi2009a]: @Garlappi_2009_A_Generalized_Approach_to_Portfolio_Optimization\.
 [^Hautsch2017]: @Hautsch_2017_Large_scale_portfolio_allocation_under_transaction\.
 [^Lee2011]: @Lee_2011_Optimal_portfolio_using_factor_graphical_lasso\.
 [^Torri2019]: @Torri_2019_Sparse_precision_matrices_for_minimum_variance\.

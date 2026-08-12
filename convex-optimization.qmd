@@ -15,7 +15,7 @@ This is how we minimize $\sigma$.
 -   [Quadratic programming](https://en.wikipedia.org/wiki/Quadratic_programming)
     -   No-shorts efficient frontier
     -   [Karush-Kuhn-Tucker (KKT) conditions](https://en.wikipedia.org/wiki/Karush%E2%80%93Kuhn%E2%80%93Tucker_conditions)
-    -   Jagannathan, R. & Ma, T. (2003). Risk reduction in large portfolios: Why imposing the wrong constraints helps. [^Jagannathan2003]
+    -   Jagannathan, R. & Ma, T. (2003). Risk reduction in large portfolios: Why imposing the wrong constraints helps. [^Jagannathan2003a]
     -   Tam, A.S. (2021). [Lagrangians and portfolio optimization](https://www.adrian.idv.hk/2021-06-22-kkt/).
 -   Boyd, S. & Vandenberghe, L. (2004). [*Convex Optimization*](https://web.stanford.edu/~boyd/cvxbook/). [^Boyd2004]
     -   Course website at Stanford: [Convex Optimization I](https://web.stanford.edu/class/ee364a/)
@@ -34,7 +34,7 @@ This is how we minimize $\sigma$.
 
 [^Bailey2013]: @Bailey_2013_An_open_source_implementation_of_the_critical_line\.
 [^Boyd2004]: @Boyd_2004_Convex_Optimization\.
-[^Jagannathan2003]: @Jagannathan_2003_Risk_reduction_in_large_portfolios_Why_imposing\.
+[^Jagannathan2003a]: @Jagannathan_2003_Risk_reduction_in_large_portfolios_Why_imposing\.
 [^Markowitz1956]: @Markowitz_1956_The_optimization_of_a_quadratic_function_subject\.
 [^Markowitz2019a]: @Markowitz_2019_Avoiding_the_downside_A_practical_review\.
 
