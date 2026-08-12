@@ -35,7 +35,7 @@ Historical background:
 -   Markowitz, H.M. (1952). Portfolio selection. [^Markowitz1952]
 -   Roy, A.D. (1952). [Safety first and the holding of assets](https://www.jstor.org/stable/1907413). [^Roy1952]
 -   Markowitz, H.M. (1959). *Portfolio Selection: Efficient Diversification of Investments*. [^Markowitz1959]
--   Merton, R.C. (1972). [An analytic derivation of the efficient portfolio frontier](https://www.jstor.org/stable/2329621). [^Merton1972]
+-   Merton, R.C. (1972). [An analytic derivation of the efficient portfolio frontier](https://www.jstor.org/stable/2329621). [^Merton1972a]
 -   Levy, H. & Markowitz, H.M. (1979). Approximating expected utility by a function of mean and variance. [^Levy1979]
 -   In 1990, Harry Markowitz, Merton Miller, and William F. Sharpe were awarded
     the Nobel Prize in Economics "for their pioneering work in the theory of
@@ -261,7 +261,7 @@ in @fig-markowitz-portfolio-btc-2024-09-13\.
 [^Markowitz1959p172]: @Markowitz_1959_Portfolio_Selection_Efficient_Diversification\, p. 172.
 [^Markowitz1990]: @Markowitz_1990_Nobel_lecture_Foundations_of_portfolio_theory\.
 [^Markowitz2005]: @Markowitz_2005_Market_efficiency_A_theoretical_distinction\.
-[^Merton1972]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio\.
+[^Merton1972a]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio\.
 [^ItCanBeShown]: @Merton_1972_An_analytic_derivation_of_the_efficient_portfolio was the first
     to show there was an analytic solution to the Markowitz portfolio problem?
     For the analytic results descussed here, we generally follow
@@ -808,14 +808,14 @@ for tuning a regularization parameter.
 The standard responses --- shrink $\hat{V}$, or constrain the weights --- are usually presented as
 two different ideas, one statistical and one practical. They are the same idea.
 
-Jagannathan & Ma [^Jagannathan2003] show that imposing no-short-sale and upper-bound
+Jagannathan & Ma [^Jagannathan2003b] show that imposing no-short-sale and upper-bound
 constraints on the weights is **mathematically equivalent to solving the unconstrained
 problem with a shrunk covariance matrix**: the constraints' Lagrange multipliers enter
 $\hat{V}$ exactly where a shrinkage term would, subtracting from the covariances of assets at
 their upper bound and adding for those at their lower bound. Their striking conclusion is
 that constraining helps *even when the constraints are wrong* --- the variance reduction from
 the implied shrinkage outweighs the bias from the misspecification. Garlappi et al.
-[^Garlappi2009] generalize this to constraints on the portfolio norm, recovering shrinkage
+[^Garlappi2009b] generalize this to constraints on the portfolio norm, recovering shrinkage
 estimators as special cases.
 
 So a pipeline that runs a box-constrained solve is not abandoning the theory for pragmatism;
@@ -835,8 +835,8 @@ has to beat $1/N$ first.
 
 [^Chopra1993]: @Chopra_1993_The_effect_of_errors_in_means_variances\.
 [^DeMiguel2009]: @DeMiguel_2009_Optimal_versus_naive_diversification_How\.
-[^Garlappi2009]: @Garlappi_2009_A_Generalized_Approach_to_Portfolio_Optimization\.
-[^Jagannathan2003]: @Jagannathan_2003_Risk_reduction_in_large_portfolios_Why_imposing\.
+[^Garlappi2009b]: @Garlappi_2009_A_Generalized_Approach_to_Portfolio_Optimization\.
+[^Jagannathan2003b]: @Jagannathan_2003_Risk_reduction_in_large_portfolios_Why_imposing\.
 
 
 ### Uncertainty estimation
