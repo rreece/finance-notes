@@ -113,6 +113,16 @@ format:
 #    number-depth: 3
     fontfamily: "mathpazo"
 #    fontfamily: "mathptmx"
+    header-includes:
+      # mathpazo covers \rmfamily (Palatino) but not \sffamily or \ttfamily. Under the
+      # T1 encoding pandoc's template requests, those fall back to EC Computer Modern,
+      # which has no Type 1 outlines unless lmodern or cm-super is installed -- so TeX
+      # generates bitmap PK fonts instead. microtype's font expansion cannot expand a
+      # bitmap, and pdfTeX aborts at the first shipout with
+      #   "auto expansion is only possible with scalable fonts".
+      # A full TeX Live has the outlines, CI's TinyTeX does not, which is why this only
+      # broke in CI. lmodern supplies scalable outlines for every CM-derived face.
+      - \usepackage{lmodern}
     colorlinks: true
     reference-location: block
     citation-location: document
