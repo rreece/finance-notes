@@ -728,6 +728,117 @@ Criticisms of MPT:
     -   To what degree are markets efficient?
 
 
+### Why the unconstrained solution explodes: $V^{-1}$ and near-collinear assets
+
+Criticism 1 above is usually stated as "the weights are sensitive to $\hat{\mu}$ and
+$\hat{V}$." That undersells it, and it hides *where* the sensitivity comes from. The
+mechanism is worth making precise, because it is the reason the analytic solution of the
+[Markowitz portfolio problem](#markowitz-portfolio-problem) can be simultaneously exactly
+correct and completely unusable.
+
+Every closed-form solution above runs through $V^{-1}$. Diagonalize
+$V = \sum_i \lambda_i \, \vec{v}_i \vec{v}_i^\intercal$ and expand the tangent portfolio in
+that eigenbasis:
+
+$$ \vec{w}_\mathrm{tan} \;\propto\; V^{-1} (\vec{\mu} - r_\mathrm{f} \vec{1}) \;=\; \sum_i \frac{\vec{v}_i \cdot (\vec{\mu} - r_\mathrm{f} \vec{1})}{\lambda_i} \, \vec{v}_i $$
+
+Each eigen-direction is amplified by $1/\lambda_i$. The smallest-variance directions --- the
+ones contributing *least* to portfolio risk --- dominate the weights. And the smallest
+eigenvalues belong to near-collinear combinations: portfolios that are long one asset and
+short a near-replica of it.
+
+**This is why adding assets makes things worse, not better.** Two things are easily
+conflated:
+
+- *Diversification, given known parameters.* Monotonically improved by more assets --- the
+  frontier can only move up and left, since setting a weight to zero is always available.
+  This is the intuition that says "more assets should smooth things out." It is correct.
+- *The inverse problem.* Monotonically degraded by more assets, because each asset that is
+  nearly a linear combination of the others contributes a new small $\lambda_i$ to the
+  spectrum, and thus a new direction along which $V^{-1}$ amplifies.
+
+Mean-variance optimization needs the second, so it inherits the second's pathology. Michaud's
+name for the result is the *estimation-error maximizer* [^Michaud1989]: the optimizer
+systematically overweights exactly those assets whose returns were overestimated and whose
+covariances were underestimated.
+
+Note the effect does not require estimation error at all. Near-collinearity is a property of
+the *true* $V$ when the universe contains redundant assets. Estimation error makes it worse ---
+and worse in a particular way, since the noise in $\hat{\mu}$ has a component along the
+near-null space, which is then divided by a tiny $\lambda$ --- but a universe of overlapping
+funds will produce enormous offsetting positions even with perfect parameters.
+
+#### A worked diagnostic
+
+The spectrum of $\hat{V}$ tells you immediately whether your universe has this problem. From
+a 20-asset run of the framework in
+[finance-notebooks](https://github.com/rreece/finance-notebooks), all of them US equity ETFs:
+
+| | |
+|---|---|
+| largest eigenvalue | $\sigma = 117\%$ |
+| smallest eigenvalue | $\sigma = 1.1\%$ |
+| condition number | $1.1 \times 10^{4}$ |
+| gross exposure $\sum_i \lvert w_i \rvert$ of the analytic tangent | $46\times$ |
+
+Decomposing that weight vector in the eigenbasis, **99.4% of $\lVert \vec{w} \rVert^2$ sits in
+the single smallest-variance mode**, and the three *largest* modes --- the market, size and
+sector factors one actually wants exposure to --- carry 0.0%. The offending eigenvector is
+
+$$ +0.755\;\mathrm{VOO} \;-\; 0.470\;\mathrm{VUG} \;-\; 0.450\;\mathrm{VTV} $$
+
+with everything else below 0.05. This is very nearly an accounting identity: VUG (large
+growth) and VTV (large value) partition essentially the same large-cap universe that VOO
+tracks, so the spread has 1.1% annualized volatility instead of ~17%. Any small difference
+in the estimated $\mu$'s across the three looks like a near-riskless arbitrage, so the
+optimizer takes about 23 units of it.
+
+The lesson is that $N$ was never the variable. Three near-identical assets would be just as
+badly behaved; twenty *genuinely distinct* ones (equities, treasuries, credit, gold, FX,
+commodities) would be fine. What matters is $\lambda_\mathrm{max}/\lambda_\mathrm{min}$, i.e.
+redundancy. The analytic solution is most informative on a small, well-conditioned universe;
+on a redundant one its real content is a statement about the conditioning of $\hat{V}$, not a
+portfolio recommendation. Tracking the condition number and the composition of the
+bottom eigenvector is a cheap and unusually legible diagnostic --- when the smallest mode is
+"an index fund minus its own constituents," that argues for pruning the universe rather than
+for tuning a regularization parameter.
+
+#### Constraints *are* regularization
+
+The standard responses --- shrink $\hat{V}$, or constrain the weights --- are usually presented as
+two different ideas, one statistical and one practical. They are the same idea.
+
+Jagannathan & Ma [^Jagannathan2003] show that imposing no-short-sale and upper-bound
+constraints on the weights is **mathematically equivalent to solving the unconstrained
+problem with a shrunk covariance matrix**: the constraints' Lagrange multipliers enter
+$\hat{V}$ exactly where a shrinkage term would, subtracting from the covariances of assets at
+their upper bound and adding for those at their lower bound. Their striking conclusion is
+that constraining helps *even when the constraints are wrong* --- the variance reduction from
+the implied shrinkage outweighs the bias from the misspecification. Garlappi et al.
+[^Garlappi2009] generalize this to constraints on the portfolio norm, recovering shrinkage
+estimators as special cases.
+
+So a pipeline that runs a box-constrained solve is not abandoning the theory for pragmatism;
+it is regularizing, by a route that happens to be easy to express to an optimizer. This is
+worth knowing mainly because it means shrinkage and constraints are *substitutes*: applying
+graphical lasso, a ridge, and tight box constraints at once is regularizing three times, and
+the combined strength is not something any one of the three knobs reports.
+
+Finally, on where to spend effort: Chopra & Ziemba [^Chopra1993] find that errors in the
+*means* are roughly an order of magnitude more costly, in cash-equivalent terms, than errors
+in variances, and larger still than errors in covariances. Estimating $\hat{\mu}$ well matters
+more than estimating $\hat{V}$ well. The sobering benchmark is DeMiguel et
+al. [^DeMiguel2009] --- across a range of datasets, naive $1/N$ allocation beats
+sample-based mean-variance out of sample, and the estimation window required for
+mean-variance to win grows to thousands of months as $N$ grows. Any optimizer worth running
+has to beat $1/N$ first.
+
+[^Chopra1993]: @Chopra_1993_The_effect_of_errors_in_means_variances\.
+[^DeMiguel2009]: @DeMiguel_2009_Optimal_versus_naive_diversification_How\.
+[^Garlappi2009]: @Garlappi_2009_A_Generalized_Approach_to_Portfolio_Optimization\.
+[^Jagannathan2003]: @Jagannathan_2003_Risk_reduction_in_large_portfolios_Why_imposing\.
+
+
 ### Uncertainty estimation
 
 -   Error propagation; resampling the efficieny frontier
