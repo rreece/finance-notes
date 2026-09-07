@@ -170,7 +170,7 @@ and using $r_\mathrm{tan} - r_\mathrm{min} = d \, / \, [\,a \, (b - a \, r_\math
 
 $$ \psi = \frac{a \, \left[ (c - b \, r_{\ast}) + r_\mathrm{f} \, (a \, r_{\ast} - b) \right]}{d}, \qquad 1 - \psi = \frac{(a \, r_{\ast} - b) \, (b - a \, r_\mathrm{f})}{d} $$
 
-Both weights carry $r_\mathrm{f}$, because *which* frontier portfolio the tangent
+Both weights carry $r_\mathrm{f}$, because which frontier portfolio the tangent
 portfolio is depends on $r_\mathrm{f}$.
 
 The efficient frontier portfolio can be equivalently written
